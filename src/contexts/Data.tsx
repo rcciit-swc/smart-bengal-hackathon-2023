@@ -5,18 +5,28 @@ type DataContextType = {
   title: string;
   description: string;
   themes: string[];
+  themesTagline: string;
   about: string;
   descriptionCards: {
     [key: string]: any;
   }[];
+  contact: {
+    phone: string[];
+    email: string[];
+  };
 };
 
 const DataContext = createContext<DataContextType>({
   title: "",
   description: "",
   themes: [],
+  themesTagline: "",
   about: "",
   descriptionCards: [],
+  contact: {
+    email: [],
+    phone: [],
+  },
 });
 
 export function useData() {
@@ -30,8 +40,10 @@ export function DataProvider(props: any) {
         title: data.title,
         description: data.description,
         themes: data.themes,
+        themesTagline: data["themes-tagline"],
         about: data.about,
         descriptionCards: data["description-cards"],
+        contact: data.contact,
       }}
     >
       {props.children}

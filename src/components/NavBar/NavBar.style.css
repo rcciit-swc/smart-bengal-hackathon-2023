@@ -1,27 +1,13 @@
-.brand-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.brand-logo {
   width: 200px;
   height: 100px;
-}
-
-.brand-logo {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
   margin-left: 20px;
 }
 
-.navbar.navbar-expand-lg.navbar-dark.bg-dark {
-  background: rgb(2, 0, 36) !important;
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 49, 121, 1) 35%,
-    rgba(43, 74, 141, 1) 100%
-  ) !important;
-  height: 100px;
+.navbar.navbar-expand-xxl.navbar-light {
+  background-color: var(--primary-color) !important;
+  height: 80px;
 }
 
 .dropdown-toggle.nav-link {
@@ -31,12 +17,12 @@
 }
 
 .dropdown-toggle.nav-link:hover {
-  color: rgb(215, 91, 42) !important;
+  color: var(--heading-color) !important;
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
-  color: rgb(215, 91, 42) !important;
+  color: var(--heading-color) !important;
 }
 
 .dropdown-item {
@@ -60,7 +46,7 @@
 }
 
 .dropdown-item:hover .dot {
-  background-color: rgb(215, 91, 42) !important;
+  background-color: var(--heading-color) !important;
 }
 
 .dropdown-item a {
@@ -70,22 +56,24 @@
 }
 
 .dropdown-item:hover a {
-  color: rgb(215, 91, 42) !important;
+  color: var(--heading-color) !important;
 }
 
 .nav-link a {
-  text-decoration: none;
   color: #fff !important;
 }
 
 .nav-link a:hover {
-  color: rgb(215, 91, 42) !important;
+  color: var(--heading-color) !important;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar.navbar-expand-lg.navbar-dark.bg-dark {
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .navbar.navbar-expand-xxl.navbar-light {
     height: max-content;
-    background-color: transparent !important;
   }
 
   .dropdown-toggle.nav-link {

@@ -1,30 +1,24 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
 import { indexRoute } from "../../Routes";
+import Footer from "../Footer/Footer";
 import "./NavBar.style.css";
 
 const NavBar = () => {
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-        className="px-3"
-      >
+      <Navbar collapseOnSelect expand="xxl" className="px-3">
         <Navbar.Brand href="#home">
-          <div style={{ backgroundColor: "red" }} className="brand-container">
-            <img src="" alt="logo" className="brand-logo" />
-          </div>
+          <img src="" alt="logo" className="brand-logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto d-flex ">
+          <Nav className="me-auto"></Nav>
+          <Nav className="d-flex ">
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>About RCCSBH2023</Link>
+                <Link to={indexRoute}>About RCCSBH 2023</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -92,13 +86,13 @@ const NavBar = () => {
                 <Link to={indexRoute}>For Schools</Link>
               </div>
             </NavDropdown>
-            <div className="nav-link">
+            <div className="nav-link text-decoration-none">
               <Link to={indexRoute}>Venue</Link>
             </div>
-            <div className="nav-link">
+            <div className="nav-link text-decoration-none">
               <Link to={indexRoute}>Updates</Link>
             </div>
-            <div className="nav-link">
+            <div className="nav-link text-decoration-none">
               <Link to={indexRoute}>Prizes</Link>
             </div>
             <NavDropdown title="Eligibility">
@@ -111,16 +105,17 @@ const NavBar = () => {
                 <Link to={indexRoute}>Schools</Link>
               </div>
             </NavDropdown>
-            <div className="nav-link">
+            <div className="nav-link text-decoration-none">
               <Link to={indexRoute}>FAQs</Link>
             </div>
-            <div className="nav-link">
+            <div className="nav-link text-decoration-none">
               <Link to={indexRoute}>Contact Us</Link>
             </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       <Outlet />
+      <Footer />
     </>
   );
 };

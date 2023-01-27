@@ -1,0 +1,10 @@
+.footer-content {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import CarouselContainer from "../../components/carousel/Carousel";
 import { useData } from "../../contexts/Data";
 import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
+
+const Themes = lazy(() => import("./component.body.themes"));
 
 const Home = () => {
   const { title, description, descriptionCards, about } = useData();
@@ -53,28 +55,9 @@ const Home = () => {
         </div>
         <img src={whatIsSbhIcon} alt="what is sbh" />
       </div>
-      {/* <div
-        style={{ backgroundColor: `var(--primary-color-light)` }}
-        className="mt-5 w-100 h-100 d-flex flex-column align-items-center"
-      >
-        <h1
-          style={{ color: `var(--heading-color)` }}
-          className="text-uppercase fw-bold mt-3"
-        >
-          {title}
-        </h1>
-        <h5 className="fw-light fs-6">{description}</h5>
-        <div className="w-100 mt-5 row row-cols-4 justify-content-center">
-          {themes.map((theme) => (
-            <div
-              style={{ backgroundColor: `var(--primary-color-light)` }}
-              className="m-3 p-3 d-flex fw-bold flex-column align-items-center"
-            >
-              <h3 className="fw-bold">{theme}</h3>
-            </div>
-          ))}
-        </div>
-      </div> */}
+      <Suspense fallback={<></>}>
+        <Themes />
+      </Suspense>
     </main>
   );
 };

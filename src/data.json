@@ -29,5 +29,10 @@
     "Agriculture , Foodtech and Rural Development",
     "Biotech and healthcare",
     "Miscellaneous"
-  ]
+  ],
+  "themes-tagline": "No problem is too big... No idea is too small",
+  "contact": {
+    "email": ["hiranmoy.roy@rcciit.org.in", "arpan.deyasi@rcciit.org.in"],
+    "phone": ["+919831445343", "+919832244201"]
+  }
 }
