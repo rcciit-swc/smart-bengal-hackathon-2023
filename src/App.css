@@ -5,6 +5,11 @@ body {
   font-family: "Montserrat", sans-serif !important;
 }
 
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 :root {
   --heading-color: rgb(0, 167, 0);
   --primary-color: #3a488b;
