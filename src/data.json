@@ -1,0 +1,33 @@
+{
+  "title": "smart bengal hackathon",
+  "description": "World’s biggest open platform for the innovators or entrepreneurs of tomorrow to start today towards a smarter Bengal",
+  "description-cards": [
+    {
+      "ingenious": "Harnessing creativity and expertise of students, academicians and visionaries"
+    },
+    { "engaging": "Sparking institute-level hackathons, fuelling imagination" },
+    { "futuristic": "Building funnel for ‘Start-up India’ campaign" },
+    {
+      "collaborative": "Crowdsourcing intelligence for improving governance and quality of life"
+    },
+    {
+      "empowering": "Enabling possibilities and enhancing opportunities for citizens to deliver innovative solutions to India’s daunting problems"
+    }
+  ],
+  "about": "Smart Bengal Hackathon 2023 is a statewide initiative to provide engineering and school students to solve some of the common problems we face in our daily life; and thus inculcate a culture of product innovation and a mindset of real time problem solving.",
+  "themes": [
+    "Smart Vehicle",
+    "Robotics and Drones",
+    "Disaster Management",
+    "Smart Education",
+    "Smart Automation",
+    "Intelligent Transportation and logistics",
+    "Clean/Green Technology",
+    "Renewable and sustainable energy",
+    "Blockchain and Cybersecurity",
+    "IOT with AI",
+    "Agriculture , Foodtech and Rural Development",
+    "Biotech and healthcare",
+    "Miscellaneous"
+  ]
+}

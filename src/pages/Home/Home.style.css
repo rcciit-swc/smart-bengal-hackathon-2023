@@ -1,0 +1,42 @@
+.what-is-sbh {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.what-is-sbh div {
+  margin-right: 35px;
+}
+
+.what-is-sbh span {
+  text-align: justify;
+}
+
+.what-is-sbh img {
+  width: auto;
+  height: calc(21.875rem + ((1vw - 7.68px) * 13.0208));
+}
+
+@media screen and (min-width: 1400px) {
+  .what-is-sbh {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .what-is-sbh {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .what-is-sbh div {
+    margin-right: 0;
+  }
+
+  .what-is-sbh img {
+    margin-top: 40px;
+    width: 320px;
+    height: auto;
+  }
+}
