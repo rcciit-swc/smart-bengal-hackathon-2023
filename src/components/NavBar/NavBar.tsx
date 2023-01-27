@@ -6,31 +6,117 @@ import "./NavBar.style.css";
 const NavBar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+        className="px-3"
+      >
+        <Navbar.Brand href="#home">
+          <div style={{ backgroundColor: "red" }} className="brand-container">
+            <img src="" alt="logo" className="brand-logo" />
+          </div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link>
-              <Link to={indexRoute}>Home</Link>
-            </Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+          <Nav className="me-auto d-flex ">
+            <NavDropdown title="Discover about SBH">
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>About RCCSBH2023</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>RCCSBH 2023 Process Flow</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>RCCSBH 2023 Themes</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>RCCSBH 2023 Problem Statements</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>RCCSBH 2023 Teams</Link>
+              </div>
             </NavDropdown>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">Something</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Something
-            </Nav.Link>
+            <NavDropdown title="Project Implementation">
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>
+                  Guidelines for further development and <br /> deployment of
+                  Winning Projects
+                </Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Intellectual Property</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Important Note</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Travel Norms</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Stay</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Field Visits</Link>
+              </div>
+            </NavDropdown>
+            <NavDropdown title="Guidelines">
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Colleges</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Schools</Link>
+              </div>
+            </NavDropdown>
+            <NavDropdown title="Idea Template">
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>For Colleges</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>For Schools</Link>
+              </div>
+            </NavDropdown>
+            <div className="nav-link">
+              <Link to={indexRoute}>Venue</Link>
+            </div>
+            <div className="nav-link">
+              <Link to={indexRoute}>Updates</Link>
+            </div>
+            <div className="nav-link">
+              <Link to={indexRoute}>Prizes</Link>
+            </div>
+            <NavDropdown title="Eligibility">
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Colleges</Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link to={indexRoute}>Schools</Link>
+              </div>
+            </NavDropdown>
+            <div className="nav-link">
+              <Link to={indexRoute}>FAQs</Link>
+            </div>
+            <div className="nav-link">
+              <Link to={indexRoute}>Contact Us</Link>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

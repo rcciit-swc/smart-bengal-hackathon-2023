@@ -2,6 +2,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 :root {
 }
 
