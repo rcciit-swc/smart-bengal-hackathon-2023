@@ -15,7 +15,7 @@ const CarouselContainer = () => {
           className="d-block w-100"
           height="500px"
           width="auto"
-          src="https://imgur.com/gallery/E5hXzpV.png"
+          src="https://sih.gov.in/img1/slider/sliderbannerM40.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -28,7 +28,7 @@ const CarouselContainer = () => {
           className="d-block w-100"
           height="500px"
           width="auto"
-          src="https://imgur.com/gallery/E5hXzpV.png"
+          src="https://sih.gov.in/img1/slider/sliderbannerM35.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -41,7 +41,7 @@ const CarouselContainer = () => {
           className="d-block w-100"
           height="500px"
           width="auto"
-          src="https://imgur.com/gallery/E5hXzpV.png"
+          src="https://sih.gov.in/img1/slider/sliderbannerM33.jpg"
           alt="Third slide"
         />
 
