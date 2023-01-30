@@ -1,14 +1,13 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import { collegeRoute, guidelinesRoute, indexRoute, schoolRoute } from "./Routes";
+import { indexRoute, problemStatementsRoute } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
+import ProblemStatements from "./pages/ProblemStatements/ProblemStatements";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
-const School = lazy(() => import("./pages/Guidelines/Page.school"));
-const College = lazy(() => import("./pages/Guidelines/Page.college"));
 
 function App() {
   return (
@@ -23,12 +22,15 @@ function App() {
                   <Home />
                 </Suspense>
               }
-            />
+            ></Route>
             <Route
-              path={guidelinesRoute}
-            >
-              
-            </Route>
+              path={problemStatementsRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <ProblemStatements />
+                </Suspense>
+              }
+            ></Route>
           </Route>
         </Routes>
       </DataProvider>

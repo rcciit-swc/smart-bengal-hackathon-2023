@@ -14,6 +14,14 @@ type DataContextType = {
     phone: string[];
     email: string[];
   };
+  ps: {
+    organization: string[];
+    problemStatementTitle: string[];
+    category: string[];
+    psNumber: string[];
+    submittedIdeasCount: string[];
+    domainBucket: string[];
+  };
 };
 
 const DataContext = createContext<DataContextType>({
@@ -26,6 +34,14 @@ const DataContext = createContext<DataContextType>({
   contact: {
     email: [],
     phone: [],
+  },
+  ps: {
+    organization: [],
+    problemStatementTitle: [],
+    category: [],
+    psNumber: [],
+    submittedIdeasCount: [],
+    domainBucket: [],
   },
 });
 
@@ -44,6 +60,7 @@ export function DataProvider(props: any) {
         about: data.about,
         descriptionCards: data["description-cards"],
         contact: data.contact,
+        ps: data.ps,
       }}
     >
       {props.children}
