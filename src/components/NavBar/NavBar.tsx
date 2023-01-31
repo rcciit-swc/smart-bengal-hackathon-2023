@@ -1,6 +1,6 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
-import { indexRoute } from "../../Routes";
+import { indexRoute, problemStatementsRoute } from "../../Routes";
 import Footer from "../Footer/Footer";
 import "./NavBar.style.css";
 
@@ -30,7 +30,9 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>RCCSBH 2023 Problem Statements</Link>
+                <Link to={problemStatementsRoute}>
+                  RCCSBH 2023 Problem Statements
+                </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>

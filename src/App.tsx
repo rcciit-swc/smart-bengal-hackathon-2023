@@ -1,9 +1,10 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import { indexRoute } from "./Routes";
+import { indexRoute, problemStatementsRoute } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
+import ProblemStatements from "./pages/ProblemStatements/ProblemStatements";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -19,6 +20,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <Home />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={problemStatementsRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <ProblemStatements />
                 </Suspense>
               }
             ></Route>

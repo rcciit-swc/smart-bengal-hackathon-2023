@@ -13,6 +13,7 @@ a {
 :root {
   --heading-color: rgb(0, 167, 0);
   --primary-color: #002449;
+  --secondary-color: #3a478b;
   --primary-color-light: #3a478b11;
   --invert-color: #fff;
 }

@@ -34,5 +34,29 @@
   "contact": {
     "email": ["hiranmoy.roy@rcciit.org.in", "arpan.deyasi@rcciit.org.in"],
     "phone": ["+919831445343", "+919832244201"]
+  },
+  "ps": {
+    "organization": [
+      "White Hour Solution",
+      "RCCIIT",
+      "De Company",
+      "Basu Infotech",
+      "Floating Point"
+    ],
+    "problemStatementTitle": [
+      "Hosting a blockchain network",
+      "Space Rocket Launch",
+      "Video processing, Video metadata, Video metadata generation"
+    ],
+    "category": ["Software", "Hardware", "Hardware", "Software", "Software"],
+    "psNumber": ["51572", "SS584", "59413", "12935", "SH2648"],
+    "submittedIdeasCount": ["60", "42", "36", "125", "47"],
+    "domainBucket": [
+      "MedTech",
+      "Miscellaneous",
+      "Disaster Management",
+      "BioTech",
+      "EdTEch"
+    ]
   }
 }
