@@ -1,6 +1,6 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
-import { indexRoute, problemStatementsRoute } from "../../Routes";
+import { indexRoute, problemStatementsRoute ,sbhthemesRoute} from "../../Routes";
 import guideline_clg from "../../assets/docs/Guidelines-College-SPOC.pdf";
 import guideline_school from "../../assets/docs/Guidelines-School-SPOC.pdf";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
@@ -31,7 +31,7 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>RCCSBH 2023 Themes</Link>
+                <Link to={sbhthemesRoute}>RCCSBH 2023 Themes</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
