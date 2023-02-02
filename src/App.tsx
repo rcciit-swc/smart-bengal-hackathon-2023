@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import { indexRoute, problemStatementsRoute,sbhthemesRoute } from "./Routes";
+import { indexRoute, problemStatementsRoute, sbhthemesRoute } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
 import ProblemStatements from "./pages/ProblemStatements/ProblemStatements";

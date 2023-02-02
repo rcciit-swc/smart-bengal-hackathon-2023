@@ -5,7 +5,6 @@ import "./ThemePage.style.css";
 
 const ThemePage = () => {
   const { themes } = useData();
-  console.log(themes);
   return (
     <main className="w-100">
       <div className={"w-100 position-relative"}>
@@ -38,13 +37,17 @@ const ThemePage = () => {
         >
           <thead>
             <tr>
-              <th style={{backgroundColor:"#313D76",color:"white"}}>S.No.</th>
-              <th style={{backgroundColor:"#313D76",color:"white"}}>Themes</th>
-              <th style={{backgroundColor:"#313D76",color:"white"}}>
+              <th style={{ backgroundColor: "#313D76", color: "white" }}>
+                S.No.
+              </th>
+              <th style={{ backgroundColor: "#313D76", color: "white" }}>
+                Themes
+              </th>
+              <th style={{ backgroundColor: "#313D76", color: "white" }}>
                 SIH Junior(Jr) Themes
                 <span>(for schools)</span>
               </th>
-              <th style={{backgroundColor:"#313D76" ,color:"white"}}>
+              <th style={{ backgroundColor: "#313D76", color: "white" }}>
                 SBH Senior(Sr) Themes
                 <span>(for colleges)</span>
               </th>

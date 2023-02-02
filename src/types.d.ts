@@ -1,2 +1,2 @@
-declare module '*.pdf';
-declare module '*.pptx';
+declare module "*.pdf";
+declare module "*.pptx";
