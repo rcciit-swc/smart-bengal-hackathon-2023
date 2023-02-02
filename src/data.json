@@ -5,8 +5,12 @@
     {
       "ingenious": "Harnessing creativity and expertise of students, academicians and visionaries"
     },
-    { "engaging": "Sparking institute-level hackathons, fuelling imagination" },
-    { "futuristic": "Building funnel for ‘Start-up India’ campaign" },
+    {
+      "engaging": "Sparking institute-level hackathons, fuelling imagination"
+    },
+    {
+      "futuristic": "Building funnel for ‘Start-up India’ campaign"
+    },
     {
       "collaborative": "Crowdsourcing intelligence for improving governance and quality of life"
     },
@@ -32,8 +36,14 @@
   ],
   "themes-tagline": "No problem is too big... No idea is too small",
   "contact": {
-    "email": ["hiranmoy.roy@rcciit.org.in", "arpan.deyasi@rcciit.org.in"],
-    "phone": ["+919831445343", "+919832244201"]
+    "email": [
+      "hiranmoy.roy@rcciit.org.in",
+      "arpan.deyasi@rcciit.org.in"
+    ],
+    "phone": [
+      "+919831445343",
+      "+919832244201"
+    ]
   },
   "ps": {
     "organization": [
@@ -48,9 +58,27 @@
       "Space Rocket Launch",
       "Video processing, Video metadata, Video metadata generation"
     ],
-    "category": ["Software", "Hardware", "Hardware", "Software", "Software"],
-    "psNumber": ["51572", "SS584", "59413", "12935", "SH2648"],
-    "submittedIdeasCount": ["60", "42", "36", "125", "47"],
+    "category": [
+      "Software",
+      "Hardware",
+      "Hardware",
+      "Software",
+      "Software"
+    ],
+    "psNumber": [
+      "51572",
+      "SS584",
+      "59413",
+      "12935",
+      "SH2648"
+    ],
+    "submittedIdeasCount": [
+      "60",
+      "42",
+      "36",
+      "125",
+      "47"
+    ],
     "domainBucket": [
       "MedTech",
       "Miscellaneous",
@@ -58,5 +86,37 @@
       "BioTech",
       "EdTEch"
     ]
-  }
+  },
+  "pf": [
+    {
+      "title": "Step1",
+      "img": "./assets/step1.png",
+      "desc": "RCCSBH2023 Software &amp; Hardware Edition: Problem statements submission by Core Industry, IT sector, Start up, PSUs, State Ministries and NGO."
+    },
+    {
+      "title": "Step2",
+      "img": "./assets/step2.png",
+      "desc": "Submission of Problem Statements (PSs) by Core Industry, IT sector, Start up, PSUs, State Ministries &amp; NGOs on the SBH portal. Review of Submitted PSs &finalization by concerned committee &amp; publish finalized PSs"
+    },
+    {
+      "title": "Step3",
+      "img": "./assets/step3.png",
+      "desc": "Registration of College SPOCs on SBH portal Blocking published PSs by SPOCs ofColleges or school or Institutes Internal campus hackathon to be conducted in each college or school or institute by their SPOCs on their blocked PSs."
+    },
+    {
+      "title": "Step4",
+      "img": "./assets/step4.png",
+      "desc": "College / school SPOC to be responsible to conduct internal hackathon in the college/school to finalize total best 10 teams + 5 waitlisted teams from the internal hackathon. SPOC to recommend the selected teams for SBH 2023 Hardware /Software edition at SBH portal."
+    },
+    {
+      "title": "Step5",
+      "img": "./assets/step5.png",
+      "desc": "Team leaders of the selected teams to be registered at the SIH portal to submit ideas Submission of ideas by selected teams against PSs by college SPOC for the sSBH2023 Finale Evaluation of submitted ideas."
+    },
+    {
+      "title": "Step6",
+      "img": "./assets/step6.png",
+      "desc": "Result Analysis and Result Publication."
+    }
+  ]
 }

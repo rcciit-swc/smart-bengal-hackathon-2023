@@ -22,6 +22,9 @@ type DataContextType = {
     submittedIdeasCount: string[];
     domainBucket: string[];
   };
+  pf: {
+    [key: string]: any;
+  }[]
 };
 
 const DataContext = createContext<DataContextType>({
@@ -43,6 +46,7 @@ const DataContext = createContext<DataContextType>({
     submittedIdeasCount: [],
     domainBucket: [],
   },
+  pf:[]
 });
 
 export function useData() {
@@ -61,6 +65,7 @@ export function DataProvider(props: any) {
         descriptionCards: data["description-cards"],
         contact: data.contact,
         ps: data.ps,
+        pf: data.pf,
       }}
     >
       {props.children}

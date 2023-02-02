@@ -1,10 +1,11 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import { indexRoute, problemStatementsRoute } from "./Routes";
+import { indexRoute, problemStatementsRoute, processFlowRoute } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
 import ProblemStatements from "./pages/ProblemStatements/ProblemStatements";
+import ProcessFlow from "./pages/ProcessFlow/ProcessFlow";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -28,6 +29,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <ProblemStatements />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={processFlowRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <ProcessFlow />
                 </Suspense>
               }
             ></Route>
