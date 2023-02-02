@@ -1,6 +1,10 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
-import { indexRoute, problemStatementsRoute } from "../../Routes";
+import {
+  indexRoute,
+  problemStatementsRoute,
+  sbhthemesRoute,
+} from "../../Routes";
 import guideline_clg from "../../assets/docs/Guidelines-College-SPOC.pdf";
 import guideline_school from "../../assets/docs/Guidelines-School-SPOC.pdf";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
@@ -27,11 +31,13 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={process_flow} target="_blank">RCCSBH 2023 Process Flow</a>
+                <a href={process_flow} target="_blank">
+                  RCCSBH 2023 Process Flow
+                </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>RCCSBH 2023 Themes</Link>
+                <Link to={sbhthemesRoute}>RCCSBH 2023 Themes</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -76,21 +82,29 @@ const NavBar = () => {
             <NavDropdown title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_clg} target="_blank">Colleges</a>
+                <a href={guideline_clg} target="_blank">
+                  Colleges
+                </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_school} target="_blank">Schools</a>
+                <a href={guideline_school} target="_blank">
+                  Schools
+                </a>
               </div>
             </NavDropdown>
             <NavDropdown title="Idea Template">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={idea_template_college} download="idea_template">For Colleges</a>
+                <a href={idea_template_college} download="idea_template">
+                  For Colleges
+                </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={idea_template_school} download="idea_template">For Schools</a>
+                <a href={idea_template_school} download="idea_template">
+                  For Schools
+                </a>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
