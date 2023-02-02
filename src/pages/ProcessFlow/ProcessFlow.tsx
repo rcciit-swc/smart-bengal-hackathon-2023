@@ -61,7 +61,7 @@ const ProcessFlow = () => {
             className="text-uppercase fw-bold fs-2"
             style={{ color: "var(--heading-color)" }}
           >
-            WHY JOIN SIH 2022?
+            WHY JOIN SBH 2023?
           </span>
           <div className="d-flex flex-row flex-wrap mt-5">
             {descriptionCards.map((card, index) => (
