@@ -17,3 +17,7 @@ a {
   --primary-color-light: #3a478b11;
   --invert-color: #fff;
 }
+
+#rcciit-direction:hover{
+  text-decoration: underline;
+}

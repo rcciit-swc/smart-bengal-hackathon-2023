@@ -1,6 +1,6 @@
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
-import { indexRoute, problemStatementsRoute } from "../../Routes";
+import { indexRoute, problemStatementsRoute, projectImplementationRoute, venueRoute } from "../../Routes";
 import guideline_clg from "../../assets/docs/Guidelines-College-SPOC.pdf";
 import guideline_school from "../../assets/docs/Guidelines-School-SPOC.pdf";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
@@ -44,35 +44,9 @@ const NavBar = () => {
                 <Link to={indexRoute}>RCCSBH 2023 Teams</Link>
               </div>
             </NavDropdown>
-            <NavDropdown title="Project Implementation">
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link to={indexRoute}>
-                  Guidelines for further development and <br /> deployment of
-                  Winning Projects
-                </Link>
-              </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link to={indexRoute}>Intellectual Property</Link>
-              </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link to={indexRoute}>Important Note</Link>
-              </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link to={indexRoute}>Travel Norms</Link>
-              </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link to={indexRoute}>Stay</Link>
-              </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link to={indexRoute}>Field Visits</Link>
-              </div>
-            </NavDropdown>
+            <div className="nav-link text-decoration-none">
+              <Link to={projectImplementationRoute}>Project Implementation</Link>
+            </div>
             <NavDropdown title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -94,7 +68,7 @@ const NavBar = () => {
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
-              <Link to={indexRoute}>Venue</Link>
+              <Link to={venueRoute}>Venue</Link>
             </div>
             <div className="nav-link text-decoration-none">
               <Link to={indexRoute}>Updates</Link>

@@ -1,13 +1,15 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import { indexRoute, problemStatementsRoute } from "./Routes";
+import { indexRoute, problemStatementsRoute, projectImplementationRoute, venueRoute } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
-import ProblemStatements from "./pages/ProblemStatements/ProblemStatements";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
+const ProblemStatements = lazy(() => import("./pages/ProblemStatements/ProblemStatements"));
+const ProjectImplementation = lazy(() => import("./pages/ProjectImplementation/ProjectImplementation"));
+const Venue = lazy(() => import("./pages/Venue/Venue"));
 
 function App() {
   return (
@@ -28,6 +30,23 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <ProblemStatements />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={projectImplementationRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <ProjectImplementation />
+                </Suspense>
+              }
+            >
+            </Route>
+            <Route
+              path={venueRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <Venue />
                 </Suspense>
               }
             ></Route>

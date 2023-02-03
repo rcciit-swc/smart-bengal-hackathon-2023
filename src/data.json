@@ -58,5 +58,60 @@
       "BioTech",
       "EdTEch"
     ]
-  }
+  },
+  "winning-guidelines":[
+    
+      {
+        "id":"1",
+        "title":"Hackathons are opportunities to quickly check the feasibility of any novel idea, hence projects developed during Hackathons are usually very crude and absolutely not ready for field implementation or deployment as working solutions. They require considerable work or development before implementation/deployment as reliable, dependable solutions."
+      },
+      {
+        "id":"2",
+        "title":"Ideally, the duration for development and implementation of SBH winning project should be between 6 months to 1 year. However, the duration could be increased /decreased with the mutual consent of all the involved parties."
+      },
+      {
+        "id":"3",
+        "title":"Once the Organizing committee of SBH shared the contact details of the winning teams with the concerned Problem Statement given agency, they are requested to directly initiate communication with the winning teams to discuss further development and implementation roadmap of the winning ideas."
+      },
+      {
+        "id":"4",
+        "title":"Concerned Problem statement agency should request a detailed project plan from the winning team which should include implementation details, tools (software & hardware) required, expert support required along with timelines."
+      },
+      {
+        "id":"5",
+        "title":"Concerned Problem statement agency should procure commercial software/ hardware critical for the development and implementation of the winning project."
+      },
+      {
+        "id":"6",
+        "title":"Ideally, a panel of experts may be appointed to oversee the development and deployment of the SIH-winning solution."
+      },
+      {
+        "id":"7",
+        "title":"TMinimum one experienced technical expert per idea/winning solution should be assigned as a ‘mentor’ to ensure timely progress and implementation of the project."
+      },
+      {
+        "id":"8",
+        "title":"In the majority of cases, the winning team will work remotely from their college, hence effective coordination is very critical. It is highly recommended that the RCCIIT schedule regular weekly/monthly monitoring sessions with each team through available video conferencing tools along with Concerned Problem statement agency."
+      },
+      {
+        "id":"9",
+        "title":"If required, an appropriate faculty member from the same institution of the winning team may be co-opted as an additional ‘mentor’ for better coordination on project development."
+      },
+      {
+        "id":"10",
+        "title":"Additionally, written consent from the winning team’s educational institution should be taken committing support (permissions and time commitments) during the development and deployment of the project. Educational institutions will not have any financial burden in this regard."
+      },
+      {
+        "id":"11",
+        "title":"In the case of software solutions, a cybersecurity expert may be engaged to ensure that the development of the winning solution is on par with the required safety standards."
+      },
+      {
+        "id":"12",
+        "title":"In the case of a hardware-based product, then it is highly recommended that a ‘Product Design Expert’ may be regularly consulted to ensure state of an art product."
+      },
+      {
+        "id":"13",
+        "title":"Concerned Problem statement agency will share quarterly status reports regarding the implementation and development of SBH-winning solutions with the RCCIIT."
+      }
+  ]
 }

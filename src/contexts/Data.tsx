@@ -1,6 +1,12 @@
 import { createContext, useContext } from "react";
 import data from "../data.json";
 
+type WinningGuidelines = {
+  id : string;
+  title : string;
+}
+
+
 type DataContextType = {
   title: string;
   description: string;
@@ -22,6 +28,7 @@ type DataContextType = {
     submittedIdeasCount: string[];
     domainBucket: string[];
   };
+  winningGuidelines: WinningGuidelines[];
 };
 
 const DataContext = createContext<DataContextType>({
@@ -43,6 +50,7 @@ const DataContext = createContext<DataContextType>({
     submittedIdeasCount: [],
     domainBucket: [],
   },
+  winningGuidelines: [],
 });
 
 export function useData() {
@@ -61,6 +69,7 @@ export function DataProvider(props: any) {
         descriptionCards: data["description-cards"],
         contact: data.contact,
         ps: data.ps,
+        winningGuidelines: data["winning-guidelines"],
       }}
     >
       {props.children}
