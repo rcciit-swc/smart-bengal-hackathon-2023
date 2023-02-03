@@ -5,8 +5,12 @@
     {
       "ingenious": "Harnessing creativity and expertise of students, academicians and visionaries"
     },
-    { "engaging": "Sparking institute-level hackathons, fuelling imagination" },
-    { "futuristic": "Building funnel for ‘Start-up India’ campaign" },
+    {
+      "engaging": "Sparking institute-level hackathons, fuelling imagination"
+    },
+    {
+      "futuristic": "Building funnel for ‘Start-up India’ campaign"
+    },
     {
       "collaborative": "Crowdsourcing intelligence for improving governance and quality of life"
     },
@@ -32,8 +36,14 @@
   ],
   "themes-tagline": "No problem is too big... No idea is too small",
   "contact": {
-    "email": ["hiranmoy.roy@rcciit.org.in", "arpan.deyasi@rcciit.org.in"],
-    "phone": ["+919831445343", "+919832244201"]
+    "email": [
+      "hiranmoy.roy@rcciit.org.in",
+      "arpan.deyasi@rcciit.org.in"
+    ],
+    "phone": [
+      "+919831445343",
+      "+919832244201"
+    ]
   },
   "ps": {
     "organization": [
@@ -48,9 +58,27 @@
       "Space Rocket Launch",
       "Video processing, Video metadata, Video metadata generation"
     ],
-    "category": ["Software", "Hardware", "Hardware", "Software", "Software"],
-    "psNumber": ["51572", "SS584", "59413", "12935", "SH2648"],
-    "submittedIdeasCount": ["60", "42", "36", "125", "47"],
+    "category": [
+      "Software",
+      "Hardware",
+      "Hardware",
+      "Software",
+      "Software"
+    ],
+    "psNumber": [
+      "51572",
+      "SS584",
+      "59413",
+      "12935",
+      "SH2648"
+    ],
+    "submittedIdeasCount": [
+      "60",
+      "42",
+      "36",
+      "125",
+      "47"
+    ],
     "domainBucket": [
       "MedTech",
       "Miscellaneous",
@@ -113,5 +141,85 @@
         "id":"13",
         "title":"Concerned Problem statement agency will share quarterly status reports regarding the implementation and development of SBH-winning solutions with the RCCIIT."
       }
-  ]
+    ],
+  "faqs": {
+    "company": [
+      {
+        "question": "WHAT IS SMART BENGAL HACKATHON?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },
+      {
+        "question" :"WHEN WAS SMART BENGAL HACKATHON STARTED?",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question" : "WHAT IS NEW IN SMART BENGAL HACKATHON 2023?",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"WHO CAN POSE CHALLENGE IN SBH?",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod,"
+      },{
+        "question":"CAN INDIVIDUAL POSE AN CHALLENGE?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },
+      {
+        "question":"WHAT ARE THE FINANCIAL IMPLICATIONS?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"CAN UNIVERSITY OR INSTITUTE SUBMIT PS'S UNDER SBH 2023?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"CAN A STUDENT FROM DISTANCE/PART-TIME EDUCATION PROGRAMME PARTICIPATE IN SBH 2023?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      }
+    ],
+    "team" : [
+      {
+        "question":"WHO CAN PARTICIPATE IN SBH 2023?",
+        "answer" :"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod,"
+      },
+      {
+        "question":"WHAT IS THE CRITERIA OF TEAM FORMATION?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod,"
+      },{
+        "question":"WHAT IS THE ROLE OF THE COLLEGE SPOC?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"I AM STUDENT OF HEI PURSUING PHD. CAN I PARTICIPATE?",
+        "answer":"I AM STUDENT OF CLASS 5TH. CAN I PARTICIPATE?"
+      },{
+        "question":"I AM STUDENT OF CLASS 5TH. CAN I PARTICIPATE?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },
+      {
+        "question":"I AM PURSUING DISTANCE/PART-TIME AND CURRENTLY ENGAGED AS A WORKING PROFESSIONAL. CAN I PARTICIPATE?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"WHAT IS PRIZE MONEY OF WINNING TEAM?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"WHEN CAN I SUBMIT THE IDEA AGAINST THE PROBLEM STATEMENT?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"WILL THIS HACKATHON BE ORGANISED DIGITALLY OR PHYSICALLY?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"WHAT ABOUT MENTORS OR HOW MANY MENTORS I CAN NOMINATE? AND WHAT IS THE MINIMUM REQUIREMENT FOR MENTOR TO MENTOR TEAM IN HACKATHON?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"THE INTERNAL HACKATHON NEEDS TO BE ORGANISED AT WHICH DATE & WHAT WILL BE THE PROCESS FOR ORGANISING INTERNAL HACKATHON? ",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"THE INTERNAL HACKATHON NEEDS TO BE ORGANISED AT WHICH DATE & WHAT WILL BE THE PROCESS FOR ORGANISING INTERNAL HACKATHON? ",  
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },{
+        "question":"WHO ALL CAN SUBMIT PROBLEM STATEMENT IN THIS HACKATHON?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      },
+      {
+        "question":"I AM INDIVIDUAL WORKING IN XYZ PRIVATE COMPANY. CAN I SUBMIT THE PROBLEM STATEMENT OR CHALLENGES AS AN INDIVIDUAL?",
+        "answer":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+      }
+    ]
+  }
+  
 }

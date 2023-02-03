@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import { indexRoute, problemStatementsRoute, projectImplementationRoute, venueRoute } from "./Routes";
+import { indexRoute, problemStatementsRoute, projectImplementationRoute, venueRoute, sbhthemesRoute } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
 
@@ -10,6 +10,7 @@ const Home = lazy(() => import("./pages/Home/Home"));
 const ProblemStatements = lazy(() => import("./pages/ProblemStatements/ProblemStatements"));
 const ProjectImplementation = lazy(() => import("./pages/ProjectImplementation/ProjectImplementation"));
 const Venue = lazy(() => import("./pages/Venue/Venue"));
+const ThemePage = lazy(() => import("./pages/ThemePage/ThemePage"));
 
 function App() {
   return (
@@ -47,6 +48,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <Venue />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={sbhthemesRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <ThemePage />
                 </Suspense>
               }
             ></Route>
