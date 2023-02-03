@@ -1,4 +1,3 @@
-
 const Updates = () => {
   return (
     <main className="w-100">
@@ -19,21 +18,30 @@ const Updates = () => {
         </h1>
       </div>
       <div className="w-100 d-flex flex-column justify-content-center align-items-center">
-      <h2
+        <h2
           className="w-100 text-center fw-bold my-5"
           style={{ color: "var(--heading-color)" }}
         >
           Important Dates and Deadlines
         </h2>
-        <ul style={{fontSize:"20px"}}>
-          <li><b>Registration Deadline:</b> 28th February, 2023.</li>
-          <li><b>Idea Submission Deadline:</b> 28th February, 2023..</li>
-          <li><b>Shortlisted Teams Announcement:</b> 31st March.2023.</li>
-          <li><b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH Junior & 12th April, 2023 for SBH Senior</li>
+        <ul style={{ fontSize: "20px" }}>
+          <li>
+            <b>Registration Deadline:</b> 28th February, 2023.
+          </li>
+          <li>
+            <b>Idea Submission Deadline:</b> 28th February, 2023..
+          </li>
+          <li>
+            <b>Shortlisted Teams Announcement:</b> 31st March.2023.
+          </li>
+          <li>
+            <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH Junior
+            & 12th April, 2023 for SBH Senior
+          </li>
         </ul>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Updates
+export default Updates;

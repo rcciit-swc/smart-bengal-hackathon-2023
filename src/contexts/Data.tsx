@@ -2,10 +2,9 @@ import { createContext, useContext } from "react";
 import data from "../data.json";
 
 type WinningGuidelines = {
-  id : string;
-  title : string;
-}
-
+  id: string;
+  title: string;
+};
 
 type DataContextType = {
   title: string;
@@ -30,7 +29,7 @@ type DataContextType = {
   };
   pf: {
     [key: string]: any;
-  }[]
+  }[];
   winningGuidelines: WinningGuidelines[];
 };
 
@@ -53,7 +52,7 @@ const DataContext = createContext<DataContextType>({
     submittedIdeasCount: [],
     domainBucket: [],
   },
-  pf:[],
+  pf: [],
   winningGuidelines: [],
 });
 

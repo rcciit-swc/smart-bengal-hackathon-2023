@@ -31,24 +31,33 @@ const ImportantNotes = [
   {
     description: (
       <p>
-        <b>Long Distance Travel/Short Distance Travel:</b>  SBH committee will not reimburse any travel cost for the participants. The concerned participants shall bear the travel cost even if they travel from any other district.
+        <b>Long Distance Travel/Short Distance Travel:</b>  SBH committee will
+        not reimburse any travel cost for the participants. The concerned
+        participants shall bear the travel cost even if they travel from any
+        other district.
       </p>
-    )
-  },
-  {
-    description:(
-      <p>
-        <b>Stay: SBH organizing</b> committee will arrange the accommodation nearby to the venue .But the participants has to bear the accommodation cost. However the participants shall request the accommodation request to SBH committee in advance.
-      </p>
-    )
+    ),
   },
   {
     description: (
       <p>
-        <b>Cost Incurred during Field Visits:</b> Other than travel and stay, if any other cost is incurred during any field visit to collect data/field survey or to undertake user testing etc (wherever required), each person shall bear the cost.
+        <b>Stay: SBH organizing</b> committee will arrange the accommodation
+        nearby to the venue .But the participants has to bear the accommodation
+        cost. However the participants shall request the accommodation request
+        to SBH committee in advance.
       </p>
-    )
-  }
+    ),
+  },
+  {
+    description: (
+      <p>
+        <b>Cost Incurred during Field Visits:</b> Other than travel and stay, if
+        any other cost is incurred during any field visit to collect data/field
+        survey or to undertake user testing etc (wherever required), each person
+        shall bear the cost.
+      </p>
+    ),
+  },
 ];
 
 const ProjectImplementation = () => {

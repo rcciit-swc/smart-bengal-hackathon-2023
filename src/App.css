@@ -21,6 +21,6 @@ a {
   --responsive-heading-font: calc(2.1875rem + ((1vw - 3px) * 4.7348));
 }
 
-#rcciit-direction:hover{
+#rcciit-direction:hover {
   text-decoration: underline;
 }
