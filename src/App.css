@@ -16,6 +16,7 @@ a {
   --secondary-color: #3a478b;
   --primary-color-light: #3a478b11;
   --invert-color: #fff;
+  --light-blue: #eff1ff;
   --sub-heading: #f75700;
   --responsive-heading-font: calc(2.1875rem + ((1vw - 3px) * 4.7348));
 }

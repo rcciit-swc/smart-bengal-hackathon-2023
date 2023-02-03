@@ -28,6 +28,9 @@ type DataContextType = {
     submittedIdeasCount: string[];
     domainBucket: string[];
   };
+  pf: {
+    [key: string]: any;
+  }[]
   winningGuidelines: WinningGuidelines[];
 };
 
@@ -50,6 +53,7 @@ const DataContext = createContext<DataContextType>({
     submittedIdeasCount: [],
     domainBucket: [],
   },
+  pf:[],
   winningGuidelines: [],
 });
 
@@ -69,6 +73,7 @@ export function DataProvider(props: any) {
         descriptionCards: data["description-cards"],
         contact: data.contact,
         ps: data.ps,
+        pf: data.pf,
         winningGuidelines: data["winning-guidelines"],
       }}
     >

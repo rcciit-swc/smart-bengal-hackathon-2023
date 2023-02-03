@@ -2,15 +2,19 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
 import {
   indexRoute,
-  problemStatementsRoute, projectImplementationRoute, venueRoute,
+  problemStatementsRoute,
+  processFlowRoute,
+  projectImplementationRoute,
+  venueRoute,
   sbhthemesRoute,
+  updatesRoute,
 } from "../../Routes";
 import guideline_clg from "../../assets/docs/Guidelines-College-SPOC.pdf";
 import guideline_school from "../../assets/docs/Guidelines-School-SPOC.pdf";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
 import idea_template_school from "../../assets/docs/Idea-Presentation-Format-SIH2022-School.pptx";
-import process_flow from "../../assets/docs/RCCIIT Smart Bengal Hackathon 2023_Publication_Final.pdf";
 import Footer from "../Footer/Footer";
+import logo from "../../assets/logo.png";
 import "./NavBar.style.css";
 
 const NavBar = () => {
@@ -18,7 +22,14 @@ const NavBar = () => {
     <>
       <Navbar collapseOnSelect expand="xxl" className="px-3">
         <Navbar.Brand href="#home">
-          <img src="" alt="logo" className="brand-logo" />
+          <img
+            src={logo}
+            alt="logo"
+            className="brand-logo"
+            style={{
+              width: "50px",
+            }}
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -31,9 +42,7 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={process_flow} target="_blank">
-                  RCCSBH 2023 Process Flow
-                </a>
+                <Link to={processFlowRoute}>RCCSBH 2023 Process Flow</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -51,7 +60,9 @@ const NavBar = () => {
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
-              <Link to={projectImplementationRoute}>Project Implementation</Link>
+              <Link to={projectImplementationRoute}>
+                Project Implementation
+              </Link>
             </div>
             <NavDropdown title="Guidelines">
               <div className="dropdown-item">
@@ -85,7 +96,7 @@ const NavBar = () => {
               <Link to={venueRoute}>Venue</Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link to={indexRoute}>Updates</Link>
+              <Link to={updatesRoute}>Updates</Link>
             </div>
             <div className="nav-link text-decoration-none">
               <Link to={indexRoute}>Prizes</Link>

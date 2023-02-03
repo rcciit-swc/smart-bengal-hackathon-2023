@@ -1,16 +1,30 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import { indexRoute, problemStatementsRoute, projectImplementationRoute, venueRoute, sbhthemesRoute } from "./Routes";
+import {
+  indexRoute,
+  problemStatementsRoute,
+  processFlowRoute,
+  projectImplementationRoute,
+  venueRoute,
+  sbhthemesRoute,
+  updatesRoute,
+} from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
-const ProblemStatements = lazy(() => import("./pages/ProblemStatements/ProblemStatements"));
-const ProjectImplementation = lazy(() => import("./pages/ProjectImplementation/ProjectImplementation"));
+const ProblemStatements = lazy(
+  () => import("./pages/ProblemStatements/ProblemStatements")
+);
+const ProjectImplementation = lazy(
+  () => import("./pages/ProjectImplementation/ProjectImplementation")
+);
 const Venue = lazy(() => import("./pages/Venue/Venue"));
 const ThemePage = lazy(() => import("./pages/ThemePage/ThemePage"));
+const Updates = lazy(() => import("./pages/Updates/Updates"));
+const ProcessFlow = lazy(() => import("./pages/ProcessFlow/ProcessFlow"));
 
 function App() {
   return (
@@ -35,14 +49,21 @@ function App() {
               }
             ></Route>
             <Route
+              path={processFlowRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <ProcessFlow />
+                </Suspense>
+              }
+            ></Route>
+            <Route
               path={projectImplementationRoute}
               element={
                 <Suspense fallback={<></>}>
                   <ProjectImplementation />
                 </Suspense>
               }
-            >
-            </Route>
+            ></Route>
             <Route
               path={venueRoute}
               element={
@@ -56,6 +77,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <ThemePage />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={updatesRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <Updates />
                 </Suspense>
               }
             ></Route>
