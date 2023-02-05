@@ -1,13 +1,13 @@
-.sponsor1{
+.sponsor-img:first-of-type{
     width: 200px;
 }
-.sponsor2, .sponsor3{
+.sponsor-img{
     width: 150px;
 }
 
 .sponsor-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: 45px;
 }
