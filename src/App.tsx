@@ -10,6 +10,7 @@ import {
   sbhthemesRoute,
   updatesRoute,
   teamRoute,
+  prizesRoute,
   eligibilityRoute,
   EmailRoute,
   prizesRoute,

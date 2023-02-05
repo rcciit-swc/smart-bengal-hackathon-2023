@@ -51,11 +51,14 @@ const Themes = () => {
   return (
     <div
       style={{ backgroundColor: `var(--primary-color-light)` }}
+      // style={{
+      //   backgroundColor: "blue",
+      // }}
       className="py-5 w-100 h-100 d-flex flex-column align-items-center"
     >
       <h5
         style={{ color: `var(--heading-color)` }}
-        className="text-uppercase fw-bold mt-3"
+        className="text-uppercase fw-bold "
       >
         {`${title}'s`}
       </h5>
@@ -81,7 +84,7 @@ const Themes = () => {
         />
         <div className="d-grid themes-grid "
         style={{
-          height: "60vh",
+          height: "70vh",
         }}>
           <ThemeCard
             id="1"
