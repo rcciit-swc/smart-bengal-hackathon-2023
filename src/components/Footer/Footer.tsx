@@ -13,10 +13,10 @@ const Footer = () => {
       className="d-flex flex-row justify-content-around py-4"
     >
       <div className="d-flex flex-column align-items-start px-3">
-        <p className="text-uppercase fs-5 fw-bold">follow us</p>
+        <p className="text-uppercase fs-5 fw-bold">Follow us</p>
         <div></div>
         <p className="fs-6">
-          © 2021-22 Smart Bengal Hackathon. All rights reserved
+          © 2022-23 Smart Bengal Hackathon. All rights reserved
         </p>
       </div>
       <div className="d-flex flex-column align-items-start px-3">

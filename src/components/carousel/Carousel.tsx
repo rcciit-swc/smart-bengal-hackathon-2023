@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import './Carousel.style.css';
 import Carousel from "react-bootstrap/Carousel";
+import carousel1 from "../../assets/caraousel-images/sbh-banner-1.webp";
+import carousel2 from "../../assets/caraousel-images/sbh-banner-3.webp";
 
 const CarouselContainer = () => {
   const [index, setIndex] = useState(0);
@@ -17,7 +19,7 @@ const CarouselContainer = () => {
           className="d-block w-100"
           height="500px"
           width="auto"
-          src="https://sih.gov.in/img1/slider/sliderbannerM40.jpg"
+          src={carousel1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -30,7 +32,7 @@ const CarouselContainer = () => {
           className="d-block w-100"
           height="500px"
           width="auto"
-          src={require("../../assets/sbh_banner_2.png")}
+          src={carousel2}
           alt="Second slide"
           // style={{ objectFit: "contain" }}
         />
@@ -44,9 +46,8 @@ const CarouselContainer = () => {
           className="d-block w-100"
           height="500px"
           width="auto"
-          src={require("../../assets/sbh_banner_3.png")}
+          src="https://sih.gov.in/img1/slider/sliderbannerM33.jpg"
           alt="Third slide"
-          // style={{ objectFit: "contain" }}
         />
 
         {/* <Carousel.Caption>
