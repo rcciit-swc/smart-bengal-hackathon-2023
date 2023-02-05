@@ -9,9 +9,11 @@ import {
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
+  EmailRoute,
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
+import EmailModule from "./utils/EmailModule";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -85,6 +87,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <Updates />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={EmailRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <EmailModule />
                 </Suspense>
               }
             ></Route>
