@@ -8,6 +8,7 @@ import {
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
+  teamRoute,
 } from "../../Routes";
 import guideline_clg from "../../assets/docs/Guidelines-College-SPOC.pdf";
 import guideline_school from "../../assets/docs/Guidelines-School-SPOC.pdf";
@@ -56,7 +57,7 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>RCCSBH 2023 Teams</Link>
+                <Link to={teamRoute}>RCCSBH 2023 Teams</Link>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">

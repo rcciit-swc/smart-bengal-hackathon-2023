@@ -9,9 +9,11 @@ import {
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
+  teamRoute,
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
+import Team from "./pages/Teams/Team";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -53,6 +55,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <ProcessFlow />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={teamRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <Team />
                 </Suspense>
               }
             ></Route>
