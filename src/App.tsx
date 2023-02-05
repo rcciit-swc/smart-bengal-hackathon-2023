@@ -12,8 +12,7 @@ import {
   teamRoute,
   prizesRoute,
   eligibilityRoute,
-  EmailRoute,
-  prizesRoute,
+  EmailRoute
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";

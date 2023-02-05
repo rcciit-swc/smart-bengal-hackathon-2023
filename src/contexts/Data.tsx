@@ -65,7 +65,6 @@ const DataContext = createContext<DataContextType>({
   pf: [],
   winningGuidelines: [],
   ThemeCardData: [],
-  themes: []
 });
 
 export function useData() {
@@ -87,7 +86,6 @@ export function DataProvider(props: any) {
         pf: data.pf,
         winningGuidelines: data["winning-guidelines"],
         ThemeCardData: data["theme-card-data"],
-        themes:data["themes"]
       }}
     >
       {props.children}
