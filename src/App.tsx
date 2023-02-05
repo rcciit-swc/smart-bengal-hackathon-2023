@@ -9,6 +9,8 @@ import {
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
+  prizesRoute,
+  eligibilityRoute
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
@@ -25,6 +27,8 @@ const Venue = lazy(() => import("./pages/Venue/Venue"));
 const ThemePage = lazy(() => import("./pages/ThemePage/ThemePage"));
 const Updates = lazy(() => import("./pages/Updates/Updates"));
 const ProcessFlow = lazy(() => import("./pages/ProcessFlow/ProcessFlow"));
+const Prizes = lazy(() => import("./pages/Prizes/Prizes"));
+const Eligibility = lazy(() => import("./pages/Eligibility/Eligibility"));
 
 function App() {
   return (
@@ -85,6 +89,22 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <Updates />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={prizesRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <Prizes />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={eligibilityRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <Eligibility />
                 </Suspense>
               }
             ></Route>

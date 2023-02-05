@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden;
 }
 
 a {
@@ -23,4 +24,11 @@ a {
 
 #rcciit-direction:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .eligibility {
+    height: 100% !important;
+  }
 }
