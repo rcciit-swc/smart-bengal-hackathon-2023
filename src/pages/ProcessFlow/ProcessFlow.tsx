@@ -15,7 +15,7 @@ const ProcessFlow = () => {
         <img src={banner} className="banner_img" />
         <div className="carosal_caption">
           <h3 className=" text-uppercase banner_tag">
-            Smart Bengal Hackathon 2022
+            Smart Bengal Hackathon 2023
           </h3>
           <h5 className="text-uppercase banner_subtxt">
             software & hardware edition

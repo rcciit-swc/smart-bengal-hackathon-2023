@@ -8,7 +8,7 @@ const CommitteCard = () => {
         <h3>Dr. Anand Deshpande</h3>
         <p> Chairman and MD, Persistent Systems</p>
         <p> Co-Chairman, Organizing Committee</p>
-        <p> Smart India Hackathon 2022</p>
+        <p> Smart Bengal Hackathon 2023</p>
       </div>
     </div>
   );

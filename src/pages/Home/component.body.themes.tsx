@@ -21,9 +21,7 @@ const ThemeCard = ({
     >
       <h5 className="fw-bold text-center">{theme}</h5>
       <span style={{ textAlign: "justify" }} className="fs-6">
-        {
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        }
+        {desc}
       </span>
     </div>
   );
@@ -80,24 +78,18 @@ const Themes = () => {
         <div className="d-grid themes-grid">
           <ThemeCard
             id="1"
-            theme={themes[visible - 2]}
-            desc={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            }
+            theme={themes[visible - 2].title}
+            desc={themes[visible - 2].description}
           />
           <ThemeCard
             id="2"
-            theme={themes[visible - 1]}
-            desc={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            }
+            theme={themes[visible - 1].title}
+            desc={themes[visible - 1].description}
           />
           <ThemeCard
             id="3"
-            theme={themes[visible]}
-            desc={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            }
+            theme={themes[visible].title}
+            desc={themes[visible].description}
           />
         </div>
         <img

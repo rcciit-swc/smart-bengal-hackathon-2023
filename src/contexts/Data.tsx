@@ -9,7 +9,10 @@ type WinningGuidelines = {
 type DataContextType = {
   title: string;
   description: string;
-  themes: string[];
+  themes: {
+    description: string;
+    title: string;
+  }[];
   themesTagline: string;
   about: string;
   descriptionCards: {

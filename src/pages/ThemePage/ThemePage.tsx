@@ -59,11 +59,9 @@ const ThemePage = () => {
                 <tr>
                   <td>{index + 1}</td>
                   <td>
-                    <h4>{item}</h4>
+                    <h4>{item.title}</h4>
                     {<br />}
-                    {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-                    }
+                    {item.description}
                   </td>
                   <td>
                     <img
