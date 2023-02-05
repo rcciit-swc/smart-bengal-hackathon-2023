@@ -42,7 +42,7 @@ const ImportantNotes = [
     description: (
       <p>
         <b>Stay: SBH organizing</b> committee will arrange the accommodation
-        nearby to the venue .But the participants has to bear the accommodation
+        nearby to the venue. But the participants has to bear the accommodation
         cost. However the participants shall request the accommodation request
         to SBH committee in advance.
       </p>

@@ -18,7 +18,7 @@
       "empowering": "Enabling possibilities and enhancing opportunities for citizens to deliver innovative solutions to India’s daunting problems"
     }
   ],
-  "about": "Smart Bengal Hackathon 2023 is a statewide initiative to provide engineering and school students to solve some of the common problems we face in our daily life; and thus inculcate a culture of product innovation and a mindset of real time problem solving.",
+  "about": "Smart Bengal Hackathon 2023 is a statewide initiative to provide engineering and school students to solve some of the common problems we face in our daily life, and thus inculcate a culture of product innovation and a mindset of real time problem solving.",
   "themes": [
     {
       "title": "Tourism",
@@ -82,12 +82,12 @@
     {
       "title": "Step1",
       "img": "./assets/step1.png",
-      "desc": "RCCSBH2023 Software &amp; Hardware Edition: Problem statements submission by Core Industry, IT sector, Start up, PSUs, State Ministries and NGO."
+      "desc": "SBH2023 Software and Hardware Edition: Problem statements submission by Core Industry, IT sector, Start up, PSUs, State Ministries and NGO."
     },
     {
       "title": "Step2",
       "img": "./assets/step2.png",
-      "desc": "Submission of Problem Statements (PSs) by Core Industry, IT sector, Start up, PSUs, State Ministries &amp; NGOs on the SBH portal. Review of Submitted PSs &finalization by concerned committee &amp; publish finalized PSs"
+      "desc": "Submission of Problem Statements (PSs) by Core Industry, IT sector, Start up, PSUs, State Ministries and NGOs on the SBH portal. Review of Submitted PSs &finalization by concerned committee and publish finalized PSs"
     },
     {
       "title": "Step3",
@@ -97,12 +97,12 @@
     {
       "title": "Step4",
       "img": "./assets/step4.png",
-      "desc": "College / school SPOC to be responsible to conduct internal hackathon in the college/school to finalize total best 10 teams + 5 waitlisted teams from the internal hackathon. SPOC to recommend the selected teams for SBH 2023 Hardware /Software edition at SBH portal."
+      "desc": "College/School SPOC to be responsible to conduct internal hackathon in the college/school to finalize total best 10 teams + 5 waitlisted teams from the internal hackathon. SPOC to recommend the selected teams for SBH 2023 Hardware/Software edition at SBH portal."
     },
     {
       "title": "Step5",
       "img": "./assets/step5.png",
-      "desc": "Team leaders of the selected teams to be registered at the SIH portal to submit ideas Submission of ideas by selected teams against PSs by college SPOC for the sSBH2023 Finale Evaluation of submitted ideas."
+      "desc": "Team leaders of the selected teams to be registered at the SBH portal to submit ideas Submission of ideas by selected teams against PSs by college SPOC for the sSBH2023 Finale Evaluation of submitted ideas."
     },
     {
       "title": "Step6",
@@ -129,11 +129,11 @@
     },
     {
       "id": "5",
-      "title": "Concerned Problem statement agency should procure commercial software/ hardware critical for the development and implementation of the winning project."
+      "title": "Concerned Problem statement agency should procure commercial Software/Hardware critical for the development and implementation of the winning project."
     },
     {
       "id": "6",
-      "title": "Ideally, a panel of experts may be appointed to oversee the development and deployment of the SIH-winning solution."
+      "title": "Ideally, a panel of experts may be appointed to oversee the development and deployment of the SBH-winning solution."
     },
     {
       "id": "7",

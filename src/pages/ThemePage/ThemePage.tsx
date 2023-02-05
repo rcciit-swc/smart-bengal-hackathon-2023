@@ -44,11 +44,11 @@ const ThemePage = () => {
                 Themes
               </th>
               <th style={{ backgroundColor: "#313D76", color: "white" }}>
-                SIH Junior(Jr) Themes
+                SBH Junior Themes
                 <span>(for schools)</span>
               </th>
               <th style={{ backgroundColor: "#313D76", color: "white" }}>
-                SBH Senior(Sr) Themes
+                SBH Senior Themes
                 <span>(for colleges)</span>
               </th>
             </tr>
