@@ -5,4 +5,6 @@ export const projectImplementationRoute = "/project-implementation";
 export const venueRoute = "/venue";
 export const sbhthemesRoute = "/sbh-themes";
 export const updatesRoute = "/updates";
+export const prizesRoute = "/prizes";
+export const eligibilityRoute = "/eligibility";
 export const EmailRoute = "/email";

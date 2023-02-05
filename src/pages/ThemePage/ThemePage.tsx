@@ -1,10 +1,9 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import { useData } from "../../contexts/Data";
-import "./ThemePage.style.css";
 
 const ThemePage = () => {
-  const { themes } = useData();
+  const { ThemeCardData } = useData();
   return (
     <main className="w-100">
       <div className={"w-100 position-relative"}>
@@ -24,7 +23,7 @@ const ThemePage = () => {
       <div className="w-100">
         <h2
           className="w-100 text-center py-5 fw-bold"
-          style={{ color: "var(--sub-heading)", fontSize: "36px" }}
+          style={{ color: "var(--heading-color)", fontSize: "36px" }}
         >
           SCHOOLS AND COLLEGES
         </h2>
@@ -43,39 +42,87 @@ const ThemePage = () => {
               <th style={{ backgroundColor: "#313D76", color: "white" }}>
                 Themes
               </th>
-              <th style={{ backgroundColor: "#313D76", color: "white" }}>
-                SBH Junior Themes
+              <th
+                style={{
+                  backgroundColor: "#313D76",
+                  color: "white",
+                  textAlign: "center",
+                }}
+              >
+                SBH Junior(Jr) Themes
                 <span>(for schools)</span>
               </th>
-              <th style={{ backgroundColor: "#313D76", color: "white" }}>
-                SBH Senior Themes
+              <th
+                style={{
+                  backgroundColor: "#313D76",
+                  color: "white",
+                  textAlign: "center",
+                }}
+              >
+                SBH Senior(Sr) Themes
                 <span>(for colleges)</span>
               </th>
             </tr>
           </thead>
           <tbody>
-            {themes.map((item, index) => {
+            {ThemeCardData.map((item, index) => {
               return (
-                <tr>
+                <tr key={index}>
                   <td>{index + 1}</td>
                   <td>
-                    <h4>{item.title}</h4>
+                    <span className="d-flex jusify-content-center align-items-center">
+                      <img
+                        src={item.icon}
+                        alt={item.theme}
+                        style={{
+                          width: "50px",
+                          height: "50px",
+                          marginRight: "10px",
+                        }}
+                      />
+                      <h4>{item.theme}</h4>
+                    </span>
+
                     {<br />}
-                    {item.description}
+                    {item.desc}
+                  </td>
+                  <td className=" ">
+                    {item.institution.includes("school") ? (
+                      <img
+                        className="d-block mx-auto my-5"
+                        src={"https://img.icons8.com/fluency/96/approval.png"}
+                        alt={"approval-icon"}
+                        style={{ height: "50px", width: "50px" }}
+                      />
+                    ) : (
+                      <img
+                        className="d-block mx-auto my-5"
+                        src={
+                          "https://img.icons8.com/fluency/96/null/cancel.png"
+                        }
+                        alt={"approval-icon"}
+                        style={{ height: "50px", width: "50px" }}
+                      />
+                    )}
                   </td>
                   <td>
-                    <img
-                      className={"d-block mx-auto"}
-                      src={"https://img.icons8.com/fluency/96/approval.png"}
-                      alt={"approval-icon"}
-                    />
-                  </td>
-                  <td>
-                    <img
-                      className="d-block mx-auto"
-                      src={"https://img.icons8.com/fluency/96/approval.png"}
-                      alt={"approval-icon"}
-                    />
+                    {item.institution.includes("college") ? (
+                      <img
+                        className="d-block mx-auto my-5"
+                        src={"https://img.icons8.com/fluency/96/approval.png"}
+                        alt={"approval-icon"}
+                        style={{ height: "50px", width: "50px" }}
+                      />
+                    ) : (
+                      <img
+                        className="d-block mx-auto my-5"
+                        src={
+                          "https://img.icons8.com/fluency/96/null/cancel.png"
+                        }
+                        alt={"approval-icon"}
+                        style={{ height: "50px", width: "50px" }}
+                      />
+                    )}
                   </td>
                 </tr>
               );

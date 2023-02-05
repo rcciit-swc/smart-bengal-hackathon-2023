@@ -6,6 +6,13 @@ type WinningGuidelines = {
   title: string;
 };
 
+type themeCardData = {
+  theme: string;
+  desc: string;
+  icon: string;
+  institution: string[];
+};
+
 type DataContextType = {
   title: string;
   description: string;
@@ -14,6 +21,7 @@ type DataContextType = {
     title: string;
   }[];
   themesTagline: string;
+  ThemeCardData: themeCardData[];
   about: string;
   descriptionCards: {
     [key: string]: any;
@@ -39,7 +47,6 @@ type DataContextType = {
 const DataContext = createContext<DataContextType>({
   title: "",
   description: "",
-  themes: [],
   themesTagline: "",
   about: "",
   descriptionCards: [],
@@ -57,6 +64,7 @@ const DataContext = createContext<DataContextType>({
   },
   pf: [],
   winningGuidelines: [],
+  ThemeCardData: [],
 });
 
 export function useData() {
@@ -69,7 +77,6 @@ export function DataProvider(props: any) {
       value={{
         title: data.title,
         description: data.description,
-        themes: data.themes,
         themesTagline: data["themes-tagline"],
         about: data.about,
         descriptionCards: data["description-cards"],
@@ -77,6 +84,7 @@ export function DataProvider(props: any) {
         ps: data.ps,
         pf: data.pf,
         winningGuidelines: data["winning-guidelines"],
+        ThemeCardData: data["theme-card-data"],
       }}
     >
       {props.children}
