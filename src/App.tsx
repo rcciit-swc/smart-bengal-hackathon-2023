@@ -13,7 +13,6 @@ import {
   prizesRoute,
   eligibilityRoute,
   EmailRoute,
-  prizesRoute,
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
