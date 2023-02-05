@@ -115,7 +115,7 @@ const NavBar = () => {
               <Link to={indexRoute}>FAQs</Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link to={indexRoute}>Contact Us</Link>
+              <Link to={indexRoute}><i className="fa fa-phone me-1"></i> Contact Us</Link>
             </div>
           </Nav>
         </Navbar.Collapse>

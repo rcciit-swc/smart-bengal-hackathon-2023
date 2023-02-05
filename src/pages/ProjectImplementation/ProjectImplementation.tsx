@@ -42,7 +42,7 @@ const ImportantNotes = [
     description: (
       <p>
         <b>Stay: SBH organizing</b> committee will arrange the accommodation
-        nearby to the venue .But the participants has to bear the accommodation
+        nearby to the venue. But the participants has to bear the accommodation
         cost. However the participants shall request the accommodation request
         to SBH committee in advance.
       </p>
@@ -96,7 +96,7 @@ const ProjectImplementation = () => {
           institutionalize a model for harnessing the creativity and technical
           expertise of millions of West Bengal students for the direct benefit
           of our state as well as nation. Through the Smart Bengal Hackathon
-          2023 (SBH2023), the Institution’s Innovation Cell (MIC) tried to
+          2023 (SBH2023), the Institution’s Innovation Cell (IIC) tried to
           crowdsource solutions for improving governance and quality of life and
           provide young citizens with an opportunity to co-create and present
           innovative solutions to India's pressing needs.
