@@ -9,6 +9,8 @@ import {
   sbhthemesRoute,
   updatesRoute,
   teamRoute,
+  prizesRoute,
+  eligibilityRoute,
 } from "../../Routes";
 import guideline_clg from "../../assets/docs/Guidelines-College-SPOC.pdf";
 import guideline_school from "../../assets/docs/Guidelines-School-SPOC.pdf";
@@ -68,13 +70,13 @@ const NavBar = () => {
             <NavDropdown title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_clg} target="_blank">
+                <a href={guideline_clg} target="_blank" rel="noreferrer">
                   Colleges
                 </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_school} target="_blank">
+                <a href={guideline_school} target="_blank" rel="noreferrer">
                   Schools
                 </a>
               </div>
@@ -100,23 +102,16 @@ const NavBar = () => {
               <Link to={updatesRoute}>Updates</Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link to={indexRoute}>Prizes</Link>
+              <Link to={prizesRoute}>Prizes</Link>
             </div>
-            <NavDropdown title="Eligibility">
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link to={indexRoute}>Colleges</Link>
-              </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link to={indexRoute}>Schools</Link>
-              </div>
-            </NavDropdown>
+            <div className="nav-link text-decoration-none">
+              <Link to={eligibilityRoute}>Eligibility</Link>
+            </div>
             <div className="nav-link text-decoration-none">
               <Link to={indexRoute}>FAQs</Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link to={indexRoute}>Contact Us</Link>
+              <a href="#contact">Contact Us</a>
             </div>
           </Nav>
         </Navbar.Collapse>

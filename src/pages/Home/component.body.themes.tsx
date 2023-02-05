@@ -6,10 +6,12 @@ const ThemeCard = ({
   theme,
   desc,
   id,
+  icon,
 }: {
   theme: string;
   desc: string;
   id: string;
+  icon: string;
 }) => {
   return (
     <div
@@ -17,10 +19,12 @@ const ThemeCard = ({
       style={{
         backgroundColor: `var(--primary-color-light)`,
       }}
-      className="m-3 p-3 d-flex flex-column align-items-center"
+      className="m-3 p-3 d-flex flex-column align-items-center "
     >
+      <img src={icon} alt={theme} className="my-4" style={{width:"80px",height:"80px"}}/>
       <h5 className="fw-bold text-center">{theme}</h5>
       <span style={{ textAlign: "justify" }} className="fs-6">
+        {desc}
         {desc}
       </span>
     </div>
@@ -28,13 +32,13 @@ const ThemeCard = ({
 };
 
 const Themes = () => {
-  const { title, themes, themesTagline } = useData();
+  const { title,  themesTagline, ThemeCardData } = useData();
 
   const [visible, setVisible] = useState(2);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (visible < themes.length - 1) {
+      if (visible < ThemeCardData.length - 1) {
         setVisible(visible + 1);
       } else {
         setVisible(2);
@@ -71,25 +75,31 @@ const Themes = () => {
             if (visible > 2) {
               setVisible(visible - 1);
             } else {
-              setVisible(themes.length - 1);
+              setVisible(ThemeCardData.length - 1);
             }
           }}
         />
-        <div className="d-grid themes-grid">
+        <div className="d-grid themes-grid "
+        style={{
+          height: "60vh",
+        }}>
           <ThemeCard
             id="1"
-            theme={themes[visible - 2].title}
-            desc={themes[visible - 2].description}
+            theme={ThemeCardData[visible - 2].theme}
+            desc={ThemeCardData[visible - 2].desc}
+            icon={ThemeCardData[visible - 2].icon}
           />
           <ThemeCard
             id="2"
-            theme={themes[visible - 1].title}
-            desc={themes[visible - 1].description}
+            theme={ThemeCardData[visible - 1].theme}
+            desc={ThemeCardData[visible - 1].desc}
+            icon={ThemeCardData[visible - 1].icon}
           />
           <ThemeCard
             id="3"
-            theme={themes[visible].title}
-            desc={themes[visible].description}
+            theme={ThemeCardData[visible].theme}
+            desc={ThemeCardData[visible].desc}
+            icon={ThemeCardData[visible].icon}
           />
         </div>
         <img
@@ -100,7 +110,7 @@ const Themes = () => {
           alt="next"
           role="button"
           onClick={() => {
-            if (visible < themes.length - 1) {
+            if (visible < ThemeCardData.length - 1) {
               setVisible(visible + 1);
             } else {
               setVisible(2);

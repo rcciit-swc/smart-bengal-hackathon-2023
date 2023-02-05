@@ -13,6 +13,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "bootstrap": "^5.2.3",
+    "emailjs-com": "^3.2.0",
     "firebase": "^9.16.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
@@ -48,5 +49,11 @@
   },
   "devDependencies": {
     "prettier": "2.8.3"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
+  
 }
