@@ -2,6 +2,14 @@
   flex-direction: row;
 }
 
+.footer-content a:hover {
+  color: var(--heading-color) !important;
+}
+
+.copyright:hover {
+  color: var(--heading-color) !important;
+}
+
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;

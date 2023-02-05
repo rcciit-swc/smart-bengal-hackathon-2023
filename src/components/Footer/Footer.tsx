@@ -15,9 +15,9 @@ const Footer = () => {
       <div className="d-flex flex-column align-items-start px-3">
         <p className="text-uppercase fs-5 fw-bold">Follow us</p>
         <div></div>
-        <p className="fs-6">
+        <a href="#" className="fs-6 copyright">
           © 2022-23 Smart Bengal Hackathon. All rights reserved
-        </p>
+        </a>
       </div>
       <div className="d-flex flex-column align-items-start px-3">
         <p className="text-uppercase fs-5 fw-bold">contact us</p>
@@ -43,6 +43,7 @@ const Footer = () => {
                 key={phone}
                 style={{ paddingRight: "10px" }}
                 href={`tel:${phone}`}
+                className="contact"
               >
                 {phone}
               </a>

@@ -16,10 +16,6 @@ type themeCardData = {
 type DataContextType = {
   title: string;
   description: string;
-  themes: {
-    description: string;
-    title: string;
-  }[];
   themesTagline: string;
   ThemeCardData: themeCardData[];
   about: string;

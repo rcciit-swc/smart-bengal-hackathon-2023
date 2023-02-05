@@ -10,7 +10,7 @@ import {
   sbhthemesRoute,
   updatesRoute,
   prizesRoute,
-  eligibilityRoute
+  eligibilityRoute,
   EmailRoute,
 } from "./Routes";
 import { lazy, Suspense } from "react";
