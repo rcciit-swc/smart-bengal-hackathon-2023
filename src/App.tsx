@@ -9,12 +9,15 @@ import {
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
+  teamRoute,
   prizesRoute,
   eligibilityRoute,
   EmailRoute,
+  prizesRoute,
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
+import Team from "./pages/Teams/Team";
 import EmailModule from "./utils/EmailModule";
 
 // splitting different page bundles
@@ -59,6 +62,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <ProcessFlow />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={teamRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <Team />
                 </Suspense>
               }
             ></Route>

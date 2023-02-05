@@ -1,5 +1,7 @@
 import { createContext, useContext } from "react";
+import { teamMemberType } from "../components/Models/teamDataType";
 import data from "../data.json";
+import { sbhTeam } from "../pages/Teams/TeamData";
 
 type WinningGuidelines = {
   id: string;
@@ -26,6 +28,7 @@ type DataContextType = {
     phone: string[];
     email: string[];
   };
+  teamData: teamMemberType[]
   ps: {
     organization: string[];
     problemStatementTitle: string[];
@@ -50,6 +53,7 @@ const DataContext = createContext<DataContextType>({
     email: [],
     phone: [],
   },
+  teamData: [],
   ps: {
     organization: [],
     problemStatementTitle: [],
@@ -61,6 +65,7 @@ const DataContext = createContext<DataContextType>({
   pf: [],
   winningGuidelines: [],
   ThemeCardData: [],
+  themes: []
 });
 
 export function useData() {
@@ -77,10 +82,12 @@ export function DataProvider(props: any) {
         about: data.about,
         descriptionCards: data["description-cards"],
         contact: data.contact,
+        teamData: sbhTeam,
         ps: data.ps,
         pf: data.pf,
         winningGuidelines: data["winning-guidelines"],
         ThemeCardData: data["theme-card-data"],
+        themes:data["themes"]
       }}
     >
       {props.children}

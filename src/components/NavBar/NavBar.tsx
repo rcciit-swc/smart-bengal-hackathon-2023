@@ -8,6 +8,7 @@ import {
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
+  teamRoute,
   prizesRoute,
   eligibilityRoute,
 } from "../../Routes";
@@ -58,7 +59,7 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>RCCSBH 2023 Teams</Link>
+                <Link to={teamRoute}>RCCSBH 2023 Teams</Link>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
