@@ -1,12 +1,7 @@
 import img1 from '../../assets/sandip saha.jpg';
 import profileIcon from '../../assets/profile-circle-svgrepo-com.svg';
+import { teamMemberType } from '../../components/Models/teamDataType';
 
-type teamMemberType = {
-    img: string,
-    name: string,
-    designation: string,
-    committee: string
-}
 
 export const sbhTeam: teamMemberType[] = [
     {
