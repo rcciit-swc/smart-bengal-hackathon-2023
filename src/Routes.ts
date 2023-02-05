@@ -6,3 +6,4 @@ export const venueRoute = "/venue";
 export const sbhthemesRoute = "/sbh-themes";
 export const updatesRoute = "/updates";
 export const EmailRoute = "/email";
+export const guidelinesRoute = '/guidelines'

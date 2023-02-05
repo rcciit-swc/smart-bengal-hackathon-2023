@@ -10,6 +10,7 @@ import {
   sbhthemesRoute,
   updatesRoute,
   EmailRoute,
+  guidelinesRoute
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
@@ -24,6 +25,7 @@ const ProjectImplementation = lazy(
   () => import("./pages/ProjectImplementation/ProjectImplementation")
 );
 const Venue = lazy(() => import("./pages/Venue/Venue"));
+const Guidelines = lazy(() => import("./pages/Guidelines/index"));
 const ThemePage = lazy(() => import("./pages/ThemePage/ThemePage"));
 const Updates = lazy(() => import("./pages/Updates/Updates"));
 const ProcessFlow = lazy(() => import("./pages/ProcessFlow/ProcessFlow"));
@@ -63,6 +65,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <ProjectImplementation />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={guidelinesRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <Guidelines />
                 </Suspense>
               }
             ></Route>

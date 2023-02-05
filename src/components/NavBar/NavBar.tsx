@@ -8,8 +8,8 @@ import {
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
+  guidelinesRoute
 } from "../../Routes";
-import guideline_clg from "../../assets/docs/Guidelines-College-SPOC.pdf";
 import guideline_school from "../../assets/docs/Guidelines-School-SPOC.pdf";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
 import idea_template_school from "../../assets/docs/Idea-Presentation-Format-SIH2022-School.pptx";
@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <>
       <Navbar collapseOnSelect expand="xxl" className="px-3">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href={indexRoute}>
           <img
             src={logo}
             alt="logo"
@@ -64,20 +64,9 @@ const NavBar = () => {
                 Project Implementation
               </Link>
             </div>
-            <NavDropdown title="Guidelines">
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <a href={guideline_clg} target="_blank">
-                  Colleges
-                </a>
-              </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <a href={guideline_school} target="_blank">
-                  Schools
-                </a>
-              </div>
-            </NavDropdown>
+            <div className="nav-link text-decoration-none">
+              <Link to={guidelinesRoute}>Guidelines</Link>
+            </div>
             <NavDropdown title="Idea Template">
               <div className="dropdown-item">
                 <span className="dot"></span>
