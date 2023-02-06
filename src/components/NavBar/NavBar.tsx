@@ -26,13 +26,14 @@ const NavBar = () => {
   const [expanded, setExpanded] = useState(true);
 
   const navHandler = () => {
-    setExpanded(false);
+    setExpanded(false)
   }
+  window.onload = () => setExpanded(false)
 
   return (
     <>
       <Navbar collapseOnSelect expanded={expanded} expand="xxl" className="px-3">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src={logo}
             alt="logo"
