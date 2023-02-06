@@ -19,11 +19,19 @@ import idea_template_school from "../../assets/docs/Idea-Presentation-Format-SIH
 import Footer from "../Footer/Footer";
 import logo from "../../assets/logo.png";
 import "./NavBar.style.css";
+import { useState } from "react";
 
 const NavBar = () => {
+
+  const [expanded, setExpanded] = useState(true);
+
+  const navHandler = () => {
+    setExpanded(false);
+  }
+
   return (
     <>
-      <Navbar collapseOnSelect expand="xxl" className="px-3">
+      <Navbar collapseOnSelect expanded={expanded} expand="xxl" className="px-3">
         <Navbar.Brand href="#home">
           <img
             src={logo}
@@ -34,49 +42,51 @@ const NavBar = () => {
             }}
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle
+          onClick={() => setExpanded(!expanded)}
+          aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="d-flex ">
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>About SBH 2023</Link>
+                <Link onClick={navHandler} to={indexRoute}>About SBH 2023</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={processFlowRoute}>SBH 2023 Process Flow</Link>
+                <Link onClick={navHandler} to={processFlowRoute}>SBH 2023 Process Flow</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={sbhthemesRoute}>SBH 2023 Themes</Link>
+                <Link onClick={navHandler} to={sbhthemesRoute}>SBH 2023 Themes</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={problemStatementsRoute}>
+                <Link onClick={navHandler} to={problemStatementsRoute}>
                   SBH 2023 Problem Statements
                 </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={teamRoute}>SBH 2023 Teams</Link>
+                <Link onClick={navHandler} to={teamRoute}>SBH 2023 Teams</Link>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
-              <Link to={projectImplementationRoute}>
+              <Link onClick={navHandler} to={projectImplementationRoute}>
                 Project Implementation
               </Link>
             </div>
             <NavDropdown title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_clg} target="_blank" rel="noreferrer">
+                <a href={guideline_clg} onClick={navHandler} target="_blank" rel="noreferrer">
                   Colleges
                 </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_school} target="_blank" rel="noreferrer">
+                <a href={guideline_school} onClick={navHandler} target="_blank" rel="noreferrer">
                   Schools
                 </a>
               </div>
@@ -84,31 +94,31 @@ const NavBar = () => {
             <NavDropdown title="Idea Template">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={idea_template_college} download="idea_template">
+                <a href={idea_template_college} onClick={navHandler} download="idea_template">
                   For Colleges
                 </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={idea_template_school} download="idea_template">
+                <a href={idea_template_school} onClick={navHandler} download="idea_template">
                   For Schools
                 </a>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
-              <Link to={venueRoute}>Venue</Link>
+              <Link onClick={navHandler} to={venueRoute}>Venue</Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link to={updatesRoute}>Updates</Link>
+              <Link onClick={navHandler} to={updatesRoute}>Updates</Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link to={prizesRoute}>Prizes</Link>
+              <Link onClick={navHandler} to={prizesRoute}>Prizes</Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link to={eligibilityRoute}>Eligibility</Link>
+              <Link onClick={navHandler} to={eligibilityRoute}>Eligibility</Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link to={indexRoute}>FAQs</Link>
+              <Link onClick={navHandler} to={indexRoute}>FAQs</Link>
             </div>
             <div className="nav-link text-decoration-none">
               <a href="#contact">Contact Us</a>
