@@ -85,7 +85,7 @@ export function DataProvider(props: any) {
         ps: data.ps,
         pf: data.pf,
         winningGuidelines: data["winning-guidelines"],
-        ThemeCardData: data["theme-card-data"]
+        ThemeCardData: data["theme-card-data"],
       }}
     >
       {props.children}
