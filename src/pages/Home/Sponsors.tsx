@@ -7,7 +7,10 @@ const Sponsors: React.FC = () => {
   return (
     <>
       <div className="container pt-5 pb-5">
-        <h1 className="text-center mb-4 sponsor-heading">
+        <h1
+          className="w-100 text-center fw-bold my-5"
+          style={{ color: "var(--heading-color)" }}
+        >
           Supporters of SBH 2023
         </h1>
         <div className="w-100 d-flex flex-row justify-content-center align-items-center">
