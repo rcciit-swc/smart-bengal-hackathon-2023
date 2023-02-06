@@ -100,7 +100,7 @@ const ProcessFlow = () => {
         </div>
         <Suspense fallback={<></>}>
           <Themes />
-          <Committee />
+          {/* <Committee /> */}
         </Suspense>
       </div>
     </>
