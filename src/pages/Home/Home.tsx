@@ -3,6 +3,7 @@ import CarouselContainer from "../../components/carousel/Carousel";
 import { useData } from "../../contexts/Data";
 import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
+import Sponsors from "./Sponsors";
 
 const Themes = lazy(() => import("./component.body.themes"));
 
@@ -81,6 +82,7 @@ const Home = () => {
           </li>
         </ul>
       </div>
+      <Sponsors />
     </main>
   );
 };

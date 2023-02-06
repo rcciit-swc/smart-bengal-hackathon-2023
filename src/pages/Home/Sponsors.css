@@ -1,0 +1,22 @@
+.sponsor-img:first-of-type{
+    width: 200px;
+}
+.sponsor-img{
+    width: 150px;
+}
+
+.sponsor-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 45px;
+}
+
+.sponsor-heading{
+    color : white;
+    background-color: black;
+    width: fit-content;
+    padding: 8px 22px;
+    margin: auto;
+    border: 3px solid black;
+}
