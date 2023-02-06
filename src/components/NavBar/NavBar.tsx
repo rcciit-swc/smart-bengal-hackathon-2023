@@ -40,25 +40,25 @@ const NavBar = () => {
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>About RCCSBH 2023</Link>
+                <Link to={indexRoute}>About SBH 2023</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={processFlowRoute}>RCCSBH 2023 Process Flow</Link>
+                <Link to={processFlowRoute}>SBH 2023 Process Flow</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={sbhthemesRoute}>RCCSBH 2023 Themes</Link>
+                <Link to={sbhthemesRoute}>SBH 2023 Themes</Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link to={problemStatementsRoute}>
-                  RCCSBH 2023 Problem Statements
+                  SBH 2023 Problem Statements
                 </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>RCCSBH 2023 Teams</Link>
+                <Link to={indexRoute}>SBH 2023 Teams</Link>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
