@@ -3,7 +3,6 @@ import { useData } from "../../contexts/Data";
 import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
-import carousel2 from "../../assets/caraousel-images/sbh-banner-3.webp";
 
 const Themes = lazy(() => import("./component.body.themes"));
 
@@ -28,7 +27,7 @@ const Home = () => {
         className="d-block w-100"
         height="500px"
         width="auto"
-        src={carousel2}
+        src="https://imgur.com/CnAq9PL.png"
         alt="Second slide"
       />
       <div

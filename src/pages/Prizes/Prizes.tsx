@@ -73,8 +73,8 @@ const Prizes = () => {
                   <b>1st Prize</b>
                 </span>
               </td>
-              <td className="text-center">₹ 50,000</td>
-              <td className="text-center">₹ 25,000</td>
+              <td className="text-center">₹ 30,000</td>
+              <td className="text-center">₹ 15,000</td>
             </tr>
             <tr>
               <td>
@@ -86,8 +86,8 @@ const Prizes = () => {
                   <b>2nd Prize</b>
                 </span>
               </td>
-              <td className="text-center">₹ 30,000</td>
-              <td className="text-center">₹ 15,000</td>
+              <td className="text-center">₹ 20,000</td>
+              <td className="text-center">₹ 10,000</td>
             </tr>
             <tr>
               <td>
@@ -99,8 +99,8 @@ const Prizes = () => {
                   <b>3rd Prize</b>
                 </span>
               </td>
-              <td className="text-center">₹ 20,000</td>
               <td className="text-center">₹ 10,000</td>
+              <td className="text-center">₹ 5,000</td>
             </tr>
           </tbody>
         </Table>

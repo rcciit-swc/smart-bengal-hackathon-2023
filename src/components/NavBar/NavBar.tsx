@@ -59,7 +59,7 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link to={indexRoute}>SBH 2023 Teams</Link>
+                <Link to={teamRoute}>SBH 2023 Teams</Link>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">

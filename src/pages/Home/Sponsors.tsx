@@ -46,7 +46,7 @@ const Sponsors: React.FC = () => {
           />
           <img
             className="sponsor-img"
-            src="https://imgur.com/WyRz2Xg.png"
+            src="https://imgur.com/nmadch8.png"
             width="150px"
             height="auto"
             alt="sponsor1"
@@ -61,7 +61,32 @@ const Sponsors: React.FC = () => {
         </div>
       </div>
       <div className="container pt-5 pb-5">
-        <h1 className="text-center mb-4 sponsor-heading">Our Sponsors</h1>
+        <div className="w-100 d-flex flex-row justify-content-center align-items-center">
+          <div
+            className="mx-2"
+            style={{
+              height: "1px",
+              backgroundColor: "grey",
+              width: "inherit",
+            }}
+          ></div>
+          <h3
+            className="text-center"
+            style={{
+              width: "inherit",
+            }}
+          >
+            Technical Partner
+          </h3>
+          <div
+            className="mx-2"
+            style={{
+              height: "1px",
+              backgroundColor: "grey",
+              width: "inherit",
+            }}
+          ></div>
+        </div>
         <div className="sponsor-wrapper mt-5">
           <img className="sponsor-img" src={sponsor3} alt="sponsor3" />
           <img className="sponsor-img" src={sponsor4} alt="sponsor4" />
