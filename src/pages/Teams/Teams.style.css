@@ -1,0 +1,43 @@
+.team-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    row-gap: 3rem;
+    column-gap: 4rem;
+}
+
+.member-container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgb(254, 235, 211);
+    /* margin-right: auto; */
+    margin-bottom: 28px;
+    padding: 22px 5px;
+    border:0 solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 275px;
+}
+
+.member-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 5px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.member-name{
+    font-weight: 900;
+}
+
+.member-designation{
+    font-weight: 500;
+}
+
+.member-committee{
+    font-size: 15px;
+}

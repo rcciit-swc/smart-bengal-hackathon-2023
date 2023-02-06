@@ -8,6 +8,7 @@ import {
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
+  teamRoute,
   prizesRoute,
   eligibilityRoute,
 } from "../../Routes";
