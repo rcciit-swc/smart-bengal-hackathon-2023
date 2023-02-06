@@ -21,7 +21,12 @@ const ThemeCard = ({
       }}
       className="m-3 p-3 d-flex flex-column align-items-center "
     >
-      <img src={icon} alt={theme} className="my-4" style={{width:"80px",height:"80px"}}/>
+      <img
+        src={icon}
+        alt={theme}
+        className="my-4"
+        style={{ width: "80px", height: "80px" }}
+      />
       <h5 className="fw-bold text-center">{theme}</h5>
       <span style={{ textAlign: "justify" }} className="fs-6">
         {desc}
@@ -32,7 +37,7 @@ const ThemeCard = ({
 };
 
 const Themes = () => {
-  const { title,  themesTagline, ThemeCardData } = useData();
+  const { title, themesTagline, ThemeCardData } = useData();
 
   const [visible, setVisible] = useState(2);
 
@@ -82,10 +87,12 @@ const Themes = () => {
             }
           }}
         />
-        <div className="d-grid themes-grid "
-        style={{
-          height: "70vh",
-        }}>
+        <div
+          className="d-grid themes-grid "
+          style={{
+            height: "70vh",
+          }}
+        >
           <ThemeCard
             id="1"
             theme={ThemeCardData[visible - 2].theme}

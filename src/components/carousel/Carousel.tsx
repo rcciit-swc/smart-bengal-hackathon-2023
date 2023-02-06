@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import './Carousel.style.css';
+import "./Carousel.style.css";
 import Carousel from "react-bootstrap/Carousel";
-import carousel1 from "../../assets/caraousel-images/sbh-banner-1.webp";
 import carousel2 from "../../assets/caraousel-images/sbh-banner-3.webp";
 
 const CarouselContainer = () => {

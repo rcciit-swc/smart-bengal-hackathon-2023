@@ -5,7 +5,7 @@ const Footer = () => {
   const { contact } = useData();
   return (
     <div
-    id="contact"
+      id="contact"
       style={{
         backgroundColor: "var(--primary-color",
         color: "var(--invert-color)",

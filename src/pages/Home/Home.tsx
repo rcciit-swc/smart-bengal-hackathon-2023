@@ -1,9 +1,9 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import CarouselContainer from "../../components/carousel/Carousel";
 import { useData } from "../../contexts/Data";
 import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
+import carousel2 from "../../assets/caraousel-images/sbh-banner-3.webp";
 
 const Themes = lazy(() => import("./component.body.themes"));
 
@@ -23,7 +23,14 @@ const Home = () => {
       style={{ width: "100vw" }}
       className="d-flex flex-column align-items-center"
     >
-      <CarouselContainer />
+      {/* <CarouselContainer /> */}
+      <img
+        className="d-block w-100"
+        height="500px"
+        width="auto"
+        src={carousel2}
+        alt="Second slide"
+      />
       <div
         style={{ backgroundColor: `var(--primary-color-light)` }}
         className="mt-5 w-100 h-100 d-flex flex-column align-items-center"
@@ -68,10 +75,7 @@ const Home = () => {
         </h2>
         <ul style={{ fontSize: "20px" }}>
           <li>
-            <b>Registration Deadline:</b> 28th February, 2023.
-          </li>
-          <li>
-            <b>Idea Submission Deadline:</b> 10th March, 2023..
+            <b>Registration & Idea Submission:</b> 10th March, 2023.
           </li>
           <li>
             <b>Shortlisted Teams Announcement:</b> 25th March.2023.

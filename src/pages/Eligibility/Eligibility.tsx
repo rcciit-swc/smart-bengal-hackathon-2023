@@ -28,23 +28,23 @@ const Eligibility = () => {
         >
           Eligibility
         </h2>
-        <h3 className="fw-bold w-75">
-            SBH Junior
-        </h3>
-        <ul className="w-75 ">
-            <li className="fs-5">
-                <b>Colleges: </b>
-                Undergraduate and Engineering Students of Higher Education Institution
-            </li>
+        <h3 className="fw-bold w-75">SBH Senior</h3>
+        <ul className="w-75 fs-5">
+          <li>
+            <b>College Students</b>
+          </li>
+          <li>
+            <b>University Students</b>
+          </li>
         </ul>
-        <h3 className="fw-bold w-75 mt-3">
-            SBH Senior
-        </h3>
-        <ul className="w-75 mb-5">
-            <li className="fs-5">
-                <b>Schools: </b>
-                Class 9th to 12th Students
-            </li>
+        <h3 className="fw-bold w-75 mt-3">SBH Junior</h3>
+        <ul className="w-75 mb-5 fs-5">
+          <li>
+            <b>Class 9th to 12th Students</b>
+          </li>
+          <li>
+            <b>Polytechnic Students</b>
+          </li>
         </ul>
       </div>
     </main>

@@ -27,7 +27,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  
   .eligibility {
     height: 100% !important;
   }

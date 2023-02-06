@@ -2,18 +2,19 @@ import { Table } from "react-bootstrap";
 
 const PrizesNotes = [
   {
-    description:"Total cash prizes worth INR 2,00,000 + goodies, internship opportunities for SBH Senior & SBH  Junior both"
+    description:
+      "Total cash prizes worth INR 2,00,000 + goodies, internship opportunities for SBH Senior & SBH  Junior both",
   },
   {
-    description:"Certificate of excellence for top 3 teams"
+    description: "Certificate of excellence for top 3 teams",
   },
   {
-    description:"Certificate of distinction for top 10 teams"
+    description: "Certificate of distinction for top 10 teams",
   },
   {
-    description:"Certificate of participation to all teams"
-  }
-]
+    description: "Certificate of participation to all teams",
+  },
+];
 
 const Prizes = () => {
   return (
@@ -104,30 +105,31 @@ const Prizes = () => {
           </tbody>
         </Table>
         <ul className="w-75">
-            {PrizesNotes.map((item, index) => (
-              <li
-                key={index}
-                className="my-2 text-start"
+          {PrizesNotes.map((item, index) => (
+            <li
+              key={index}
+              className="my-2 text-start"
+              style={{
+                listStyle: "square",
+                color: "var(--heading-color)",
+                fontSize: "25px",
+              }}
+            >
+              <p
                 style={{
-                  listStyle: "square",
-                  color: "var(--heading-color)",
-                  fontSize: "25px",
+                  color: "var(--bs-body-color)",
+                  fontSize: "var(--bs-body-font-size)",
+                  lineHeight: "var(--bs-body-line-height)",
                 }}
               >
-                <p
-                  style={{
-                    color: "var(--bs-body-color)",
-                    fontSize: "var(--bs-body-font-size)",
-                    lineHeight: "var(--bs-body-line-height)",
-                  }}
-                >
-                  {item.description}
-                </p>
-              </li>
-            ))}
-          </ul>
-          <h3 className="w-75 fs-6 text-center mb-5">
-        * All the prizes and certificate will be Released Within 30 days after the event is over
+                {item.description}
+              </p>
+            </li>
+          ))}
+        </ul>
+        <h3 className="w-75 fs-6 text-center mb-5">
+          * All the prizes and certificate will be Released Within 30 days after
+          the event is over
         </h3>
       </div>
     </main>

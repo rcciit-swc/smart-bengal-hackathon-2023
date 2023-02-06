@@ -28,7 +28,7 @@ type DataContextType = {
     phone: string[];
     email: string[];
   };
-  teamData: teamMemberType[]
+  teamData: teamMemberType[];
   ps: {
     organization: string[];
     problemStatementTitle: string[];
