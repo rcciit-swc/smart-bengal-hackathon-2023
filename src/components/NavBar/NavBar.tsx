@@ -80,13 +80,13 @@ const NavBar = () => {
             <NavDropdown title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_clg} target="_blank" rel="noreferrer">
+                <a href={guideline_clg} onClick={navHandler} target="_blank" rel="noreferrer">
                   Colleges
                 </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_school} target="_blank" rel="noreferrer">
+                <a href={guideline_school} onClick={navHandler} target="_blank" rel="noreferrer">
                   Schools
                 </a>
               </div>
@@ -94,13 +94,13 @@ const NavBar = () => {
             <NavDropdown title="Idea Template">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={idea_template_college} download="idea_template">
+                <a href={idea_template_college} onClick={navHandler} download="idea_template">
                   For Colleges
                 </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={idea_template_school} download="idea_template">
+                <a href={idea_template_school} onClick={navHandler} download="idea_template">
                   For Schools
                 </a>
               </div>
