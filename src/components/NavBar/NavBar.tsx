@@ -76,7 +76,7 @@ const NavBar = () => {
             </NavDropdown>
             <div className="nav-link text-decoration-none">
               <Link onClick={navHandler} to={TeamImplementationRoute}>
-                Team Implementation
+                Implementation Team
               </Link>
             </div>
             <div className="nav-link text-decoration-none">
