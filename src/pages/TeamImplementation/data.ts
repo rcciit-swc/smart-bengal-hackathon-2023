@@ -42,7 +42,7 @@ const impl_team_data: impl_team_type[] = [
     {
         img: 'https://rcciit.org/images/staff/ee/f/alok.jpg',
         name: 'Dr. Alok Kole',
-        position: 'Converner',
+        position: 'Convener',
         designation: 'Professor, Dept.of EE & President of Institution’s Innovation Council, RCCIIT'
     },
     {
