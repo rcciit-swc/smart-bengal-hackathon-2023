@@ -68,3 +68,12 @@
   color: #fff;
   text-align: center;
 }
+
+.text-process a[target="_blank"] {
+  font-weight: 500 !important;
+  color: blue !important;
+}
+
+span[class="text-uppercase"] {
+  font-weight: 600 !important;
+}
