@@ -74,7 +74,7 @@ const Home = () => {
         </h2>
         <ul style={{ fontSize: "20px" }}>
           <li>
-            <b>Registration & Idea Submission:</b> 10th March, 2023.
+            <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023 and ends on 10 Mar 2023.
           </li>
           <li>
             <b>Shortlisted Teams Announcement:</b> 25th March.2023.

@@ -6,6 +6,7 @@ import {
   problemStatementsRoute,
   processFlowRoute,
   projectImplementationRoute,
+  TeamImplementationRoute,
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
@@ -27,6 +28,8 @@ const ProblemStatements = lazy(
 const ProjectImplementation = lazy(
   () => import("./pages/ProjectImplementation/ProjectImplementation")
 );
+
+const TeamImplementation = lazy (()=> import('./pages/TeamImplementation/TeamImplementation'))
 const Venue = lazy(() => import("./pages/Venue/Venue"));
 const ThemePage = lazy(() => import("./pages/ThemePage/ThemePage"));
 const Updates = lazy(() => import("./pages/Updates/Updates"));
@@ -69,6 +72,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <Team />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={TeamImplementationRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <TeamImplementation />
                 </Suspense>
               }
             ></Route>

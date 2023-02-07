@@ -5,6 +5,7 @@ import {
   problemStatementsRoute,
   processFlowRoute,
   projectImplementationRoute,
+  TeamImplementationRoute,
   venueRoute,
   sbhthemesRoute,
   updatesRoute,
@@ -74,6 +75,11 @@ const NavBar = () => {
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
+              <Link onClick={navHandler} to={TeamImplementationRoute}>
+                Implementation Team
+              </Link>
+            </div>
+            <div className="nav-link text-decoration-none">
               <Link onClick={navHandler} to={projectImplementationRoute}>
                 Project Implementation
               </Link>
@@ -81,14 +87,14 @@ const NavBar = () => {
             <NavDropdown title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_clg} onClick={navHandler} target="_blank" rel="noreferrer">
-                  Colleges
+                <a href="https://docs.google.com/document/d/17DrpmAKZ20Kvwqg2hjQWbtd_Rtz22m69/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true" onClick={navHandler} target="_blank" rel="noreferrer">
+                  SBH Senior
                 </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={guideline_school} onClick={navHandler} target="_blank" rel="noreferrer">
-                  Schools
+                <a href="https://docs.google.com/document/d/1aO2-qzhJioC-SLw2JQ6e7nprd9i7KrEk/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true" onClick={navHandler} target="_blank" rel="noreferrer">
+                  SBH Junior
                 </a>
               </div>
             </NavDropdown>
