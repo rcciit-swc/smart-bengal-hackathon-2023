@@ -2,6 +2,7 @@ import React from "react";
 import "./Sponsors.css";
 import sponsor3 from "../../assets/sponsors/sponsor3.jpg";
 import sponsor4 from "../../assets/sponsors/sponsor4.png";
+import ieeeSponsor from "../../assets/sponsors/ieee-sponsor.png";
 
 const Sponsors: React.FC = () => {
   return (
@@ -101,6 +102,11 @@ const Sponsors: React.FC = () => {
           <img
             className="sponsor-img img-fluid"
             src="https://imgur.com/ij4C4T3.png"
+            alt="sponsor"
+          />
+          <img
+            className="sponsor-img img-fluid"
+            src={ieeeSponsor}
             alt="sponsor"
           />
         </div>

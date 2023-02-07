@@ -1,13 +1,17 @@
 .sponsor-img {
-  width: 110px;
+  width: auto;
   height: 110px;
+  flex-basis: 110px;
+  object-fit: contain;
 }
 
 .sponsor-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   column-gap: 45px;
+  row-gap: 35px;
 }
 
 .sponsor-heading {
