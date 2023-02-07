@@ -13,8 +13,6 @@ import {
   prizesRoute,
   eligibilityRoute,
 } from "../../Routes";
-import guideline_clg from "../../assets/docs/Guidelines-College-SPOC.pdf";
-import guideline_school from "../../assets/docs/Guidelines-School-SPOC.pdf";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
 import idea_template_school from "../../assets/docs/Idea-Presentation-Format-SIH2022-School.pptx";
 import Footer from "../Footer/Footer";

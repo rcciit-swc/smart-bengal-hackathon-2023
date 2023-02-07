@@ -12,7 +12,7 @@
   background-color: rgb(254, 235, 211);
   /* margin-right: auto; */
   margin-bottom: 28px;
-  padding: 22px 5px;
+  padding: 22px 20px;
   border: 0 solid black;
   border-radius: 5px;
   display: flex;
@@ -25,7 +25,7 @@
 .member-img {
   width: 130px;
   height: 130px;
-  border-radius: 5px;
+  border-radius: 50%;
   object-position: center;
   object-fit: cover;
 }
