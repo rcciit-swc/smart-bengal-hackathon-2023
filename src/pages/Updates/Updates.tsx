@@ -26,13 +26,10 @@ const Updates = () => {
         </h2>
         <ul style={{ fontSize: "20px" }}>
           <li>
-            <b>Registration Deadline:</b> 28th February, 2023.
+            <b>Registration & Idea Submission:</b> 10th March, 2023.
           </li>
           <li>
-            <b>Idea Submission Deadline:</b> 10th March,2023.
-          </li>
-          <li>
-            <b>Shortlisted Teams Announcement:</b> 25th March.2023.
+            <b>Shortlisted Teams Announcement:</b> 25th March.2023.
           </li>
           <li>
             <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH Junior
