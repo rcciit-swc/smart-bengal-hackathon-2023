@@ -1,8 +1,10 @@
-.sponsor-img:first-of-type {
+/* .sponsor-img:first-of-type {
   width: 200px;
-}
+  height: 200px;
+} */
 .sponsor-img {
-  width: 150px;
+  width: 110px;
+  height: 110px;
 }
 
 .sponsor-wrapper {
