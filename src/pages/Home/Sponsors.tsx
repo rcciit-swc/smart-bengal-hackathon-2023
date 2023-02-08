@@ -94,6 +94,11 @@ const Sponsors: React.FC = () => {
         <div className="sponsor-wrapper mt-5">
           <img
             className="sponsor-img img-fluid"
+            src="3.jpeg"
+            alt="sponsor"
+          />
+          <img
+            className="sponsor-img img-fluid"
             src="https://imgur.com/80slGFz.png"
             alt="sponsor4"
           />
@@ -109,6 +114,17 @@ const Sponsors: React.FC = () => {
             src="https://i.imgur.com/RN8dyJt.jpg"
             alt="sponsor"
           />
+          <img
+            className="sponsor-img img-fluid"
+            src="2.jpeg"
+            alt="sponsor"
+          />
+          <img
+            className="sponsor-img img-fluid"
+            src="1.jpeg"
+            alt="sponsor"
+          />
+          
         </div>
       </div>
     </>
