@@ -83,7 +83,7 @@
       "theme": "Smart Automation",
       "desc": "Ideas focused on the intelligent use of resources for transforming and advancements of technology with combining the artificial intelligence to explore more various sources and get valuable insights.",
       "icon": "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
-      "institution": ["college"]
+      "institution": ["school", "college"]
     },
     {
       "theme": "Intelligent Transportation and logistics",
@@ -125,7 +125,7 @@
       "theme": "Biotech and healthcare",
       "desc": "Cutting-edge technology in these sectors continues to be in demand. Recent shifts in healthcare trends, growing populations also present an array of opportunities for innovation.",
       "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-biotech-bioengineering-flaticons-flat-flat-icons.png",
-      "institution": ["college"]
+      "institution": ["school", "college"]
     },
     {
       "theme": "Miscellaneous",
