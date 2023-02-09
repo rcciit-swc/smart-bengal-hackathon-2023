@@ -16,6 +16,12 @@ export const sbhTeam: teamMemberType[] = [
     committee: "Coordinator, Promotion and Sponsorship Sub-Committee",
   },
   {
+    img: "https://rcciit.org/images/staff/it/f/Hiranmoy.jpg",
+    name: "Dr. Hiranmoy Roy",
+    designation: "Jt. Convener, SBH2023",
+    committee: "Coordinator, Program Design and Technical Sub-Committee",
+  },
+  {
     img: "https://rcciit.org/images/staff/it/f/Hrishikesh.jpg",
     name: "Dr. Hrishikesh Bhaumik",
     designation: "Jt. Coordinator, SBH2023",
@@ -26,12 +32,6 @@ export const sbhTeam: teamMemberType[] = [
     name: "Dr. Indrajit Pan",
     designation: "Coordinator, SBH2023",
     committee: "Technical Collaborations Sub-Committee",
-  },
-  {
-    img: "https://rcciit.org/images/staff/it/f/Hiranmoy.jpg",
-    name: "Dr. Hiranmoy Roy",
-    designation: "Jt. Convener, SBH2023",
-    committee: "Coordinator, Program Design and Technical Sub-Committee",
   },
   {
     img: "https://rcciit.org/images/staff/ece/f/arpan.jpg",
