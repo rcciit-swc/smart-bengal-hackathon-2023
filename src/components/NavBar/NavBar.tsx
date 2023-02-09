@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect expanded={expanded} expand="xxl" className="px-3">
+      <Navbar collapseOnSelect expanded={expanded} expand="md" className="px-3">
         <Navbar.Brand href="/">
           <img
             src={logo}
