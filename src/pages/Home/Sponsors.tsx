@@ -2,7 +2,8 @@ import React from "react";
 import "./Sponsors.css";
 import sponsor3 from "../../assets/sponsors/sponsor3.jpg";
 import sponsor4 from "../../assets/sponsors/sponsor4.png";
-import ieeeSponsor from "../../assets/sponsors/ieee-sponsor.png";
+import ieeeSponsor from "../../assets/sponsors/IEEE-Logo.png";
+import csiLogo from "../../assets/sponsors/new CSI logo.jpg";
 
 const Sponsors: React.FC = () => {
   return (
@@ -41,6 +42,13 @@ const Sponsors: React.FC = () => {
           ></div>
         </div>
         <div className="sponsor-wrapper mt-5">
+          <img
+            className="sponsor-img"
+            src={ieeeSponsor}
+            width="150px"
+            height="auto"
+            alt="sponsor1"
+          />
           <img
             className="sponsor-img"
             src="https://imgur.com/fl3E9UF.png"
@@ -99,7 +107,8 @@ const Sponsors: React.FC = () => {
           />
           <img
             className="sponsor-img img-fluid"
-            src="https://imgur.com/80slGFz.png"
+            // src="https://imgur.com/80slGFz.png"
+            src={csiLogo}
             alt="sponsor4"
           />
           <img className="sponsor-img img-fluid" src={sponsor3} alt="sponsor3" />
@@ -124,7 +133,7 @@ const Sponsors: React.FC = () => {
             src="1.jpeg"
             alt="sponsor"
           />
-          
+
         </div>
       </div>
     </>
