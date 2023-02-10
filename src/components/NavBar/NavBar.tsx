@@ -21,13 +21,12 @@ import "./NavBar.style.css";
 import { useState } from "react";
 
 const NavBar = () => {
-
   const [expanded, setExpanded] = useState(true);
 
   const navHandler = () => {
-    setExpanded(false)
-  }
-  window.onload = () => setExpanded(false)
+    setExpanded(false);
+  };
+  window.onload = () => setExpanded(false);
 
   return (
     <>
@@ -44,22 +43,29 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}
-          aria-controls="responsive-navbar-nav" />
+          aria-controls="responsive-navbar-nav"
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav className="d-flex ">
+          <Nav className="d-flex bg-navbar">
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link onClick={navHandler} to={indexRoute}>About SBH 2023</Link>
+                <Link onClick={navHandler} to={indexRoute}>
+                  About SBH 2023
+                </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link onClick={navHandler} to={processFlowRoute}>SBH 2023 Process Flow</Link>
+                <Link onClick={navHandler} to={processFlowRoute}>
+                  SBH 2023 Process Flow
+                </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link onClick={navHandler} to={sbhthemesRoute}>SBH 2023 Themes</Link>
+                <Link onClick={navHandler} to={sbhthemesRoute}>
+                  SBH 2023 Themes
+                </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -69,7 +75,9 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link onClick={navHandler} to={teamRoute}>SBH 2023 Teams</Link>
+                <Link onClick={navHandler} to={teamRoute}>
+                  SBH 2023 Teams
+                </Link>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
@@ -85,13 +93,23 @@ const NavBar = () => {
             <NavDropdown title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href="https://docs.google.com/document/d/17DrpmAKZ20Kvwqg2hjQWbtd_Rtz22m69/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true" onClick={navHandler} target="_blank" rel="noreferrer">
+                <a
+                  href="https://docs.google.com/document/d/17DrpmAKZ20Kvwqg2hjQWbtd_Rtz22m69/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true"
+                  onClick={navHandler}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   SBH Senior
                 </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href="https://docs.google.com/document/d/1aO2-qzhJioC-SLw2JQ6e7nprd9i7KrEk/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true" onClick={navHandler} target="_blank" rel="noreferrer">
+                <a
+                  href="https://docs.google.com/document/d/1aO2-qzhJioC-SLw2JQ6e7nprd9i7KrEk/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true"
+                  onClick={navHandler}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   SBH Junior
                 </a>
               </div>
@@ -99,31 +117,49 @@ const NavBar = () => {
             <NavDropdown title="Idea Template">
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={idea_template_college} onClick={navHandler} download="idea_template">
+                <a
+                  href={idea_template_college}
+                  onClick={navHandler}
+                  download="idea_template"
+                >
                   For Colleges
                 </a>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <a href={idea_template_school} onClick={navHandler} download="idea_template">
+                <a
+                  href={idea_template_school}
+                  onClick={navHandler}
+                  download="idea_template"
+                >
                   For Schools
                 </a>
               </div>
             </NavDropdown>
             <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={venueRoute}>Venue</Link>
+              <Link onClick={navHandler} to={venueRoute}>
+                Venue
+              </Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={updatesRoute}>Updates</Link>
+              <Link onClick={navHandler} to={updatesRoute}>
+                Updates
+              </Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={prizesRoute}>Prizes</Link>
+              <Link onClick={navHandler} to={prizesRoute}>
+                Prizes
+              </Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={eligibilityRoute}>Eligibility</Link>
+              <Link onClick={navHandler} to={eligibilityRoute}>
+                Eligibility
+              </Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={indexRoute}>FAQs</Link>
+              <Link onClick={navHandler} to={indexRoute}>
+                FAQs
+              </Link>
             </div>
             <div className="nav-link text-decoration-none">
               <a href="#contact">Contact Us</a>
