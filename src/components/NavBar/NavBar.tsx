@@ -21,7 +21,7 @@ import "./NavBar.style.css";
 import { useState } from "react";
 
 const NavBar = () => {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   const navHandler = () => {
     setExpanded(false);
