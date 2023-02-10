@@ -47,7 +47,7 @@ const NavBar = () => {
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav className="d-flex bg-navbar">
+          <Nav className="d-flex bg-navbar py-4">
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
