@@ -128,6 +128,12 @@
       "institution": ["school", "college"]
     },
     {
+      "theme": "IOT with AI",
+      "desc": "Submit your idea on Artificial intelligence technologies with the Internet of things infrastructure to achieve more efficient IoT operations, improve human-machine interactions and enhance data management and analytics.",
+      "icon": "https://img.icons8.com/ultraviolet/40/null/artificial-intelligence-productivity.png",
+      "institution": ["school", "college"]
+    },
+    {
       "theme": "Miscellaneous",
       "desc": "Technology ideas in tertiary sectors like Hospitality, Financial Services, Entertainment and Retail.",
       "icon": "https://sih.gov.in/img/icon_education.png",
@@ -136,7 +142,6 @@
   ],
   "ps": {
     "organization": [
-      "RCC Institute of Information Technology, Kolkata",
       "RCC Institute of Information Technology, Kolkata",
       "RCC Institute of Information Technology, Kolkata",
       "RCC Institute of Information Technology, Kolkata",

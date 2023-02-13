@@ -14,6 +14,7 @@ import {
   prizesRoute,
   eligibilityRoute,
   EmailRoute,
+  registerRoute
 } from "./Routes";
 import { lazy, Suspense } from "react";
 // import { DataProvider } from "./contexts/Data";
@@ -39,6 +40,7 @@ const Updates = lazy(() => import("./pages/Updates/Updates"));
 const ProcessFlow = lazy(() => import("./pages/ProcessFlow/ProcessFlow"));
 const Prizes = lazy(() => import("./pages/Prizes/Prizes"));
 const Eligibility = lazy(() => import("./pages/Eligibility/Eligibility"));
+const Register = lazy(() => import("./pages/Register/Register"));
 
 function App() {
   return (
@@ -140,6 +142,14 @@ function App() {
               element={
                 <Suspense fallback={<></>}>
                   <EmailModule />
+                </Suspense>
+              }
+            ></Route>
+            <Route
+              path={registerRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <Register />
                 </Suspense>
               }
             ></Route>
