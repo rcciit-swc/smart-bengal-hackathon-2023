@@ -30,24 +30,26 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect expanded={expanded} expand="md" className="px-3">
+      <Navbar collapseOnSelect expanded={expanded} expand="md" className="px-3 z-top">
         <Navbar.Brand href="/">
           <img
             src={logo}
             alt="logo"
             className="brand-logo"
             style={{
-              width: "50px",
+              width: "100%",
+              maxHeight: "50px",
             }}
           />
         </Navbar.Brand>
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}
           aria-controls="responsive-navbar-nav"
+          style={{paddingInline: 0}}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav className="d-flex bg-navbar py-4">
+          <Nav className="d-flex bg-navbar">
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>

@@ -38,7 +38,7 @@ const ProblemStatements = () => {
           <span className="text-capitalize">hybrid</span>
         </div>
       </div>
-      <div className="my-5">
+      <div className="my-5" style={{width:'100%', overflowX: 'scroll'}}>
         <Table striped bordered hover>
           <thead>
             <tr>
