@@ -17,7 +17,8 @@ import {
   registerRoute
 } from "./Routes";
 import { lazy, Suspense } from "react";
-import { DataProvider } from "./contexts/Data";
+// import { DataProvider } from "./contexts/Data";
+import { UserProvider } from "./contexts/DataProvider";
 import Team from "./pages/Teams/Team";
 import EmailModule from "./utils/EmailModule";
 
@@ -30,7 +31,9 @@ const ProjectImplementation = lazy(
   () => import("./pages/ProjectImplementation/ProjectImplementation")
 );
 
-const TeamImplementation = lazy (()=> import('./pages/TeamImplementation/TeamImplementation'))
+const TeamImplementation = lazy(
+  () => import("./pages/TeamImplementation/TeamImplementation")
+);
 const Venue = lazy(() => import("./pages/Venue/Venue"));
 const ThemePage = lazy(() => import("./pages/ThemePage/ThemePage"));
 const Updates = lazy(() => import("./pages/Updates/Updates"));
@@ -42,7 +45,8 @@ const Register = lazy(() => import("./pages/Register/Register"));
 function App() {
   return (
     <BrowserRouter>
-      <DataProvider>
+      {/* <DataProvider> */}
+      <UserProvider>
         <Routes>
           <Route path={indexRoute} element={<NavBar />}>
             <Route
@@ -151,7 +155,8 @@ function App() {
             ></Route>
           </Route>
         </Routes>
-      </DataProvider>
+      </UserProvider>
+      {/* </DataProvider> */}
       <img
         className="position-fixed"
         style={{ bottom: "20px", right: "20px" }}
