@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./ProblemStatements.style.css";
 import Table from "react-bootstrap/Table";
 import { useData } from "../../contexts/Data";
