@@ -20,7 +20,10 @@ import logo from "../../assets/logo.png";
 import "./NavBar.style.css";
 import { useState } from "react";
 
+import { useDataContext } from "../../contexts/DataProvider";
+
 const NavBar = () => {
+  const { addOrganisation, addProblemStatement } = useDataContext();
   const [expanded, setExpanded] = useState(false);
 
   const navHandler = () => {
@@ -30,7 +33,12 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect expanded={expanded} expand="md" className="px-3 z-top">
+      <Navbar
+        collapseOnSelect
+        expanded={expanded}
+        expand="md"
+        className="px-3 z-top"
+      >
         <Navbar.Brand href="/">
           <img
             src={logo}
@@ -45,7 +53,7 @@ const NavBar = () => {
         <Navbar.Toggle
           onClick={() => setExpanded(!expanded)}
           aria-controls="responsive-navbar-nav"
-          style={{paddingInline: 0}}
+          style={{ paddingInline: 0 }}
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
@@ -166,6 +174,15 @@ const NavBar = () => {
             <div className="nav-link text-decoration-none">
               <a href="#contact">Contact Us</a>
             </div>
+            {/* <button
+              onClick={(e) => {
+                e.preventDefault();
+                addProblemStatement("2SsRL825aYlHU5e5vxYw");
+                // addOrganisation()
+              }}
+            >
+              ADD
+            </button> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
