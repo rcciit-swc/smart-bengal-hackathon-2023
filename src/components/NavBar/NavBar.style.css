@@ -1,13 +1,17 @@
+.z-top {
+  z-index: 999999999;
+}
+
+
 .brand-logo {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   object-fit: contain;
-  margin-left: 20px;
 }
 
 .navbar-light {
   background-color: var(--primary-color) !important;
-  height: 80px;
+  min-height: 80px;
 }
 
 .dropdown-toggle.nav-link {
@@ -30,7 +34,7 @@
   align-items: center;
   flex-direction: row;
   gap: 10px !important;
-  height: max-content !important;
+  min-height: max-content !important;
 }
 
 .dropdown-menu {
@@ -38,7 +42,7 @@
 }
 
 .dot {
-  height: 8px;
+  min-height: 8px;
   width: 8px;
   background-color: grey !important;
   border-radius: 50%;
@@ -83,7 +87,7 @@
 
 @media screen and (max-width: 1400px) {
   .navbar.navbar-expand-xl.navbar-light {
-    height: max-content;
+    min-height: max-content;
   }
 
   .dropdown-toggle.nav-link {
