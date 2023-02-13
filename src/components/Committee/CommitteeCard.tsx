@@ -5,7 +5,7 @@ const CommitteCard = () => {
         <img src="https://www.sih.gov.in/img/people/Anand_Deshpande.png" />
       </div>
       <div className="p-2 mt-2">
-        <h3>Dr. Anand Deshpande</h3>
+        <span className="text-uppercase fw-bold">Dr. Anand Deshpande</span>
         <p> Chairman and MD, Persistent Systems</p>
         <p> Co-Chairman, Organizing Committee</p>
         <p> Smart India Hackathon 2022</p>

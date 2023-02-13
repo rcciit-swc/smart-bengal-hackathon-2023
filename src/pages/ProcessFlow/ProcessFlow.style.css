@@ -55,6 +55,11 @@
        font-size: 12px;
     }
 }
+@media screen and (max-width:913px){
+    .text-process{
+        font-size: 12px;
+    }
+}
 
 .carosal_caption{
     position: absolute;

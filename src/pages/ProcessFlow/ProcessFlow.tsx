@@ -63,7 +63,7 @@ const ProcessFlow = () => {
           >
             WHY JOIN SBH 2023?
           </span>
-          <div className="d-flex flex-row flex-wrap mt-5">
+          <div className="d-flex flex-row flex-wrap mt-5 justify-content-center">
             {descriptionCards.map((card, index) => (
               <DescriptionCard
                 key={title + index}
