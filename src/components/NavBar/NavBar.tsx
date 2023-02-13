@@ -82,7 +82,7 @@ const NavBar = () => {
             </NavDropdown>
             <div className="nav-link text-decoration-none">
               <Link onClick={navHandler} to={TeamImplementationRoute}>
-                Implementation Team
+                Executive Team
               </Link>
             </div>
             <div className="nav-link text-decoration-none">
