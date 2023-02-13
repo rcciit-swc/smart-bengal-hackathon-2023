@@ -18,6 +18,7 @@ import {
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
+import { UserProvider } from "./contexts/DataProvider";
 import Team from "./pages/Teams/Team";
 import EmailModule from "./utils/EmailModule";
 import { AuthProvider } from "./contexts/Auth";
@@ -46,6 +47,7 @@ function App() {
   return (
     <BrowserRouter>
       <DataProvider>
+      <UserProvider>
         <AuthProvider>
           <Routes>
             <Route path={indexRoute} element={<NavBar />}>
@@ -156,6 +158,7 @@ function App() {
             </Route>
           </Routes>
         </AuthProvider>
+      </UserProvider>
       </DataProvider>
       <img
         className="position-fixed"
