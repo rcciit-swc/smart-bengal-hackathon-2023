@@ -64,8 +64,8 @@ const ProblemStatements = () => {
                     <td className="w-25">{item.name}</td>
                     <td className="w-25">{data.psTitle}</td>
                     <td>{data.category}</td>
-                    <td>{data.domain}</td>
-                    {/* <td className="w-25">{ps.domainBucket[index]}</td> */}
+                    <td>{data.psNumber}</td>
+                    <td className="w-25">{data.domainBucket}</td>
                   </tr>
                 ))
               )}
