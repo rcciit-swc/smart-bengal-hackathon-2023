@@ -1,5 +1,10 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword,
+} from "firebase/auth";
 
 import { signOut, onAuthStateChanged, User } from "firebase/auth";
 import { auth, db } from "../firebase";
@@ -10,7 +15,16 @@ type AuthContextType = {
     name: string;
     email: string;
     uid: string;
-  }
+  };
+  signUp: ({
+    email,
+    password,
+    name,
+  }: {
+    email: string;
+    password: string;
+    name: string;
+  }) => void;
   // signIn: () => void;
   logOut: () => void;
   status: string;
@@ -22,6 +36,7 @@ const AuthContext = createContext<AuthContextType>({
     email: "",
     uid: "",
   },
+  signUp: () => {},
   // signIn: () => {},
   logOut: () => {},
   status: "",
@@ -57,30 +72,36 @@ export function AuthProvider(props: any) {
   //     });
   // }
 
-  async function signUp({ email, password, name }: { email: string; password: string, name: string}) {
+  function signUp({
+    email,
+    password,
+    name,
+  }: {
+    email: string;
+    password: string;
+    name: string;
+  }) {
+    console.log("hi")
+    console.log(email, password, name)
     const auth = getAuth();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        
+    createUserWithEmailAndPassword(auth, email, password).then(
+      (userCredential) => {
         const userRef = doc(db, "users", userCredential.user.uid);
-        
+
         setDoc(userRef, {
           name: name,
           email: email,
           uid: userCredential.user.uid,
-        })
-        .then(
-          () => {
-            setCurrentUser({
-              name: name,
-              email: email,
-              uid: userCredential.user.uid,
-            });
-          }
-        )
-  })
-  } 
-
+        }).then(() => {
+          setCurrentUser({
+            name: name,
+            email: email,
+            uid: userCredential.user.uid,
+          });
+        });
+      }
+    );
+  }
 
   function logOut() {
     window.localStorage.clear();
@@ -101,12 +122,13 @@ export function AuthProvider(props: any) {
     <AuthContext.Provider
       value={{
         currentUser: currentUser,
+        signUp: signUp,
         // signIn: signIn,
         logOut: logOut,
         status: status,
       }}
     >
-      {!loading && props.children}
+      {props.children}
     </AuthContext.Provider>
   );
 }
