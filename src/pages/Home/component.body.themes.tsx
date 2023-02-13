@@ -30,7 +30,6 @@ const ThemeCard = ({
       <h5 className="fw-bold text-center">{theme}</h5>
       <span style={{ textAlign: "justify" }} className="fs-6">
         {desc}
-        {desc}
       </span>
     </div>
   );

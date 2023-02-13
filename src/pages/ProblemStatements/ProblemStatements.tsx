@@ -54,7 +54,7 @@ const ProblemStatements = () => {
             {ps.organization.map((item, index) => {
               return (
                 <tr>
-                  <td >{index}</td>
+                  <td >{index+1}</td>
                   <td className="w-25">{item}</td>
                   <td className="w-25">{ps.problemStatementTitle[index]}</td>
                   <td >{ps.category[index]}</td>
