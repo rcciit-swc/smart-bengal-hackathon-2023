@@ -34,7 +34,6 @@ type DataContextType = {
     problemStatementTitle: string[];
     category: string[];
     psNumber: string[];
-    submittedIdeasCount: string[];
     domainBucket: string[];
   };
   pf: {
@@ -59,7 +58,6 @@ const DataContext = createContext<DataContextType>({
     problemStatementTitle: [],
     category: [],
     psNumber: [],
-    submittedIdeasCount: [],
     domainBucket: [],
   },
   pf: [],

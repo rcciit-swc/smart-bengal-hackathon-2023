@@ -12,7 +12,7 @@ const ProblemStatements = () => {
       >
         <span className="text-uppercase">problem statements</span>
       </div>
-      {/* <div
+      <div
         style={{
           backgroundColor: "var(--primary-color)",
           borderRadius: "20px",
@@ -37,9 +37,9 @@ const ProblemStatements = () => {
           <span className="fs-2 fw-bold">104</span>
           <span className="text-capitalize">hardware</span>
         </div>
-      </div> */}
+      </div>
       <div className="my-5">
-        {/* <Table striped bordered hover>
+        <Table striped bordered hover>
           <thead>
             <tr>
               <th>S.No.</th>
@@ -47,7 +47,6 @@ const ProblemStatements = () => {
               <th>Problem Statement Title</th>
               <th>Category</th>
               <th>PS Number</th>
-              <th>Submitted Idea(s) Count</th>
               <th>Domain Bucket</th>
             </tr>
           </thead>
@@ -55,18 +54,18 @@ const ProblemStatements = () => {
             {ps.organization.map((item, index) => {
               return (
                 <tr>
-                  <td>{index}</td>
-                  <td colSpan={2}>{item}</td>
-                  <td>{ps.category[index]}</td>
-                  <td>{ps.psNumber[index]}</td>
-                  <td>{ps.submittedIdeasCount[index]}</td>
-                  <td>{ps.domainBucket[index]}</td>
+                  <td >{index}</td>
+                  <td className="w-25">{item}</td>
+                  <td className="w-25">{ps.problemStatementTitle[index]}</td>
+                  <td >{ps.category[index]}</td>
+                  <td >{ps.psNumber[index]}</td>
+                  <td className="w-25">{ps.domainBucket[index]}</td>
                 </tr>
               );
             })}
           </tbody>
-        </Table> */}
-        Problem statements will be available soon
+        </Table>
+        {/* Problem statements will be available soon */}
       </div>
     </main>
   );
