@@ -19,7 +19,7 @@ const TeamImplementation = () => {
                 "min(max(10px, calc(0.625rem + ((1vw - 0.01px) * 2.6055))), 60px)",
             }}
           >
-            IMPLEMENTATION TEAM
+            EXECUTIVE TEAM
           </h1>
         </div>
       </main>
