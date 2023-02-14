@@ -1,19 +1,12 @@
 import React, { useContext, useState, useEffect } from "react";
 import { db } from "../firebase";
-import { collection, getDocs, addDoc, setDoc ,doc,updateDoc} from "firebase/firestore";
+import { collection, getDocs, addDoc, setDoc, doc, updateDoc, arrayUnion } from "firebase/firestore";
 const DataContext = React.createContext();
 
 export function useDataContext() {
   return useContext(DataContext);
 }
-const obj = {
-  email: "roysulogna@gmail.com",
-  spocName: "sulogna",
-  name: "Heritage",
-  logoUrl: "budeuieui",
-  mobileNumber: "6786786786",
-  problemStatement: [],
-};
+
 const objPs = {
   problemStatement: [
     {
@@ -46,27 +39,31 @@ export function UserProvider({ children }) {
     try {
       const docsSnap = await getDocs(collection(db, "organisations"));
       docsSnap.forEach((doc) => {
-        res.push(doc.data());
+        res.push({ ...doc.data(), id: doc.id });
       });
       setOrg(res);
     } catch (error) {
       console.log(error);
     }
   }
-  async function addOrganisation() {
+  async function addOrganisation(org) {
     try {
       const userRef = collection(db, "organisations");
-      addDoc(userRef, obj);
+      addDoc(userRef, org);
     } catch (err) {
       console.log(err);
     }
   }
-  async function addProblemStatement(props) {
+  async function addProblemStatement(id, data) {
     try {
-      await updateDoc(doc(db, "organisations", props), objPs);
-    } catch (err) {
-      console.log(err);
+      const docRef = doc(db, "organisations", id);
+      await updateDoc(docRef, {
+        problemStatements: arrayUnion(data),
+      });
+    } catch (error) {
+      console.log(error);
     }
+
   }
   useEffect(() => {
     getAllUsers();

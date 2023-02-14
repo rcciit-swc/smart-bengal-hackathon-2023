@@ -177,8 +177,8 @@ const NavBar = () => {
             {/* <button
               onClick={(e) => {
                 e.preventDefault();
-                addProblemStatement("2SsRL825aYlHU5e5vxYw");
-                // addOrganisation()
+                // addProblemStatement("2SsRL825aYlHU5e5vxYw");
+                addOrganisation()
               }}
             >
               ADD
