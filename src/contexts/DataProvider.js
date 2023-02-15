@@ -93,24 +93,20 @@ export function UserProvider({ children }) {
   }
 
   // Set new Sponsors by Admin
-  async function setImageAndCategory(imageFile, category) {
+  async function setImageAndCategory(imageFile, sponsorData) {
+    const { category, name } = sponsorData;
     const modifiedCategory = category.toLowerCase().replace(/\s+/g, '-'); // example: Tech Partner => tech-partner
     try {
-      const sponsorImagesRef = ref(storage, `sponsor-images/${imageFile.name}`);
+      const sponsorImagesRef = ref(storage, `sponsor-images/${name}`);
       // uploading image into Firebase Storage
       const snapshot = await uploadBytes(sponsorImagesRef, imageFile);
       // Fetch URL of uploaded image in firebase Storage
-      const downloadURL = await getDownloadURL(snapshot.ref);
+      const url = await getDownloadURL(snapshot.ref);
 
       // check if document exists
       const docRef = doc(db, "sponsors", modifiedCategory);
       const response = await getDoc(docRef);
-      const sponsorImageName = imageFile.name.slice(0, imageFile.name.indexOf("."));
-
-      const newEntry = {
-        name: sponsorImageName,
-        url: downloadURL
-      }
+      const newEntry = { name, url }
 
       // sponsor category already exists
       if (response.exists()) {
@@ -124,10 +120,7 @@ export function UserProvider({ children }) {
         // setDoc for $new_category as document under 'sponsors' collection
         await setDoc(docRef, {
           category: category,
-          images: [{
-            name: sponsorImageName,
-            url: downloadURL
-          }]
+          images: [newEntry]
         })
       }
     }

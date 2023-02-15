@@ -7,7 +7,13 @@ import { useDataContext } from "../../contexts/DataProvider";
 function SponsorModal() {
 	const [show, setShow] = useState(false);
 	const [seletecdFile, setSelectedFile] = useState<File | null>(null);
-	const [sponsorCategory, setSponsorCategory] = useState<string>('');
+	const [uploadSponsor, setUploadSponsor] = useState<{
+		category: string,
+		name: string
+	}>({
+		category: '',
+		name: ''
+	});
 	const { setImageAndCategory } = useDataContext();
 
 	const handleFileSelect = (event: ChangeEvent<HTMLInputElement>) => {
@@ -19,10 +25,10 @@ function SponsorModal() {
 	const handleSubmit = (e: any) => {
 		e.preventDefault();
 		setShow(false);
-		setImageAndCategory(seletecdFile, sponsorCategory);
+		setImageAndCategory(seletecdFile, uploadSponsor);
 		// clear inputs
 		setSelectedFile(null);
-		setSponsorCategory('');
+		setUploadSponsor({ category: '', name: '' });
 	};
 
 
@@ -50,8 +56,18 @@ function SponsorModal() {
 								type="text"
 								placeholder="Enter Category"
 								autoFocus
-								value={sponsorCategory}
-								onChange={(e) => setSponsorCategory(e.target.value)}
+								value={uploadSponsor.category}
+								onChange={(e) => setUploadSponsor({ category: e.target.value, name: uploadSponsor.name })}
+							/>
+						</Form.Group>
+						<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+							<Form.Label>Sponsor Logo Name</Form.Label>
+							<Form.Control
+								type="text"
+								placeholder="Enter Logo Name"
+								autoFocus
+								value={uploadSponsor.name}
+								onChange={(e) => setUploadSponsor({ category: uploadSponsor.category, name: e.target.value })}
 							/>
 						</Form.Group>
 						<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
