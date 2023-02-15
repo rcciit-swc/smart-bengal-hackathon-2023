@@ -3,6 +3,7 @@ import { useData } from "../../contexts/Data";
 import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
+import homeBanner from '../../assets/caraousel-images/sbh-banner.webp';
 
 const Themes = lazy(() => import("./component.body.themes"));
 
@@ -24,15 +25,14 @@ const Home = () => {
     >
       {/* <CarouselContainer /> */}
       <img
-        className="d-block w-100"
-        height="500px"
-        width="auto"
-        src="https://imgur.com/CnAq9PL.png"
+        className="d-block img-fluid"
+        // src="https://imgur.com/CnAq9PL.png"
+        src={homeBanner}
         alt="Second slide"
       />
       <div
         style={{ backgroundColor: `var(--primary-color-light)` }}
-        className="mt-5 w-100 h-100 d-flex flex-column align-items-center"
+        className="w-100 h-100 d-flex flex-column align-items-center"
       >
         <h1
           style={{ color: `var(--heading-color)` }}
