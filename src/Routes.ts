@@ -10,3 +10,5 @@ export const teamRoute = "/team";
 export const prizesRoute = "/prizes";
 export const eligibilityRoute = "/eligibility";
 export const EmailRoute = "/email";
+export const registerRoute = "/register";
+export const adminPortalRoute = "/admin-portal";

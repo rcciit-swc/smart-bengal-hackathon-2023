@@ -1,9 +1,17 @@
 import "./ProblemStatements.style.css";
+import { useRef, useState } from "react";
 import Table from "react-bootstrap/Table";
 import { useData } from "../../contexts/Data";
+import { useDataContext } from "../../contexts/DataProvider";
+import DescriptionModal from "./DescriptionModal";
 
 const ProblemStatements = () => {
   const { ps } = useData();
+  const { org } = useDataContext();
+
+  const [show, setShow] = useState(false);
+  const modalData = useRef("");
+
   return (
     <main className="d-flex flex-column align-items-center my-5">
       <div
@@ -38,7 +46,8 @@ const ProblemStatements = () => {
           <span className="text-capitalize">hybrid</span>
         </div>
       </div>
-      <div className="my-5" style={{width:'100%', overflowX: 'scroll'}}>
+
+      <div className="my-5">
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -51,16 +60,49 @@ const ProblemStatements = () => {
             </tr>
           </thead>
           <tbody>
+            {/* {org &&
+              org?.map((item: any, index: any) =>
+                item?.problemStatements?.map((data: any, indexing: any) => (
+                  <tr>
+                    <td>{indexing + 1}</td>
+                    <td className="w-25">{item.name}</td>
+                    <td className="w-25">{data.psTitle}</td>
+                    <td>{data.category}</td>
+                    <td>{data.psNumber}</td>
+                    <td className="w-25">{data.domainBucket}</td>
+                  </tr>
+                ))
+              )} */}
             {ps.organization.map((item, index) => {
               return (
-                <tr>
-                  <td >{index}</td>
-                  <td className="w-25">{item}</td>
-                  <td className="w-25">{ps.problemStatementTitle[index]}</td>
-                  <td >{ps.category[index]}</td>
-                  <td >{ps.psNumber[index]}</td>
-                  <td className="w-25">{ps.domainBucket[index]}</td>
-                </tr>
+                <>
+                  <tr>
+                    <td>{index + 1}</td>
+                    <td className="w-25">{item}</td>
+                    <td
+                      className="w-25"
+                      style={{
+                        cursor: "pointer",
+                        color: "blue",
+                        textDecoration: "underline",
+                      }}
+                      onClick={() => {
+                        setShow(true);
+                        modalData.current = ps.problemStatementDesc[index];
+                      }}
+                    >
+                      {ps.problemStatementTitle[index]}
+                    </td>
+                    <td>{ps.category[index]}</td>
+                    <td>{ps.psNumber[index]}</td>
+                    <td className="w-25">{ps.domainBucket[index]}</td>
+                  </tr>
+                  <DescriptionModal
+                    Desc={modalData.current}
+                    Show={show}
+                    Hide={() => setShow(false)}
+                  />
+                </>
               );
             })}
           </tbody>
