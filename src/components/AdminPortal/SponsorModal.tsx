@@ -130,7 +130,7 @@ function SponsorModal() {
 							{!newOrderNo && <Form.Select aria-label="Default select example" onChange={handlePosition}>
 								<option value={'Last'}>Last (Default)</option>
 								<option value={'First'}>First</option>
-								<option value={'Other'}>Other</option>
+								<option value={'Other'}>Set Position</option>
 							</Form.Select>}
 							{newOrderNo && <Form.Control
 								type="text"
