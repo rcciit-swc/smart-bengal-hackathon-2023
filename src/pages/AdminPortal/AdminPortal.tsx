@@ -3,6 +3,7 @@ import { useDataContext } from "../../contexts/DataProvider";
 import ProblemStatementModal from "../../components/AdminPortal/ProblemStatementModal";
 import AddOrganisationModal from "../../components/AdminPortal/AddOrganisationModal";
 import UpdateProblemStatementModal from "../../components/AdminPortal/UpdateProblemStatementModal";
+import SponsorModal from "../../components/AdminPortal/SponsorModal";
 
 const AdminPortal = () => {
   const { org } = useDataContext();
@@ -46,14 +47,14 @@ const AdminPortal = () => {
         })}
 
         {/* Add Sponsor */}
-        {/* <Card style={{ width: "18rem", marginLeft: "10px" }}>
+        <Card style={{ width: "18rem", marginLeft: "10px" }}>
           <Card.Body className="text-center">
             <Card.Title className="fw-bold fs-3 text-center">
               Add Sponsor
             </Card.Title>
             <SponsorModal />
           </Card.Body>
-        </Card> */}
+        </Card>
 
         {/* Add Organization */}
         <Card style={{ width: "18rem", marginLeft: "10px" }}>
