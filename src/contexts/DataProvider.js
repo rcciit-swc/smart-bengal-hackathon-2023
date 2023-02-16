@@ -104,7 +104,7 @@ export function UserProvider({ children }) {
   }
 
   // Set new Sponsors by Admin
-  async function setImageAndCategory(imageFile, sponsorData) {
+  async function setImageAndCategory(imageFile, sponsorData, orderNo) {
     const { category, name } = sponsorData;
     const modifiedCategory = category.toLowerCase().replace(/\s+/g, '-'); // example: Tech Partner => tech-partner
     try {
@@ -122,7 +122,10 @@ export function UserProvider({ children }) {
       // sponsor category already exists
       if (response.exists()) {
         const sponsorDetails = response.data();
-        sponsorDetails.images.push(newEntry);
+        if (orderNo === 'Last')
+          sponsorDetails.images.push(newEntry);
+        else if (orderNo === 'First')
+          sponsorDetails.images.unshift(newEntry);
         await setDoc(docRef, sponsorDetails);
       }
 

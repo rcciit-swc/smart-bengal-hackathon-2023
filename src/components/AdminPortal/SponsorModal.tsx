@@ -17,6 +17,7 @@ function SponsorModal() {
 	});
 	const { setImageAndCategory, getSponsorCategory } = useDataContext();
 	const [newCategory, setNewCategory] = useState<boolean>(false);
+	const [orderNo, setOrderNo] = useState<string>('');
 
 	const handleFileSelect = (event: ChangeEvent<HTMLInputElement>) => {
 		const file = event.target.files?.[0];
@@ -27,7 +28,7 @@ function SponsorModal() {
 	const handleSubmit = (e: any) => {
 		e.preventDefault();
 		setShow(false);
-		setImageAndCategory(seletecdFile, uploadSponsor);
+		setImageAndCategory(seletecdFile, uploadSponsor, orderNo);
 		// clear inputs
 		setSelectedFile(null);
 		setUploadSponsor({ category: '', name: '' });
@@ -109,6 +110,13 @@ function SponsorModal() {
 								placeholder="Upload Sponsor Logo"
 								onChange={handleFileSelect}
 							/>
+						</Form.Group>
+						<Form.Label>Set Logo Position</Form.Label>
+						<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+							<Form.Select aria-label="Default select example" onChange={(e: any) => setOrderNo(e.target.value)}>
+								<option value={'Last'}>Last (Default)</option>
+								<option value={'First'}>First</option>
+							</Form.Select>
 						</Form.Group>
 						<Button variant="primary" type="submit" onClick={handleSubmit}>
 							Save Changes
