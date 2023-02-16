@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Sponsors.css";
-import sponsor3 from "../../assets/sponsors/sponsor3.jpg";
-import sponsor4 from "../../assets/sponsors/sponsor4.png";
-import ieeeSponsor from "../../assets/sponsors/IEEE-Logo.png";
-import csiLogo from "../../assets/sponsors/new CSI logo.jpg";
-import ieee_cis from "../../assets/sponsors/IEEE-CIS-new-logo.jpg";
+import { useDataContext } from "../../contexts/DataProvider";
 
 const Sponsors: React.FC = () => {
+
+  const { getSponsors } = useDataContext();
+  const [sponsorList, setSponsorList] = useState<any>();
+
+  useEffect(() => {
+    async function fetchSponsorDetails() {
+      const sponsors = await getSponsors();
+      setSponsorList([...sponsors]);
+    }
+    fetchSponsorDetails();
+  // eslint-disable-next-line
+  }, [])
+
   return (
     <>
       <div className="container pt-5 pb-5">
         <h1
-          className="w-100 text-center fw-bold my-5"
+          className="w-100 text-center fw-bold mt-5"
           style={{ color: "var(--heading-color)" }}
         >
           Supporters of SBH 2023

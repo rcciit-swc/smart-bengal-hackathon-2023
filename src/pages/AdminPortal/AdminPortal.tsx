@@ -10,7 +10,7 @@ const AdminPortal = () => {
   return (
     <main
       className="w-100 d-flex flex-column justify-content-center align-items-center "
-      style={{ backgroundColor: "var(--primary-color-light)" }}
+      style={{ backgroundColor: "var(--primary-color-light)"}}
     >
       <h1 className="fw-bold mt-3">Admin Portal</h1>
       <Container className="d-flex flex-row justify-content-center align-items-center flex-wrap mb-3">
@@ -44,7 +44,19 @@ const AdminPortal = () => {
             </Card>
           );
         })}
-        <Card style={{ width: "18rem",marginLeft:"10px" }}>
+
+        {/* Add Sponsor */}
+        <Card style={{ width: "18rem", marginLeft: "10px" }}>
+          <Card.Body className="text-center">
+            <Card.Title className="fw-bold fs-3 text-center">
+              Add Sponsor
+            </Card.Title>
+            <SponsorModal />
+          </Card.Body>
+        </Card>
+
+        {/* Add Organization */}
+        <Card style={{ width: "18rem", marginLeft: "10px" }}>
           <Card.Body className="text-center">
             <Card.Title className="fw-bold fs-3 text-center">
               Add Organisation

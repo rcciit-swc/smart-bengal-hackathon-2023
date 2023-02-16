@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
-import { db } from "../firebase";
-import { collection, getDocs, addDoc, setDoc, doc, updateDoc, arrayUnion } from "firebase/firestore";
+import { db, storage } from "../firebase";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { collection, getDocs, addDoc, setDoc, getDoc, doc, query, updateDoc, arrayUnion } from "firebase/firestore";
 const DataContext = React.createContext();
 
 export function useDataContext() {
@@ -34,6 +35,8 @@ export function UserProvider({ children }) {
       console.log(error);
     }
   }
+
+
   async function getProblemStatements() {
     var res = [];
     try {
@@ -46,6 +49,8 @@ export function UserProvider({ children }) {
       console.log(error);
     }
   }
+
+
   async function addOrganisation(org) {
     try {
       const userRef = collection(db, "organisations");
@@ -54,6 +59,8 @@ export function UserProvider({ children }) {
       console.log(err);
     }
   }
+
+
   async function addProblemStatement(id, data) {
     try {
       const docRef = doc(db, "organisations", id);
@@ -65,6 +72,64 @@ export function UserProvider({ children }) {
     }
 
   }
+
+  async function getSponsors() {
+    try {
+      // refernce to sponsor collection
+      const sponsorCollectionRef = collection(db, 'sponsors');
+      // fetch referrences to all documents under sponsors
+      const q = query(sponsorCollectionRef);
+      const querySnapshot = await getDocs(q);
+      var sponsorList = [];
+      querySnapshot.forEach(doc => {
+        // console.log(doc.data());
+        sponsorList.push(doc.data());
+      })
+      console.log(sponsorList);
+      return sponsorList;
+    } catch (err) {
+      console.log('failed to fetch sponsor data');
+    }
+  }
+
+  // Set new Sponsors by Admin
+  async function setImageAndCategory(imageFile, sponsorData) {
+    const { category, name } = sponsorData;
+    const modifiedCategory = category.toLowerCase().replace(/\s+/g, '-'); // example: Tech Partner => tech-partner
+    try {
+      const sponsorImagesRef = ref(storage, `sponsor-images/${name}`);
+      // uploading image into Firebase Storage
+      const snapshot = await uploadBytes(sponsorImagesRef, imageFile);
+      // Fetch URL of uploaded image in firebase Storage
+      const url = await getDownloadURL(snapshot.ref);
+
+      // check if document exists
+      const docRef = doc(db, "sponsors", modifiedCategory);
+      const response = await getDoc(docRef);
+      const newEntry = { name, url }
+
+      // sponsor category already exists
+      if (response.exists()) {
+        const sponsorDetails = response.data();
+        sponsorDetails.images.push(newEntry);
+        await setDoc(docRef, sponsorDetails);
+      }
+
+      // new sponsor-category creation
+      else {
+        // setDoc for $new_category as document under 'sponsors' collection
+        await setDoc(docRef, {
+          category: category,
+          images: [newEntry]
+        })
+      }
+    }
+    catch (err) {
+      console.log(err);
+    }
+  }
+
+
   useEffect(() => {
     getAllUsers();
     getProblemStatements();
@@ -75,6 +140,8 @@ export function UserProvider({ children }) {
     users,
     addOrganisation,
     addProblemStatement,
+    getSponsors,
+    setImageAndCategory
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
