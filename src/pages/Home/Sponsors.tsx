@@ -10,10 +10,11 @@ const Sponsors: React.FC = () => {
   useEffect(() => {
     async function fetchSponsorDetails() {
       const sponsors = await getSponsors();
+      sponsors.sort((a: any, b: any) => a.orderNo - b.orderNo);
       setSponsorList([...sponsors]);
     }
     fetchSponsorDetails();
-  // eslint-disable-next-line
+    // eslint-disable-next-line
   }, [])
 
   return (

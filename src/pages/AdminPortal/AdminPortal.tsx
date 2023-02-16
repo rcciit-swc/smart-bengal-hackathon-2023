@@ -3,14 +3,24 @@ import { useDataContext } from "../../contexts/DataProvider";
 import ProblemStatementModal from "../../components/AdminPortal/ProblemStatementModal";
 import AddOrganisationModal from "../../components/AdminPortal/AddOrganisationModal";
 import SponsorModal from "../../components/AdminPortal/SponsorModal";
+import { useEffect, useState } from "react";
 
 const AdminPortal = () => {
-  const { org } = useDataContext();
+  const { org, getSponsors } = useDataContext();
+  const [sponsorList, setSponsorsList] = useState<any>();
+
+  // useEffect(() => {
+  //   async function fetchSponsors() {
+  //     await getSponsors();
+  //   }
+  //   fetchSponsors();
+  // // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   return (
     <main
       className="w-100 d-flex flex-column justify-content-center align-items-center "
-      style={{ backgroundColor: "var(--primary-color-light)"}}
+      style={{ backgroundColor: "var(--primary-color-light)" }}
     >
       <h1 className="fw-bold mt-3">Admin Portal</h1>
       <Container className="d-flex flex-row justify-content-center align-items-center flex-wrap mb-3">
