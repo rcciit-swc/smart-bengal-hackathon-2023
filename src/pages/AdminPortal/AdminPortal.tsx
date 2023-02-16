@@ -2,6 +2,7 @@ import { Button, Card, Container } from "react-bootstrap";
 import { useDataContext } from "../../contexts/DataProvider";
 import ProblemStatementModal from "../../components/AdminPortal/ProblemStatementModal";
 import AddOrganisationModal from "../../components/AdminPortal/AddOrganisationModal";
+import UpdateProblemStatementModal from "../../components/AdminPortal/UpdateProblemStatementModal";
 
 const AdminPortal = () => {
   const { org } = useDataContext();
@@ -34,7 +35,10 @@ const AdminPortal = () => {
                     item.problemStatements.length
                   }
                 </Card.Text>
+                <div className="d-flex flex-column gap-3 text-center">
                 <ProblemStatementModal  org={item}  />
+                <UpdateProblemStatementModal org={item} />
+                </div>
                 {/* <Button variant="primary">Add Problem Statement</Button> */}
               </Card.Body>
             </Card>

@@ -38,7 +38,7 @@ const ProblemStatements = () => {
           <span className="text-capitalize">as per available data</span>
         </div>
         <div className="d-flex flex-column soft-background">
-          <span className="fs-2 fw-bold">7</span>
+          <span className="fs-2 fw-bold">9</span>
           <span className="text-capitalize">software</span>
         </div>
         <div className="d-flex flex-column soft-background">
@@ -51,12 +51,13 @@ const ProblemStatements = () => {
         <Table striped bordered hover>
           <thead>
             <tr>
-              <th>S.No.</th>
+              {/* <th>S.No.</th> */}
+              <th>PS Number</th>
               <th>Organization</th>
               <th>Problem Statement Title</th>
               <th>Category</th>
-              <th>PS Number</th>
               <th>Domain Bucket</th>
+              <th>Applicable For</th>
             </tr>
           </thead>
           <tbody>
@@ -77,14 +78,14 @@ const ProblemStatements = () => {
               return (
                 <>
                   <tr>
-                    <td>{index + 1}</td>
+                    {/* <td>{index + 1}</td> */}
+                    <td>{ps.psNumber[index]}</td>
                     <td className="w-25">{item}</td>
                     <td
                       className="w-25"
                       style={{
                         cursor: "pointer",
                         color: "blue",
-                        textDecoration: "underline",
                       }}
                       onClick={() => {
                         setShow(true);
@@ -94,8 +95,8 @@ const ProblemStatements = () => {
                       {ps.problemStatementTitle[index]}
                     </td>
                     <td>{ps.category[index]}</td>
-                    <td>{ps.psNumber[index]}</td>
                     <td className="w-25">{ps.domainBucket[index]}</td>
+                    <td>{ps.applicableFor[index]}</td>
                   </tr>
                   <DescriptionModal
                     Desc={modalData.current}

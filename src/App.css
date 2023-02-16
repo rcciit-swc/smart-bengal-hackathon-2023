@@ -30,4 +30,13 @@ a {
   .eligibility {
     height: 100% !important;
   }
+  .edit-icon{
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+.edit-icon:hover{
+  cursor: pointer;
+  filter: opacity(0.5);
 }

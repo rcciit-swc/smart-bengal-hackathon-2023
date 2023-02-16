@@ -89,6 +89,41 @@ const Sponsors: React.FC = () => {
               width: "inherit",
             }}
           >
+            Knowledge Partner
+          </h3>
+          <div
+            className="mx-2"
+            style={{
+              height: "1px",
+              backgroundColor: "grey",
+              width: "inherit",
+            }}
+          ></div>
+        </div>
+        <div className="sponsor-wrapper mt-5">
+        <img
+            className="sponsor-img img-fluid"
+            src="https://i.imgur.com/sOxgwCC.jpg"
+            alt="sponsor"
+          />
+        </div>
+      </div>
+      <div className="container pt-5 pb-5">
+        <div className="w-100 d-flex flex-row justify-content-center align-items-center">
+          <div
+            className="mx-2"
+            style={{
+              height: "1px",
+              backgroundColor: "grey",
+              width: "inherit",
+            }}
+          ></div>
+          <h3
+            className="text-center"
+            style={{
+              width: "inherit",
+            }}
+          >
             Technical Partner
           </h3>
           <div
@@ -101,6 +136,11 @@ const Sponsors: React.FC = () => {
           ></div>
         </div>
         <div className="sponsor-wrapper mt-5">
+        <img
+            className="sponsor-img img-fluid"
+            src="https://i.imgur.com/uzVX7pa.jpg"
+            alt="sponsor"
+          />
           <img
             className="sponsor-img img-fluid"
             src={ieee_cis}
@@ -121,23 +161,32 @@ const Sponsors: React.FC = () => {
           <img className="sponsor-img img-fluid" src={sponsor4} alt="sponsor4" />
           <img
             className="sponsor-img img-fluid"
-            src="https://imgur.com/ij4C4T3.png"
+            src="2.jpeg"
             alt="sponsor"
           />
+          
           <img
             className="sponsor-img img-fluid"
             src="https://i.imgur.com/RN8dyJt.jpg"
             alt="sponsor"
           />
+          <br />  
           <img
             className="sponsor-img img-fluid"
-            src="2.jpeg"
+            src="https://imgur.com/ij4C4T3.png"
             alt="sponsor"
+            style={{
+              width:"50px",
+              height:"50px"
+            }}
           />
           <img
             className="sponsor-img img-fluid"
             src="1.jpeg"
             alt="sponsor"
+            style={{
+              width:"130px"
+            }}
           />
 
         </div>

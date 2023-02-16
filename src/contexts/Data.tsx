@@ -36,6 +36,7 @@ type DataContextType = {
     category: string[];
     psNumber: string[];
     domainBucket: string[];
+    applicableFor:string[];
   };
   pf: {
     [key: string]: any;
@@ -61,6 +62,7 @@ const DataContext = createContext<DataContextType>({
     category: [],
     psNumber: [],
     domainBucket: [],
+    applicableFor:[],
   },
   pf: [],
   winningGuidelines: [],

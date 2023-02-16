@@ -8,14 +8,14 @@ function DescriptionModal({Desc,Show,Hide}:{Desc:string,Show:boolean,Hide:any}) 
   
 
   return (
-    <>
-      <Modal style={{marginTop:"10vh"}} show={Show} onHide={Hide}>
+      <Modal style={{marginTop:"10vh",marginBottom:"5vh"}} show={Show} onHide={Hide}>
         <Modal.Header closeButton>
           <Modal.Title>Problem Statement Description</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{Desc}</Modal.Body>
+        <Modal.Body
+        style={{overflowY:"auto",maxHeight:"70vh"}}
+        >{Desc}</Modal.Body>
       </Modal>
-    </>
   );
 }
 
