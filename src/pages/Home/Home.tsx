@@ -4,6 +4,7 @@ import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
 import homeBanner from '../../assets/caraousel-images/sbh-banner.png';
+import CarouselContainer from "../../components/carousel/Carousel";
 
 const Themes = lazy(() => import("./component.body.themes"));
 
@@ -23,13 +24,13 @@ const Home = () => {
       style={{ width: "100vw" }}
       className="d-flex flex-column align-items-center"
     >
-      {/* <CarouselContainer /> */}
-      <img
+      <CarouselContainer />
+      {/* <img
         className="d-block img-fluid"
         // src="https://imgur.com/CnAq9PL.png"
         src={homeBanner}
         alt="Second slide"
-      />
+      /> */}
       <div
         style={{ backgroundColor: `var(--primary-color-light)` }}
         className="w-100 h-100 d-flex flex-column align-items-center"

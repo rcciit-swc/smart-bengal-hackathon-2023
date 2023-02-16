@@ -18,7 +18,7 @@ const CarouselContainer = () => {
           className="d-block w-100"
           height="500px"
           width="auto"
-          src={carousel1}
+          src="https://i.imgur.com/SraJzN7.png"
           alt="First slide"
         />
         {/* <Carousel.Caption>
@@ -27,14 +27,14 @@ const CarouselContainer = () => {
         </Carousel.Caption> */}
       </Carousel.Item>
       <Carousel.Item>
-        {/* <img
+        <img
           className="d-block w-100"
           height="500px"
           width="auto"
-          src={carousel2}
+          src="https://i.imgur.com/JPInk6V.png"
           alt="Second slide"
           // style={{ objectFit: "contain" }}
-        /> */}
+        />
         {/* <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
