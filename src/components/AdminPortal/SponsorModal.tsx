@@ -134,7 +134,7 @@ function SponsorModal() {
 							</Form.Select>}
 							{newOrderNo && <Form.Control
 								type="text"
-								placeholder="Enter Category"
+								placeholder="Enter Position"
 								autoFocus
 								value={orderNo}
 								onChange={(e) => setOrderNo(parseInt(e.target.value))}
