@@ -3,7 +3,7 @@ import { useData } from "../../contexts/Data";
 import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
-import homeBanner from '../../assets/caraousel-images/sbh-banner.webp';
+import homeBanner from '../../assets/caraousel-images/sbh-banner.png';
 
 const Themes = lazy(() => import("./component.body.themes"));
 
