@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { db, storage } from "../firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { collection, getDocs, addDoc, setDoc, getDoc, doc, query, updateDoc, arrayUnion } from "firebase/firestore";
+import { collection, getDocs, addDoc, setDoc, getDoc, doc, query, updateDoc, arrayUnion, orderBy } from "firebase/firestore";
 const DataContext = React.createContext();
 
 export function useDataContext() {
@@ -73,6 +73,17 @@ export function UserProvider({ children }) {
 
   }
 
+  async function getSponsorCategory() {
+    const sponsorCollectionRef = collection(db, 'sponsors');
+    const q = query(sponsorCollectionRef);
+    const querySnapshot = await getDocs(q);
+    var sponsorCategoryList = [];
+    querySnapshot.forEach(doc => sponsorCategoryList.push(doc.data().category));
+    // console.log(sponsorCategoryList);
+    return sponsorCategoryList;
+  }
+
+
   async function getSponsors() {
     try {
       // refernce to sponsor collection
@@ -141,7 +152,8 @@ export function UserProvider({ children }) {
     addOrganisation,
     addProblemStatement,
     getSponsors,
-    setImageAndCategory
+    setImageAndCategory,
+    getSponsorCategory
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
