@@ -15,6 +15,7 @@ function SponsorModal() {
 		name: ''
 	});
 	const { setImageAndCategory } = useDataContext();
+	const [newCategory, setNewCategory] = useState<boolean>(false);
 
 	const handleFileSelect = (event: ChangeEvent<HTMLInputElement>) => {
 		const file = event.target.files?.[0];
@@ -29,8 +30,21 @@ function SponsorModal() {
 		// clear inputs
 		setSelectedFile(null);
 		setUploadSponsor({ category: '', name: '' });
+		setNewCategory(false);
 	};
 
+	const handleCategory = (event: React.ChangeEvent<HTMLSelectElement>) => {
+		const option = event.target.value;
+		if (option === 'Other') {
+			setNewCategory(true);
+			setUploadSponsor({ category: '', name: uploadSponsor.name })
+			return;
+		}
+
+		else if (option !== '') {
+			setUploadSponsor({ category: option, name: uploadSponsor.name })
+		}
+	}
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
@@ -51,14 +65,20 @@ function SponsorModal() {
 				<Modal.Body>
 					<Form>
 						<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-							<Form.Label>Sponsor Category Name</Form.Label>
-							<Form.Control
+							<Form.Label>Sponsor Category</Form.Label>
+							{!newCategory && <Form.Select aria-label="Default select example" onChange={handleCategory}>
+								<option value={''}>Open this select menu</option>
+								<option value="Tech Partner">Tech Partner</option>
+								<option value="Organizing Partner">Organizing Partner</option>
+								<option value="Other">Other</option>
+							</Form.Select>}
+							{newCategory && <><Form.Control
 								type="text"
 								placeholder="Enter Category"
 								autoFocus
 								value={uploadSponsor.category}
 								onChange={(e) => setUploadSponsor({ category: e.target.value, name: uploadSponsor.name })}
-							/>
+							/><span className="text-decoration-underline" style={{ cursor: 'pointer' }} onClick={() => setNewCategory(false)}>{'Back'}</span></>}
 						</Form.Group>
 						<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
 							<Form.Label>Sponsor Logo Name</Form.Label>
