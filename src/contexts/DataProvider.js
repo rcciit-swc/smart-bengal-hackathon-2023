@@ -122,10 +122,18 @@ export function UserProvider({ children }) {
       // sponsor category already exists
       if (response.exists()) {
         const sponsorDetails = response.data();
-        if (orderNo === 'Last')
-          sponsorDetails.images.push(newEntry);
-        else if (orderNo === 'First')
-          sponsorDetails.images.unshift(newEntry);
+        console.log('typeof', typeof orderNo);
+        if (typeof orderNo === "string") {
+          console.log(orderNo);
+          if (orderNo === 'Last')
+            sponsorDetails.images.push(newEntry);
+          else if (orderNo === 'First')
+            sponsorDetails.images.unshift(newEntry);
+        }
+        else if (typeof orderNo === "number") {
+          console.log(orderNo);
+          sponsorDetails.images.splice(orderNo - 1, 0, newEntry);
+        }
         await setDoc(docRef, sponsorDetails);
       }
 

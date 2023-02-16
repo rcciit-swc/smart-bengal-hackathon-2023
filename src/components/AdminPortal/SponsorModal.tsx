@@ -17,7 +17,8 @@ function SponsorModal() {
 	});
 	const { setImageAndCategory, getSponsorCategory } = useDataContext();
 	const [newCategory, setNewCategory] = useState<boolean>(false);
-	const [orderNo, setOrderNo] = useState<string>('');
+	const [newOrderNo, setNewOrderNo] = useState<boolean>(false);
+	const [orderNo, setOrderNo] = useState<string | number>('');
 
 	const handleFileSelect = (event: ChangeEvent<HTMLInputElement>) => {
 		const file = event.target.files?.[0];
@@ -28,11 +29,13 @@ function SponsorModal() {
 	const handleSubmit = (e: any) => {
 		e.preventDefault();
 		setShow(false);
+		console.log('orderNo', orderNo);
 		setImageAndCategory(seletecdFile, uploadSponsor, orderNo);
 		// clear inputs
 		setSelectedFile(null);
 		setUploadSponsor({ category: '', name: '' });
 		setNewCategory(false);
+		setNewOrderNo(false);
 	};
 
 	const handleCategory = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -44,6 +47,17 @@ function SponsorModal() {
 
 		else if (option !== '') {
 			setUploadSponsor({ category: option, name: uploadSponsor.name });
+		}
+	}
+
+	const handlePosition = (event: React.ChangeEvent<HTMLSelectElement>) => {
+		const option = event.target.value;
+		if (option === 'Other') {
+			setNewOrderNo(true);
+			setOrderNo('');
+		}
+		else if (option !== '') {
+			setOrderNo(option);
 		}
 	}
 
@@ -113,10 +127,18 @@ function SponsorModal() {
 						</Form.Group>
 						<Form.Label>Set Logo Position</Form.Label>
 						<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-							<Form.Select aria-label="Default select example" onChange={(e: any) => setOrderNo(e.target.value)}>
+							{!newOrderNo && <Form.Select aria-label="Default select example" onChange={handlePosition}>
 								<option value={'Last'}>Last (Default)</option>
 								<option value={'First'}>First</option>
-							</Form.Select>
+								<option value={'Other'}>Set Position</option>
+							</Form.Select>}
+							{newOrderNo && <Form.Control
+								type="text"
+								placeholder="Enter Category"
+								autoFocus
+								value={orderNo}
+								onChange={(e) => setOrderNo(parseInt(e.target.value))}
+							/>}
 						</Form.Group>
 						<Button variant="primary" type="submit" onClick={handleSubmit}>
 							Save Changes
