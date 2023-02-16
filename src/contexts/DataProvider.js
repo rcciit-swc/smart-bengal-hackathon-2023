@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { db, storage } from "../firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { collection, getDocs, addDoc, setDoc, getDoc, doc, query, updateDoc, arrayUnion } from "firebase/firestore";
+import { collection, getDocs, addDoc, setDoc, getDoc, doc, query, updateDoc, arrayUnion, orderBy } from "firebase/firestore";
 const DataContext = React.createContext();
 
 export function useDataContext() {
@@ -73,6 +73,17 @@ export function UserProvider({ children }) {
 
   }
 
+  async function getSponsorCategory() {
+    const sponsorCollectionRef = collection(db, 'sponsors');
+    const q = query(sponsorCollectionRef);
+    const querySnapshot = await getDocs(q);
+    var sponsorCategoryList = [];
+    querySnapshot.forEach(doc => sponsorCategoryList.push(doc.data().category));
+    // console.log(sponsorCategoryList);
+    return sponsorCategoryList;
+  }
+
+
   async function getSponsors() {
     try {
       // refernce to sponsor collection
@@ -93,7 +104,7 @@ export function UserProvider({ children }) {
   }
 
   // Set new Sponsors by Admin
-  async function setImageAndCategory(imageFile, sponsorData) {
+  async function setImageAndCategory(imageFile, sponsorData, orderNo) {
     const { category, name } = sponsorData;
     const modifiedCategory = category.toLowerCase().replace(/\s+/g, '-'); // example: Tech Partner => tech-partner
     try {
@@ -111,7 +122,18 @@ export function UserProvider({ children }) {
       // sponsor category already exists
       if (response.exists()) {
         const sponsorDetails = response.data();
-        sponsorDetails.images.push(newEntry);
+        console.log('typeof', typeof orderNo);
+        if (typeof orderNo === "string") {
+          console.log(orderNo);
+          if (orderNo === 'Last')
+            sponsorDetails.images.push(newEntry);
+          else if (orderNo === 'First')
+            sponsorDetails.images.unshift(newEntry);
+        }
+        else if (typeof orderNo === "number") {
+          console.log(orderNo);
+          sponsorDetails.images.splice(orderNo - 1, 0, newEntry);
+        }
         await setDoc(docRef, sponsorDetails);
       }
 
@@ -141,7 +163,8 @@ export function UserProvider({ children }) {
     addOrganisation,
     addProblemStatement,
     getSponsors,
-    setImageAndCategory
+    setImageAndCategory,
+    getSponsorCategory
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;

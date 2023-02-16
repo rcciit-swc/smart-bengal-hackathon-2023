@@ -1,6 +1,7 @@
 import { truncate } from "fs/promises";
 import { useState } from "react";
 import { Button, Col, Modal, Row, Form } from "react-bootstrap";
+import UpdateForm from "./UpdateForm";
 
 const UpdateProblemStatementModal = ({ org }: { org: any }) => {
   const [show, setShow] = useState(false);
@@ -18,15 +19,33 @@ const UpdateProblemStatementModal = ({ org }: { org: any }) => {
     domain: "",
     description: "",
   });
+  //console.log(org);
 
   const [psindex, setPsindex] = useState(0);
 
-  const [showForm,setShowForm] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
-  const [showDetails,setShowDetails] = useState(true);
+  const [showDetails, setShowDetails] = useState(true);
+
+  const [updateData, setupdateData] = useState({
+    title: "test",
+    category: "test",
+    domain: "test",
+    description: "test",
+  });
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  function setEdit(item: any) {
+    setupdateData({
+      ...updateData,
+      title: item.title,
+      category: item.category,
+      domain: item.domain,
+      description: item.description,
+    });
+  }
 
   return (
     <>
@@ -49,102 +68,64 @@ const UpdateProblemStatementModal = ({ org }: { org: any }) => {
           <Col>
             {org.problemStatements.map((item: any, index: any) => {
               return (
-                <Col className="d-flex flex-column p-3 my-3"
-                style={{border:"1px solid black",borderRadius:"10px"}}
-                key={index}
-                >
-                  <div className="w- 100 d-flex flex-row justify-content-between align-items-center">
-                    <span className="fw-bold fs-4">
-                      Problem Statement {index + 1}
-                    </span>
-                    <img
-                    className="edit-icon"
-                    style={{ display: showDetails ? "block" : "none" }}
-                      src="https://img.icons8.com/ios/50/000000/edit-file.png"
-                      alt="edit"
-                      onClick={() => {setShowForm(!showForm)
-                      setShowDetails(!showDetails)
-                      setPsindex(index)
-                      }}
-                    />
-                  </div>
-                  
-                    <Form
-                      className="w-100"
-                      style={{ display: showForm ? "block" : "none" }}
+                <div style={{ display: showDetails ? "block" : "none" }}>
+                  <Col
+                    className="d-flex flex-column p-3 my-3"
+                    style={{
+                      display: showDetails ? "block" : "none",
+                      border: "1px solid black",
+                      borderRadius: "10px",
+                    }}
+                    key={index}
+                  >
+                    <div
+                      className="w- 100 d-flex flex-row justify-content-between align-items-center"
+                      style={{ display: showDetails ? "block" : "none" }}
                     >
-                      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Problem Title</Form.Label>
-                        <Form.Control
-                          type="text"
-                          placeholder="Enter Problem Title"
-                          autoFocus
-                          value={item.title}
-                          onChange={(e) =>
-                            setProblemStatement({
-                              ...problemStatement,
-                              title: e.target.value,
-                            })
-                          }
-                        />
-                      </Form.Group>
-                      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Domain</Form.Label>
-                        <Form.Control
-                          type="text"
-                          placeholder="Enter Domain"
-                          value={item.domain}
-                          onChange={(e) =>
-                            setProblemStatement({
-                              ...problemStatement,
-                              domain: e.target.value,
-                            })
-                          }
-                        />
-                      </Form.Group>
-                      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                        <Form.Label>Category</Form.Label>
-                        <Form.Control
-                          type="text"
-                          placeholder="Enter Category"
-                          value={item.category}
-                          onChange={(e) =>
-                            setProblemStatement({
-                              ...problemStatement,
-                              category: e.target.value,
-                            })
-                          }
-                        />
-                      </Form.Group>
-                      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Problem Description</Form.Label>
-                        <Form.Control
-                          as="textarea"
-                          rows={3}
-                          value={item.description}
-                          onChange={(e) =>
-                            setProblemStatement({
-                              ...problemStatement,
-                              description: e.target.value,
-                            })
-                          }
-                        />
-                      </Form.Group>
-                      <Button variant="primary" type="submit">
-                        Save Changes
-                      </Button>
-                    </Form>
-                    <Col className="flex-column "
-                    style={{display:showDetails ? "flex" : "none"}}
+                      <span className="fw-bold fs-4">
+                        Problem Statement {index + 1}
+                      </span>
+                      <img
+                        className="edit-icon"
+                        style={{ display: showDetails ? "block" : "none" }}
+                        src="https://img.icons8.com/ios/50/000000/edit-file.png"
+                        alt="edit"
+                        onClick={() => {
+                          setEdit(item);
+                          setShowForm(!showForm);
+                          setShowDetails(!showDetails);
+
+                          setPsindex(index);
+                        }}
+                      />
+                    </div>
+
+                    <Col
+                      className="flex-column "
+                      style={{ display: showDetails ? "flex" : "none" }}
                     >
-                    <span><b>Problem Statement Title: </b>{item.title}</span>
-                    <span><b>Domain: </b>{item.domain}</span>
-                    <span><b>Category: </b>{item.category}</span>
-                    <p><b>Problem Statement Description: </b>{item.description}</p>
+                      <span>
+                        <b>Problem Statement Title: </b>
+                        {item.title}
+                      </span>
+                      <span>
+                        <b>Domain: </b>
+                        {item.domain}
+                      </span>
+                      <span>
+                        <b>Category: </b>
+                        {item.category}
+                      </span>
+                      <p>
+                        <b>Problem Statement Description: </b>
+                        {item.description}
+                      </p>
+                    </Col>
                   </Col>
-                </Col>
+                </div>
               );
             })}
+            <UpdateForm item={updateData} showForm={showForm} />
           </Col>
         </Modal.Body>
       </Modal>
