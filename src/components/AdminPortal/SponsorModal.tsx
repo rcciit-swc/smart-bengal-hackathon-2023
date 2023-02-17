@@ -18,7 +18,7 @@ function SponsorModal() {
 	const { setImageAndCategory, getSponsorCategory } = useDataContext();
 	const [newCategory, setNewCategory] = useState<boolean>(false);
 	const [newOrderNo, setNewOrderNo] = useState<boolean>(false);
-	const [orderNo, setOrderNo] = useState<string | number>('');
+	const [orderNo, setOrderNo] = useState<string | number>('Last');
 
 	const handleFileSelect = (event: ChangeEvent<HTMLInputElement>) => {
 		const file = event.target.files?.[0];
@@ -52,6 +52,8 @@ function SponsorModal() {
 
 	const handlePosition = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		const option = event.target.value;
+		console.log('in handle position', option);
+		
 		if (option === 'Other') {
 			setNewOrderNo(true);
 			setOrderNo('');
