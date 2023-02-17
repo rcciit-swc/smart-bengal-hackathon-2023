@@ -35,7 +35,7 @@ const Footer = () => {
             );
           })}
         </div>
-        <div className="d-flex footer-content">
+        <div className="d-flex footer-content mb-3">
           <span>Phone:&nbsp;</span>
           {contact.phone.map((phone, index) => {
             return (
@@ -50,6 +50,15 @@ const Footer = () => {
             );
           })}
         </div>
+        <div className="d-flex flex-column footer-content mb-3">
+          <div>Alimpan De</div>
+          <div>Email: <a href={`mailto:${'de.alimpan5@gmail.com'}`}>de.alimpan5@gmail.com</a></div>
+          <div>Phone: <a href={`tel:${'+916289210018'}`}>+916289210018</a></div>
+        </div>
+        <div className="d-flex flex-column footer-content">
+          <div>Mainak Hazra</div>
+          <div>Email: <a href={`mailto:${'mainakhajra15@gmail.com'}`}>mainakhajra15@gmail.com</a></div>
+          <div>Phone: <a href={`tel:${'+918768660200'}`}>+918768660200</a></div></div>
       </div>
     </div>
   );
