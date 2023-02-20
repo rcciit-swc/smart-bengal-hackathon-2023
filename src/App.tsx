@@ -144,14 +144,14 @@ function App() {
                   </Suspense>
                 }
               ></Route>
-              <Route
+              {/* <Route
                 path={EmailRoute}
                 element={
                   <Suspense fallback={<></>}>
                     <EmailModule />
                   </Suspense>
                 }
-              ></Route>
+              ></Route> */}
               <Route
                 path={registerRoute}
                 element={
