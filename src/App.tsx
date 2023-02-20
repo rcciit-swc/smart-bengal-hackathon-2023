@@ -16,6 +16,7 @@ import {
   EmailRoute,
   registerRoute,
   adminPortalRoute,
+  contactUsRoute,
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
@@ -44,6 +45,7 @@ const Prizes = lazy(() => import("./pages/Prizes/Prizes"));
 const Eligibility = lazy(() => import("./pages/Eligibility/Eligibility"));
 const Register = lazy(() => import("./pages/Register/Register"));
 const AdminPortal = lazy(() => import("./pages/AdminPortal/AdminPortal"));
+const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 
 
 function App() {
@@ -166,6 +168,14 @@ function App() {
                   </Suspense>
                 }
               ></Route>
+              <Route
+              path={contactUsRoute}
+              element={
+                <Suspense fallback={<></>}>
+                  <ContactUs />
+                </Suspense>
+              }
+            ></Route>
             </Route>
           </Routes>
         </AuthProvider>
