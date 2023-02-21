@@ -51,8 +51,24 @@
   ],
   "themes-tagline": "No problem is too big... No idea is too small",
   "contact": {
-    "email": ["hiranmoy.roy@rcciit.org.in", "arpan.deyasi@rcciit.org.in"],
-    "phone": ["+919831445343", "+919832244201"]
+    "name": [
+      "Dr. Hiranmoy Roy",
+      "Dr. Arpan Deyasi",
+      "Alimpan De",
+      "Mainak Hazra"
+    ],
+    "email": [
+      "hiranmoy.roy@rcciit.org.in",
+      "arpan.deyasi@rcciit.org.in",
+      "de.alimpan5@gmail.com",
+      "mainakhajra15@gmail.com"
+    ],
+    "phone": [
+      "+919831445343",
+      "+919832244201",
+      "+916289210018",
+      "+918768660200"
+    ]
   },
   "theme-card-data": [
     {
@@ -158,7 +174,9 @@
       "Simpheal Informstics Private Iimited",
       "Ashtik Softech (P) Limited",
       "Entiovi Technologies",
-      "Entiovi Technologies"
+      "Entiovi Technologies",
+      "Tectes Technologies Private Limited",
+      "Tectes Technologies Private Limited"
     ],
     "problemStatementTitle": [
       "Create a smart farming system to increase agricultural yields and decrease waste.",
@@ -177,9 +195,11 @@
       "Identity the users from their pre-information. ",
       "The Class Timetabling Problem",
       "Accurate and efficient way of estimating the expected time of arrival (ETA) for different modes of city transport.",
-      "Hyper local pollution prediction"
+      "Hyper local pollution prediction",
+      " Cheque Book Leaflet Data Extraction",
+      "Passenger Volume analysis and footfall prediction for 4th of July"
     ],
-    "problemStatementDesc":[
+    "problemStatementDesc": [
       "Create a smart farming system to increase agricultural yields and decrease waste. This can involve enhancing irrigation, fertilization, and pest control procedures through the use of data analysis, machine learning, and IoT technologies.",
       "Create a smart transportation network to ease traffic and boost performance. This can involve developing real-time traffic control systems, electric automobiles, or bike-sharing initiatives, as well as models for predicting traffic.",
       "Enhance rural  Bengal' s access to high-quality medical care. This could involve establishing mobile health clinics, constructing telemedicine platforms, or applying AI to enhance disease diagnosis and treatment planning in rural locations.",
@@ -196,13 +216,15 @@
       "A system enabled with ML, which can identify users as per- i. their pre-filled data, ii. Their medicine order historyAnd flag the users with the disease pattern they have (suppose one person is ordering a diabatic medicine every month, so flag the patient as diabatic patient and so on). After flagging, the System should refer products and other medicines related to the disease to the user.",
       "The class timetabling problem is a typical scheduling problem that appears to be a stressful job in every academic institute. In previous years, timetable scheduling was done manually with a single person or group of individuals involved in the task of scheduling it manually. Planning of timetable is one of the most complex and error-prone applications because it is actually done manually. This situation demands a comprehensive approach where a computer can be used to schedule a timetabling problem by being automated using a concept. In institutions, the class time table is a major administrative activity which is prerequisite. The time table problem or conflict can be said to be the problem of assigning a number of events into a limited number of time period. The problem of the time table is subject to many constraints which are usually divided into two categories: “hard” and “soft”. Hard Constraints: These are constraints that must be enforced. Some examples of such constraints are: 1. In each period, there should be sufficient resources (e.g. rooms and lecturers) available for all the events that have been scheduled for that time period. 2. No lecturer should have different classes at the same time slot. There cannot be more than two classes for a subject in one day. Soft Constraints: Soft constraints are those that are desirable but not absolutely essential. Sometimes it is impossible to satisfy all soft constraints in real world situations. Some of the soft constraints (in both exams and course timetabling) are: 3. Lecturers and students may prefer to have all their lectures in some number of days and to have a number of lecture-free days 4. Lab classes may not be in consecutive hours 5. Every staff should get at least one first hour 6. A particular class may need to be scheduled in a particular time period. Objectives The project is a software application that many Institutions, businesses and some companies may actually need. This is a simple case of an allocation problem. (1) The project involves developing a program that can schedule time table effectively for school. The prototype of this work should be followed by the development of a booking system that can automatically allocate resources. (2) The main principal of this project is to solve timetable problems with evolutionary computing processes.",
       "The current transportation system in many cities lacks an accurate and efficient way of estimating the expected time of arrival (ETA) for different modes of transport. This leads to significant inconvenience for commuters, especially during peak hours or when there are unexpected delays. The problem requires developing an AI/ML-based solution to predict ETA for different modes of transport in real-time, considering various factors such as traffic congestion, weather conditions, roadblocks, and more. The ETA prediction system should leverage machine learning algorithms to analyze historical data, real-time traffic patterns, and weather updates to provide accurate and up-to-date ETA information for various modes of transport such as buses, trains, and taxis. The solution should be scalable, cost-effective, and easily deployable in different cities worldwide. The proposed solution should be able to address the following challenges: Accuracy: The solution should be able to accurately predict ETA in real-time by accounting for various factors that impact transportation. Scalability: The system should be designed to be scalable, efficient, and able to handle large volumes of data in real-time to support multiple modes of transport and different cities. Usability: The solution should be user-friendly and easily accessible by commuters to plan their travel accordingly. Cost-effectiveness: The solution should be cost-effective and use the most efficient algorithms and technologies to minimize infrastructure and operational costs. Overall, the proposed solution should help cities and transportation providers to better manage their transport networks, reduce congestion, and improve the overall transportation experience for commuters.",
-      "Air pollution is a critical global issue, and accurate prediction of pollutant levels is essential for public health and environmental management. However, many areas lack the necessary sensors to collect accurate air quality data, making it challenging to assess the local pollution levels. The objective of this hackathon is to develop a hyper-local pollution prediction system that leverages hourly data on particulates, gases, and meteorology to train a model that can provide current values for particulate and gas levels at any location, even where sensors are unavailable. The model will be trained by splitting the sensor data into training and testing sets and evaluating its performance on an independent dataset. The hackathon will use hourly reference data from the EPA's Air Quality System (AQS) available at https://aqs.epa.gov/aqsweb/airdata/download_files.html. The data includes hourly measurements of particulate matter (PM2.5, PM10), gases (SO2, NO2, O3, CO), and meteorological parameters (temperature, pressure, wind speed, etc.). Participants will be required to build a model that predicts particulate and gas levels at any location using a combination of available sensor data and meteorological parameters. The model should be designed to handle missing data, accommodate the spatial and temporal variability of pollutant levels, and produce predictions with a high level of accuracy. The proposed solution should address the following challenges: Data Processing: The solution should preprocess and handle missing data effectively to create a clean and accurate dataset for training and testing the model. Model Development: The solution should use appropriate machine learning algorithms to train a model that accurately predicts hyper-local pollutant levels using the available data. Model Validation: The solution should validate the model's accuracy by comparing predictions with independent data. Deployment: The solution should be easily deployable and provide real-time predictions for any location where sensors are not available. The proposed solution will help address the critical issue of air pollution by providing hyper-local predictions of pollutant levels, improving public health outcomes and environmental management."
+      "Air pollution is a critical global issue, and accurate prediction of pollutant levels is essential for public health and environmental management. However, many areas lack the necessary sensors to collect accurate air quality data, making it challenging to assess the local pollution levels. The objective of this hackathon is to develop a hyper-local pollution prediction system that leverages hourly data on particulates, gases, and meteorology to train a model that can provide current values for particulate and gas levels at any location, even where sensors are unavailable. The model will be trained by splitting the sensor data into training and testing sets and evaluating its performance on an independent dataset. The hackathon will use hourly reference data from the EPA's Air Quality System (AQS) available at https://aqs.epa.gov/aqsweb/airdata/download_files.html. The data includes hourly measurements of particulate matter (PM2.5, PM10), gases (SO2, NO2, O3, CO), and meteorological parameters (temperature, pressure, wind speed, etc.). Participants will be required to build a model that predicts particulate and gas levels at any location using a combination of available sensor data and meteorological parameters. The model should be designed to handle missing data, accommodate the spatial and temporal variability of pollutant levels, and produce predictions with a high level of accuracy. The proposed solution should address the following challenges: Data Processing: The solution should preprocess and handle missing data effectively to create a clean and accurate dataset for training and testing the model. Model Development: The solution should use appropriate machine learning algorithms to train a model that accurately predicts hyper-local pollutant levels using the available data. Model Validation: The solution should validate the model's accuracy by comparing predictions with independent data. Deployment: The solution should be easily deployable and provide real-time predictions for any location where sensors are not available. The proposed solution will help address the critical issue of air pollution by providing hyper-local predictions of pollutant levels, improving public health outcomes and environmental management.",
+      "A Cheque is an instrument with an unconditional order, addressed to the banker. There are certain important information on a cheque leaflet that are used to identify and affirm the ingenuity of the transaction , like the account number, authorization signature , amount of money , etc. Most of the time this is done manually by a bank staff, which leaves a chance for error. Your task is to extract certain key data features from a cheque leaflet which will help build a larger, smart application. As a precursor, you are required to build a service that will take input a simple image in png/jpg format ( which might be rotated ) and extract the IFSC CODE , ACCOUNT NUMBER , BANK NAME and the CHEQUE NUMBER ( printed in MICR at the bottom of the leaflet ) and return over an API to the user.",
+      "Each year thousands of passengers’ travel through hundreds of airports across the USA. During holiday seasons like the 4th of July ( Independence Day) , there is a huge surge of passengers across airports which causes delay in flights , check-ins , ground staff availability etc. which ultimately lead to a bad customer experience. The Transportation Security Administration is an agency of the United States Department of Homeland Security that has authority over the security of transportation systems within, and connecting to the United States. Using the data publicly provided by them here : TSA Passenger Volumes , your work is to thoroughly analyze the volumes of passengers , and provide a detailed statistical report based on past years. Furthermore, leveraging this as a time series , compute the Footfall prediction for the week before and after 4th of July , 2023 and provide a prediction ( which should be Footfall in Numbers ) by training any three ML models of your choice. Also , provide a prediction for the dates ( 15th February to 5th March ) using your models. Prepare a detailed comparison report of the models used and their performance metrics."
     ],
     "category": [
-      "Hybrid", 
-      "Hybrid", 
-      "Hybrid", 
-      "Hybrid", 
+      "Hybrid",
+      "Hybrid",
+      "Hybrid",
+      "Hybrid",
       "Software",
       "Software",
       "Hybrid",
@@ -215,13 +237,15 @@
       "Software",
       "Software",
       "Software",
+      "Software",
+      "Software",
       "Software"
     ],
     "psNumber": [
-      "SBHRCCIIT001", 
-      "SBHRCCIIT002", 
-      "SBHRCCIIT003", 
-      "SBHRCCIIT004", 
+      "SBHRCCIIT001",
+      "SBHRCCIIT002",
+      "SBHRCCIIT003",
+      "SBHRCCIIT004",
       "SBHRCCIIT005",
       "SBHRCCIIT006",
       "SBHRCCIIT007",
@@ -234,7 +258,9 @@
       "SBHRCCIIT014",
       "SBHRCCIIT015",
       "SBHRCCIIT016",
-      "SBHRCCIIT017"
+      "SBHRCCIIT017",
+      "SBHRCCIIT018",
+      "SBHRCCIIT019"
     ],
     "domainBucket": [
       "Agriculture , Foodtech and Rural Development",
@@ -253,9 +279,11 @@
       "Biotech and healthcare",
       "Smart Automation",
       "Intelligent Transport & AI/ML",
-      "Environment Tech & AI/ML"
+      "Environment Tech & AI/ML",
+      "AI/ML",
+      "AI/ML"
     ],
-    "applicableFor":[
+    "applicableFor": [
       "SBH Junior/ SBH Senior",
       "SBH Junior/ SBH Senior",
       "SBH Junior/ SBH Senior",
@@ -270,6 +298,8 @@
       "SBH Junior/ SBH Senior",
       "SBH Junior/ SBH Senior",
       "SBH Senior",
+      "SBH Junior/ SBH Senior",
+      "SBH Junior/ SBH Senior",
       "SBH Junior/ SBH Senior",
       "SBH Junior/ SBH Senior",
       "SBH Junior/ SBH Senior"

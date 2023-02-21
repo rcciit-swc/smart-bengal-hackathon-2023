@@ -4,7 +4,6 @@ import { Button, Form } from "react-bootstrap";
 import EmailModule from "../../utils/EmailModule";
 
 const ContactUs = () => {
-
   const { contact } = useData();
 
   const [formData, setFormData] = React.useState({
@@ -16,7 +15,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    EmailModule(formData)
+    EmailModule(formData);
     setFormData({
       name: "",
       email: "",
@@ -26,10 +25,11 @@ const ContactUs = () => {
   };
 
   return (
-    <main className="w-100"
-    style={{
-      backgroundColor: "var(--primary-color-light)",
-    }}
+    <main
+      className="w-100"
+      style={{
+        backgroundColor: "var(--primary-color-light)",
+      }}
     >
       <div className={"w-100 position-relative"}>
         <img
@@ -58,133 +58,111 @@ const ContactUs = () => {
             backgroundColor: "white",
           }}
         >
-          <div
-          className="d-flex flex-column text-left my-3 "
-          style={{
-          }}
-          >
+          <div className="d-flex flex-column text-left my-3 " style={{}}>
             <h1 className="fw-bold fs-1">Ask A Question</h1>
-            <Form
-            onSubmit={handleSubmit}
-            >
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Select aria-label="Default select example"
-                style={{
-                  backgroundColor: "var(--primary-color-light)",
-                }}
-                value={formData.category}
-                onChange={(e) => {
-                  setFormData({ ...formData, category: e.target.value });
-                }}
+                <Form.Select
+                  aria-label="Default select example"
+                  style={{
+                    backgroundColor: "var(--primary-color-light)",
+                  }}
+                  value={formData.category}
+                  onChange={(e) => {
+                    setFormData({ ...formData, category: e.target.value });
+                  }}
                 >
                   <option>Select Category</option>
                   <option value="Sponsors">Sponsors</option>
                   <option value="Partners">Partners</option>
-                  <option value="Participate as Team">Participate as Team</option>
+                  <option value="Participate as Team">
+                    Participate as Team
+                  </option>
                   <option value="Join SBH Team">Join SBH Team</option>
                   <option value="SPOC">SPOC</option>
                   <option value="Others">Others</option>
                 </Form.Select>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicName">
-                <Form.Control type="name" placeholder="Enter Name" 
-                value={formData.name}
-                onChange={(e) => {
-                  setFormData({ ...formData, name: e.target.value });
-                }}
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicName">
+                <Form.Control
+                  type="name"
+                  placeholder="Enter Name"
+                  value={formData.name}
+                  onChange={(e) => {
+                    setFormData({ ...formData, name: e.target.value });
+                  }}
                 />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" placeholder="Enter email" 
-                value={formData.email}
-                onChange={(e) => {
-                  setFormData({ ...formData, email: e.target.value });
-                }}
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  value={formData.email}
+                  onChange={(e) => {
+                    setFormData({ ...formData, email: e.target.value });
+                  }}
                 />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Control
-                as="textarea"
-                rows={3}
-                placeholder="Messages"
-                value={formData.message}
-                onChange={(e) => {
-                  setFormData({ ...formData, message: e.target.value });
-                }}
-              />
-            </Form.Group>
-            <Button
-            className="w-100"
-            type="submit"
-            >
-              Send Message
-            </Button>
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  placeholder="Messages"
+                  value={formData.message}
+                  onChange={(e) => {
+                    setFormData({ ...formData, message: e.target.value });
+                  }}
+                />
+              </Form.Group>
+              <Button className="w-100" type="submit">
+                Send Message
+              </Button>
             </Form>
           </div>
-          <div
-          className="my-5"
-          >
-          <div
-      id="contact"
-      style={{
-        backgroundColor: "var(--primary-color)",
-        color: "var(--invert-color)",
-        borderRadius: "30px"
-      }}
-      className="d-flex flex-column justify-content-around py-4 px-3"
-      
-    >
-      <div className="d-flex flex-column align-items-start px-3">
-        <p className="text-uppercase fs-5 fw-bold">Follow us</p>
-        <a href="#" className="fs-6 copyright">
-          © 2022-23 Smart Bengal Hackathon. All rights reserved
-        </a>
-      </div>
-      <div className="d-flex flex-column align-items-start px-3">
-        <p className="text-uppercase fs-5 fw-bold mt-3">contact us</p>
-        <div className="d-flex footer-content">
-          <span>Email:&nbsp;</span>
-          {contact.email.map((email, index) => {
-            return (
-              <a
-                key={index}
-                style={{ paddingRight: "10px" }}
-                href={`mailto:${email}`}
-              >
-                {email}
-              </a>
-            );
-          })}
-        </div>
-        <div className="d-flex footer-content mb-3 flex-wrap">
-          <span>Phone:&nbsp;</span>
-          {contact.phone.map((phone, index) => {
-            return (
-              <a
-                key={phone}
-                style={{ paddingRight: "20px" }}
-                href={`tel:${phone}`}
-                className="contact"
-              >
-                {phone}
-              </a>
-            );
-          })}
-        </div>
-        <div className="d-flex flex-column footer-content mb-4">
-          <div>Alimpan De</div>
-          <div>Email: <a href={`mailto:${'de.alimpan5@gmail.com'}`}>de.alimpan5@gmail.com</a></div>
-          <div>Phone: <a href={`tel:${'+916289210018'}`}>+916289210018</a></div>
-        </div>
-        <div className="d-flex flex-column footer-content">
-          <div>Mainak Hazra</div>
-          <div>Email: <a href={`mailto:${'mainakhajra15@gmail.com'}`}>mainakhajra15@gmail.com</a></div>
-          <div>Phone: <a href={`tel:${'+918768660200'}`}>+918768660200</a></div></div>
-      </div>
-    </div>
+          <div className="my-5">
+            <div
+              id="contact"
+              style={{
+                backgroundColor: "var(--primary-color)",
+                color: "var(--invert-color)",
+                borderRadius: "30px",
+              }}
+              className="d-flex flex-column justify-content-around py-4 px-3"
+            >
+              <div className="d-flex flex-column align-items-start px-3">
+                <p className="text-uppercase fs-5 fw-bold">Follow us</p>
+                <a href="#" className="fs-6 copyright">
+                  © 2022-23 Smart Bengal Hackathon. All rights reserved
+                </a>
+              </div>
+              <div className="d-flex flex-column align-items-start px-3">
+                <p className="text-uppercase fs-5 fw-bold mt-3">contact us</p>
+                <div className="d-flex footer-content flex-column">
+                  {contact.name.map((item, index) => {
+                    return (
+                      <div className="d-flex flex-column px-3 mb-3 flex-wrap">
+                        <span>{item}</span>
+                        <span>
+                          Email:{" "}
+                          <a href={`mailto:${contact.email[index]}`}>
+                            {contact.email[index]}
+                          </a>
+                        </span>
+                        <span>
+                          Email:{" "}
+                          <a href={`tel:${contact.phone[index]}`}>
+                            {contact.phone[index]}
+                          </a>
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

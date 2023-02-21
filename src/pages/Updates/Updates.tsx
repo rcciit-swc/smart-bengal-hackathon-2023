@@ -11,10 +11,13 @@ const Updates = () => {
           style={{ height: "46vh", width: "100%", objectFit: "cover" }}
         />
         <h1
-          className="carousel-caption fw-bold text-center"
-          style={{ fontSize: "60px" }}
+          className="carousel-caption fw-bold text-center "
+          style={{
+            fontSize:
+              "min(max(10px, calc(0.625rem + ((1vw - 0.01px) * 2.6055))), 60px)",
+          }}
         >
-          UPDATES
+          REGISTRATION AND UPDATES
         </h1>
       </div>
       <div className="w-100 d-flex flex-column justify-content-center align-items-center">
@@ -52,7 +55,7 @@ const Updates = () => {
             <b>SBH JUNIOR :</b> - Rs. 1000/- per team
           </li>
         </ul>
-        <span className="mb-4">Registration fees need to be paid after the shortlisting.</span>
+        <span className="mb-4 text-center">Registration fees need to be paid after the shortlisting.</span>
       </div>
     </main>
   );

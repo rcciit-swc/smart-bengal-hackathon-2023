@@ -43,7 +43,7 @@ const Sponsors: React.FC = () => {
                     <img
                       className="sponsor-img"
                       src={image.url}
-                      width="150px"
+                      width="130px"
                       height="auto"
                       alt={image.name}
                     />

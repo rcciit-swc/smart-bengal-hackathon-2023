@@ -25,6 +25,7 @@ type DataContextType = {
     [key: string]: any;
   }[];
   contact: {
+    name: string[];
     phone: string[];
     email: string[];
   };
@@ -36,7 +37,7 @@ type DataContextType = {
     category: string[];
     psNumber: string[];
     domainBucket: string[];
-    applicableFor:string[];
+    applicableFor: string[];
   };
   pf: {
     [key: string]: any;
@@ -51,6 +52,7 @@ const DataContext = createContext<DataContextType>({
   about: "",
   descriptionCards: [],
   contact: {
+    name: [],
     email: [],
     phone: [],
   },
@@ -62,7 +64,7 @@ const DataContext = createContext<DataContextType>({
     category: [],
     psNumber: [],
     domainBucket: [],
-    applicableFor:[],
+    applicableFor: [],
   },
   pf: [],
   winningGuidelines: [],

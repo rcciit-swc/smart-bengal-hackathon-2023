@@ -10,7 +10,7 @@ const Footer = () => {
         backgroundColor: "var(--primary-color",
         color: "var(--invert-color)",
       }}
-      className="d-flex flex-row justify-content-around py-4"
+      className="d-flex flex-row justify-content-evenly py-4"
     >
       <div className="d-flex flex-column align-items-start px-3">
         <p className="text-uppercase fs-5 fw-bold">Follow us</p>
@@ -22,43 +22,26 @@ const Footer = () => {
       <div className="d-flex flex-column align-items-start px-3">
         <p className="text-uppercase fs-5 fw-bold">contact us</p>
         <div className="d-flex footer-content">
-          <span>Email:&nbsp;</span>
-          {contact.email.map((email, index) => {
+          {contact.name.map((item, index) => {
             return (
-              <a
-                key={index}
-                style={{ paddingRight: "10px" }}
-                href={`mailto:${email}`}
-              >
-                {email}
-              </a>
+              <div className="d-flex flex-column px-3 mb-3 flex-wrap">
+                <span>{item}</span>
+                <span>
+                  Email:{" "}
+                  <a href={`mailto:${contact.email[index]}`}>
+                    {contact.email[index]}
+                  </a>
+                </span>
+                <span>
+                  Email:{" "}
+                  <a href={`tel:${contact.phone[index]}`}>
+                    {contact.phone[index]}
+                  </a>
+                </span>
+              </div>
             );
           })}
         </div>
-        <div className="d-flex footer-content mb-3">
-          <span>Phone:&nbsp;</span>
-          {contact.phone.map((phone, index) => {
-            return (
-              <a
-                key={phone}
-                style={{ paddingRight: "10px" }}
-                href={`tel:${phone}`}
-                className="contact"
-              >
-                {phone}
-              </a>
-            );
-          })}
-        </div>
-        <div className="d-flex flex-column footer-content mb-3">
-          <div>Alimpan De</div>
-          <div>Email: <a href={`mailto:${'de.alimpan5@gmail.com'}`}>de.alimpan5@gmail.com</a></div>
-          <div>Phone: <a href={`tel:${'+916289210018'}`}>+916289210018</a></div>
-        </div>
-        <div className="d-flex flex-column footer-content">
-          <div>Mainak Hazra</div>
-          <div>Email: <a href={`mailto:${'mainakhajra15@gmail.com'}`}>mainakhajra15@gmail.com</a></div>
-          <div>Phone: <a href={`tel:${'+918768660200'}`}>+918768660200</a></div></div>
       </div>
     </div>
   );
