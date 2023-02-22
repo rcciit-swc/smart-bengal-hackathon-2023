@@ -33,7 +33,7 @@ const Footer = () => {
                   </a>
                 </span>
                 <span>
-                  Email:{" "}
+                  Phone:{" "}
                   <a href={`tel:${contact.phone[index]}`}>
                     {contact.phone[index]}
                   </a>
