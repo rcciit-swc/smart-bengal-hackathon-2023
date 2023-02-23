@@ -154,7 +154,7 @@ const NavBar = () => {
             </div>
             <div className="nav-link text-decoration-none">
               <Link onClick={navHandler} to={updatesRoute}>
-                Updates
+                Registrations
               </Link>
             </div>
             <div className="nav-link text-decoration-none">

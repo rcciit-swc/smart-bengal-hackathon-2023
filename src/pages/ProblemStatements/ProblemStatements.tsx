@@ -38,7 +38,7 @@ const ProblemStatements = () => {
           <span className="text-capitalize">as per available data</span>
         </div>
         <div className="d-flex flex-column soft-background">
-          <span className="fs-2 fw-bold">9</span>
+          <span className="fs-2 fw-bold">11</span>
           <span className="text-capitalize">software</span>
         </div>
         <div className="d-flex flex-column soft-background">
@@ -67,18 +67,18 @@ const ProblemStatements = () => {
                   <tr>
                     <td>{indexing + 1}</td>
                     <td className="w-25">{item.name}</td>
-                    <td className="w-25">{data.psTitle}</td>
+                    <td className="w-25">{data.title}</td>
                     <td>{data.category}</td>
                     <td>{data.psNumber}</td>
                     <td className="w-25">{data.domainBucket}</td>
                   </tr>
                 ))
               )} */}
-            {ps.organization.map((item, index) => {
+            {
+            ps.organization.map((item, index) => {
               return (
                 <>
                   <tr>
-                    {/* <td>{index + 1}</td> */}
                     <td>{ps.psNumber[index]}</td>
                     <td className="w-25">{item}</td>
                     <td

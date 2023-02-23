@@ -1,6 +1,6 @@
 import React from "react";
 import { useData } from "../../contexts/Data";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Spinner } from "react-bootstrap";
 import EmailModule from "../../utils/EmailModule";
 
 const ContactUs = () => {
@@ -13,9 +13,16 @@ const ContactUs = () => {
     category: "",
   });
 
+  const [loading, setLoading] = React.useState(false);
+
   const handleSubmit = (e: any) => {
+    setLoading(true);
     e.preventDefault();
     EmailModule(formData);
+    // console.log(isSubmitted)
+    // if (isSubmitted) {
+    //   setLoading(false);
+    // }
     setFormData({
       name: "",
       email: "",
@@ -58,7 +65,9 @@ const ContactUs = () => {
             backgroundColor: "white",
           }}
         >
-          <div className="d-flex flex-column text-left my-3 " style={{}}>
+          <div className="d-flex flex-column text-left my-3 " style={{
+            backgroundColor: "white",
+          }}>
             <h1 className="fw-bold fs-1">Ask A Question</h1>
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -118,11 +127,13 @@ const ContactUs = () => {
                 />
               </Form.Group>
               <Button className="w-100" type="submit">
+                {/* {loading ? (<Spinner animation="grow" variant="light" />) : "Send Message"} */}
                 Send Message
               </Button>
             </Form>
           </div>
-          <div className="my-5">
+          <div className="my-5"
+          >
             <div
               id="contact"
               style={{
@@ -137,13 +148,41 @@ const ContactUs = () => {
                 <a href="#" className="fs-6 copyright">
                   © 2022-23 Smart Bengal Hackathon. All rights reserved
                 </a>
+                <a className="fs-6 copyright" href="mailto:sbh@rcciit.org.in">
+                  sbh@rcciit.org.in
+                </a>
+                <div className="w-50 d-flex justify-content-between mt-2">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100090128125218"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-facebook-square fs-1 copyright"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/sbh_rcc_2023/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-instagram fs-1 copyright"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/smart-bengal-hackathon/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-linkedin fs-1 copyright"></i>
+                  </a>
+                </div>
               </div>
               <div className="d-flex flex-column align-items-start px-3">
                 <p className="text-uppercase fs-5 fw-bold mt-3">contact us</p>
                 <div className="d-flex footer-content flex-column">
                   {contact.name.map((item, index) => {
                     return (
-                      <div className="d-flex flex-column px-3 mb-3 flex-wrap">
+                      <div 
+                      key={index}
+                      className="d-flex flex-column px-3 mb-3 flex-wrap">
                         <span>{item}</span>
                         <span>
                           Email:{" "}

@@ -75,6 +75,7 @@ function ProblemStatementModal({ org }: { org: any }) {
                   })
                 }
               >
+                <option value="">Select Category</option>
                 <option value="Software">Software</option>
                 <option value="Hardware">Hardware</option>
                 <option value="Hybrid">Hybrid</option>
@@ -92,6 +93,7 @@ function ProblemStatementModal({ org }: { org: any }) {
                   })
                 }
               >
+                <option value="">Select Domain</option>
                 {ps.domainBucket.map((p: any) => {
                   return <option value={p}>{p}</option>;
                 })}

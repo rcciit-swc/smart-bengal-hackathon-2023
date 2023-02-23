@@ -32,15 +32,6 @@ const AdminPortal = () => {
               <Card.Body>
                 <Card.Title className="fw-bold fs-2">{item.name}</Card.Title>
                 <Card.Text>
-                  <b>SPOC Name: </b>
-                  {item.spocName}
-                  <br />
-                  <b>Email: </b>
-                  {item.email}
-                  <br />
-                  <b>Phone No. : </b>
-                  {item.mobileNumber}
-                  <br />
                   <b>Problem Statements : </b>
                   {
                     item.problemStatements.length

@@ -11,9 +11,6 @@ function AddOrganisationModal() {
 
   const [organisation, setOrganisation] = useState({
     name: "",
-    spocName: "",
-    email: "",
-    mobileNumber: "",
     problemStatements: [],
   });
 
@@ -23,9 +20,6 @@ function AddOrganisationModal() {
     setShow(false);
     setOrganisation({
         name: "",
-        spocName: "",
-        email: "",
-        mobileNumber: "",
         problemStatements: [],
     });
     };
@@ -58,42 +52,6 @@ function AddOrganisationModal() {
                 value={organisation.name}
                 onChange={(e) =>
                   setOrganisation({ ...organisation, name: e.target.value })
-                }
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Organisation Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter Organisation Email"
-                value={organisation.email}
-                onChange={(e) =>
-                  setOrganisation({ ...organisation, email: e.target.value })
-                }
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Organisation Phone</Form.Label>
-              <Form.Control
-                type="tel"
-                placeholder="Enter Organisation Phone"
-                value={organisation.mobileNumber}
-                onChange={(e) =>
-                  setOrganisation({
-                    ...organisation,
-                    mobileNumber: e.target.value,
-                  })
-                }
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>SPOC Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter SPOC Name"
-                value={organisation.spocName}
-                onChange={(e) =>
-                  setOrganisation({ ...organisation, spocName: e.target.value })
                 }
               />
             </Form.Group>
