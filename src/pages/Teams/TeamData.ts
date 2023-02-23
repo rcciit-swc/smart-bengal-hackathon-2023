@@ -86,7 +86,7 @@ export const sbhTeam: teamMemberType[] = [
   {
     img: "https://rcciit.org/images/staff/ece/f/Soham.jpg",
     name: "Dr. Soham Sarkar",
-    designation: "Jt. Coordinator, SBH2023",
+    designation: "Coordinator, SBH2023",
     committee: "Publication & Media Sub-Committee",
   },
   {
