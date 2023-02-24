@@ -1,6 +1,6 @@
 import React from "react";
 import { useData } from "../../contexts/Data";
-import { Button, Form, Spinner } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import EmailModule from "../../utils/EmailModule";
 
 const ContactUs = () => {
@@ -65,9 +65,12 @@ const ContactUs = () => {
             backgroundColor: "white",
           }}
         >
-          <div className="d-flex flex-column text-left my-3 " style={{
-            backgroundColor: "white",
-          }}>
+          <div
+            className="d-flex flex-column text-left my-3 "
+            style={{
+              backgroundColor: "white",
+            }}
+          >
             <h1 className="fw-bold fs-1">Ask A Question</h1>
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -132,8 +135,7 @@ const ContactUs = () => {
               </Button>
             </Form>
           </div>
-          <div className="my-5"
-          >
+          <div className="my-5">
             <div
               id="contact"
               style={{
@@ -180,9 +182,10 @@ const ContactUs = () => {
                 <div className="d-flex footer-content flex-column">
                   {contact.name.map((item, index) => {
                     return (
-                      <div 
-                      key={index}
-                      className="d-flex flex-column px-3 mb-3 flex-wrap">
+                      <div
+                        key={index}
+                        className="d-flex flex-column px-3 mb-3 flex-wrap"
+                      >
                         <span>{item}</span>
                         <span>
                           Email:{" "}

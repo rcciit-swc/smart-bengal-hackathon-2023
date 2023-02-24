@@ -1,7 +1,17 @@
 import React, { useContext, useState, useEffect } from "react";
 import { db, storage } from "../firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { collection, getDocs, addDoc, setDoc, getDoc, doc, query, updateDoc, arrayUnion, orderBy } from "firebase/firestore";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  setDoc,
+  getDoc,
+  doc,
+  query,
+  updateDoc,
+  arrayUnion,
+} from "firebase/firestore";
 const DataContext = React.createContext();
 
 export function useDataContext() {
@@ -36,7 +46,6 @@ export function UserProvider({ children }) {
     }
   }
 
-
   async function getProblemStatements() {
     var res = [];
     try {
@@ -50,7 +59,6 @@ export function UserProvider({ children }) {
     }
   }
 
-
   async function addOrganisation(org) {
     try {
       const userRef = collection(db, "organisations");
@@ -59,7 +67,6 @@ export function UserProvider({ children }) {
       console.log(err);
     }
   }
-
 
   async function addProblemStatement(id, data) {
     try {
@@ -70,43 +77,40 @@ export function UserProvider({ children }) {
     } catch (error) {
       console.log(error);
     }
-
   }
 
   async function getSponsorCategory() {
-    const sponsorCollectionRef = collection(db, 'sponsors');
+    const sponsorCollectionRef = collection(db, "sponsors");
     const q = query(sponsorCollectionRef);
     const querySnapshot = await getDocs(q);
     var sponsorCategoryList = [];
-    querySnapshot.forEach(doc => sponsorCategoryList.push(doc.data().category));
-    // console.log(sponsorCategoryList);
+    querySnapshot.forEach((doc) =>
+      sponsorCategoryList.push(doc.data().category)
+    );
     return sponsorCategoryList;
   }
-
 
   async function getSponsors() {
     try {
       // refernce to sponsor collection
-      const sponsorCollectionRef = collection(db, 'sponsors');
+      const sponsorCollectionRef = collection(db, "sponsors");
       // fetch referrences to all documents under sponsors
       const q = query(sponsorCollectionRef);
       const querySnapshot = await getDocs(q);
       var sponsorList = [];
-      querySnapshot.forEach(doc => {
-        // console.log(doc.data());
+      querySnapshot.forEach((doc) => {
         sponsorList.push(doc.data());
-      })
-      console.log(sponsorList);
+      });
       return sponsorList;
     } catch (err) {
-      console.log('failed to fetch sponsor data');
+      console.log("failed to fetch sponsor data");
     }
   }
 
   // Set new Sponsors by Admin
   async function setImageAndCategory(imageFile, sponsorData, orderNo) {
     const { category, name } = sponsorData;
-    const modifiedCategory = category.toLowerCase().replace(/\s+/g, '-'); // example: Tech Partner => tech-partner
+    const modifiedCategory = category.toLowerCase().replace(/\s+/g, "-"); // example: Tech Partner => tech-partner
     try {
       const sponsorImagesRef = ref(storage, `sponsor-images/${name}`);
       // uploading image into Firebase Storage
@@ -117,20 +121,17 @@ export function UserProvider({ children }) {
       // check if document exists
       const docRef = doc(db, "sponsors", modifiedCategory);
       const response = await getDoc(docRef);
-      const newEntry = { name, url }
+      const newEntry = { name, url };
 
       // sponsor category already exists
       if (response.exists()) {
         const sponsorDetails = response.data();
-        console.log('typeof', typeof orderNo);
+        console.log("typeof", typeof orderNo);
         if (typeof orderNo === "string") {
           console.log(orderNo);
-          if (orderNo === 'Last')
-            sponsorDetails.images.push(newEntry);
-          else if (orderNo === 'First')
-            sponsorDetails.images.unshift(newEntry);
-        }
-        else if (typeof orderNo === "number") {
+          if (orderNo === "Last") sponsorDetails.images.push(newEntry);
+          else if (orderNo === "First") sponsorDetails.images.unshift(newEntry);
+        } else if (typeof orderNo === "number") {
           console.log(orderNo);
           sponsorDetails.images.splice(orderNo - 1, 0, newEntry);
         }
@@ -142,15 +143,13 @@ export function UserProvider({ children }) {
         // setDoc for $new_category as document under 'sponsors' collection
         await setDoc(docRef, {
           category: category,
-          images: [newEntry]
-        })
+          images: [newEntry],
+        });
       }
-    }
-    catch (err) {
+    } catch (err) {
       console.log(err);
     }
   }
-
 
   useEffect(() => {
     getAllUsers();
@@ -164,7 +163,7 @@ export function UserProvider({ children }) {
     addProblemStatement,
     getSponsors,
     setImageAndCategory,
-    getSponsorCategory
+    getSponsorCategory,
   };
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>;

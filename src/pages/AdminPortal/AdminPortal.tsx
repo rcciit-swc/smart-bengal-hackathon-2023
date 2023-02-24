@@ -1,10 +1,10 @@
-import { Button, Card, Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { useDataContext } from "../../contexts/DataProvider";
 import ProblemStatementModal from "../../components/AdminPortal/ProblemStatementModal";
 import AddOrganisationModal from "../../components/AdminPortal/AddOrganisationModal";
 import UpdateProblemStatementModal from "../../components/AdminPortal/UpdateProblemStatementModal";
 import SponsorModal from "../../components/AdminPortal/SponsorModal";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const AdminPortal = () => {
   const { org, getSponsors } = useDataContext();
@@ -33,13 +33,11 @@ const AdminPortal = () => {
                 <Card.Title className="fw-bold fs-2">{item.name}</Card.Title>
                 <Card.Text>
                   <b>Problem Statements : </b>
-                  {
-                    item.problemStatements.length
-                  }
+                  {item.problemStatements.length}
                 </Card.Text>
                 <div className="d-flex flex-column gap-3 text-center">
-                <ProblemStatementModal  org={item}  />
-                <UpdateProblemStatementModal org={item} />
+                  <ProblemStatementModal org={item} />
+                  <UpdateProblemStatementModal org={item} />
                 </div>
                 {/* <Button variant="primary">Add Problem Statement</Button> */}
               </Card.Body>
