@@ -118,12 +118,10 @@ export function AuthProvider(props: any) {
   }
 
   function logOut() {
-    console.log("ok");
     window.localStorage.clear();
     signOut(auth)
       .then(() => {
         setCurrentUser(null);
-        console.log("ok");
       })
       .catch((error) => {
         console.log(error);
