@@ -10,7 +10,7 @@ const ProblemStatements = () => {
   const { org } = useDataContext();
 
   const [show, setShow] = useState(false);
-  const modalData = useRef("");
+  const [modalData, setModalData] = useState("");
 
   return (
     <main className="d-flex flex-column align-items-center my-5">
@@ -61,20 +61,37 @@ const ProblemStatements = () => {
             </tr>
           </thead>
           <tbody>
-            {/* {org &&
+            {org &&
               org?.map((item: any, index: any) =>
                 item?.problemStatements?.map((data: any, indexing: any) => (
-                  <tr>
-                    <td>{indexing + 1}</td>
-                    <td className="w-25">{item.name}</td>
-                    <td className="w-25">{data.title}</td>
-                    <td>{data.category}</td>
-                    <td>{data.psNumber}</td>
-                    <td className="w-25">{data.domainBucket}</td>
-                  </tr>
+                  <>
+                    <tr>
+                      {/* <td>{indexing + 1}</td> */}
+                      <td>{data.psNumber}</td>
+                      <td className="w-25">{item.name}</td>
+                      <td className="w-25"
+                        style={{
+                          cursor: "pointer",
+                          color: "blue",
+                        }}
+                        onClick={() => {
+                          setShow(true);
+                          setModalData(data.description);
+                        }}
+                      >{data.title}</td>
+                      <td>{data.category}</td>
+                      <td className="w-25">{data.domain}</td>
+                      <td className="w-25">{data.applicableFor}</td>
+                    </tr>
+                  </>
                 ))
-              )} */}
-            {
+                )}
+                <DescriptionModal
+                  Desc={modalData}
+                  Show={show}
+                  Hide={() => setShow(false)}
+                />
+            {/* {
             ps.organization.map((item, index) => {
               return (
                 <>
@@ -105,7 +122,7 @@ const ProblemStatements = () => {
                   />
                 </>
               );
-            })}
+            })} */}
           </tbody>
         </Table>
         {/* Problem statements will be available soon */}

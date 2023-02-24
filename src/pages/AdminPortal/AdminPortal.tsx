@@ -46,7 +46,7 @@ const AdminPortal = () => {
         })}
 
         {/* Add Sponsor */}
-        <Card style={{ width: "18rem", marginLeft: "10px" }}>
+        <Card style={{ width: "auto", marginLeft: "10px" }}>
           <Card.Body className="text-center">
             <Card.Title className="fw-bold fs-3 text-center">
               Add Sponsor
@@ -56,7 +56,7 @@ const AdminPortal = () => {
         </Card>
 
         {/* Add Organization */}
-        <Card style={{ width: "18rem", marginLeft: "10px" }}>
+        <Card style={{ width: "auto", marginLeft: "10px" }}>
           <Card.Body className="text-center">
             <Card.Title className="fw-bold fs-3 text-center">
               Add Organisation

@@ -13,10 +13,12 @@ function ProblemStatementModal({ org }: { org: any }) {
   const [show, setShow] = useState(false);
 
   const [problemStatement, setProblemStatement] = useState({
+    psNumber:"",
     title: "",
     category: "",
     domain: "",
     description: "",
+    applicableFor: ""
   });
 
   const handleSubmit = (e: any) => {
@@ -24,10 +26,12 @@ function ProblemStatementModal({ org }: { org: any }) {
     addProblemStatement(org.id,problemStatement);
     setShow(false);
     setProblemStatement({
+      psNumber:"",
       title: "",
       category: "",
       domain: "",
       description: "",
+      applicableFor: ""
     });
   };
 
@@ -42,12 +46,31 @@ function ProblemStatementModal({ org }: { org: any }) {
         </Button>
       </div>
 
-      <Modal show={show} onHide={handleClose} style={{ marginTop: "10vh" }}>
+      <Modal show={show} onHide={handleClose} style={{ marginTop: "2vh" }}>
         <Modal.Header closeButton>
           <Modal.Title>Add problem Statement</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body
+        style={{
+          overflow:"scroll"
+        }}
+        >
           <Form>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Problem Statement No.</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter Problem Statement No."
+                autoFocus
+                value={problemStatement.psNumber}
+                onChange={(e) =>
+                  setProblemStatement({
+                    ...problemStatement,
+                    psNumber: e.target.value,
+                  })
+                }
+              />
+            </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Problem Title</Form.Label>
               <Form.Control
@@ -115,6 +138,24 @@ function ProblemStatementModal({ org }: { org: any }) {
                   })
                 }
               />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
+              <Form.Label>Category</Form.Label>
+              <Form.Select
+                aria-label="Default select example"
+                value={problemStatement.applicableFor}
+                onChange={(e) =>
+                  setProblemStatement({
+                    ...problemStatement,
+                    applicableFor: e.target.value,
+                  })
+                }
+              >
+                <option value="">Select Category</option>
+                <option value="SBH Senior">SBH Senior</option>
+                <option value="SBH Junior">SBH Junior</option>
+                <option value="SBH Senior/Junior">SBH Senior/Junior</option>
+              </Form.Select>
             </Form.Group>
             <Button variant="primary" type="submit" onClick={handleSubmit}>
               Save Changes
