@@ -1,21 +1,26 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import {
   getAuth,
-  signInWithPopup,
-  GoogleAuthProvider,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
 } from "firebase/auth";
 
-import { signOut, onAuthStateChanged, User } from "firebase/auth";
+import { signOut } from "firebase/auth";
 import { auth, db } from "../firebase";
 import { doc, setDoc } from "@firebase/firestore";
+
+type UserType = {
+  name: string;
+  email: string;
+  uid: string;
+} | null;
 
 type AuthContextType = {
   currentUser: {
     name: string;
     email: string;
     uid: string;
-  };
+  } | null;
   signUp: ({
     email,
     password,
@@ -25,7 +30,7 @@ type AuthContextType = {
     password: string;
     name: string;
   }) => void;
-  // signIn: () => void;
+  login: ({ email, password }: { email: string; password: string }) => void;
   logOut: () => void;
   status: string;
 };
@@ -37,7 +42,7 @@ const AuthContext = createContext<AuthContextType>({
     uid: "",
   },
   signUp: () => {},
-  // signIn: () => {},
+  login: () => {},
   logOut: () => {},
   status: "",
 });
@@ -47,15 +52,10 @@ export function useAuth() {
 }
 
 export function AuthProvider(props: any) {
-  const [currentUser, setCurrentUser] = useState({
-    name: "",
-    email: "",
-    uid: "",
-  });
-  const [loading, setLoading] = useState(true);
+  const [currentUser, setCurrentUser] = useState<UserType>(null);
   const [status, setStatus] = useState("");
 
-  const provider = new GoogleAuthProvider();
+  // const provider = new GoogleAuthProvider();
 
   // async function signIn() {
   //   const auth = getAuth();
@@ -81,13 +81,10 @@ export function AuthProvider(props: any) {
     password: string;
     name: string;
   }) {
-    console.log("hi")
-    console.log(email, password, name)
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password).then(
       (userCredential) => {
         const userRef = doc(db, "users", userCredential.user.uid);
-
         setDoc(userRef, {
           name: name,
           email: email,
@@ -103,27 +100,42 @@ export function AuthProvider(props: any) {
     );
   }
 
-  function logOut() {
-    window.localStorage.clear();
-    return signOut(auth);
+  function login({ email, password }: { email: string; password: string }) {
+    const auth = getAuth();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        setCurrentUser({
+          name: "",
+          email: email,
+          uid: userCredential.user.uid,
+        });
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
   }
 
-  // useEffect(() => {
-  //   const unsubscribe = onAuthStateChanged(auth, (user) => {
-  //     if (user !== null) {
-  //       setCurrentUser(user);
-  //     }
-  //     setLoading(false);
-  //   });
-  //   return unsubscribe;
-  // }, []);
+  function logOut() {
+    console.log("ok");
+    window.localStorage.clear();
+    signOut(auth)
+      .then(() => {
+        setCurrentUser(null);
+        console.log("ok");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
 
   return (
     <AuthContext.Provider
       value={{
         currentUser: currentUser,
         signUp: signUp,
-        // signIn: signIn,
+        login: login,
         logOut: logOut,
         status: status,
       }}

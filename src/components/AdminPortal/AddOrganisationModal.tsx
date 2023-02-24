@@ -7,7 +7,7 @@ import { useDataContext } from "../../contexts/DataProvider";
 function AddOrganisationModal() {
   const [show, setShow] = useState(false);
 
-    const { addOrganisation } = useDataContext();
+  const { addOrganisation } = useDataContext();
 
   const [organisation, setOrganisation] = useState({
     name: "",
@@ -19,11 +19,10 @@ function AddOrganisationModal() {
     addOrganisation(organisation);
     setShow(false);
     setOrganisation({
-        name: "",
-        problemStatements: [],
+      name: "",
+      problemStatements: [],
     });
-    };
-
+  };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);

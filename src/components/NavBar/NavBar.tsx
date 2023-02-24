@@ -173,7 +173,9 @@ const NavBar = () => {
               </Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={contactUsRoute}>Contact Us</Link>
+              <Link onClick={navHandler} to={contactUsRoute}>
+                Contact Us
+              </Link>
             </div>
             {/* <button
               onClick={(e) => {

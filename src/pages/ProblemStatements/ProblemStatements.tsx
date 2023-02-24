@@ -74,8 +74,7 @@ const ProblemStatements = () => {
                   </tr>
                 ))
               )} */}
-            {
-            ps.organization.map((item, index) => {
+            {ps.organization.map((item, index) => {
               return (
                 <>
                   <tr>

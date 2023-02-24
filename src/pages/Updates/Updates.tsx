@@ -29,7 +29,8 @@ const Updates = () => {
         </h2>
         <ul className="w-75" style={{ fontSize: "20px" }}>
           <li>
-            <b>Registration & Idea Submission:</b> Begins on 28 Feb 2023 and ends on 10 Mar 2023.
+            <b>Registration & Idea Submission:</b> Begins on 28 Feb 2023 and
+            ends on 10 Mar 2023.
           </li>
           <li>
             <b>Shortlisted Teams Announcement:</b> 25th March.2023.
@@ -47,7 +48,7 @@ const Updates = () => {
         >
           Registration Fees
         </h2>
-        <ul className="w-75" style={{ fontSize: "20px"}}>
+        <ul className="w-75" style={{ fontSize: "20px" }}>
           <li>
             <b>SBH SENIOR :</b> - Rs. 2000/- per team
           </li>
@@ -55,7 +56,9 @@ const Updates = () => {
             <b>SBH JUNIOR :</b> - Rs. 1000/- per team
           </li>
         </ul>
-        <span className="mb-4 text-center">Registration fees need to be paid after the shortlisting.</span>
+        <span className="mb-4 text-center">
+          Registration fees need to be paid after the shortlisting.
+        </span>
       </div>
     </main>
   );

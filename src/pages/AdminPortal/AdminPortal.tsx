@@ -1,14 +1,14 @@
-import { Card, Container } from "react-bootstrap";
+import { Button, Card, Container } from "react-bootstrap";
 import { useDataContext } from "../../contexts/DataProvider";
 import ProblemStatementModal from "../../components/AdminPortal/ProblemStatementModal";
 import AddOrganisationModal from "../../components/AdminPortal/AddOrganisationModal";
 import UpdateProblemStatementModal from "../../components/AdminPortal/UpdateProblemStatementModal";
 import SponsorModal from "../../components/AdminPortal/SponsorModal";
-import { useState } from "react";
+import { useAuth } from "../../contexts/Auth";
 
 const AdminPortal = () => {
   const { org, getSponsors } = useDataContext();
-  const [sponsorList, setSponsorsList] = useState<any>();
+  const { logOut } = useAuth();
 
   // useEffect(() => {
   //   async function fetchSponsors() {
@@ -39,7 +39,6 @@ const AdminPortal = () => {
                   <ProblemStatementModal org={item} />
                   <UpdateProblemStatementModal org={item} />
                 </div>
-                {/* <Button variant="primary">Add Problem Statement</Button> */}
               </Card.Body>
             </Card>
           );
@@ -65,6 +64,9 @@ const AdminPortal = () => {
           </Card.Body>
         </Card>
       </Container>
+      <Button variant="danger" onClick={logOut}>
+        Logout
+      </Button>
     </main>
   );
 };

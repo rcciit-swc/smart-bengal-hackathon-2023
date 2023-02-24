@@ -8,7 +8,7 @@ import { useDataContext } from "../../contexts/DataProvider";
 import { db } from "../../firebase";
 
 function ProblemStatementModal({ org }: { org: any }) {
-  const {addProblemStatement} = useDataContext();
+  const { addProblemStatement } = useDataContext();
   const { ps } = useData();
   const [show, setShow] = useState(false);
 
@@ -21,7 +21,7 @@ function ProblemStatementModal({ org }: { org: any }) {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    addProblemStatement(org.id,problemStatement);
+    addProblemStatement(org.id, problemStatement);
     setShow(false);
     setProblemStatement({
       title: "",

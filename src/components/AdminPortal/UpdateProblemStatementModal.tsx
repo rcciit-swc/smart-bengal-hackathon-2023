@@ -1,6 +1,5 @@
-import { truncate } from "fs/promises";
 import { useState } from "react";
-import { Button, Col, Modal, Row, Form } from "react-bootstrap";
+import { Button, Col, Modal } from "react-bootstrap";
 import UpdateForm from "./UpdateForm";
 
 const UpdateProblemStatementModal = ({ org }: { org: any }) => {
@@ -19,7 +18,6 @@ const UpdateProblemStatementModal = ({ org }: { org: any }) => {
     domain: "",
     description: "",
   });
-  //console.log(org);
 
   const [psindex, setPsindex] = useState(0);
 
