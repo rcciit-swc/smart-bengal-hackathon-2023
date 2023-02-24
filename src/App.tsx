@@ -168,6 +168,12 @@ function App() {
                     }
                   />
                 </Route>
+                {/* <Route path={adminPortalRoute} element={
+                  <Suspense fallback={<></>}>
+                    <AdminPortal />
+                  </Suspense>
+                }>
+                </Route> */}
                 <Route
                   path={contactUsRoute}
                   element={

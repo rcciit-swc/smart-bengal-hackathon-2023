@@ -15,7 +15,7 @@ function DescriptionModal({
   //   const [show, setShow] = useState(false);
 
   return (
-    <Modal size="xl" style={{ marginTop: "5vh" }} show={Show}>
+    <Modal size="xl" style={{}} show={Show}>
       <Modal.Header>
         <Modal.Title className="d-flex justify-content-between px-2 w-100 align-items-center">
           <img src={logo} alt="logo" width={80} />
@@ -29,7 +29,9 @@ function DescriptionModal({
         <div className="d-flex flex-column gap-3">
           <div className="d-flex flex-column">
             <span className="fw-bold">Problem Statement Description: </span>{" "}
-            <span>{Ps.description}</span>
+            <span
+            dangerouslySetInnerHTML={{ __html: Ps.description }}
+            ></span>
           </div>
           <div className="d-flex flex-column">
             <span className="fw-bold">Problem Statement Number: </span>{" "}

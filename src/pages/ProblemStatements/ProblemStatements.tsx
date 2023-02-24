@@ -13,6 +13,20 @@ const ProblemStatements = () => {
   const [orgName, setOrgName] = useState("");
   const [modalData, setModalData] = useState({});
 
+  let sno = 1;
+  let softwareCount = 0;
+  let hybridCount = 0;
+
+  for (let i = 0; i < org.length; i++) {
+    for (let j = 0; j < org[i].problemStatements.length; j++) {
+      if (org[i].problemStatements[j].category === "Software") {
+        softwareCount++;
+      } else if (org[i].problemStatements[j].category === "Hybrid") {
+        hybridCount++;
+      }
+    }
+  }
+
   return (
     <main className="d-flex flex-column align-items-center my-5">
       <div
@@ -39,11 +53,11 @@ const ProblemStatements = () => {
           <span className="text-capitalize">as per available data</span>
         </div>
         <div className="d-flex flex-column soft-background">
-          <span className="fs-2 fw-bold">12</span>
+          <span className="fs-2 fw-bold">{softwareCount}</span>
           <span className="text-capitalize">software</span>
         </div>
         <div className="d-flex flex-column soft-background">
-          <span className="fs-2 fw-bold">8</span>
+          <span className="fs-2 fw-bold">{hybridCount}</span>
           <span className="text-capitalize">hybrid</span>
         </div>
       </div>
@@ -51,11 +65,11 @@ const ProblemStatements = () => {
       <div className="my-5">
         <Table striped bordered hover>
           <thead>
-            <tr>
-              {/* <th>S.No.</th> */}
-              <th>PS Number</th>
+            <tr className="text-center">
+              <th>S.No.</th>
               <th>Organization</th>
               <th>Problem Statement Title</th>
+              <th>PS Number</th>
               <th>Category</th>
               <th>Domain Bucket</th>
               <th>Applicable For</th>
@@ -65,13 +79,16 @@ const ProblemStatements = () => {
             {org &&
               org?.map((item: any, index: any) =>
                 item?.problemStatements?.map((data: any, indexing: any) => {
+
+                  
+
                   return (
                     <>
-                      <tr key={indexing}>
-                        <td>{data.psNumber}</td>
+                      <tr key={indexing} >
+                        <td className="text-center">{sno++}</td>
                         <td className="w-25">{item.name}</td>
                         <td
-                          className="w-25"
+                          className="w-25 text-center"
                           style={{
                             cursor: "pointer",
                             color: "blue",
@@ -84,9 +101,10 @@ const ProblemStatements = () => {
                         >
                           {data.title}
                         </td>
-                        <td>{data.category}</td>
-                        <td className="w-25">{data.domain}</td>
-                        <td className="w-25">{data.applicableFor}</td>
+                        <td className="text-center">{data.psNumber}</td>
+                        <td className="text-center">{data.category}</td>
+                        <td className="w-25 text-center">{data.domain}</td>
+                        <td className="text-center">{data.applicableFor}</td>
                       </tr>
                     </>
                   );
