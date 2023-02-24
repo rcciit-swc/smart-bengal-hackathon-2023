@@ -74,16 +74,16 @@ const ProcessFlow = () => {
           </div>
         </div>
         <div
-          className="w-75  process-container p-5 text-center"
+          className="w-75  process-container text-center"
           style={{ backgroundColor: "var(--invert-color)" }}
         >
-          <span
-            className="text-uppercase fw-bold fs-2"
+          <div
+            className="text-uppercase fw-bold fs-2 mt-4 mb-3"
             style={{ color: "var(--heading-color)" }}
           >
             PROCESS FLOW
-          </span>
-          <div className="d-grid process_flow_grid p-4">
+          </div>
+          <div className="d-grid process_flow_grid pb-5">
             {pf.map((card) => (
               <div
                 style={{

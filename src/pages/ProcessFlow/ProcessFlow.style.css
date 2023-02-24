@@ -99,6 +99,12 @@ span[class="text-uppercase"] {
   }
 }
 
+@media screen and (max-width: 350px) {
+  .process_box_main {
+    width: 230px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .process_flow_grid {
     grid-template-columns: repeat(1, 1fr);
