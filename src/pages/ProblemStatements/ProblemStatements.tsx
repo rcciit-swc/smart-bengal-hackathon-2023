@@ -28,7 +28,7 @@ const ProblemStatements = () => {
   }
 
   return (
-    <main className="d-flex flex-column align-items-center my-5">
+    <main className="d-flex flex-column align-items-center my-5 w-100">
       <div
         style={{ color: "var(--heading-color)" }}
         className="d-flex flex-row fw-bold fs-1"
@@ -61,9 +61,14 @@ const ProblemStatements = () => {
           <span className="text-capitalize">hybrid</span>
         </div>
       </div>
-
-      <div className="my-5">
-        <Table striped bordered hover>
+      <div className="w-100">
+        <Table
+          striped
+          bordered
+          responsive
+          className={"my-5"}
+          style={{ width: "75%", margin: "0 auto" }}
+        >
           <thead>
             <tr className="text-center">
               <th>S.No.</th>
@@ -79,12 +84,9 @@ const ProblemStatements = () => {
             {org &&
               org?.map((item: any, index: any) =>
                 item?.problemStatements?.map((data: any, indexing: any) => {
-
-                  
-
                   return (
                     <>
-                      <tr key={indexing} >
+                      <tr key={indexing}>
                         <td className="text-center">{sno++}</td>
                         <td className="w-25">{item.name}</td>
                         <td
@@ -118,7 +120,6 @@ const ProblemStatements = () => {
             />
           </tbody>
         </Table>
-        {/* Problem statements will be available soon */}
       </div>
     </main>
   );
