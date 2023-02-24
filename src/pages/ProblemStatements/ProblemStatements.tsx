@@ -10,7 +10,8 @@ const ProblemStatements = () => {
   const { org } = useDataContext();
 
   const [show, setShow] = useState(false);
-  const [modalData, setModalData] = useState("");
+  const [orgName, setOrgName] = useState("");
+  const [modalData, setModalData] = useState({});
 
   return (
     <main className="d-flex flex-column align-items-center my-5">
@@ -63,66 +64,40 @@ const ProblemStatements = () => {
           <tbody>
             {org &&
               org?.map((item: any, index: any) =>
-                item?.problemStatements?.map((data: any, indexing: any) => (
-                  <>
-                    <tr>
-                      {/* <td>{indexing + 1}</td> */}
-                      <td>{data.psNumber}</td>
-                      <td className="w-25">{item.name}</td>
-                      <td className="w-25"
-                        style={{
-                          cursor: "pointer",
-                          color: "blue",
-                        }}
-                        onClick={() => {
-                          setShow(true);
-                          setModalData(data.description);
-                        }}
-                      >{data.title}</td>
-                      <td>{data.category}</td>
-                      <td className="w-25">{data.domain}</td>
-                      <td className="w-25">{data.applicableFor}</td>
-                    </tr>
-                  </>
-                ))
-                )}
-                <DescriptionModal
-                  Desc={modalData}
-                  Show={show}
-                  Hide={() => setShow(false)}
-                />
-            {/* {
-            ps.organization.map((item, index) => {
-              return (
-                <>
-                  <tr>
-                    <td>{ps.psNumber[index]}</td>
-                    <td className="w-25">{item}</td>
-                    <td
-                      className="w-25"
-                      style={{
-                        cursor: "pointer",
-                        color: "blue",
-                      }}
-                      onClick={() => {
-                        setShow(true);
-                        modalData.current = ps.problemStatementDesc[index];
-                      }}
-                    >
-                      {ps.problemStatementTitle[index]}
-                    </td>
-                    <td>{ps.category[index]}</td>
-                    <td className="w-25">{ps.domainBucket[index]}</td>
-                    <td>{ps.applicableFor[index]}</td>
-                  </tr>
-                  <DescriptionModal
-                    Desc={modalData.current}
-                    Show={show}
-                    Hide={() => setShow(false)}
-                  />
-                </>
-              );
-            })} */}
+                item?.problemStatements?.map((data: any, indexing: any) => {
+                  return (
+                    <>
+                      <tr key={indexing}>
+                        <td>{data.psNumber}</td>
+                        <td className="w-25">{item.name}</td>
+                        <td
+                          className="w-25"
+                          style={{
+                            cursor: "pointer",
+                            color: "blue",
+                          }}
+                          onClick={() => {
+                            setShow(true);
+                            setModalData(data);
+                            setOrgName(item.name);
+                          }}
+                        >
+                          {data.title}
+                        </td>
+                        <td>{data.category}</td>
+                        <td className="w-25">{data.domain}</td>
+                        <td className="w-25">{data.applicableFor}</td>
+                      </tr>
+                    </>
+                  );
+                })
+              )}
+            <DescriptionModal
+              OrgName={orgName}
+              Ps={modalData}
+              Show={show}
+              Hide={() => setShow(false)}
+            />
           </tbody>
         </Table>
         {/* Problem statements will be available soon */}
