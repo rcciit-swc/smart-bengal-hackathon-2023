@@ -3,6 +3,7 @@ import { useData } from "../../contexts/Data";
 import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
+import Marquee from "react-fast-marquee";
 import homeBanner from '../../assets/caraousel-images/sbh-banner.png';
 import CarouselContainer from "../../components/carousel/Carousel";
 
@@ -21,7 +22,9 @@ const Home = () => {
 
   return (
     <main
-      style={{ width: "100vw" }}
+      style={{ width: "100vw",
+    // backgroundColor: `var(--primary-color-light)`,
+    }}
       className="d-flex flex-column align-items-center"
     >
       <CarouselContainer />
@@ -31,6 +34,23 @@ const Home = () => {
         src={homeBanner}
         alt="Second slide"
       /> */}
+      <div
+      className="w-75 my-2 fs-3"
+      style={{
+        // backgroundColor: `var(--primary-color-light)`,
+      }}
+      >
+        <Marquee
+        style={{
+          // backgroundColor: `var(--primary-color-light)`,
+        }}
+        pauseOnHover={true}
+        speed={100}
+        gradient={false}
+        >
+          <a href="https://anonymiser.wb.gov.in/" target="_blank" rel="noreferrer" >The Anonymiser Hackathon</a>
+        </Marquee>
+      </div>
       <div
         style={{ backgroundColor: `var(--primary-color-light)` }}
         className="w-100 h-100 d-flex flex-column align-items-center"

@@ -54,7 +54,9 @@ export function UserProvider({ children }) {
   async function addOrganisation(org) {
     try {
       const userRef = collection(db, "organisations");
-      addDoc(userRef, org);
+      addDoc(userRef, org).then((docRef) => {
+        setOrg((prev) => [...prev, { ...org, id: docRef.id }]);
+      });
     } catch (err) {
       console.log(err);
     }

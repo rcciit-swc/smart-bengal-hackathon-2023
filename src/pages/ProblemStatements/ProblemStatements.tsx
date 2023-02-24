@@ -38,7 +38,7 @@ const ProblemStatements = () => {
           <span className="text-capitalize">as per available data</span>
         </div>
         <div className="d-flex flex-column soft-background">
-          <span className="fs-2 fw-bold">11</span>
+          <span className="fs-2 fw-bold">12</span>
           <span className="text-capitalize">software</span>
         </div>
         <div className="d-flex flex-column soft-background">
