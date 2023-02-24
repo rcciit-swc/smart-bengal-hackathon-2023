@@ -1,5 +1,6 @@
 .footer-content {
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer-content a:hover {

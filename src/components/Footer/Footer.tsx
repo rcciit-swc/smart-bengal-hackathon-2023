@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="d-flex flex-column align-items-start px-3">
-        <p className="text-uppercase fs-5 fw-bold">contact us</p>
+        <p className="text-uppercase fs-5 fw-bold px-3">contact us</p>
         <div className="d-flex footer-content">
           {contact.name.map((item, index) => {
             return (

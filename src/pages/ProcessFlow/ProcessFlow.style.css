@@ -77,3 +77,30 @@
 span[class="text-uppercase"] {
   font-weight: 600 !important;
 }
+
+.process_box_main {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.process_box_main div {
+  height: 370px;
+}
+
+.process_flow_grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .process_flow_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .process_flow_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

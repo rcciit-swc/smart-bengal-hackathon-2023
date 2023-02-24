@@ -6,13 +6,12 @@ import DescriptionCard from "../Home/component.body.description";
 
 const ProcessFlow = () => {
   const Themes = lazy(() => import("../Home/component.body.themes"));
-  const Committee = lazy(() => import("../../components/Committee/Committee"));
 
   const { title, descriptionCards, pf } = useData();
   return (
     <>
       <div className="banner_container">
-        <img src={banner} className="banner_img" />
+        <img src={banner} className="banner_img" alt="banner" />
         <div className="carosal_caption">
           <h3 className=" text-uppercase banner_tag">
             Smart Bengal Hackathon 2023
@@ -63,7 +62,7 @@ const ProcessFlow = () => {
           >
             WHY JOIN SBH 2023?
           </span>
-          <div className="d-flex flex-row flex-wrap mt-5">
+          <div className="d-flex flex-row flex-wrap justify-content-center mt-5">
             {descriptionCards.map((card, index) => (
               <DescriptionCard
                 key={title + index}
@@ -84,17 +83,35 @@ const ProcessFlow = () => {
           >
             PROCESS FLOW
           </span>
-          <div className="row p-4">
+          <div className="d-grid process_flow_grid p-4">
             {pf.map((card) => (
-              <div className="col-md-4 p-4">
-                <div className="process-box-main">
+              <div
+                style={{
+                  boxShadow: "inset 0px 1px 5px rgba(0, 0, 0, 0.15)",
+                }}
+                className="col-md-4 p-4 process_box_main"
+              >
+                <div className="d-flex flex-column justify-content-between">
+                  <span className="text-uppercase">{card.title}</span>
+
                   <p
                     className="text-process"
                     dangerouslySetInnerHTML={{ __html: card.desc }}
                   ></p>
-                  <div className="d-grid">
-                    <span className="text-uppercase">{card.title}</span>
-                    <img src={`${card.img}`} className="m-auto" />
+                  <div
+                    style={{
+                      height: "fit-content",
+                    }}
+                    className="w-100 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src={`${card.img}`}
+                      style={{
+                        width: "140px",
+                        height: "140px",
+                      }}
+                      alt="card"
+                    />
                   </div>
                 </div>
               </div>
@@ -103,7 +120,6 @@ const ProcessFlow = () => {
         </div>
         <Suspense fallback={<></>}>
           <Themes />
-          {/* <Committee /> */}
         </Suspense>
       </div>
     </>
