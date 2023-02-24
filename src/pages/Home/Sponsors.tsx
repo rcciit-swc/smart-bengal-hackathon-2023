@@ -57,8 +57,7 @@ const Sponsors: React.FC = () => {
                       <img
                         className="sponsor-img"
                         src={image.url}
-                        width="130px"
-                        height="auto"
+                        style={{ width: "20rem" }}
                         alt={image.name}
                       />
                     );
