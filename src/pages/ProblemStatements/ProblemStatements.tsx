@@ -10,7 +10,22 @@ const ProblemStatements = () => {
   const { org } = useDataContext();
 
   const [show, setShow] = useState(false);
-  const modalData = useRef("");
+  const [orgName, setOrgName] = useState("");
+  const [modalData, setModalData] = useState({});
+
+  let sno = 1;
+  let softwareCount = 0;
+  let hybridCount = 0;
+
+  for (let i = 0; i < org.length; i++) {
+    for (let j = 0; j < org[i].problemStatements.length; j++) {
+      if (org[i].problemStatements[j].category === "Software") {
+        softwareCount++;
+      } else if (org[i].problemStatements[j].category === "Hybrid") {
+        hybridCount++;
+      }
+    }
+  }
 
   return (
     <main className="d-flex flex-column align-items-center my-5">
@@ -38,11 +53,11 @@ const ProblemStatements = () => {
           <span className="text-capitalize">as per available data</span>
         </div>
         <div className="d-flex flex-column soft-background">
-          <span className="fs-2 fw-bold">12</span>
+          <span className="fs-2 fw-bold">{softwareCount}</span>
           <span className="text-capitalize">software</span>
         </div>
         <div className="d-flex flex-column soft-background">
-          <span className="fs-2 fw-bold">8</span>
+          <span className="fs-2 fw-bold">{hybridCount}</span>
           <span className="text-capitalize">hybrid</span>
         </div>
       </div>
@@ -50,61 +65,57 @@ const ProblemStatements = () => {
       <div className="my-5">
         <Table striped bordered hover>
           <thead>
-            <tr>
-              {/* <th>S.No.</th> */}
-              <th>PS Number</th>
+            <tr className="text-center">
+              <th>S.No.</th>
               <th>Organization</th>
               <th>Problem Statement Title</th>
+              <th>PS Number</th>
               <th>Category</th>
               <th>Domain Bucket</th>
               <th>Applicable For</th>
             </tr>
           </thead>
           <tbody>
-            {/* {org &&
+            {org &&
               org?.map((item: any, index: any) =>
-                item?.problemStatements?.map((data: any, indexing: any) => (
-                  <tr>
-                    <td>{indexing + 1}</td>
-                    <td className="w-25">{item.name}</td>
-                    <td className="w-25">{data.title}</td>
-                    <td>{data.category}</td>
-                    <td>{data.psNumber}</td>
-                    <td className="w-25">{data.domainBucket}</td>
-                  </tr>
-                ))
-              )} */}
-            {ps.organization.map((item, index) => {
-              return (
-                <>
-                  <tr>
-                    <td>{ps.psNumber[index]}</td>
-                    <td className="w-25">{item}</td>
-                    <td
-                      className="w-25"
-                      style={{
-                        cursor: "pointer",
-                        color: "blue",
-                      }}
-                      onClick={() => {
-                        setShow(true);
-                        modalData.current = ps.problemStatementDesc[index];
-                      }}
-                    >
-                      {ps.problemStatementTitle[index]}
-                    </td>
-                    <td>{ps.category[index]}</td>
-                    <td className="w-25">{ps.domainBucket[index]}</td>
-                    <td>{ps.applicableFor[index]}</td>
-                  </tr>
-                  <DescriptionModal
-                    Desc={modalData.current}
-                    Show={show}
-                    Hide={() => setShow(false)}
-                  />
-                </>
-              );
-            })}
+                item?.problemStatements?.map((data: any, indexing: any) => {
+
+                  
+
+                  return (
+                    <>
+                      <tr key={indexing} >
+                        <td className="text-center">{sno++}</td>
+                        <td className="w-25">{item.name}</td>
+                        <td
+                          className="w-25 text-center"
+                          style={{
+                            cursor: "pointer",
+                            color: "blue",
+                          }}
+                          onClick={() => {
+                            setShow(true);
+                            setModalData(data);
+                            setOrgName(item.name);
+                          }}
+                        >
+                          {data.title}
+                        </td>
+                        <td className="text-center">{data.psNumber}</td>
+                        <td className="text-center">{data.category}</td>
+                        <td className="w-25 text-center">{data.domain}</td>
+                        <td className="text-center">{data.applicableFor}</td>
+                      </tr>
+                    </>
+                  );
+                })
+              )}
+            <DescriptionModal
+              OrgName={orgName}
+              Ps={modalData}
+              Show={show}
+              Hide={() => setShow(false)}
+            />
           </tbody>
         </Table>
         {/* Problem statements will be available soon */}

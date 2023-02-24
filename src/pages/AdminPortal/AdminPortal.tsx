@@ -27,9 +27,17 @@ const AdminPortal = () => {
       <Container className="d-flex flex-row justify-content-center align-items-center flex-wrap mb-3">
         {org.map((item: any, index: any) => {
           return (
-            <Card key={index} style={{ width: "300px", margin: "10px" }}>
+            <Card
+              key={index}
+              style={{
+                width: "300px",
+                height: "auto",
+                margin: "10px",
+                backgroundColor: "var(--primary-color-light)",
+              }}
+            >
               {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-              <Card.Body>
+              <Card.Body className="d-flex flex-column justify-content-evenly align-items-center">
                 <Card.Title className="fw-bold fs-2">{item.name}</Card.Title>
                 <Card.Text>
                   <b>Problem Statements : </b>
@@ -45,8 +53,14 @@ const AdminPortal = () => {
         })}
 
         {/* Add Sponsor */}
-        <Card style={{ width: "18rem", marginLeft: "10px" }}>
-          <Card.Body className="text-center">
+        <Card
+          style={{
+            width: "18rem",
+            height: "15rem",
+            marginLeft: "10px",
+          }}
+        >
+          <Card.Body className="text-center d-flex flex-column justify-content-evenly">
             <Card.Title className="fw-bold fs-3 text-center">
               Add Sponsor
             </Card.Title>
@@ -55,8 +69,14 @@ const AdminPortal = () => {
         </Card>
 
         {/* Add Organization */}
-        <Card style={{ width: "18rem", marginLeft: "10px" }}>
-          <Card.Body className="text-center">
+        <Card
+          style={{
+            width: "18rem",
+            height: "15rem",
+            marginLeft: "10px",
+          }}
+        >
+          <Card.Body className="text-center d-flex flex-column justify-content-evenly">
             <Card.Title className="fw-bold fs-3 text-center">
               Add Organisation
             </Card.Title>
@@ -64,7 +84,7 @@ const AdminPortal = () => {
           </Card.Body>
         </Card>
       </Container>
-      <Button variant="danger" onClick={logOut}>
+      <Button variant="danger" onClick={logOut} className="mb-5">
         Logout
       </Button>
     </main>
