@@ -3,7 +3,7 @@
   height: 600px;
   overflow: hidden;
 }
-#fix-venue{
+#fix-venue {
   padding: 2rem;
 }
 
@@ -25,20 +25,20 @@
 
 h2 {
   text-align: center;
-line-height: 1.6;
+  line-height: 1.6;
 }
 @media screen and (max-width: 768px) {
-#fix-venue{
-  padding: 1.5rem;
-}
+  #fix-venue {
+    padding: 1.5rem;
+  }
 
-h2 {
-  text-align: inherit;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
+  h2 {
+    text-align: inherit;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 
-.btn-link {
-  align-self: stretch;
-}
+  .btn-link {
+    align-self: stretch;
+  }
 }

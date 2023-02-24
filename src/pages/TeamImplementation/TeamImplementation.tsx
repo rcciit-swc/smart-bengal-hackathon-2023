@@ -1,5 +1,5 @@
 import impl_team_data from "./data";
-import '../Teams/Teams.style.css';
+import "../Teams/Teams.style.css";
 
 const TeamImplementation = () => {
   return (

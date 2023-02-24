@@ -4,7 +4,6 @@ import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
 import Marquee from "react-fast-marquee";
-import homeBanner from '../../assets/caraousel-images/sbh-banner.png';
 import CarouselContainer from "../../components/carousel/Carousel";
 
 const Themes = lazy(() => import("./component.body.themes"));
@@ -22,9 +21,10 @@ const Home = () => {
 
   return (
     <main
-      style={{ width: "100vw",
-    // backgroundColor: `var(--primary-color-light)`,
-    }}
+      style={{
+        width: "100vw",
+        // backgroundColor: `var(--primary-color-light)`,
+      }}
       className="d-flex flex-column align-items-center"
     >
       <CarouselContainer />
@@ -35,20 +35,30 @@ const Home = () => {
         alt="Second slide"
       /> */}
       <div
-      className="w-75 my-2 fs-3"
-      style={{
-        // backgroundColor: `var(--primary-color-light)`,
-      }}
+        className="w-75 my-2 fs-3"
+        style={
+          {
+            // backgroundColor: `var(--primary-color-light)`,
+          }
+        }
       >
         <Marquee
-        style={{
-          // backgroundColor: `var(--primary-color-light)`,
-        }}
-        pauseOnHover={true}
-        speed={100}
-        gradient={false}
+          style={
+            {
+              // backgroundColor: `var(--primary-color-light)`,
+            }
+          }
+          pauseOnHover={true}
+          speed={100}
+          gradient={false}
         >
-          <a href="https://anonymiser.wb.gov.in/" target="_blank" rel="noreferrer" >The Anonymiser Hackathon</a>
+          <a
+            href="https://anonymiser.wb.gov.in/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            The Anonymiser Hackathon
+          </a>
         </Marquee>
       </div>
       <div
@@ -95,7 +105,8 @@ const Home = () => {
         </h2>
         <ul style={{ fontSize: "20px" }}>
           <li>
-            <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023 and ends on 10 Mar 2023.
+            <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023 and ends
+            on 10 Mar 2023.
           </li>
           <li>
             <b>Shortlisted Teams Announcement:</b> 25th March.2023.

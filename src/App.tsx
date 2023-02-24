@@ -13,8 +13,7 @@ import {
   teamRoute,
   prizesRoute,
   eligibilityRoute,
-  EmailRoute,
-  registerRoute,
+  loginRoute,
   adminPortalRoute,
   contactUsRoute,
 } from "./Routes";
@@ -22,8 +21,8 @@ import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
 import { UserProvider } from "./contexts/DataProvider";
 import Team from "./pages/Teams/Team";
-import EmailModule from "./utils/EmailModule";
 import { AuthProvider } from "./contexts/Auth";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -43,108 +42,107 @@ const Updates = lazy(() => import("./pages/Updates/Updates"));
 const ProcessFlow = lazy(() => import("./pages/ProcessFlow/ProcessFlow"));
 const Prizes = lazy(() => import("./pages/Prizes/Prizes"));
 const Eligibility = lazy(() => import("./pages/Eligibility/Eligibility"));
-const Register = lazy(() => import("./pages/Register/Register"));
+const Register = lazy(() => import("./pages/Login/Login"));
 const AdminPortal = lazy(() => import("./pages/AdminPortal/AdminPortal"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
-
 
 function App() {
   return (
     <BrowserRouter>
       <DataProvider>
-      <UserProvider>
-        <AuthProvider>
-          <Routes>
-            <Route path={indexRoute} element={<NavBar />}>
-              <Route
-                index={true}
-                element={
-                  <Suspense fallback={<></>}>
-                    <Home />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={problemStatementsRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <ProblemStatements />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={processFlowRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <ProcessFlow />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={teamRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <Team />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={TeamImplementationRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <TeamImplementation />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={projectImplementationRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <ProjectImplementation />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={venueRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <Venue />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={sbhthemesRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <ThemePage />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={updatesRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <Updates />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={prizesRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <Prizes />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={eligibilityRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <Eligibility />
-                  </Suspense>
-                }
-              ></Route>
-              {/* <Route
+        <UserProvider>
+          <AuthProvider>
+            <Routes>
+              <Route path={indexRoute} element={<NavBar />}>
+                <Route
+                  index={true}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <Home />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={problemStatementsRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <ProblemStatements />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={processFlowRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <ProcessFlow />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={teamRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <Team />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={TeamImplementationRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <TeamImplementation />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={projectImplementationRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <ProjectImplementation />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={venueRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <Venue />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={sbhthemesRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <ThemePage />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={updatesRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <Updates />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={prizesRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <Prizes />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={eligibilityRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <Eligibility />
+                    </Suspense>
+                  }
+                ></Route>
+                {/* <Route
                 path={EmailRoute}
                 element={
                   <Suspense fallback={<></>}>
@@ -152,34 +150,36 @@ function App() {
                   </Suspense>
                 }
               ></Route> */}
-              <Route
-                path={registerRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <Register />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-                path={adminPortalRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <AdminPortal />
-                  </Suspense>
-                }
-              ></Route>
-              <Route
-              path={contactUsRoute}
-              element={
-                <Suspense fallback={<></>}>
-                  <ContactUs />
-                </Suspense>
-              }
-            ></Route>
-            </Route>
-          </Routes>
-        </AuthProvider>
-      </UserProvider>
+                <Route
+                  path={loginRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <Register />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route path={adminPortalRoute} element={<PrivateRoute />}>
+                  <Route
+                    index={true}
+                    element={
+                      <Suspense fallback={<></>}>
+                        <AdminPortal />
+                      </Suspense>
+                    }
+                  />
+                </Route>
+                <Route
+                  path={contactUsRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <ContactUs />
+                    </Suspense>
+                  }
+                ></Route>
+              </Route>
+            </Routes>
+          </AuthProvider>
+        </UserProvider>
       </DataProvider>
       <img
         className="position-fixed"

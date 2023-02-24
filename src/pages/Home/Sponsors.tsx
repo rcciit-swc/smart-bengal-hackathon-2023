@@ -3,7 +3,6 @@ import "./Sponsors.css";
 import { useDataContext } from "../../contexts/DataProvider";
 
 const Sponsors: React.FC = () => {
-
   const { getSponsors } = useDataContext();
   const [sponsorList, setSponsorList] = useState<any>();
 
@@ -15,7 +14,7 @@ const Sponsors: React.FC = () => {
     }
     fetchSponsorDetails();
     // eslint-disable-next-line
-  }, [])
+  }, []);
 
   return (
     <>
@@ -27,34 +26,50 @@ const Sponsors: React.FC = () => {
           Supporters of SBH 2023
         </h1>
         {/* Sponsor Category */}
-        {sponsorList && sponsorList.map((sponsor: any) => {
-          return (
-            <div className="py-5">
-              <div className="w-100 d-flex flex-row justify-content-center align-items-center">
-                <div className="mx-2" style={{ height: "1px", backgroundColor: "grey", width: "inherit", }}></div>
-                <h3 className="text-center" style={{ width: "inherit", }}>
-                  {sponsor.category}
-                </h3>
-                <div className="mx-2" style={{ height: "1px", backgroundColor: "grey", width: "inherit", }}></div>
+        {sponsorList &&
+          sponsorList.map((sponsor: any) => {
+            return (
+              <div className="py-5">
+                <div className="w-100 d-flex flex-row justify-content-center align-items-center">
+                  <div
+                    className="mx-2"
+                    style={{
+                      height: "1px",
+                      backgroundColor: "grey",
+                      width: "inherit",
+                    }}
+                  ></div>
+                  <h3 className="text-center" style={{ width: "inherit" }}>
+                    {sponsor.category}
+                  </h3>
+                  <div
+                    className="mx-2"
+                    style={{
+                      height: "1px",
+                      backgroundColor: "grey",
+                      width: "inherit",
+                    }}
+                  ></div>
+                </div>
+                <div className="sponsor-wrapper mt-5">
+                  {sponsor.images.map((image: any) => {
+                    return (
+                      <img
+                        className="sponsor-img"
+                        src={image.url}
+                        width="130px"
+                        height="auto"
+                        alt={image.name}
+                      />
+                    );
+                  })}
+                </div>
               </div>
-              <div className="sponsor-wrapper mt-5">
-                {sponsor.images.map((image: any) => {
-                  return (
-                    <img
-                      className="sponsor-img"
-                      src={image.url}
-                      width="130px"
-                      height="auto"
-                      alt={image.name}
-                    />
-                  )
-                })}
-              </div>
-            </div>)
-        })}
+            );
+          })}
       </div>
     </>
   );
 };
 
-export default Sponsors
+export default Sponsors;

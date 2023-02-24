@@ -88,7 +88,10 @@ const ProcessFlow = () => {
             {pf.map((card) => (
               <div className="col-md-4 p-4">
                 <div className="process-box-main">
-                  <p className="text-process" dangerouslySetInnerHTML={{__html:card.desc}}></p>
+                  <p
+                    className="text-process"
+                    dangerouslySetInnerHTML={{ __html: card.desc }}
+                  ></p>
                   <div className="d-grid">
                     <span className="text-uppercase">{card.title}</span>
                     <img src={`${card.img}`} className="m-auto" />
