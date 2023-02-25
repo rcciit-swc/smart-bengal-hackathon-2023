@@ -78,7 +78,8 @@ const ProjectImplementation = () => {
             fontSize:
               "min(max(10px, calc(0.625rem + ((1vw - 0.01px) * 2.6055))), 60px)",
           }}
-        >
+        >`
+        `
           PROJECT IMPLEMENTATION
         </h1>
       </div>
