@@ -15,6 +15,11 @@ type themeCardData = {
   institution: string[];
 };
 
+type FaqObjectType = {
+  question: string;
+  answer: string;
+};
+
 type DataContextType = {
   title: string;
   description: string;
@@ -43,6 +48,10 @@ type DataContextType = {
     [key: string]: any;
   }[];
   winningGuidelines: WinningGuidelines[];
+  faq:{
+    SBHSenior: FaqObjectType[];
+    SBHJunior: FaqObjectType[];
+  }
 };
 
 const DataContext = createContext<DataContextType>({
@@ -69,6 +78,10 @@ const DataContext = createContext<DataContextType>({
   pf: [],
   winningGuidelines: [],
   ThemeCardData: [],
+  faq:{
+    SBHSenior: [],
+    SBHJunior: []
+  }
 });
 
 export function useData() {
@@ -90,6 +103,7 @@ export function DataProvider(props: any) {
         pf: data.pf,
         winningGuidelines: data["winning-guidelines"],
         ThemeCardData: data["theme-card-data"],
+        faq: data.faqs
       }}
     >
       {props.children}

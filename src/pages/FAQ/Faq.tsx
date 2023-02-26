@@ -1,7 +1,10 @@
 import React from "react";
 import FaqCard from "../../components/FaqCard/FaqCard";
+import { useData } from "../../contexts/Data";
 
 const FAQ = () => {
+  const { faq } = useData();
+  const { SBHSenior,SBHJunior } = faq;
   return (
     <main className="w-100">
       <div className={"w-100 position-relative"}>
@@ -62,12 +65,55 @@ const FAQ = () => {
               Register Now
             </button>
           </div>
-          <FaqCard
-            question={"Who can participate in SBH Senior?"}
-            answer={
-              "A student of College or University, pursuing any of the following programmeB.Sc./ BCA/ BBABE/ B. Tech.M. Sc.MCA/ MBAME/ M. Tech.Ph.D. (Science)/ Ph.D. (Engineering)/ Ph.D. (Management)"
-            }
-          />
+          <div
+            className="w-100 d-flex flex-column mt-3"
+            style={{ gap: "10px" }}
+          >
+            {SBHSenior.map((item, index) => {
+              return (
+                <FaqCard
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className="w-75 mx-auto mt-5">
+          <div className="d-flex justify-content-between w-100 align-items-center">
+            <h3 className="fw-bold" style={{ color: "var(--heading-color)" }}>
+              FAQ FOR SBH JUNIOR
+            </h3>
+            <button
+              style={{
+                outline: "none",
+                border: "none",
+                backgroundColor: "var(--heading-color)",
+                color: "white",
+                padding: "10px 30px",
+                borderRadius: "50px",
+                fontWeight: "600",
+                letterSpacing: "2px",
+              }}
+            >
+              Register Now
+            </button>
+          </div>
+          <div
+            className="w-100 d-flex flex-column mt-3"
+            style={{ gap: "10px" }}
+          >
+            {SBHJunior.map((item, index) => {
+              return (
+                <FaqCard
+                  key={index}
+                  question={item.question}
+                  answer={item.answer}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </main>

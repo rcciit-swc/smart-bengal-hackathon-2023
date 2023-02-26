@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import plus from "../../assets/expandIcons/plus.png";
+import minus from "../../assets/expandIcons/minus.png";
 
 interface FaqCardProps {
   question: string;
@@ -11,7 +13,7 @@ const FaqCard = ({ question, answer }: FaqCardProps) => {
     <div className="w-100 ">
       <div
         className="w-100 d-flex justify-content-between align-items-center"
-        style={{ backgroundColor: "var(--invert-color)" ,padding:"10px 30px"}}
+        style={{ backgroundColor: "var(--invert-color)", padding: "10px 30px" }}
       >
         <h4 style={{ backgroundColor: "var(--invert-color)" }}>Q.{question}</h4>
         {!showAnswer ? (
@@ -20,12 +22,14 @@ const FaqCard = ({ question, answer }: FaqCardProps) => {
               outline: "none",
               border: "none",
               backgroundColor: "#5d73d1",
+              borderRadius: "50%",
             }}
             onClick={() => setShowAnswer(!showAnswer)}
           >
             <img
-              src={"https://icons8.com/icon/FybpuRe5Prpj/add"}
+              src={plus}
               alt={"plus"}
+              style={{ width: "30px", height: "30px" }}
             />
           </button>
         ) : (
@@ -34,10 +38,11 @@ const FaqCard = ({ question, answer }: FaqCardProps) => {
               outline: "none",
               border: "none",
               backgroundColor: "#5d73d1",
+              borderRadius: "50%",
             }}
             onClick={() => setShowAnswer(!showAnswer)}
           >
-            <img src={"https://icons8.com/icon/37783/subtract"} alt={"minus"} />
+            <img src={minus} alt={"minus"} />
           </button>
         )}
       </div>
@@ -48,7 +53,16 @@ const FaqCard = ({ question, answer }: FaqCardProps) => {
             color: "black",
           }}
         >
-          <p style={{ color: "black" }}>A.{answer}</p>
+          <p
+            style={{
+              color: "black",
+              whiteSpace: "pre-line",
+              padding: "0 10px",
+              margin: "10px 0",
+            }}
+          >
+            {answer}
+          </p>
         </div>
       ) : null}
     </div>
