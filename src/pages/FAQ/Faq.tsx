@@ -4,7 +4,7 @@ import { useData } from "../../contexts/Data";
 
 const FAQ = () => {
   const { faq } = useData();
-  const { SBHSenior,SBHJunior } = faq;
+  const { SBHSenior, SBHJunior } = faq;
   return (
     <main className="w-100">
       <div className={"w-100 position-relative"}>
@@ -62,7 +62,13 @@ const FAQ = () => {
                 letterSpacing: "2px",
               }}
             >
-              Register Now
+              <a
+                href="https://forms.gle/Pw93DdyUN9t1h59E8"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Register Now
+              </a>
             </button>
           </div>
           <div
@@ -97,7 +103,13 @@ const FAQ = () => {
                 letterSpacing: "2px",
               }}
             >
-              Register Now
+              <a
+                href="https://forms.gle/Pw93DdyUN9t1h59E8"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Register Now
+              </a>
             </button>
           </div>
           <div

@@ -59,7 +59,29 @@ const Updates = () => {
         <span className="mb-4 text-center">
           Registration fees need to be paid after the shortlisting.
         </span>
+        <button
+      className="mb-5"
+              style={{
+                outline: "none",
+                border: "none",
+                backgroundColor: "var(--heading-color)",
+                color: "white",
+                padding: "10px 30px",
+                borderRadius: "50px",
+                fontWeight: "600",
+                letterSpacing: "2px",
+              }}
+            >
+              <a
+                href="https://forms.gle/Pw93DdyUN9t1h59E8"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Register Now
+              </a>
+            </button>
       </div>
+      
     </main>
   );
 };

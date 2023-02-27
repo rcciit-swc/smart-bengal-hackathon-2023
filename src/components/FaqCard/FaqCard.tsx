@@ -60,8 +60,8 @@ const FaqCard = ({ question, answer }: FaqCardProps) => {
               padding: "0 10px",
               margin: "10px 0",
             }}
+            dangerouslySetInnerHTML={{ __html: answer }}
           >
-            {answer}
           </p>
         </div>
       ) : null}
