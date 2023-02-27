@@ -13,6 +13,7 @@ import {
   prizesRoute,
   eligibilityRoute,
   contactUsRoute,
+  faqRoute,
 } from "../../Routes";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
 import idea_template_school from "../../assets/docs/Idea-Presentation-Format-SIH2022-School.pptx";
@@ -168,7 +169,7 @@ const NavBar = () => {
               </Link>
             </div>
             <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={indexRoute}>
+              <Link onClick={navHandler} to={faqRoute}>
                 FAQs
               </Link>
             </div>

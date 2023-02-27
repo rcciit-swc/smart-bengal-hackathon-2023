@@ -13,3 +13,4 @@ export const EmailRoute = "/email";
 export const loginRoute = "/login";
 export const adminPortalRoute = "/admin-portal";
 export const contactUsRoute = "/contact-us";
+export const faqRoute = "/faq";

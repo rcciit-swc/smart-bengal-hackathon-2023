@@ -75,91 +75,134 @@
       "theme": "Smart Vehicle",
       "desc": "Creating intelligent devices to improve commutation sector.",
       "icon": "https://sih.gov.in/img/icon_automobiles.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Robotics and Drones",
       "desc": "There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.",
       "icon": "https://img.icons8.com/external-soft-fill-juicy-fish/60/null/external-drone-aerospace-engineering-soft-fill-soft-fill-juicy-fish.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Disaster Management",
       "desc": "Disaster management includes ideas related to risk mitigation, Planning and management before, after or during a disaster.",
       "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-environment-ecology-flaticons-lineal-color-flat-icons.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Smart Education",
       "desc": "Smart education,a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.",
       "icon": "https://sih.gov.in/img/smart-education.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Smart Automation",
       "desc": "Ideas focused on the intelligent use of resources for transforming and advancements of technology with combining the artificial intelligence to explore more various sources and get valuable insights.",
       "icon": "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Intelligent Transportation and logistics",
       "desc": "Submit your ideas to address the growing pressures on the city’s resources, transport networks, and logistic infrastructure.",
       "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-logistics-industry-flaticons-lineal-color-flat-icons-2.png",
-      "institution": ["college"]
+      "institution": [
+        "college"
+      ]
     },
     {
       "theme": "Clean/Green Technology",
       "desc": "Solutions could be in the form of waste segregation, disposal, and improve sanitization system.",
       "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-green-technology-renewable-energy-flaticons-flat-flat-icons.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Renewable and sustainable energy",
       "desc": "Innovative ideas that help manage and generate renewable /sustainable sources more efficiently.",
       "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-renewable-energy-renewable-energy-flaticons-flat-flat-icons-2.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Blockchain and Cybersecurity",
       "desc": "Provide ideas in a decentralized and distributed ledger technology used to store digital information that powers cryptocurrencies and NFTs and can radically change multiple sectors.",
       "icon": "https://img.icons8.com/external-becris-lineal-becris/64/null/external-blockchain-cryptocurrency-block-chain-becris-lineal-becris-1.png",
-      "institution": ["college"]
+      "institution": [
+        "college"
+      ]
     },
     {
       "theme": "Fitness and Sports",
       "desc": "Ideas that can boost fitness activities and assist in keeping fit.",
       "icon": "https://sih.gov.in/img/icon_sport.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Agriculture , Foodtech and Rural Development",
       "desc": "Developing solutions, keeping in mind the need to enhance the primary sector of India - Agriculture and to manage and process our agriculture produce.",
       "icon": "https://sih.gov.in/img/icon_technology.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Biotech and healthcare",
       "desc": "Cutting-edge technology in these sectors continues to be in demand. Recent shifts in healthcare trends, growing populations also present an array of opportunities for innovation.",
       "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-biotech-bioengineering-flaticons-flat-flat-icons.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "IOT with AI",
       "desc": "Submit your idea on Artificial intelligence technologies with the Internet of things infrastructure to achieve more efficient IoT operations, improve human-machine interactions and enhance data management and analytics.",
       "icon": "https://img.icons8.com/ultraviolet/40/null/artificial-intelligence-productivity.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Data Privacy and Anonymisation",
       "desc": "Submit your idea and  develop a tool which can access data and anonymize it, so that privacy of the person is protected in compliance with proposed Digital Personal Data Protection Bill, 2022 (to be enacted shortly). With this tool, live transactional data can be made accessible to various stakeholders without violating privacy.",
       "icon": "https://img.icons8.com/external-filled-line-andi-nur-abdillah/64/null/external-Data-Privacy-cyber-security-(filled-line)-filled-line-andi-nur-abdillah.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     },
     {
       "theme": "Miscellaneous",
       "desc": "Technology ideas in tertiary sectors like Hospitality, Financial Services, Entertainment and Retail.",
       "icon": "https://sih.gov.in/img/icon_education.png",
-      "institution": ["school", "college"]
+      "institution": [
+        "school",
+        "college"
+      ]
     }
   ],
   "ps": {
@@ -421,96 +464,64 @@
     }
   ],
   "faqs": {
-    "company": [
+    "SBHSenior": [
       {
-        "question": "WHAT IS SMART BENGAL HACKATHON?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question": "Who can participate in SBH Senior?",
+        "answer": "A student of College or University, pursuing any of the following programme \n a) B.Sc./ BCA/ BBA \nb) BE/B.Tech \nc) M.Sc \nd) MCA/MBA \ne) ME/ M. Tech \nf) Ph.D. (Science)/ Ph.D. (Engineering)/ Ph.D. (Management)"
       },
       {
-        "question": "WHEN WAS SMART BENGAL HACKATHON STARTED?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question" :"Can Mentor or Student Members join from different Institutes?",
+        "answer":"Yes, in that case approval should be obtained from respective Heads of all Institutes in\n the given format separately and those should be merged into a single PDF and uploaded\n during registration."
       },
       {
-        "question": "WHAT IS NEW IN SMART BENGAL HACKATHON 2023?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question":"How do I register for Smart Bengal Hackathon 2023?",
+        "answer":"Mentors of a team can register at https://forms.gle/Pw93DdyUN9t1h59E8."
       },
       {
-        "question": "WHO CAN POSE CHALLENGE IN SBH?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod,"
+        "question":"When Registration will start?",
+        "answer":"Registration for SBH 2023 will commence from 28 February 2023 and it will close on 10 March 2023."
       },
       {
-        "question": "CAN INDIVIDUAL POSE AN CHALLENGE?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question":"What is the Registration Fee for each team?",
+        "answer":"There is no initial registration fee. No payment needed for Primary registration and\n IDEA submission. A team selected for Grand Finale has to pay Rs. 2000/- for attending\n the GRAND FINALE round."
       },
       {
-        "question": "WHAT ARE THE FINANCIAL IMPLICATIONS?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question":"What will be the team size?",
+        "answer":"Mentors can identify minimum two or maximum three students as per eligibility and form a team. A unique team name has to be decided."
       },
       {
-        "question": "CAN UNIVERSITY OR INSTITUTE SUBMIT PS'S UNDER SBH 2023?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-      },
-      {
-        "question": "CAN A STUDENT FROM DISTANCE/PART-TIME EDUCATION PROGRAMME PARTICIPATE IN SBH 2023?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question":"What do we require for registration?",
+        "answer":"Following steps to be followed:\n Step 1.Team should be formed as per above mentioned guideline. Eligibility of the\n members for SBH Senior should follow the above guideline.\nStep 2.A theme and matching problem statement has to be identified from SBH\n portal https://sbh.rcciit.org.in/.\nStep 3.IDEA template has to be prepared following the given IDEA template ppt in\n the SBH portal.\nStep 4. A PDF has to be created of this PPT.\nStep 5.A consent letter has to be obtained in the given format from the Head of the\n Institute and it should be scanned to PDF.\nStep 6.Registration Form has to be filled with all above mentioned details at\n https://forms.gle/Pw93DdyUN9t1h59E8."
       }
     ],
-    "team": [
+    "SBHJunior" : [
       {
-        "question": "WHO CAN PARTICIPATE IN SBH 2023?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod,"
+        "question":"Who can participate in SBH Junior?",
+        "answer" :"a) Any student from School – Class IX to XII \nb) Any student from Polytechnic Institute (AICTE affiliated)"
       },
       {
-        "question": "WHAT IS THE CRITERIA OF TEAM FORMATION?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod,"
+        "question":"Can Mentor or Student Members join from different Institutes?",
+        "answer":"Yes, in that case approval should be obtained from respective Heads of all Institutes in\n the given format separately and those should be merged into a single PDF and uploaded\n during registration."
       },
       {
-        "question": "WHAT IS THE ROLE OF THE COLLEGE SPOC?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question" :"How do I register for Smart Bengal Hackathon 2023?",
+        "answer":"Mentors of a team can register at https://forms.gle/Pw93DdyUN9t1h59E8."
       },
       {
-        "question": "I AM STUDENT OF HEI PURSUING PHD. CAN I PARTICIPATE?",
-        "answer": "I AM STUDENT OF CLASS 5TH. CAN I PARTICIPATE?"
+        "question":"When Registration will start?",
+        "answer":"Registration for SBH 2023 will commence from 28 February 2023 and it will close on 10 March 2023."
       },
       {
-        "question": "I AM STUDENT OF CLASS 5TH. CAN I PARTICIPATE?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question":"What is the Registration Fee for each team?",
+        "answer":"There is no initial registration fee. No payment needed for Primary registration and\n IDEA submission. A team selected for Grand Finale has to pay Rs. 1000/- for attending\n the GRAND FINALE round."
       },
       {
-        "question": "I AM PURSUING DISTANCE/PART-TIME AND CURRENTLY ENGAGED AS A WORKING PROFESSIONAL. CAN I PARTICIPATE?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question":"What will be the team size?",
+        "answer":"Mentors can identify minimum two or maximum three students as per eligibility and form a team. A unique team name has to be decided."
       },
       {
-        "question": "WHAT IS PRIZE MONEY OF WINNING TEAM?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-      },
-      {
-        "question": "WHEN CAN I SUBMIT THE IDEA AGAINST THE PROBLEM STATEMENT?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-      },
-      {
-        "question": "WILL THIS HACKATHON BE ORGANISED DIGITALLY OR PHYSICALLY?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-      },
-      {
-        "question": "WHAT ABOUT MENTORS OR HOW MANY MENTORS I CAN NOMINATE? AND WHAT IS THE MINIMUM REQUIREMENT FOR MENTOR TO MENTOR TEAM IN HACKATHON?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-      },
-      {
-        "question": "THE INTERNAL HACKATHON NEEDS TO BE ORGANISED AT WHICH DATE & WHAT WILL BE THE PROCESS FOR ORGANISING INTERNAL HACKATHON? ",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-      },
-      {
-        "question": "THE INTERNAL HACKATHON NEEDS TO BE ORGANISED AT WHICH DATE & WHAT WILL BE THE PROCESS FOR ORGANISING INTERNAL HACKATHON? ",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-      },
-      {
-        "question": "WHO ALL CAN SUBMIT PROBLEM STATEMENT IN THIS HACKATHON?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
-      },
-      {
-        "question": "I AM INDIVIDUAL WORKING IN XYZ PRIVATE COMPANY. CAN I SUBMIT THE PROBLEM STATEMENT OR CHALLENGES AS AN INDIVIDUAL?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquet nisl, nec ultricies nisl nisl vel nisl. Sed euismod, "
+        "question":"What do we require for registration?",
+        "answer":"Following steps to be followed:\n Step 1.Team should be formed as per above mentioned guideline. Eligibility of the\n members for SBH Junior should follow the above guideline.\nStep 2.A theme and matching problem statement has to be identified from SBH\n portal https://sbh.rcciit.org.in/.\nStep 3.IDEA template has to be prepared following the given IDEA template ppt in\n the SBH portal.\nStep 4. A PDF has to be created of this PPT.\nStep 5.A consent letter has to be obtained in the given format from the Head of the\n Institute and it should be scanned to PDF.\nStep 6.Registration Form has to be filled with all above mentioned details at\n https://forms.gle/Pw93DdyUN9t1h59E8."
       }
     ]
   }
