@@ -73,7 +73,7 @@ const Updates = () => {
               }}
             >
               <a
-                href="https://forms.gle/Pw93DdyUN9t1h59E8"
+                href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
                 target="_blank"
                 rel="noreferrer"
               >
