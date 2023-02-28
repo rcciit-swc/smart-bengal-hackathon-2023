@@ -3,6 +3,7 @@ import "./ProcessFlow.style.css";
 import { useData } from "../../contexts/Data";
 import banner from "../../assets/sbh-banner.jpg";
 import DescriptionCard from "../Home/component.body.description";
+import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 
 const ProcessFlow = () => {
   const Themes = lazy(() => import("../Home/component.body.themes"));
@@ -64,12 +65,19 @@ const ProcessFlow = () => {
           </span>
           <div className="d-flex flex-row flex-wrap justify-content-center mt-5">
             {descriptionCards.map((card, index) => (
-              <DescriptionCard
-                key={title + index}
-                index={index}
-                title={Object.keys(card)[0]}
-                desc={Object.values(card)[0]}
-              />
+              <FadeIn
+                from="bottom"
+                positionOffset={50}
+                triggerOffset={25}
+                delayInMilliseconds={50}
+              >
+                <DescriptionCard
+                  key={title + index}
+                  index={index}
+                  title={Object.keys(card)[0]}
+                  desc={Object.values(card)[0]}
+                />
+              </FadeIn>
             ))}
           </div>
         </div>
@@ -85,36 +93,43 @@ const ProcessFlow = () => {
           </div>
           <div className="d-grid process_flow_grid pb-5">
             {pf.map((card) => (
-              <div
-                style={{
-                  boxShadow: "inset 0px 1px 5px rgba(0, 0, 0, 0.15)",
-                }}
-                className="col-md-4 p-4 process_box_main"
+              <FadeIn
+                from="left"
+                positionOffset={150}
+                triggerOffset={25}
+                delayInMilliseconds={100}
               >
-                <div className="d-flex flex-column justify-content-between">
-                  <span className="text-uppercase">{card.title}</span>
+                <div
+                  style={{
+                    boxShadow: "inset 0px 1px 5px rgba(0, 0, 0, 0.15)",
+                  }}
+                  className="col-md-4 p-4 process_box_main"
+                >
+                  <div className="d-flex flex-column justify-content-between">
+                    <span className="text-uppercase">{card.title}</span>
 
-                  <p
-                    className="text-process"
-                    dangerouslySetInnerHTML={{ __html: card.desc }}
-                  ></p>
-                  <div
-                    style={{
-                      height: "fit-content",
-                    }}
-                    className="w-100 d-flex justify-content-center align-items-center"
-                  >
-                    <img
-                      src={`${card.img}`}
+                    <p
+                      className="text-process"
+                      dangerouslySetInnerHTML={{ __html: card.desc }}
+                    ></p>
+                    <div
                       style={{
-                        width: "140px",
-                        height: "140px",
+                        height: "fit-content",
                       }}
-                      alt="card"
-                    />
+                      className="w-100 d-flex justify-content-center align-items-center"
+                    >
+                      <img
+                        src={`${card.img}`}
+                        style={{
+                          width: "140px",
+                          height: "140px",
+                        }}
+                        alt="card"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </FadeIn>
             ))}
           </div>
         </div>

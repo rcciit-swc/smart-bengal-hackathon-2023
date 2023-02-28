@@ -5,6 +5,7 @@ import "./Home.style.css";
 import Sponsors from "./Sponsors";
 import Marquee from "react-fast-marquee";
 import CarouselContainer from "../../components/carousel/Carousel";
+import { FadeIn } from "react-slide-fade-in";
 
 const Themes = lazy(() => import("./component.body.themes"));
 
@@ -74,48 +75,77 @@ const Home = () => {
         <h5 className="fw-light fs-6 text-center px-4 mb-5">{description}</h5>
         <div className="d-flex flex-row flex-wrap justify-content-center">
           {descriptionCards.map((card, index) => (
-            <DescriptionCard
-              key={title + index}
-              index={index}
-              title={Object.keys(card)[0]}
-              desc={Object.values(card)[0]}
-            />
+            <FadeIn
+              from="bottom"
+              positionOffset={50}
+              triggerOffset={25}
+              delayInMilliseconds={50}
+            >
+              <DescriptionCard
+                key={title + index}
+                index={index}
+                title={Object.keys(card)[0]}
+                desc={Object.values(card)[0]}
+              />
+            </FadeIn>
           ))}
         </div>
       </div>
       <div className="my-5 d-flex what-is-sbh">
-        <div className="d-flex flex-column">
-          <h1
-            style={{ color: `var(--heading-color)` }}
-            className="text-uppercase fw-bold"
-          >{`what is sbh?`}</h1>
-          <span className="fs-5">{about}</span>
-        </div>
-        <img src={whatIsSbhIcon} alt="what is sbh" />
+        <FadeIn
+          from="left"
+          positionOffset={150}
+          triggerOffset={25}
+          delayInMilliseconds={100}
+        >
+          <div className="d-flex flex-column">
+            <h1
+              style={{ color: `var(--heading-color)` }}
+              className="text-uppercase fw-bold"
+            >{`what is sbh?`}</h1>
+            <span className="fs-5">{about}</span>
+          </div>
+        </FadeIn>
+        <FadeIn
+          from="right"
+          positionOffset={150}
+          triggerOffset={25}
+          delayInMilliseconds={100}
+        >
+          <img src={whatIsSbhIcon} alt="what is sbh" />
+        </FadeIn>
       </div>
       <Suspense fallback={<></>}>
         <Themes />
       </Suspense>
-      <div className="w-100 d-flex flex-column justify-content-center align-items-center">
-        <h2
-          className="w-100 text-center fw-bold my-5"
-          style={{ color: "var(--heading-color)" }}
+      <div className="w-100 d-flex flex-column justify-content-center align-items-center px-3">
+        
+          <h2
+            className="w-100 text-center fw-bold my-5"
+            style={{ color: "var(--heading-color)" }}
+          >
+            Important Dates and Deadlines
+          </h2>
+          <FadeIn
+          from="bottom"
+          positionOffset={150}
+          triggerOffset={25}
+          delayInMilliseconds={100}
         >
-          Important Dates and Deadlines
-        </h2>
-        <ul style={{ fontSize: "20px" }}>
-          <li>
-            <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023 and ends
-            on 10 Mar 2023.
-          </li>
-          <li>
-            <b>Shortlisted Teams Announcement:</b> 25th March.2023.
-          </li>
-          <li>
-            <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH Junior
-            & 12th April, 2023 for SBH Senior
-          </li>
-        </ul>
+          <ul style={{ fontSize: "20px" }}>
+            <li>
+              <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023 and
+              ends on 10 Mar 2023.
+            </li>
+            <li>
+              <b>Shortlisted Teams Announcement:</b> 25th March.2023.
+            </li>
+            <li>
+              <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH
+              Junior & 12th April, 2023 for SBH Senior
+            </li>
+          </ul>
+          </FadeIn>
       </div>
       <Sponsors />
     </main>

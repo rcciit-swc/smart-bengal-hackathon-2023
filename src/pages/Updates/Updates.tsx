@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+
 const Updates = () => {
   return (
     <main className="w-100">
@@ -59,13 +61,14 @@ const Updates = () => {
         <span className="mb-4 text-center">
           Registration fees need to be paid after the shortlisting.
         </span>
-        <button
+        <Button
+        variant="success"
       className="mb-5"
               style={{
                 outline: "none",
                 border: "none",
-                backgroundColor: "var(--heading-color)",
-                color: "white",
+                // backgroundColor: "var(--heading-color)",
+                // color: "white",
                 padding: "10px 30px",
                 borderRadius: "50px",
                 fontWeight: "600",
@@ -79,7 +82,7 @@ const Updates = () => {
               >
                 Register Now
               </a>
-            </button>
+            </Button>
       </div>
       
     </main>

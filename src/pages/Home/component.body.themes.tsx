@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 import { useData } from "../../contexts/Data";
 import "./component.body.themes.style.css";
 
@@ -58,75 +59,83 @@ const Themes = () => {
       // style={{
       //   backgroundColor: "blue",
       // }}
-      className="py-5 w-100 h-100 d-flex flex-column align-items-center"
+      className="py-5 w-100 h-100 d-flex flex-column align-items-center text-center"
     >
-      <h5
-        style={{ color: `var(--heading-color)` }}
-        className="text-uppercase fw-bold "
-      >
-        {`${title}'s`}
-      </h5>
-      <h1
-        style={{ color: "var(--primary-color)" }}
-        className="text-uppercase fw-bold"
-      >
-        themes
-      </h1>
-      <h5 className="fw-light fs-5 text-center">{themesTagline}</h5>
-      <div className="d-flex flex-row align-items-center themes-grid-container">
-        <img
-          src="https://img.icons8.com/flat-round/64/000000/long-arrow-left.png"
-          alt="previous"
-          role="button"
-          onClick={() => {
-            if (visible > 2) {
-              setVisible(visible - 1);
-            } else {
-              setVisible(ThemeCardData.length - 1);
-            }
-          }}
-        />
-        <div
-          className="d-grid themes-grid "
-          style={{
-            height: "70vh",
-          }}
+      
+        <h5
+          style={{ color: `var(--heading-color)` }}
+          className="text-uppercase fw-bold "
         >
-          <ThemeCard
-            id="1"
-            theme={ThemeCardData[visible - 2].theme}
-            desc={ThemeCardData[visible - 2].desc}
-            icon={ThemeCardData[visible - 2].icon}
+          {`${title}'s`}
+        </h5>
+        <h1
+          style={{ color: "var(--primary-color)" }}
+          className="text-uppercase fw-bold"
+        >
+          themes
+        </h1>
+        <h5 className="fw-light fs-5 text-center">{themesTagline}</h5>
+        <FadeIn
+        from="bottom"
+        positionOffset={200}
+        triggerOffset={0}
+        delayInMilliseconds={100}
+      >
+        <div className="d-flex flex-row align-items-center themes-grid-container">
+          <img
+            src="https://img.icons8.com/flat-round/64/000000/long-arrow-left.png"
+            alt="previous"
+            role="button"
+            onClick={() => {
+              if (visible > 2) {
+                setVisible(visible - 1);
+              } else {
+                setVisible(ThemeCardData.length - 1);
+              }
+            }}
           />
-          <ThemeCard
-            id="2"
-            theme={ThemeCardData[visible - 1].theme}
-            desc={ThemeCardData[visible - 1].desc}
-            icon={ThemeCardData[visible - 1].icon}
-          />
-          <ThemeCard
-            id="3"
-            theme={ThemeCardData[visible].theme}
-            desc={ThemeCardData[visible].desc}
-            icon={ThemeCardData[visible].icon}
+          <div
+            className="d-grid themes-grid "
+            style={{
+              height: "70vh",
+            }}
+          >
+            <ThemeCard
+              id="1"
+              theme={ThemeCardData[visible - 2].theme}
+              desc={ThemeCardData[visible - 2].desc}
+              icon={ThemeCardData[visible - 2].icon}
+            />
+            <ThemeCard
+              id="2"
+              theme={ThemeCardData[visible - 1].theme}
+              desc={ThemeCardData[visible - 1].desc}
+              icon={ThemeCardData[visible - 1].icon}
+            />
+            <ThemeCard
+              id="3"
+              theme={ThemeCardData[visible].theme}
+              desc={ThemeCardData[visible].desc}
+              icon={ThemeCardData[visible].icon}
+            />
+          </div>
+          <img
+            style={{
+              transform: "rotate(180deg)",
+            }}
+            src="https://img.icons8.com/flat-round/64/000000/long-arrow-left.png"
+            alt="next"
+            role="button"
+            onClick={() => {
+              if (visible < ThemeCardData.length - 1) {
+                setVisible(visible + 1);
+              } else {
+                setVisible(2);
+              }
+            }}
           />
         </div>
-        <img
-          style={{
-            transform: "rotate(180deg)",
-          }}
-          src="https://img.icons8.com/flat-round/64/000000/long-arrow-left.png"
-          alt="next"
-          role="button"
-          onClick={() => {
-            if (visible < ThemeCardData.length - 1) {
-              setVisible(visible + 1);
-            } else {
-              setVisible(2);
-            }
-          }}
-        />
-      </div>
+        </FadeIn>
     </div>
   );
 };

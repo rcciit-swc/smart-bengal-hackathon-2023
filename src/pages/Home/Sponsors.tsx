@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Sponsors.css";
 import { useDataContext } from "../../contexts/DataProvider";
+import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 
 const Sponsors: React.FC = () => {
   const { getSponsors } = useDataContext();
@@ -54,12 +55,19 @@ const Sponsors: React.FC = () => {
                 <div className="sponsor-wrapper mt-5">
                   {sponsor.images.map((image: any) => {
                     return (
-                      <img
-                        className="sponsor-img"
-                        src={image.url}
-                        style={{ width: "20rem" }}
-                        alt={image.name}
-                      />
+                      <FadeIn
+                        from="left"
+                        positionOffset={150}
+                        triggerOffset={25}
+                        delayInMilliseconds={100}
+                      >
+                        <img
+                          className="sponsor-img"
+                          src={image.url}
+                          style={{ width: "20rem" }}
+                          alt={image.name}
+                        />
+                      </FadeIn>
                     );
                   })}
                 </div>

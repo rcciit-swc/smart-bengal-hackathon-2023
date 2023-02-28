@@ -3,7 +3,7 @@ import { teamMemberType } from "../../components/Models/teamDataType";
 
 export const sbhTeam: teamMemberType[] = [
   {
-    img: "https://www.indicon2022.org/images/Advisory%20Committee%20Photos/Dr.%20Aloknath%20De.png",
+    img: "https://i.imgur.com/weq8eKV.png",
     name: "Dr. Aloknath De",
     designation: "Chief Mentor, SBH2023",
     committee:

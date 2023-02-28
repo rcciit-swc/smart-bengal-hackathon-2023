@@ -1,4 +1,5 @@
 import impl_team_data from "./data";
+import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 import "../Teams/Teams.style.css";
 
 const TeamImplementation = () => {
@@ -26,20 +27,31 @@ const TeamImplementation = () => {
       <div className="container pt-5 pb-5 team-wrapper">
         {impl_team_data.map((member, index) => {
           return (
-            <div key={index} className="member-container">
-              {member.img && (
-                <img
-                  className="member-img mb-3"
-                  src={member.img}
-                  alt={`${member.name}`}
-                />
-              )}
-              <h6 className="member-name">{member.name}</h6>
-              <h6 className="member-designation mb-3">{member.position}</h6>
-              <h6 className="text-center member-committee">
-                {member.designation}
-              </h6>
-            </div>
+            <FadeIn
+              from="left"
+              positionOffset={150}
+              triggerOffset={25}
+              delayInMilliseconds={100}
+            >
+              <div key={index} className="member-container"
+              style={{
+                height:"350px"
+              }}
+              >
+                {member.img && (
+                  <img
+                    className="member-img mb-3"
+                    src={member.img}
+                    alt={`${member.name}`}
+                  />
+                )}
+                <h6 className="member-name">{member.name}</h6>
+                <h6 className="member-designation mb-3">{member.position}</h6>
+                <h6 className="text-center member-committee">
+                  {member.designation}
+                </h6>
+              </div>
+            </FadeIn>
           );
         })}
       </div>

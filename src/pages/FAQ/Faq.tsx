@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import FaqCard from "../../components/FaqCard/FaqCard";
 import { useData } from "../../contexts/Data";
 
@@ -50,12 +51,14 @@ const FAQ = () => {
             <h3 className="fw-bold" style={{ color: "var(--heading-color)" }}>
               FAQ FOR SBH SENIOR
             </h3>
-            <button
+            <Button
+              variant="success"
+              className="mb-5"
               style={{
                 outline: "none",
                 border: "none",
-                backgroundColor: "var(--heading-color)",
-                color: "white",
+                // backgroundColor: "var(--heading-color)",
+                // color: "white",
                 padding: "10px 30px",
                 borderRadius: "50px",
                 fontWeight: "600",
@@ -69,7 +72,7 @@ const FAQ = () => {
               >
                 Register Now
               </a>
-            </button>
+            </Button>
           </div>
           <div
             className="w-100 d-flex flex-column mt-3"
@@ -91,12 +94,14 @@ const FAQ = () => {
             <h3 className="fw-bold" style={{ color: "var(--heading-color)" }}>
               FAQ FOR SBH JUNIOR
             </h3>
-            <button
+            <Button
+              variant="success"
+              className="mb-5"
               style={{
                 outline: "none",
                 border: "none",
-                backgroundColor: "var(--heading-color)",
-                color: "white",
+                // backgroundColor: "var(--heading-color)",
+                // color: "white",
                 padding: "10px 30px",
                 borderRadius: "50px",
                 fontWeight: "600",
@@ -110,7 +115,7 @@ const FAQ = () => {
               >
                 Register Now
               </a>
-            </button>
+            </Button>
           </div>
           <div
             className="w-100 d-flex flex-column mt-3"
