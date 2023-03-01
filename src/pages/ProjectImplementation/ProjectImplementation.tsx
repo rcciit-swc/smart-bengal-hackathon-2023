@@ -78,9 +78,8 @@ const ProjectImplementation = () => {
             fontSize:
               "min(max(10px, calc(0.625rem + ((1vw - 0.01px) * 2.6055))), 60px)",
           }}
-        >`
-        `
-          PROJECT IMPLEMENTATION
+        >
+          ` ` PROJECT IMPLEMENTATION
         </h1>
       </div>
       <div className="d-flex w-100 flex-column justify-content-center align-items-center">
@@ -130,13 +129,13 @@ const ProjectImplementation = () => {
         <div className="w-75 ">
           <h3 className="fw-bold">INTELLECTUAL PROPERTY (IP):</h3>
           <p>
-            The Intellectual Property (IP) of the solution resides with the
-            students who have developed and deployed the solution post-Hackathon
-            but the concern Concerned Problem statement agency will have
-            lifetime access to the solution for free. This has been done to
-            encourage Startups to be created out of the developed solutions
-            while also keeping in mind the interest of the involved Concerned
-            Problem statement agency.
+            The Intellectual Property (IP) of the solution shall reside normally
+            with the students who have developed and deployed the solution,
+            unless the agency furnishing the problem statement explicitly
+            mentions that the IP of the solution shall reside jointly with the
+            agency and the students who developed it. The agency furnishing the
+            problem statement shall have lifetime access to the solution for
+            free, under all situations, whether or not it holds the IP.
           </p>
         </div>
         <br />
