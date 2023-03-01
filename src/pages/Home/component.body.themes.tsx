@@ -61,21 +61,20 @@ const Themes = () => {
       // }}
       className="py-5 w-100 h-100 d-flex flex-column align-items-center text-center"
     >
-      
-        <h5
-          style={{ color: `var(--heading-color)` }}
-          className="text-uppercase fw-bold "
-        >
-          {`${title}'s`}
-        </h5>
-        <h1
-          style={{ color: "var(--primary-color)" }}
-          className="text-uppercase fw-bold"
-        >
-          themes
-        </h1>
-        <h5 className="fw-light fs-5 text-center">{themesTagline}</h5>
-        <FadeIn
+      <h5
+        style={{ color: `var(--heading-color)` }}
+        className="text-uppercase fw-bold "
+      >
+        {`${title}'s`}
+      </h5>
+      <h1
+        style={{ color: "var(--primary-color)" }}
+        className="text-uppercase fw-bold"
+      >
+        themes
+      </h1>
+      <h5 className="fw-light fs-5 text-center">{themesTagline}</h5>
+      <FadeIn
         from="bottom"
         positionOffset={200}
         triggerOffset={0}
@@ -135,7 +134,11 @@ const Themes = () => {
             }}
           />
         </div>
-        </FadeIn>
+      </FadeIn>
+      <p className="mt-4 fw-bold fs-5">
+        Participants can submit their innovative ideas according to their choice of concerned theme
+        irrespective of the already present problem statements.
+      </p>
     </div>
   );
 };

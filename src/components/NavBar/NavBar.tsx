@@ -14,6 +14,7 @@ import {
   eligibilityRoute,
   contactUsRoute,
   faqRoute,
+  rulesRoute
 } from "../../Routes";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
 import idea_template_school from "../../assets/docs/Idea-Presentation-Format-SIH2022-School.pptx";
@@ -89,6 +90,12 @@ const NavBar = () => {
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={teamRoute}>
                   SBH 2023 Teams
+                </Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link onClick={navHandler} to={rulesRoute}>
+                  SBH 2023 Rules
                 </Link>
               </div>
             </NavDropdown>

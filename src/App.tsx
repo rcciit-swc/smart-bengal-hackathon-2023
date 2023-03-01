@@ -17,6 +17,7 @@ import {
   adminPortalRoute,
   contactUsRoute,
   faqRoute,
+  rulesRoute
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
@@ -39,6 +40,7 @@ const TeamImplementation = lazy(
 );
 const Venue = lazy(() => import("./pages/Venue/Venue"));
 const ThemePage = lazy(() => import("./pages/ThemePage/ThemePage"));
+const Rules = lazy(() => import("./pages/Rules/Rules"))
 const Updates = lazy(() => import("./pages/Updates/Updates"));
 const ProcessFlow = lazy(() => import("./pages/ProcessFlow/ProcessFlow"));
 const Prizes = lazy(() => import("./pages/Prizes/Prizes"));
@@ -47,7 +49,6 @@ const Register = lazy(() => import("./pages/Login/Login"));
 const AdminPortal = lazy(() => import("./pages/AdminPortal/AdminPortal"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 const Faq = lazy(() => import("./pages/FAQ/Faq"));
-
 
 function App() {
   return (
@@ -78,6 +79,14 @@ function App() {
                   element={
                     <Suspense fallback={<></>}>
                       <ProcessFlow />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={rulesRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <Rules />
                     </Suspense>
                   }
                 ></Route>

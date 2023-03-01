@@ -81,6 +81,15 @@ const ProblemStatements = () => {
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td className="text-center">Open innovative ideas for hackathon are accepted</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
             {org &&
               org?.map((item: any, index: any) =>
                 item?.problemStatements?.map((data: any, indexing: any) => {
