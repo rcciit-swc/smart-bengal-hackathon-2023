@@ -95,7 +95,7 @@ const NavBar = () => {
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={rulesRoute}>
-                  SBH 2023 Rules
+                  SBH 2023 Rules and Regulations
                 </Link>
               </div>
             </NavDropdown>

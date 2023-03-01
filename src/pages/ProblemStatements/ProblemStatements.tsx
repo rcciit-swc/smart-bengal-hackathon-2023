@@ -85,10 +85,10 @@ const ProblemStatements = () => {
               <td></td>
               <td></td>
               <td className="text-center">Open innovative ideas for hackathon are accepted</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td className="text-center">SBHRCCIITXXX</td>
+              <td className="text-center">All</td>
+              <td className="text-center">Open Innovation</td>
+              <td className="text-center">SBH Senior/Junior</td>
             </tr>
             {org &&
               org?.map((item: any, index: any) =>

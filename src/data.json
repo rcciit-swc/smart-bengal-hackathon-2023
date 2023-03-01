@@ -160,6 +160,12 @@
       "desc": "Technology ideas in tertiary sectors like Hospitality, Financial Services, Entertainment and Retail.",
       "icon": "https://sih.gov.in/img/icon_education.png",
       "institution": ["school", "college"]
+    },
+    {
+      "theme": "Open Innovation",
+      "desc": "Participants can submit their innovative ideas according to their choice of concerned theme irrespective of the already present problem statements.",
+      "icon": "https://img.icons8.com/external-filled-color-icons-papa-vector/78/null/external-Innovative-Idea-sales-trends-filled-color-icons-papa-vector.png",
+      "institution": ["school", "college"]
     }
   ],
   "ps": {
