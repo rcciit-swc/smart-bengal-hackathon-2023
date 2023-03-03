@@ -43,6 +43,13 @@ const Footer = () => {
           >
             <i className="fab fa-linkedin fs-1 copyright"></i>
           </a>
+          <a
+            href="https://discord.gg/7a7VB7HDvE"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-discord fs-1 copyright"></i>
+          </a>
         </div>
       </div>
       <div className="d-flex flex-column align-items-center px-3 my-3">
