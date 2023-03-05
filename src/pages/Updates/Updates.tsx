@@ -44,7 +44,7 @@ const Updates = () => {
         </ul>
       </div>
       <div className="w-100 d-flex flex-column justify-content-center align-items-center">
-        <h2
+        {/* <h2
           className="w-100 text-center fw-bold my-3"
           style={{ color: "var(--heading-color)" }}
         >
@@ -60,7 +60,7 @@ const Updates = () => {
         </ul>
         <span className="mb-4 text-center">
           Registration fees need to be paid after the shortlisting.
-        </span>
+        </span> */}
         <Button
         variant="success"
       className="mb-5"

@@ -6,6 +6,8 @@ import Sponsors from "./Sponsors";
 import Marquee from "react-fast-marquee";
 import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
+import { Link } from "react-router-dom";
+import { problemStatementsRoute } from "../../Routes";
 
 const Themes = lazy(() => import("./component.body.themes"));
 
@@ -57,9 +59,15 @@ const Home = () => {
             href="https://anonymiser.wb.gov.in/"
             target="_blank"
             rel="noreferrer"
+            className="mx-2"
           >
             The Anonymiser Hackathon
           </a>
+          {/* |
+          <Link to={problemStatementsRoute} className="mx-2">
+            <span className="blink">Problem statements are Live</span>
+          </Link>
+          |<span className="mx-2 blink">No Registration Fees</span>| */}
         </Marquee>
       </div>
       <div
@@ -119,14 +127,13 @@ const Home = () => {
         <Themes />
       </Suspense>
       <div className="w-100 d-flex flex-column justify-content-center align-items-center px-3">
-        
-          <h2
-            className="w-100 text-center fw-bold my-5"
-            style={{ color: "var(--heading-color)" }}
-          >
-            Important Dates and Deadlines
-          </h2>
-          <FadeIn
+        <h2
+          className="w-100 text-center fw-bold my-5"
+          style={{ color: "var(--heading-color)" }}
+        >
+          Important Dates and Deadlines
+        </h2>
+        <FadeIn
           from="bottom"
           positionOffset={150}
           triggerOffset={25}
@@ -145,7 +152,7 @@ const Home = () => {
               Junior & 12th April, 2023 for SBH Senior
             </li>
           </ul>
-          </FadeIn>
+        </FadeIn>
       </div>
       <Sponsors />
     </main>

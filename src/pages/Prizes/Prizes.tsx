@@ -127,9 +127,12 @@ const Prizes = () => {
             </li>
           ))}
         </ul>
-        <h3 className="w-75 fs-6 text-center mb-5">
+        <h3 className="w-75 fs-6 text-center mb-2">
           * All the prizes and certificate will be Released Within 30 days after
           the event is over
+        </h3>
+        <h3 className="w-75 fs-6 text-center mb-5">
+          * Prize value may be enhanced 
         </h3>
       </div>
     </main>
