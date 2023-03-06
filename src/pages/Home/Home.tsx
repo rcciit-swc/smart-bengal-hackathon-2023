@@ -155,6 +155,23 @@ const Home = () => {
         </FadeIn>
       </div>
       <Sponsors />
+      <div className="mb-5 fs-3 ">
+        <span>Want to sponsor us?</span>
+        <a href="https://cutt.ly/sbh_partner" target="_blank" rel="noreferrer" >
+          <span
+            className="mx-2 fw-bold"
+            style={{ color: "var(--heading-color)" }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.color = "var(--primary-color)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.color = "var(--heading-color)";
+            }}
+          >
+            Contact Us
+          </span>
+        </a>
+      </div>
     </main>
   );
 };
