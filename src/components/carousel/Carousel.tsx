@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./Carousel.style.css";
 import Carousel from "react-bootstrap/Carousel";
-import carousel1 from "../../assets/caraousel-images/sbh-banner-3.webp";
+import Countdown from "./Countdown";
+import { Button } from "react-bootstrap";
+import axios from "axios";
 
 const CarouselContainer = () => {
   const [index, setIndex] = useState(0);
@@ -10,6 +12,22 @@ const CarouselContainer = () => {
   const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
   };
+
+  const unstop_api_key = process.env.REACT_APP_UNSTOP_API_KEY;
+
+  // async function fetchUnstopData() {
+  //   try {
+  //     fetch(url)
+  //       .then((response) => console.log(response))
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   fetchUnstopData()
+  // }, [])
+
 
   return (
     <Carousel className="w-100" activeIndex={index} onSelect={handleSelect}>
@@ -27,11 +45,6 @@ const CarouselContainer = () => {
             alt="First slide"
           />
         </a>
-
-        {/* <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption> */}
       </Carousel.Item>
       <Carousel.Item>
         <a
@@ -45,30 +58,55 @@ const CarouselContainer = () => {
             width="auto"
             src="https://i.imgur.com/JPInk6V.png"
             alt="Second slide"
-            // style={{ objectFit: "contain" }}
           />
         </a>
-
-        {/* <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption> */}
+      </Carousel.Item>
+      <Carousel.Item>
+        <div
+          className="countdown-timer"
+          style={{
+            height: "500px",
+            width: "auto",
+          }}
+        >
+          <div className="d-flex flex-column justify-content-evenly align-items-center h-100 py-3">
+            <h1
+              className="text-center text-uppercase fw-bold"
+              style={{
+                color: "white",
+                fontSize:
+                  "min(max(10px, calc(0.625rem + ((1vw - 0.01px) * 2.6055))), 60px)",
+              }}
+            >
+              Registration Closes In
+            </h1>
+            <Countdown />
+            <Button
+              variant="success"
+              className="mb-4"
+              style={{
+                outline: "none",
+                border: "none",
+                padding: "10px 30px",
+                borderRadius: "50px",
+                fontWeight: "600",
+                letterSpacing: "2px",
+                fontSize: "12px",
+              }}
+            >
+              <a
+                href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Register Now
+              </a>
+            </Button>
+          </div>
+        </div>
       </Carousel.Item>
       {/* <Carousel.Item>
-        <img
-          className="d-block w-100"
-          height="500px"
-          width="auto"
-          src="https://sih.gov.in/img1/slider/sliderbannerM33.jpg"
-          alt="Third slide"
-        />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
       </Carousel.Item> */}
     </Carousel>
   );
