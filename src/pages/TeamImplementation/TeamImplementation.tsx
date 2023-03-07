@@ -33,10 +33,12 @@ const TeamImplementation = () => {
               triggerOffset={25}
               delayInMilliseconds={100}
             >
-              <div key={index} className="member-container"
-              style={{
-                height:"350px"
-              }}
+              <div
+                key={index}
+                className="member-container"
+                style={{
+                  height: "350px",
+                }}
               >
                 {member.img && (
                   <img

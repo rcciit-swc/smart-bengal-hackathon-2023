@@ -55,9 +55,7 @@ const Sponsors: React.FC = () => {
                 </div>
                 <div className="sponsor-wrapper mt-5">
                   {sponsor.category === "Tech Partner" ? (
-                    <Marquee pauseOnHover={true} speed={80}
-                    
-                    >
+                    <Marquee pauseOnHover={true} speed={80}>
                       {sponsor.images.map((image: any) => {
                         return (
                           <FadeIn
@@ -67,13 +65,13 @@ const Sponsors: React.FC = () => {
                             delayInMilliseconds={100}
                           >
                             <div className="sponsor-img-container my-3 mx-3">
-                            <img
-                              className="sponsor-img"
-                              src={image.url}
-                              // style={{ width: "20rem" }}
-                              alt={image.name}
-                            />
-                          </div>
+                              <img
+                                className="sponsor-img"
+                                src={image.url}
+                                // style={{ width: "20rem" }}
+                                alt={image.name}
+                              />
+                            </div>
                           </FadeIn>
                         );
                       })}

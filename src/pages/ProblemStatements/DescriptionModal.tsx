@@ -29,9 +29,7 @@ function DescriptionModal({
         <div className="d-flex flex-column gap-3">
           <div className="d-flex flex-column">
             <span className="fw-bold">Problem Statement Description: </span>{" "}
-            <span
-            dangerouslySetInnerHTML={{ __html: Ps.description }}
-            ></span>
+            <span dangerouslySetInnerHTML={{ __html: Ps.description }}></span>
           </div>
           <div className="d-flex flex-column">
             <span className="fw-bold">Problem Statement Number: </span>{" "}

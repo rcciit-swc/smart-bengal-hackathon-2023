@@ -28,7 +28,6 @@ const CarouselContainer = () => {
   //   fetchUnstopData()
   // }, [])
 
-
   return (
     <Carousel className="w-100" activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>

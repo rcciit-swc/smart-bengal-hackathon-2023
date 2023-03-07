@@ -17,7 +17,7 @@ import {
   adminPortalRoute,
   contactUsRoute,
   faqRoute,
-  rulesRoute
+  rulesRoute,
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
@@ -40,7 +40,7 @@ const TeamImplementation = lazy(
 );
 const Venue = lazy(() => import("./pages/Venue/Venue"));
 const ThemePage = lazy(() => import("./pages/ThemePage/ThemePage"));
-const Rules = lazy(() => import("./pages/Rules/Rules"))
+const Rules = lazy(() => import("./pages/Rules/Rules"));
 const Updates = lazy(() => import("./pages/Updates/Updates"));
 const ProcessFlow = lazy(() => import("./pages/ProcessFlow/ProcessFlow"));
 const Prizes = lazy(() => import("./pages/Prizes/Prizes"));

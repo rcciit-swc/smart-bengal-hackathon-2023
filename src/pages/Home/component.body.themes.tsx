@@ -136,8 +136,9 @@ const Themes = () => {
         </div>
       </FadeIn>
       <p className="mt-4 fw-bold fs-5">
-        Participants can submit their innovative ideas according to their choice of concerned theme
-        irrespective of the already present problem statements.
+        Participants can submit their innovative ideas according to their choice
+        of concerned theme irrespective of the already present problem
+        statements.
       </p>
     </div>
   );

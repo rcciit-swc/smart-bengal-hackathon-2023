@@ -62,29 +62,28 @@ const Updates = () => {
           Registration fees need to be paid after the shortlisting.
         </span> */}
         <Button
-        variant="success"
-      className="mb-5"
-              style={{
-                outline: "none",
-                border: "none",
-                // backgroundColor: "var(--heading-color)",
-                // color: "white",
-                padding: "10px 30px",
-                borderRadius: "50px",
-                fontWeight: "600",
-                letterSpacing: "2px",
-              }}
-            >
-              <a
-                href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Register Now
-              </a>
-            </Button>
+          variant="success"
+          className="mb-5"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Register Now
+          </a>
+        </Button>
       </div>
-      
     </main>
   );
 };

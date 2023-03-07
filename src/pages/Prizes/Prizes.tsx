@@ -132,7 +132,7 @@ const Prizes = () => {
           the event is over
         </h3>
         <h3 className="w-75 fs-6 text-center mb-5">
-          * Prize value may be enhanced 
+          * Prize value may be enhanced
         </h3>
       </div>
     </main>

@@ -22,26 +22,28 @@ const Team = () => {
               triggerOffset={25}
               delayInMilliseconds={100}
             >
-                <div key={index} className="member-container"
+              <div
+                key={index}
+                className="member-container"
                 style={{
-                  height:"350px"
+                  height: "350px",
                 }}
-                >
-                  {member.img && (
-                    <img
-                      className="member-img mb-3"
-                      src={member.img}
-                      alt={`${member.name}`}
-                    />
-                  )}
-                  <h6 className="member-name">{member.name}</h6>
-                  <h6 className="member-designation mb-3">
-                    {member.designation}
-                  </h6>
-                  <h6 className="text-center member-committee">
-                    {member.committee}
-                  </h6>
-                </div>
+              >
+                {member.img && (
+                  <img
+                    className="member-img mb-3"
+                    src={member.img}
+                    alt={`${member.name}`}
+                  />
+                )}
+                <h6 className="member-name">{member.name}</h6>
+                <h6 className="member-designation mb-3">
+                  {member.designation}
+                </h6>
+                <h6 className="text-center member-committee">
+                  {member.committee}
+                </h6>
+              </div>
             </FadeIn>
           );
         })}

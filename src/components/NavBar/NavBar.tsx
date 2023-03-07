@@ -14,7 +14,7 @@ import {
   eligibilityRoute,
   contactUsRoute,
   faqRoute,
-  rulesRoute
+  rulesRoute,
 } from "../../Routes";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
 import idea_template_school from "../../assets/docs/Idea-Presentation-Format-SIH2022-School.pptx";
@@ -23,10 +23,7 @@ import logo from "../../assets/logo.png";
 import "./NavBar.style.css";
 import { useState } from "react";
 
-import { useDataContext } from "../../contexts/DataProvider";
-
 const NavBar = () => {
-  const { addOrganisation, addProblemStatement } = useDataContext();
   const [expanded, setExpanded] = useState(false);
 
   const navHandler = () => {
@@ -39,8 +36,8 @@ const NavBar = () => {
       <Navbar
         collapseOnSelect
         expanded={expanded}
-        expand="md"
-        className="px-3 z-top"
+        expand="xl"
+        className="px-3 z-top navbar__color"
       >
         <Navbar.Brand href="/">
           <img
@@ -60,7 +57,7 @@ const NavBar = () => {
         />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
-          <Nav className="d-flex bg-navbar">
+          <Nav className="d-flex">
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -109,7 +106,7 @@ const NavBar = () => {
                 Project Implementation
               </Link>
             </div>
-            <NavDropdown title="Guidelines">
+            <NavDropdown className="navbar__color" title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <a

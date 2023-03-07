@@ -1,8 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+.caveat {
+  font-family: "Caveat", cursive !important;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   overflow-x: hidden;
 }
 
@@ -13,6 +22,7 @@ a {
 
 :root {
   --heading-color: rgb(0, 167, 0);
+  --secondary-heading-color: rgba(38, 50, 56, 0.65);
   --primary-color: #002449;
   --secondary-color: #3a478b;
   --primary-color-light: #3a478b11;
@@ -62,7 +72,8 @@ a {
 #close:hover {
   background: rgba(29, 161, 142, 0.1);
 }
-#close:before, #close:after {
+#close:before,
+#close:after {
   position: absolute;
   top: 15%;
   left: calc(50% - 0.0625em);

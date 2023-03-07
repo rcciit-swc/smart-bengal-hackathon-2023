@@ -13,12 +13,12 @@ function ProblemStatementModal({ org }: { org: any }) {
   const [show, setShow] = useState(false);
 
   const [problemStatement, setProblemStatement] = useState({
-    psNumber:"",
+    psNumber: "",
     title: "",
     category: "",
     domain: "",
     description: "",
-    applicableFor: ""
+    applicableFor: "",
   });
 
   const handleSubmit = (e: any) => {
@@ -26,12 +26,12 @@ function ProblemStatementModal({ org }: { org: any }) {
     addProblemStatement(org.id, problemStatement);
     setShow(false);
     setProblemStatement({
-      psNumber:"",
+      psNumber: "",
       title: "",
       category: "",
       domain: "",
       description: "",
-      applicableFor: ""
+      applicableFor: "",
     });
   };
 
@@ -51,12 +51,12 @@ function ProblemStatementModal({ org }: { org: any }) {
           <Modal.Title>Add problem Statement</Modal.Title>
         </Modal.Header>
         <Modal.Body
-        style={{
-          overflow:"scroll"
-        }}
+          style={{
+            overflow: "scroll",
+          }}
         >
           <Form>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Problem Statement No.</Form.Label>
               <Form.Control
                 type="text"

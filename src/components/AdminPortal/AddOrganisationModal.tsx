@@ -29,8 +29,7 @@ function AddOrganisationModal() {
 
   return (
     <>
-      <Button variant="light" onClick={handleShow}
-      >
+      <Button variant="light" onClick={handleShow}>
         <img
           src="https://img.icons8.com/ios-filled/108/null/plus-2-math.png"
           alt="addOrg"
