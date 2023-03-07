@@ -56,9 +56,6 @@ const Themes = () => {
   return (
     <div
       style={{ backgroundColor: `var(--primary-color-light)` }}
-      // style={{
-      //   backgroundColor: "blue",
-      // }}
       className="py-5 w-100 h-100 d-flex flex-column align-items-center text-center"
     >
       <h5
@@ -69,7 +66,7 @@ const Themes = () => {
       </h5>
       <h1
         style={{ color: "var(--primary-color)" }}
-        className="text-uppercase fw-bold"
+        className="text-uppercase fw-bold caveat"
       >
         themes
       </h1>

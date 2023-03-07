@@ -22,12 +22,11 @@ const Sponsors: React.FC = () => {
     <>
       <div className="container pt-5 pb-5">
         <h1
-          className="w-100 text-center fw-bold mt-5"
+          className="w-100 text-center fw-bold mt-5 caveat"
           style={{ color: "var(--heading-color)" }}
         >
           Supporters of SBH 2023
         </h1>
-        {/* Sponsor Category */}
         {sponsorList &&
           sponsorList.map((sponsor: any) => {
             return (
