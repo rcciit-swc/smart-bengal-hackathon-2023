@@ -32,7 +32,7 @@ const Updates = () => {
         <ul className="w-75" style={{ fontSize: "20px" }}>
           <li>
             <b>Registration & Idea Submission:</b> Begins on 28 Feb 2023 and
-            ends on 10 Mar 2023.
+            ends on 20 Mar 2023.
           </li>
           <li>
             <b>Shortlisted Teams Announcement:</b> 25th March.2023.

@@ -62,7 +62,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="my-5 d-flex flex-column">
+      <div className="my-5 d-flex flex-column w-75">
         <h2
           style={{ color: `var(--heading-color)` }}
           className="caveat text-uppercase px-3"
@@ -97,7 +97,10 @@ const Home = () => {
               triggerOffset={25}
               delayInMilliseconds={100}
             >
-              <ul style={{ fontSize: "20px" }}>
+              <p>
+              Important dates and deadlines vary depending on the context. It's crucial to keep track of them for tasks such as project submissions, application deadlines, and events. Missing deadlines can lead to penalties and missed opportunities.
+              </p>
+              {/* <ul style={{ fontSize: "20px" }}>
                 <li>
                   <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023
                   and ends on 10 Mar 2023.
@@ -109,57 +112,64 @@ const Home = () => {
                   <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH
                   Junior & 12th April, 2023 for SBH Senior
                 </li>
-              </ul>
+              </ul> */}
             </FadeIn>
           </div>
-          <div className="position-relative dates__deadlines-bubbles">
-            <div
-              style={{
-                background:
-                  "linear-gradient(232.22deg, #3695E9 19.32%, #1768B0 39.03%)",
-              }}
-              className="circle position-absolute bubble__1"
-            >
-              <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                <span className="fw-bold pb-2 bubble__title">25th Mar</span>
-                <span className="bubble__text">
-                  Shortlisted Team Announcements
+          <FadeIn
+            from="right"
+            positionOffset={150}
+            triggerOffset={25}
+            delayInMilliseconds={100}
+          >
+            <div className="position-relative dates__deadlines-bubbles">
+              <div
+                style={{
+                  background:
+                    "linear-gradient(232.22deg, #3695E9 19.32%, #1768B0 39.03%)",
+                }}
+                className="circle position-absolute bubble__1"
+              >
+                <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                  <span className="fw-bold pb-2 bubble__title">25th Mar</span>
+                  <span className="bubble__text">
+                    Shortlisted Team Announcements
+                  </span>
                 </span>
-              </span>
+              </div>
+              <div
+                style={{
+                  background:
+                    "linear-gradient(232.22deg, rgba(255, 46, 0, 0.74) 19.32%, #F88208 55.71%)",
+                }}
+                className="circle position-absolute bubble__2"
+              >
+                <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                  <span className="fw-bold pb-2 bubble__title">
+                    28th Feb - 20th March
+                  </span>
+                  <span className="bubble__text">
+                    Registration & Idea Submission
+                  </span>
+                </span>
+              </div>
+              <div
+                style={{
+                  background:
+                    "linear-gradient(233.98deg, rgba(248, 130, 8, 0.5) 18.97%, rgba(255, 46, 0, 0.62) 91.4%)",
+                }}
+                className="circle position-absolute bubble__3"
+              >
+                <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                  <span className="fw-bold pb-2 bubble__title">
+                    11th & 12th April
+                  </span>
+                  <span className="bubble__text">
+                    Finals for SBH Junior & Senior
+                  </span>
+                </span>
+              </div>
             </div>
-            <div
-              style={{
-                background:
-                  "linear-gradient(232.22deg, rgba(255, 46, 0, 0.74) 19.32%, #F88208 55.71%)",
-              }}
-              className="circle position-absolute bubble__2"
-            >
-              <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                <span className="fw-bold pb-2 bubble__title">
-                  28th Feb - 10th March
-                </span>
-                <span className="bubble__text">
-                  Registration & Idea Submission
-                </span>
-              </span>
-            </div>
-            <div
-              style={{
-                background:
-                  "linear-gradient(233.98deg, rgba(248, 130, 8, 0.5) 18.97%, rgba(255, 46, 0, 0.62) 91.4%)",
-              }}
-              className="circle position-absolute bubble__3"
-            >
-              <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                <span className="fw-bold pb-2 bubble__title">
-                  11th & 12hh March
-                </span>
-                <span className="bubble__text">
-                  Finals for SBH Junior & Senior
-                </span>
-              </span>
-            </div>
-          </div>
+          </FadeIn>
         </div>
       </div>
       <Suspense fallback={<></>}>
