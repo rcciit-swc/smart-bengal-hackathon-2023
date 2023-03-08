@@ -8,6 +8,7 @@ import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
 
+const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
 
 const Home = () => {
@@ -15,44 +16,28 @@ const Home = () => {
 
   return (
     <main
-      // style={{
-      //   width: "100vw",
-      //   // backgroundColor: `var(--primary-color-light)`,
-      // }}
       className="d-flex flex-column align-items-center"
       style={{
-        overflowY: "hidden",
+        overflowX: "hidden",
       }}
     >
-      <div
-        id="orange_circle"
-        style={{ top: "-20%", right: "-35%", zIndex: "-1" }}
-      ></div>
-      <div
-        id="blue_circle"
-        style={{ top: "-20%", left: "-35%", zIndex: "-1" }}
-      ></div>
-      <div
-        className="orange_circle_body"
-        style={{ top: "200%", left: "-35%", zIndex: "-1" }}
-      ></div>
-      <div
-        className="orange_circle_body"
-        style={{ top: "300%", right: "-35%", zIndex: "-1" }}
-      ></div>
-      <div
-        className="blue_circle_body"
-        style={{ top: "400%", left: "-35%", zIndex: "-1" }}
-      ></div>
-
-      <div
-        className="blue_circle_body"
-        style={{ top: "500%", right: "-35%", zIndex: "-1" }}
-      ></div>
-      <div
-        className="orange_circle_body"
-        style={{ top: "600%", left: "-35%", zIndex: "-1" }}
-      ></div>
+      <Suspense fallback={<></>}>
+        <Circle
+          width="300px"
+          height="300px"
+          blur="100"
+          top="200px"
+          left="-150px"
+        />
+        <Circle
+          width="300px"
+          height="300px"
+          blur="100"
+          top="200px"
+          right="-150px"
+          color="#1768B0"
+        />
+      </Suspense>
       <CarouselContainer />
       <div className="w-75 my-2 fs-3">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>

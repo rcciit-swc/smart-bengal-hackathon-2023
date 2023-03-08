@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import "./Sponsors.css";
 import { useDataContext } from "../../contexts/DataProvider";
 import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 import Marquee from "react-fast-marquee";
+
+const Circle = lazy(() => import("../../components/Blob/Circle"));
 
 const Sponsors: React.FC = () => {
   const { getSponsors } = useDataContext();
@@ -20,7 +22,32 @@ const Sponsors: React.FC = () => {
 
   return (
     <>
-      <div className="container pt-5 pb-5">
+      <div className="container pt-5 pb-5 position-relative">
+        <Suspense fallback={<></>}>
+          <Circle
+            width="300px"
+            height="300px"
+            blur="300"
+            top="600px"
+            right="-300px"
+          />
+          <Circle
+            width="300px"
+            height="300px"
+            blur="500"
+            top="50%"
+            left="-300px"
+            color="#1768B0"
+          />
+          <Circle
+            width="300px"
+            height="300px"
+            blur="100"
+            bottom="-250px"
+            right="-350px"
+            zIndex="-1"
+          />
+        </Suspense>
         <h1
           className="w-100 text-center fw-bold mt-5 caveat"
           style={{ color: "var(--heading-color)" }}

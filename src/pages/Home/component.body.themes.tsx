@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 import { useData } from "../../contexts/Data";
 import "./component.body.themes.style.css";
+
+const Circle = lazy(() => import("../../components/Blob/Circle"));
 
 const ThemeCard = ({
   theme,
@@ -24,6 +26,7 @@ const ThemeCard = ({
         height: "375px",
         boxShadow: "-8px 32px 30px -2px rgba(0, 106, 167, 0.21)",
         overflow: "hidden",
+        backgroundColor: "white",
       }}
       className="m-3 p-3 d-flex flex-column align-items-center position-relative"
     >
@@ -86,7 +89,17 @@ const Themes = () => {
   }, [visible]);
 
   return (
-    <div className="pt-5 w-100 h-100 d-flex flex-column align-items-center text-center">
+    <div className="pt-5 w-100 h-100 d-flex flex-column align-items-center text-center position-relative">
+      <Suspense fallback={<></>}>
+        <Circle
+          width="300px"
+          height="300px"
+          blur="300"
+          top="400px"
+          left="-150px"
+          color="#1768B0"
+        />
+      </Suspense>
       <h5
         style={{ color: `var(--heading-color)` }}
         className="text-uppercase fw-bold"
