@@ -20,15 +20,54 @@
 
 .bubble__1 {
   left: 90px;
+  animation: bubble__1_shrink 1.3s ease-in-out infinite alternate;
+  -webkit-animation: bubble__1_shrink 1.3s ease-in-out infinite alternate;
 }
 
 .bubble__2 {
   top: 100px;
+  animation: bubble__2_shrink 1.2s ease-in-out infinite alternate;
+  -webkit-animation: bubble__2_shrink 1.2s ease-in-out infinite alternate;
 }
 
 .bubble__3 {
   top: 130px;
   left: 190px;
+  animation: bubble__3_shrink 1.5s ease-in-out infinite alternate;
+  -webkit-animation: bubble__3_shrink 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes bubble__1_shrink {
+  0% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bubble__2_shrink {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
+}
+
+@keyframes bubble__3_shrink {
+  0% {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
 }
 
 .bubble__title {
