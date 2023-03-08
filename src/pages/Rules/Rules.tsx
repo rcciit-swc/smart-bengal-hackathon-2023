@@ -1,11 +1,11 @@
 const Rules = () => {
   return (
-    <main className="d-flex flex-column align-items-center my-5 w-100">
+    <main className="d-flex flex-column align-items-center mb-5 w-100">
       <div
         style={{ color: "var(--heading-color)" }}
-        className="d-flex flex-row fw-bold fs-1"
+        className="d-flex flex-row fw-bold fs-1 text-uppercase text-center caveat"
       >
-        <span className="text-uppercase">Rules and Regulations</span>
+        Rules and Regulations
       </div>
       <div className="w-75 my-3">
         <ol>

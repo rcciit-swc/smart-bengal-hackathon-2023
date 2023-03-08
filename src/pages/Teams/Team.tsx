@@ -1,18 +1,21 @@
 import { useData } from "../../contexts/Data";
 import { FadeIn } from "react-slide-fade-in";
 import "./Teams.style.css";
+import { lazy, Suspense } from "react";
+
+const Header = lazy(() => import("../../components/Header/Header"));
 
 const Team = () => {
   const { teamData } = useData();
 
   return (
-    <div className="pt-5 pb-5">
-      <h3
-        className="text-center text-uppercase fw-bold fs-1"
-        style={{ color: "var(--heading-color)" }}
-      >
-        Team SBH
-      </h3>
+    <>
+      <Suspense fallback={<></>}>
+        <Header
+          text="Executive Team"
+          image="https://sih.gov.in/img/project-implementation.jpg"
+        />
+      </Suspense>
       <div className="container pt-5 pb-5 team-wrapper">
         {teamData.map((member, index) => {
           return (
@@ -48,7 +51,7 @@ const Team = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 

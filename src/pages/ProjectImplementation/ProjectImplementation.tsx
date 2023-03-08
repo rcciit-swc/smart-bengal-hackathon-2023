@@ -1,4 +1,7 @@
+import { lazy, Suspense } from "react";
 import { useData } from "../../contexts/Data";
+
+const Header = lazy(() => import("../../components/Header/Header"));
 
 const ImportantNotes = [
   {
@@ -64,28 +67,17 @@ const ProjectImplementation = () => {
   const { winningGuidelines } = useData();
 
   return (
-    <main className="w-100">
-      <div className={"w-100 position-relative"}>
-        <img
-          className={"d-block"}
-          src={"https://sih.gov.in/img/project-implementation.jpg"}
-          alt={"projectImplementation"}
-          style={{ height: "100%", width: "100%", objectFit: "cover" }}
+    <>
+      <Suspense fallback={<></>}>
+        <Header
+          text="Project Implementation"
+          image="https://sih.gov.in/img/project-implementation.jpg"
         />
-        <h1
-          className="carousel-caption fw-bold text-center "
-          style={{
-            fontSize:
-              "min(max(10px, calc(0.625rem + ((1vw - 0.01px) * 2.6055))), 60px)",
-          }}
-        >
-          ` ` PROJECT IMPLEMENTATION
-        </h1>
-      </div>
-      <div className="d-flex w-100 flex-column justify-content-center align-items-center">
+      </Suspense>
+      <div className="d-flex w-100 mb-5 flex-column justify-content-center align-items-center">
         <h2
-          className="w-50 text-center fw-bold my-5"
-          style={{ color: "var(--heading-color)" }}
+          className="text-center fw-bold my-5"
+          style={{ color: "var(--heading-color)", width: "90%" }}
         >
           GUIDELINES FOR FURTHER DEVELOPMENT AND DEPLOYMENT OF SMART BENGAL
           HACKATHON (SBH2023) WINNING PROJECTS
@@ -165,7 +157,7 @@ const ProjectImplementation = () => {
           </ul>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 

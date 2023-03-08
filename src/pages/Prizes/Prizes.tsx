@@ -1,9 +1,12 @@
+import { lazy, Suspense } from "react";
 import { Table } from "react-bootstrap";
+
+const Header = lazy(() => import("../../components/Header/Header"));
 
 const PrizesNotes = [
   {
     description:
-      "Total cash prizes worth INR 2,00,000 + goodies, internship opportunities for SBH Senior & SBH  Junior both",
+      "Total cash prizes worth INR 2,00,000 + goodies, internship opportunities for SBH Senior & SBH  Junior both",
   },
   {
     description: "Certificate of excellence for top 3 teams",
@@ -18,26 +21,16 @@ const PrizesNotes = [
 
 const Prizes = () => {
   return (
-    <main className="w-100">
-      <div className={"w-100 position-relative"}>
-        <img
-          className={"d-block"}
-          src={
-            "https://www.lupin.com/wp-content/uploads/2021/04/about-us-Awards-Recognition-2.jpg"
-          }
-          alt={"prizes"}
-          style={{ height: "46vh", width: "100%", objectFit: "cover" }}
+    <>
+      <Suspense fallback={<></>}>
+        <Header
+          text="Prizes"
+          image="https://www.lupin.com/wp-content/uploads/2021/04/about-us-Awards-Recognition-2.jpg"
         />
-        <h1
-          className="carousel-caption fw-bold text-center"
-          style={{ fontSize: "60px" }}
-        >
-          PRIZES
-        </h1>
-      </div>
+      </Suspense>
       <div className="w-100 d-flex flex-column justify-content-center align-items-center">
         <h2
-          className="w-100 text-center fw-bold my-5 text-uppercase"
+          className="w-100 text-center fw-bold my-5 text-uppercase caveat"
           style={{ color: "var(--heading-color)" }}
         >
           Rewards and Prizes
@@ -64,43 +57,37 @@ const Prizes = () => {
           </thead>
           <tbody>
             <tr>
-              <td>
-                <span className="d-flex justify-content-center align-items-center">
-                  <img
-                    src="https://img.icons8.com/emoji/35/null/1st-place-medal-emoji.png"
-                    alt="1st prize"
-                  />
-                  <b>1st Prize</b>
-                </span>
+              <td className="d-flex justify-content-start align-items-center">
+                <img
+                  src="https://img.icons8.com/emoji/35/null/1st-place-medal-emoji.png"
+                  alt="1st prize"
+                />
+                <b>1st Prize</b>
               </td>
-              <td className="text-center">₹ 30,000</td>
-              <td className="text-center">₹ 25,000</td>
+              <td className="text-center">₹&emsp;30,000</td>
+              <td className="text-center">₹&emsp;25,000</td>
             </tr>
             <tr>
-              <td>
-                <span className="d-flex align-items-center justify-content-between">
-                  <img
-                    src="https://img.icons8.com/emoji/35/null/2nd-place-medal-emoji.png"
-                    alt="2nd prize"
-                  />
-                  <b>2nd Prize</b>
-                </span>
+              <td className="d-flex align-items-center justify-content-start">
+                <img
+                  src="https://img.icons8.com/emoji/35/null/2nd-place-medal-emoji.png"
+                  alt="2nd prize"
+                />
+                <b>2nd Prize</b>
               </td>
-              <td className="text-center">₹ 20,000</td>
-              <td className="text-center">₹ 15,000</td>
+              <td className="text-center">₹&emsp;20,000</td>
+              <td className="text-center">₹&emsp;15,000</td>
             </tr>
             <tr>
-              <td>
-                <span className="d-flex justify-content-center align-items-center">
-                  <img
-                    src="https://img.icons8.com/emoji/35/null/3rd-place-medal-emoji.png"
-                    alt="3rd prize"
-                  />
-                  <b>3rd Prize</b>
-                </span>
+              <td className="d-flex justify-content-start align-items-center">
+                <img
+                  src="https://img.icons8.com/emoji/35/null/3rd-place-medal-emoji.png"
+                  alt="3rd prize"
+                />
+                <b>3rd Prize</b>
               </td>
-              <td className="text-center">₹ 10,000</td>
-              <td className="text-center">₹ 10,000</td>
+              <td className="text-center">₹&emsp;10,000</td>
+              <td className="text-center">₹&emsp;10,000</td>
             </tr>
           </tbody>
         </Table>
@@ -135,7 +122,7 @@ const Prizes = () => {
           * Prize value may be enhanced
         </h3>
       </div>
-    </main>
+    </>
   );
 };
 

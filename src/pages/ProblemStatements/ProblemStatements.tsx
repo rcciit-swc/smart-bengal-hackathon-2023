@@ -1,12 +1,10 @@
 import "./ProblemStatements.style.css";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Table from "react-bootstrap/Table";
-import { useData } from "../../contexts/Data";
 import { useDataContext } from "../../contexts/DataProvider";
 import DescriptionModal from "./DescriptionModal";
 
 const ProblemStatements = () => {
-  const { ps } = useData();
   const { org } = useDataContext();
 
   const [show, setShow] = useState(false);

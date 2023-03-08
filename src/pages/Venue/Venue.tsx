@@ -1,24 +1,17 @@
+import { lazy, Suspense } from "react";
 import "./Venue.style.css";
+
+const Header = lazy(() => import("../../components/Header/Header"));
 
 const Venue = () => {
   return (
-    <main className="w-100">
-      <div className={"w-100 position-relative"}>
-        <img
-          className={"d-block"}
-          src={
-            "https://college4u.in/wp-content/uploads/2018/03/RCC3-830x254.jpg"
-          }
-          alt={"venue"}
-          style={{ height: "46vh", width: "100%", objectFit: "cover" }}
+    <>
+      <Suspense fallback={<></>}>
+        <Header
+          text="Venue"
+          image="https://college4u.in/wp-content/uploads/2018/03/RCC3-830x254.jpg"
         />
-        <h1
-          className="carousel-caption fw-bold text-center"
-          style={{ fontSize: "60px" }}
-        >
-          VENUE
-        </h1>
-      </div>
+      </Suspense>
       <div
         id="fix-venue"
         className="w-100 d-flex flex-column justify-content-center align-items-center"
@@ -59,7 +52,7 @@ const Venue = () => {
           </a>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 
