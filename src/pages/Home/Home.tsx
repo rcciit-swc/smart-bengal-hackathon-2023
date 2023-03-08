@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { useData } from "../../contexts/Data";
-import DescriptionCard from "./component.body.description";
+// import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
 import Marquee from "react-fast-marquee";
@@ -11,7 +11,7 @@ import { Button } from "react-bootstrap";
 const Themes = lazy(() => import("./component.body.themes"));
 
 const Home = () => {
-  const { title, description, descriptionCards, about } = useData();
+  const { title, about } = useData();
 
   return (
     <main
@@ -100,7 +100,7 @@ const Home = () => {
           style={{ color: `var(--heading-color)` }}
           className="caveat text-uppercase px-3"
         >
-          smart bengal hackathon
+          {title}
         </h2>
         <FadeIn
           from="left"
@@ -233,23 +233,6 @@ const Home = () => {
         <Themes />
       </Suspense>
       <Sponsors />
-      {/* <div className="mb-5 fs-3 ">
-        <span>Want to sponsor us?</span>
-        <a href="https://cutt.ly/sbh_partner" target="_blank" rel="noreferrer">
-          <span
-            className="mx-2 fw-bold"
-            style={{ color: "var(--heading-color)" }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.color = "var(--primary-color)";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.color = "var(--heading-color)";
-            }}
-          >
-            Contact Us
-          </span>
-        </a>
-      </div> */}
       <div
         className="d-flex sponsor-form w-100 justify-content-center align-items-center py-5"
         style={{ height: "400px", padding: "0px 10vw" }}
@@ -260,7 +243,7 @@ const Home = () => {
         >
           <div
             className="d-flex flex-column justify-content-center align-items-left poppin my-5 mx-auto px-3"
-            style={{ color: "white",marginLeft:"3vw" }}
+            style={{ color: "white", marginLeft: "3vw" }}
           >
             <span className="text-uppercase fs-3 fw-semibold">
               Feeling Excited ?
@@ -276,23 +259,33 @@ const Home = () => {
             </span>
           </div>
           <div className="mx-auto">
-            <Button className="rounded-button poppins "
-            style={{
-              backgroundColor: "#000000",
-              boxShadow: "0px 8px 25px #000000",
-              fontWeight: "400",
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.filter = "invert(1)";
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.filter = "invert(0)";
-            }}
-            ><a href="https://cutt.ly/sbh_partner" target="_blank" rel="noreferrer">Support the Cause</a></Button>
+            <Button
+              className="rounded-button poppins "
+              style={{
+                backgroundColor: "#000000",
+                boxShadow: "0px 8px 25px #000000",
+                fontWeight: "400",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.filter = "invert(1)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.filter = "invert(0)";
+              }}
+            >
+              <a
+                href="https://cutt.ly/sbh_partner"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Support the Cause
+              </a>
+            </Button>
           </div>
-          <img 
-          className=" mx-auto my-5"
-          src="https://i.imgur.com/9KWEdy0.png" alt="handshake_icon" 
+          <img
+            className=" mx-auto my-5"
+            src="https://i.imgur.com/9KWEdy0.png"
+            alt="handshake_icon"
             width={200}
           />
         </div>

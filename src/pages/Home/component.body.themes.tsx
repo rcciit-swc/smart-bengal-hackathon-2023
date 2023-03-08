@@ -54,10 +54,7 @@ const Themes = () => {
   }, [visible]);
 
   return (
-    <div
-      style={{ backgroundColor: `var(--primary-color-light)` }}
-      className="py-5 w-100 h-100 d-flex flex-column align-items-center text-center"
-    >
+    <div className="py-5 w-100 h-100 d-flex flex-column align-items-center text-center">
       <h5
         style={{ color: `var(--heading-color)` }}
         className="text-uppercase fw-bold "
@@ -79,7 +76,10 @@ const Themes = () => {
       >
         <div className="d-flex flex-row align-items-center themes-grid-container">
           <img
-            src="https://img.icons8.com/flat-round/64/000000/long-arrow-left.png"
+            style={{
+              transform: "rotate(180deg)",
+            }}
+            src="https://img.icons8.com/ios-glyphs/40/null/more-than.png"
             alt="previous"
             role="button"
             onClick={() => {
@@ -116,10 +116,7 @@ const Themes = () => {
             />
           </div>
           <img
-            style={{
-              transform: "rotate(180deg)",
-            }}
-            src="https://img.icons8.com/flat-round/64/000000/long-arrow-left.png"
+            src="https://img.icons8.com/ios-glyphs/40/null/more-than.png"
             alt="next"
             role="button"
             onClick={() => {

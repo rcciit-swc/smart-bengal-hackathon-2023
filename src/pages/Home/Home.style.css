@@ -8,6 +8,7 @@
 
 .dates__deadlines-bubbles {
   height: 350px;
+  margin-top: 10px;
 }
 
 .circle {
@@ -18,17 +19,16 @@
 }
 
 .bubble__1 {
-  left: 100px;
+  left: 90px;
 }
 
 .bubble__2 {
   top: 100px;
-  left: 10px;
 }
 
 .bubble__3 {
   top: 130px;
-  left: 200px;
+  left: 190px;
 }
 
 .bubble__title {
@@ -63,16 +63,16 @@
 
   .dates__deadlines-bubbles {
     height: 270px;
+    margin-top: 20px;
   }
 
   .bubble__2 {
     top: 85px;
-    left: 25px;
   }
 
   .bubble__3 {
     top: 110px;
-    left: 160px;
+    left: 135px;
   }
 
   .bubble__title {
@@ -105,7 +105,7 @@
     height: 500px !important;
   }
 
-  .sponsor-form{
+  .sponsor-form {
     height: 100% !important;
     text-align: center !important;
   }
@@ -157,8 +157,13 @@
   filter: blur(70px);
 }
 
-.sponsor-form{
-  background-image: linear-gradient(180deg, rgba(0,0,0,0.644782913165266) 24%, rgba(0,0,0,0.6811974789915967) 83%),url("https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/09/Capture_HAckathon_wordpress.jpg");
+.sponsor-form {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.644782913165266) 24%,
+      rgba(0, 0, 0, 0.6811974789915967) 83%
+    ),
+    url("https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/09/Capture_HAckathon_wordpress.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

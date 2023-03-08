@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
 import { useState } from "react";
 import "./Carousel.style.css";
 import Carousel from "react-bootstrap/Carousel";
 import Countdown from "./Countdown";
 import { Button } from "react-bootstrap";
-import axios from "axios";
+// import axios from "axios";
 
 const CarouselContainer = () => {
   const [index, setIndex] = useState(0);
@@ -13,7 +12,7 @@ const CarouselContainer = () => {
     setIndex(selectedIndex);
   };
 
-  const unstop_api_key = process.env.REACT_APP_UNSTOP_API_KEY;
+  // const unstop_api_key = process.env.REACT_APP_UNSTOP_API_KEY;
 
   // async function fetchUnstopData() {
   //   try {
@@ -29,11 +28,13 @@ const CarouselContainer = () => {
   // }, [])
 
   return (
-    <Carousel 
-    style={{
-      width: "90vw",
-    }}
-    activeIndex={index} onSelect={handleSelect}>
+    <Carousel
+      style={{
+        width: "90vw",
+      }}
+      activeIndex={index}
+      onSelect={handleSelect}
+    >
       <Carousel.Item>
         <a
           href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
