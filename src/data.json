@@ -44,6 +44,7 @@
     {
       "theme": "Smart Vehicle",
       "desc": "Creating intelligent devices to improve commutation sector.",
+      "picture": "https://scwcontent.affino.com/AcuCustom/Sitename/DAM/014/Autonomous-vehicle-AdobeStock_174958313_rm.png",
       "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Smart_Fortwo_EQ_Car2goStuttgart_IMG_0750.jpg/1200px-Smart_Fortwo_EQ_Car2goStuttgart_IMG_0750.jpg",
       "institution": ["school", "college"],
       "color": "rgb(146, 186, 213)"
@@ -51,105 +52,120 @@
     {
       "theme": "Robotics and Drones",
       "desc": "There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/ICub_-_Festival_Economia_2018_2.jpg/1200px-ICub_-_Festival_Economia_2018_2.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/ICub_-_Festival_Economia_2018_2.jpg/1200px-ICub_-_Festival_Economia_2018_2.jpg",
+      "icon": "https://img.icons8.com/external-soft-fill-juicy-fish/60/null/external-drone-aerospace-engineering-soft-fill-soft-fill-juicy-fish.png",
       "institution": ["school", "college"],
       "color": "#0d1402"
     },
     {
       "theme": "Disaster Management",
       "desc": "Disaster management includes ideas related to risk mitigation, Planning and management before, after or during a disaster.",
-      "icon": "https://drscdn.500px.org/photo/83432187/m%3D900/v2?sig=fca34a23a10a8207eb1ded7e1b1d8fb0c6eb477b9bd964090b0ea280766f1050",
+      "picture": "https://drscdn.500px.org/photo/83432187/m%3D900/v2?sig=fca34a23a10a8207eb1ded7e1b1d8fb0c6eb477b9bd964090b0ea280766f1050",
+      "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-environment-ecology-flaticons-lineal-color-flat-icons.png",
       "institution": ["school", "college"],
       "color": "rgb(248, 130, 8)"
     },
     {
       "theme": "Smart Education",
       "desc": "Smart education,a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Interactive_whiteboard_at_CeBIT_2007.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Interactive_whiteboard_at_CeBIT_2007.jpg",
+      "icon": "https://sih.gov.in/img/smart-education.png",
       "institution": ["school", "college"],
       "color": "rgb(147, 63, 44)"
     },
     {
       "theme": "Smart Automation",
       "desc": "Ideas focused on the intelligent use of resources for transforming and advancements of technology with combining the artificial intelligence to explore more various sources and get valuable insights.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/BMW_Leipzig_MEDIA_050719_Download_Karosseriebau_max.jpg/463px-BMW_Leipzig_MEDIA_050719_Download_Karosseriebau_max.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/BMW_Leipzig_MEDIA_050719_Download_Karosseriebau_max.jpg/463px-BMW_Leipzig_MEDIA_050719_Download_Karosseriebau_max.jpg",
+      "icon": "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
       "institution": ["school", "college"],
       "color": "rgb(238, 101, 0)"
     },
     {
       "theme": "Intelligent Transportation and logistics",
       "desc": "Submit your ideas to address the growing pressures on the city’s resources, transport networks, and logistic infrastructure.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Platooning_Back_022414_Final_noTpye.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Platooning_Back_022414_Final_noTpye.jpg",
+      "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-logistics-industry-flaticons-lineal-color-flat-icons-2.png",
       "institution": ["college"],
       "color": "rgb(0, 45, 62)"
     },
     {
       "theme": "Clean/Green Technology",
       "desc": "Solutions could be in the form of waste segregation, disposal, and improve sanitization system.",
+      "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-green-technology-renewable-energy-flaticons-flat-flat-icons.png",
       "institution": ["school", "college"],
-      "icon": "https://drscdn.500px.org/photo/31224973/m%3D900/v2?sig=9ef91d98e591c587be5909a76d1a6d57139785dd418f3ff5c21bf3d12d14c533",
+      "picture": "https://drscdn.500px.org/photo/31224973/m%3D900/v2?sig=9ef91d98e591c587be5909a76d1a6d57139785dd418f3ff5c21bf3d12d14c533",
       "color": "rgb(0, 97, 167)"
     },
     {
       "theme": "Renewable and sustainable energy",
       "desc": "Innovative ideas that help manage and generate renewable /sustainable sources more efficiently.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/As_solar_firmengebaude.jpg/1200px-As_solar_firmengebaude.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/As_solar_firmengebaude.jpg/1200px-As_solar_firmengebaude.jpg",
+      "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-renewable-energy-renewable-energy-flaticons-flat-flat-icons-2.png",
       "institution": ["school", "college"],
       "color": "rgb(0, 112, 255)"
     },
     {
       "theme": "Blockchain and Cybersecurity",
       "desc": "Provide ideas in a decentralized and distributed ledger technology used to store digital information that powers cryptocurrencies and NFTs and can radically change multiple sectors.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Data_Security_Breach_%2829723649810%29.jpg/1200px-Data_Security_Breach_%2829723649810%29.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Data_Security_Breach_%2829723649810%29.jpg/1200px-Data_Security_Breach_%2829723649810%29.jpg",
+      "icon": "https://img.icons8.com/external-becris-lineal-becris/64/null/external-blockchain-cryptocurrency-block-chain-becris-lineal-becris-1.png",
       "institution": ["college"],
       "color": "rgb(255, 0, 0)"
     },
     {
       "theme": "Fitness and Sports",
       "desc": "Ideas that can boost fitness activities and assist in keeping fit.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Football_in_Bloomington%2C_Indiana%2C_1996.jpg/1200px-Football_in_Bloomington%2C_Indiana%2C_1996.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Football_in_Bloomington%2C_Indiana%2C_1996.jpg/1200px-Football_in_Bloomington%2C_Indiana%2C_1996.jpg",
+      "icon": "https://sih.gov.in/img/icon_sport.png",
       "institution": ["school", "college"],
       "color": "rgb(30, 109, 30)"
     },
     {
       "theme": "Agriculture , Foodtech and Rural Development",
       "desc": "Developing solutions, keeping in mind the need to enhance the primary sector of India - Agriculture and to manage and process our agriculture produce.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/4/41/India_Farming.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/4/41/India_Farming.jpg",
+      "icon": "https://sih.gov.in/img/icon_technology.png",
       "institution": ["school", "college"],
       "color": "rgb(68, 255, 0)"
     },
     {
       "theme": "Biotech and healthcare",
       "desc": "Cutting-edge technology in these sectors continues to be in demand. Recent shifts in healthcare trends, growing populations also present an array of opportunities for innovation.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/0/0f/%D0%93%D0%B0%D0%B7%D0%B5%D0%BB%D1%8C_%D1%80%D0%B5%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/0/0f/%D0%93%D0%B0%D0%B7%D0%B5%D0%BB%D1%8C_%D1%80%D0%B5%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F.jpg",
+      "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-biotech-bioengineering-flaticons-flat-flat-icons.png",
       "institution": ["school", "college"],
       "color": "rgb(0, 56, 162)"
     },
     {
       "theme": "IOT with AI",
       "desc": "Submit your idea on Artificial intelligence technologies with the Internet of things infrastructure to achieve more efficient IoT operations, improve human-machine interactions and enhance data management and analytics.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Oneplus_TV_U1S.jpg/333px-Oneplus_TV_U1S.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Oneplus_TV_U1S.jpg/333px-Oneplus_TV_U1S.jpg",
+      "icon": "https://img.icons8.com/ultraviolet/40/null/artificial-intelligence-productivity.png",
       "institution": ["school", "college"],
       "color": "rgb(88, 48, 39)"
     },
     {
       "theme": "Data Privacy and Anonymisation",
       "desc": "Submit your idea and  develop a tool which can access data and anonymize it, so that privacy of the person is protected in compliance with proposed Digital Personal Data Protection Bill, 2022 (to be enacted shortly). With this tool, live transactional data can be made accessible to various stakeholders without violating privacy.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Bansky_one_nation_under_cctv.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Bansky_one_nation_under_cctv.jpg",
+      "icon": "https://img.icons8.com/external-filled-line-andi-nur-abdillah/64/null/external-Data-Privacy-cyber-security-(filled-line)-filled-line-andi-nur-abdillah.png",
       "institution": ["school", "college"],
       "color": "rgb(212, 197, 176)"
     },
     {
       "theme": "Miscellaneous",
       "desc": "Technology ideas in tertiary sectors like Hospitality, Financial Services, Entertainment and Retail.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Silego_clock_generator.JPG/1200px-Silego_clock_generator.JPG",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Silego_clock_generator.JPG/1200px-Silego_clock_generator.JPG",
+      "icon": "https://sih.gov.in/img/icon_education.png",
       "institution": ["school", "college"],
       "color": "rgb(47, 131, 166)"
     },
     {
       "theme": "Open Innovation",
       "desc": "Participants can submit their innovative ideas according to their choice of concerned theme irrespective of the already present problem statements.",
-      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kibo_PM_and_ELM-PS.jpg/800px-Kibo_PM_and_ELM-PS.jpg",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kibo_PM_and_ELM-PS.jpg/800px-Kibo_PM_and_ELM-PS.jpg",
+      "icon": "https://img.icons8.com/external-filled-color-icons-papa-vector/78/null/external-Innovative-Idea-sales-trends-filled-color-icons-papa-vector.png",
       "institution": ["school", "college"],
       "color": "rgb(120, 112, 100)"
     }

@@ -11,6 +11,7 @@ type WinningGuidelines = {
 type themeCardData = {
   theme: string;
   desc: string;
+  picture: string;
   icon: string;
   institution: string[];
   color: string;

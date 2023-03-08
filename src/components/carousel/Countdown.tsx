@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 
 const Countdown = () => {
   const [days, setDays] = useState(0);
@@ -32,53 +33,76 @@ const Countdown = () => {
 
   return (
     <div
-      className="d-flex align-items-center  fw-bold w-75 justify-content-evenly h-50"
+      className="countdown-section px-4 d-flex flex-row align-items-center justify-content-evenly"
       style={{
-        color: "black",
-        fontSize:
-          "min(max(10px, calc(0.625rem + ((1vw - 0.01px) * 2.6055))), 60px)",
+        position: "absolute",
+        bottom: "-20%",
+        zIndex: "10",
+        width: "95%",
+        height: "15vh",
+        backgroundColor: "white",
       }}
     >
+      <img
+        src="https://i.imgur.com/ZCFgq7l.png"
+        alt="logo"
+        className="countdown-logo "
+      />
       <div
-        className="text-center py-2 countdown-item-container d-flex flex-column justify-content-center align-items-center"
+        className="countdown-timer d-flex justify-content-evenly align-items-center flex-wrap"
         style={{
-          // backgroundColor:"blue",
-          width: "10vw",
+          width: "100%",
         }}
       >
-        <div className="countdown-item">{days}</div>
-        <div className="countdown-header">Days</div>
+        <h3
+          className="poppins"
+          style={{
+            fontSize: "1.2rem",
+          }}
+        >
+          Registrations open for :
+        </h3>
+        <div className="d-flex gap-3 mt-3 mb-3">
+          <div className="d-flex flex-column text-center countdown-item ">
+            <span className="fw-bold time">{days}</span>
+            <span className="time-label">Days</span>
+          </div>
+          <div className="d-flex flex-column text-center countdown-item">
+            <span className="fw-bold time">{hours}</span>
+            <span className="time-label">Hours</span>
+          </div>
+          <div className="d-flex flex-column text-center countdown-item">
+            <span className="fw-bold time">{minutes}</span>
+            <span className="time-label">Minutes</span>
+          </div>
+          <div className="d-flex flex-column text-center countdown-item">
+            <span className="fw-bold time">{seconds}</span>
+            <span className="time-label">Seconds</span>
+          </div>
+        </div>
+        <Button
+                className="rounded-button"
+                style={{
+                  backgroundColor: "#F88208",
+                  boxShadow: "0px 8px 25px #F88208",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#f2be88";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = "#F88208";
+                }}
+              >
+                <a
+                  href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Register Now
+                </a>
+              </Button>
       </div>
-      <div
-        className="text-center py-2 countdown-item-container d-flex flex-column justify-content-center align-items-center"
-        style={{
-          // backgroundColor:"blue",
-          width: "10vw",
-        }}
-      >
-        <div className="countdown-item">{hours}</div>
-        <div className="countdown-header">Hours</div>
-      </div>
-      <div
-        className="text-center py-2 countdown-item-container d-flex flex-column justify-content-center align-items-center"
-        style={{
-          // backgroundColor:"blue",
-          width: "10vw",
-        }}
-      >
-        <div className="countdown-item">{minutes}</div>
-        <div className="countdown-header">Minutes</div>
-      </div>
-      <div
-        className="text-center py-2 countdown-item-container d-flex flex-column justify-content-center align-items-center"
-        style={{
-          // backgroundColor:"blue",
-          width: "10vw",
-        }}
-      >
-        <div className="countdown-item">{seconds}</div>
-        <div className="countdown-header">Seconds</div>
-      </div>
+      
     </div>
   );
 };

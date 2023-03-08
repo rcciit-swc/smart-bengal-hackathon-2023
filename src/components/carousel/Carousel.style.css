@@ -7,38 +7,62 @@
     height: 200px !important;
   }
 
-  .countdown-timer {
+  .countdown-section{
     height: 200px !important;
+    bottom:-95% !important;
   }
 
-  .countdown-header {
-    font-size: 10px !important;
+  .countdown-logo{
+    height: 80px !important;
   }
 
-  .countdown-item {
-    font-size: 10px !important;
+  .time{
+    font-size: 0.8rem !important;
   }
 
-  .countdown-item-container {
-    width: 65px !important;
-    padding: 15px !important;
+  .time-label{
+    font-size: 0.5rem !important;
+  }
+
+  .countdown-item{
+    padding: 8px 5px !important;
+    width: 45px !important;
+  }
+
+  .countdown-timer{
+    margin: 0 10px !important;
   }
 }
 
-.countdown-timer {
-  background-image: url("https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/09/Capture_HAckathon_wordpress.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.countdown-section {
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border-radius: 10px !important;
 }
 
-.countdown-header {
-  font-size: 20px;
+.countdown-logo{
+  height: 140px;
 }
 
-.countdown-item-container {
-  backdrop-filter: blur(13px) saturate(140%);
-  -webkit-backdrop-filter: blur(13px) saturate(140%);
-  background-color: rgba(255, 255, 255, 0.56);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+.countdown-item{
+  padding: 10px 10px;
+  width: 100px;
+  backdrop-filter: blur(25px) saturate(47%);
+    -webkit-backdrop-filter: blur(25px) saturate(47%);
+    background-color: rgba(17, 25, 40, 0.77);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+}
+
+.time{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.time-label{
+  font-size: 1rem;
+  font-weight: 200;
 }

@@ -18,28 +18,30 @@ const Home = () => {
     <main
       className="d-flex flex-column align-items-center"
       style={{
-        overflowX: "hidden",
+        overflow: "hidden",
       }}
     >
       <Suspense fallback={<></>}>
         <Circle
-          width="300px"
-          height="300px"
-          blur="100"
-          top="200px"
-          left="-150px"
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          right="-450px"
+          color="orange"
         />
         <Circle
-          width="300px"
-          height="300px"
-          blur="100"
-          top="200px"
-          right="-150px"
-          color="#1768B0"
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          left="-450px"
+          color="blue"
         />
+
       </Suspense>
       <CarouselContainer />
-      <div className="w-75 my-2 fs-3">
+      {/* <div className="w-75 my-5 fs-3">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
           <a
             href="https://anonymiser.wb.gov.in/"
@@ -50,7 +52,7 @@ const Home = () => {
             The Anonymiser Hackathon
           </a>
         </Marquee>
-      </div>
+      </div> */}
       {/* <div
         style={{ backgroundColor: `var(--primary-color-light)` }}
         className="w-100 h-100 d-flex flex-column align-items-center"
@@ -80,9 +82,9 @@ const Home = () => {
           ))}
         </div>
       </div> */}
-      <div className="my-5 d-flex flex-column w-75">
+      <div className=" d-flex flex-column w-75 sbh-title">
         <h2
-          style={{ color: `var(--heading-color)` }}
+          style={{ color: `var(--heading-color)`,marginTop:"5em" }}
           className="caveat text-uppercase px-3"
         >
           {title}

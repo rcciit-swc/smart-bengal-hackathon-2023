@@ -25,27 +25,36 @@ const Sponsors: React.FC = () => {
       <div className="container pt-5 pb-5 position-relative">
         <Suspense fallback={<></>}>
           <Circle
-            width="300px"
-            height="300px"
-            blur="300"
-            top="600px"
-            right="-300px"
+            width="600px"
+            height="600px"
+            blur="80"
+            top="800px"
+            right="-500px"
+            color="orange"
           />
           <Circle
-            width="300px"
-            height="300px"
-            blur="500"
-            top="50%"
-            left="-300px"
-            color="#1768B0"
+            width="600px"
+            height="600px"
+            blur="80"
+            top="1500px"
+            left="-500px"
+            color="blue"
           />
           <Circle
-            width="300px"
-            height="300px"
-            blur="100"
-            bottom="-250px"
-            right="-350px"
-            zIndex="-1"
+            width="600px"
+            height="600px"
+            blur="80"
+            top="2000px"
+            right="-500px"
+            color="orange"
+          />
+          <Circle
+            width="600px"
+            height="600px"
+            blur="80"
+            top="2600px"
+            left="-500px"
+            color="blue"
           />
         </Suspense>
         <h1

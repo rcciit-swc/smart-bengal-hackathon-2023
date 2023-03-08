@@ -9,13 +9,13 @@ const ThemeCard = ({
   theme,
   desc,
   id,
-  icon,
+  picture,
   color,
 }: {
   theme: string;
   desc: string;
   id: string;
-  icon: string;
+  picture: string;
   color: string;
 }) => {
   return (
@@ -59,7 +59,7 @@ const ThemeCard = ({
             width: "inherit",
             borderRadius: "inherit",
           }}
-          src={icon}
+          src={picture}
           alt=""
         />
       </div>
@@ -91,18 +91,26 @@ const Themes = () => {
   return (
     <div className="pt-5 w-100 h-100 d-flex flex-column align-items-center text-center position-relative">
       <Suspense fallback={<></>}>
+      <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="-50px"
+          right="-400px"
+          color="orange"
+        />
         <Circle
-          width="300px"
-          height="300px"
-          blur="300"
-          top="400px"
-          left="-150px"
-          color="#1768B0"
+          width="600px"
+          height="600px"
+          blur="80"
+          top="500px"
+          left="-400px"
+          color="blue"
         />
       </Suspense>
       <h5
         style={{ color: `var(--heading-color)` }}
-        className="text-uppercase fw-bold"
+        className="caveat text-uppercase fw-bold fs-2"
       >
         {`${title}'s`}
       </h5>
@@ -140,21 +148,21 @@ const Themes = () => {
               id="1"
               theme={ThemeCardData[visible - 2].theme}
               desc={ThemeCardData[visible - 2].desc}
-              icon={ThemeCardData[visible - 2].icon}
+              picture={ThemeCardData[visible - 2].picture}
               color={ThemeCardData[visible - 2].color}
             />
             <ThemeCard
               id="2"
               theme={ThemeCardData[visible - 1].theme}
               desc={ThemeCardData[visible - 1].desc}
-              icon={ThemeCardData[visible - 1].icon}
+              picture={ThemeCardData[visible - 1].picture}
               color={ThemeCardData[visible - 1].color}
             />
             <ThemeCard
               id="3"
               theme={ThemeCardData[visible].theme}
               desc={ThemeCardData[visible].desc}
-              icon={ThemeCardData[visible].icon}
+              picture={ThemeCardData[visible].picture}
               color={ThemeCardData[visible].color}
             />
           </div>
