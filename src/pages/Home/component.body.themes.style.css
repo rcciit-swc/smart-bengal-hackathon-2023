@@ -13,6 +13,12 @@
   width: 300px;
 }
 
+@media screen and (max-width: 380px) {
+  .themes-grid-container {
+    scale: 0.8;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .themes-grid {
     grid-template-columns: 1fr !important;

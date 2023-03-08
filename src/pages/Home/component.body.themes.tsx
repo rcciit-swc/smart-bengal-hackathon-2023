@@ -8,27 +8,59 @@ const ThemeCard = ({
   desc,
   id,
   icon,
+  color,
 }: {
   theme: string;
   desc: string;
   id: string;
   icon: string;
+  color: string;
 }) => {
   return (
     <div
       id={`theme_card_${id}`}
       style={{
-        backgroundColor: `var(--primary-color-light)`,
+        borderRadius: "20px",
+        height: "375px",
+        boxShadow: "-8px 32px 30px -2px rgba(0, 106, 167, 0.21)",
+        overflow: "hidden",
       }}
-      className="m-3 p-3 d-flex flex-column align-items-center "
+      className="m-3 p-3 d-flex flex-column align-items-center position-relative"
     >
-      <img
-        src={icon}
-        alt={theme}
-        className="my-4"
-        style={{ width: "80px", height: "80px" }}
-      />
-      <h5 className="fw-bold text-center">{theme}</h5>
+      <span
+        style={{
+          height: "250px",
+          width: "250px",
+          backgroundColor: color,
+          opacity: "0.5",
+          borderRadius: "50%",
+          top: "225px",
+          left: "-36px",
+        }}
+        className="position-absolute"
+      ></span>
+      <div
+        style={{
+          height: "266px",
+          width: "414px",
+          left: "85px",
+          top: "180px",
+          borderRadius: "20px",
+          transform: "rotate(-28deg)",
+        }}
+        className="position-absolute"
+      >
+        <img
+          style={{
+            height: "inherit",
+            width: "inherit",
+            borderRadius: "inherit",
+          }}
+          src={icon}
+          alt=""
+        />
+      </div>
+      <h5 className="fw-bold text-start w-100">{theme}</h5>
       <span style={{ textAlign: "justify" }} className="fs-6">
         {desc}
       </span>
@@ -54,10 +86,10 @@ const Themes = () => {
   }, [visible]);
 
   return (
-    <div className="py-5 w-100 h-100 d-flex flex-column align-items-center text-center">
+    <div className="pt-5 w-100 h-100 d-flex flex-column align-items-center text-center">
       <h5
         style={{ color: `var(--heading-color)` }}
-        className="text-uppercase fw-bold "
+        className="text-uppercase fw-bold"
       >
         {`${title}'s`}
       </h5>
@@ -67,7 +99,7 @@ const Themes = () => {
       >
         themes
       </h1>
-      <h5 className="fw-light fs-5 text-center">{themesTagline}</h5>
+      <h5 className="fw-light fs-6 text-center">{themesTagline}</h5>
       <FadeIn
         from="bottom"
         positionOffset={200}
@@ -90,29 +122,27 @@ const Themes = () => {
               }
             }}
           />
-          <div
-            className="d-grid themes-grid "
-            style={{
-              height: "70vh",
-            }}
-          >
+          <div className="d-grid themes-grid ">
             <ThemeCard
               id="1"
               theme={ThemeCardData[visible - 2].theme}
               desc={ThemeCardData[visible - 2].desc}
               icon={ThemeCardData[visible - 2].icon}
+              color={ThemeCardData[visible - 2].color}
             />
             <ThemeCard
               id="2"
               theme={ThemeCardData[visible - 1].theme}
               desc={ThemeCardData[visible - 1].desc}
               icon={ThemeCardData[visible - 1].icon}
+              color={ThemeCardData[visible - 1].color}
             />
             <ThemeCard
               id="3"
               theme={ThemeCardData[visible].theme}
               desc={ThemeCardData[visible].desc}
               icon={ThemeCardData[visible].icon}
+              color={ThemeCardData[visible].color}
             />
           </div>
           <img
@@ -129,7 +159,7 @@ const Themes = () => {
           />
         </div>
       </FadeIn>
-      <p className="mt-4 fw-bold fs-5 w-75">
+      <p className="mt-4 fw-500 fs-6 w-75">
         Participants can submit their innovative ideas according to their choice
         of concerned theme irrespective of the already present problem
         statements.

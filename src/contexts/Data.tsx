@@ -13,6 +13,7 @@ type themeCardData = {
   desc: string;
   icon: string;
   institution: string[];
+  color: string;
 };
 
 type FaqObjectType = {
