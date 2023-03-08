@@ -7,15 +7,15 @@ const Footer = () => {
     <div
       id="contact"
       style={{
-        backgroundColor: "var(--primary-color)",
+        backgroundColor: "black",
         color: "var(--invert-color)",
       }}
       className="d-flex flex-row justify-content-evenly py-4 flex-wrap align-items-start"
     >
       <div className="d-flex flex-column align-items-center px-3 justify-content-evenly my-3">
-        <p className="text-uppercase fs-5 fw-bold">Follow us</p>
+        <p className="text-uppercase fs-5 fw-bold montserrat">Follow us</p>
         <div></div>
-        <a href="#" className="fs-6 copyright my-1 text-center">
+        <a href="#" className="fs-6 copyright my-1 text-center poppins">
           © 2022-23 Smart Bengal Hackathon. All rights reserved
         </a>
         <a className="fs-6 copyright" href="mailto:sbh@rcciit.org.in">
@@ -53,21 +53,23 @@ const Footer = () => {
         </div>
       </div>
       <div className="d-flex flex-column align-items-center px-3 my-3">
-        <p className="text-uppercase fs-5 fw-bold px-3">contact us</p>
+        <p className="text-uppercase fs-5 fw-bold px-3 montserrat">
+          contact us
+        </p>
         <div className="d-flex footer-content">
           {contact.name.map((item, index) => {
             return (
               <div
                 key={index}
-                className="d-flex flex-column px-3 mb-3 flex-wrap align-items-center justify-content-evenly"
+                className="d-flex flex-column px-3 mb-3 flex-wrap align-items-center justify-content-evenly montserrat"
               >
                 <span>{item}</span>
-                <span>
+                <span style={{ fontWeight: "200" }}>
                   <a href={`mailto:${contact.email[index]}`}>
                     {contact.email[index]}
                   </a>
                 </span>
-                <span>
+                <span style={{ fontWeight: "200" }}>
                   <a href={`tel:${contact.phone[index]}`}>
                     {contact.phone[index]}
                   </a>

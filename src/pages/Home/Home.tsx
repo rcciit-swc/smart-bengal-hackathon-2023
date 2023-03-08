@@ -6,6 +6,7 @@ import Sponsors from "./Sponsors";
 import Marquee from "react-fast-marquee";
 import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
+import { Button } from "react-bootstrap";
 
 const Themes = lazy(() => import("./component.body.themes"));
 
@@ -14,12 +15,44 @@ const Home = () => {
 
   return (
     <main
-      style={{
-        width: "100vw",
-        // backgroundColor: `var(--primary-color-light)`,
-      }}
+      // style={{
+      //   width: "100vw",
+      //   // backgroundColor: `var(--primary-color-light)`,
+      // }}
       className="d-flex flex-column align-items-center"
+      style={{
+        overflowY: "hidden",
+      }}
     >
+      <div
+        id="orange_circle"
+        style={{ top: "-20%", right: "-35%", zIndex: "-1" }}
+      ></div>
+      <div
+        id="blue_circle"
+        style={{ top: "-20%", left: "-35%", zIndex: "-1" }}
+      ></div>
+      <div
+        className="orange_circle_body"
+        style={{ top: "200%", left: "-35%", zIndex: "-1" }}
+      ></div>
+      <div
+        className="orange_circle_body"
+        style={{ top: "300%", right: "-35%", zIndex: "-1" }}
+      ></div>
+      <div
+        className="blue_circle_body"
+        style={{ top: "400%", left: "-35%", zIndex: "-1" }}
+      ></div>
+
+      <div
+        className="blue_circle_body"
+        style={{ top: "500%", right: "-35%", zIndex: "-1" }}
+      ></div>
+      <div
+        className="orange_circle_body"
+        style={{ top: "600%", left: "-35%", zIndex: "-1" }}
+      ></div>
       <CarouselContainer />
       <div className="w-75 my-2 fs-3">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
@@ -33,7 +66,7 @@ const Home = () => {
           </a>
         </Marquee>
       </div>
-      <div
+      {/* <div
         style={{ backgroundColor: `var(--primary-color-light)` }}
         className="w-100 h-100 d-flex flex-column align-items-center"
       >
@@ -61,7 +94,7 @@ const Home = () => {
             </FadeIn>
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="my-5 d-flex flex-column w-75">
         <h2
           style={{ color: `var(--heading-color)` }}
@@ -98,8 +131,32 @@ const Home = () => {
               delayInMilliseconds={100}
             >
               <p>
-              Important dates and deadlines vary depending on the context. It's crucial to keep track of them for tasks such as project submissions, application deadlines, and events. Missing deadlines can lead to penalties and missed opportunities.
+                Important dates and deadlines vary depending on the context.
+                It's crucial to keep track of them for tasks such as project
+                submissions, application deadlines, and events. Missing
+                deadlines can lead to penalties and missed opportunities.
               </p>
+              <Button
+                className="rounded-button"
+                style={{
+                  backgroundColor: "#1768b0",
+                  boxShadow: "0px 8px 25px #1768b0",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#508fc7";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = "#1768B0";
+                }}
+              >
+                <a
+                  href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Register Now
+                </a>
+              </Button>
               {/* <ul style={{ fontSize: "20px" }}>
                 <li>
                   <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023
@@ -176,7 +233,7 @@ const Home = () => {
         <Themes />
       </Suspense>
       <Sponsors />
-      <div className="mb-5 fs-3 ">
+      {/* <div className="mb-5 fs-3 ">
         <span>Want to sponsor us?</span>
         <a href="https://cutt.ly/sbh_partner" target="_blank" rel="noreferrer">
           <span
@@ -192,6 +249,53 @@ const Home = () => {
             Contact Us
           </span>
         </a>
+      </div> */}
+      <div
+        className="d-flex sponsor-form w-100 justify-content-center align-items-center py-5"
+        style={{ height: "400px", padding: "0px 10vw" }}
+      >
+        <div
+          className="w-100 h-100 d-flex justify-content-between align-items-center flex-wrap "
+          style={{ backgroundColor: "#F88208", borderRadius: "50px" }}
+        >
+          <div
+            className="d-flex flex-column justify-content-center align-items-left poppin my-5 mx-auto px-3"
+            style={{ color: "white",marginLeft:"3vw" }}
+          >
+            <span className="text-uppercase fs-3 fw-semibold">
+              Feeling Excited ?
+            </span>
+            <span className="text-uppercase fs-3 fw-semibold">
+              Wanna Partner With Us ?
+            </span>
+            <span className="fs-6">
+              Fill the form to partner with us. We together can change the way
+              <br />
+              other think. So, let’s just take a step forward and solve the
+              problem
+            </span>
+          </div>
+          <div className="mx-auto">
+            <Button className="rounded-button poppins "
+            style={{
+              backgroundColor: "#000000",
+              boxShadow: "0px 8px 25px #000000",
+              fontWeight: "400",
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.filter = "invert(1)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.filter = "invert(0)";
+            }}
+            ><a href="https://cutt.ly/sbh_partner" target="_blank" rel="noreferrer">Support the Cause</a></Button>
+          </div>
+          <img 
+          className=" mx-auto my-5"
+          src="https://i.imgur.com/9KWEdy0.png" alt="handshake_icon" 
+            width={200}
+          />
+        </div>
       </div>
     </main>
   );

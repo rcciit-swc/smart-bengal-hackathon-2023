@@ -29,7 +29,11 @@ const CarouselContainer = () => {
   // }, [])
 
   return (
-    <Carousel className="w-100" activeIndex={index} onSelect={handleSelect}>
+    <Carousel 
+    style={{
+      width: "90vw",
+    }}
+    activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <a
           href="https://unstop.com/o/2adeEYJ?lb=TzAP536"

@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;700&display=swap');
 
 .caveat {
   font-family: "Caveat", cursive !important;
 }
 
 .poppins {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 body {
@@ -86,4 +91,12 @@ a {
 }
 #close:after {
   transform: rotate(-45deg);
+}
+
+.rounded-button {
+  outline: none !important;
+  border: none !important;
+  padding: 10px 30px !important;
+  border-radius: 50px !important;
+  letter-spacing: 2px !important;
 }
