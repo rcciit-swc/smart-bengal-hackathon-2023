@@ -44,9 +44,9 @@
     {
       "theme": "Smart Vehicle",
       "desc": "Creating intelligent devices to improve commutation sector.",
-      "icon": "https://sih.gov.in/img/icon_automobiles.png",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Smart_Fortwo_EQ_Car2goStuttgart_IMG_0750.jpg/1200px-Smart_Fortwo_EQ_Car2goStuttgart_IMG_0750.jpg",
       "institution": ["school", "college"],
-      "color": "#00A700"
+      "color": "rgb(146, 186, 213)"
     },
     {
       "theme": "Robotics and Drones",

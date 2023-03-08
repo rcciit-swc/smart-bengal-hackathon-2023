@@ -1,31 +1,21 @@
-import React from "react";
+import { lazy, Suspense } from "react";
 import { Button } from "react-bootstrap";
 import FaqCard from "../../components/FaqCard/FaqCard";
 import { useData } from "../../contexts/Data";
+
+const Header = lazy(() => import("../../components/Header/Header"));
 
 const FAQ = () => {
   const { faq } = useData();
   const { SBHSenior, SBHJunior } = faq;
   return (
-    <main className="w-100">
-      <div className={"w-100 position-relative"}>
-        <img
-          className={"d-block"}
-          src={"https://sih.gov.in/img1/faq-bg.jpg"}
-          alt={"projectImplementation"}
-          style={{ height: "100%", width: "100%", objectFit: "cover" }}
+    <>
+      <Suspense fallback={<></>}>
+        <Header
+          text="Frequently Asked Questions"
+          image="https://sih.gov.in/img1/faq-bg.jpg"
         />
-        <h1
-          className="carousel-caption fw-bold text-center position-absolute"
-          style={{
-            fontSize:
-              "min(max(10px, calc(0.625rem + ((1vw - 0.01px) * 2.6055))), 60px)",
-            top: "50%",
-          }}
-        >
-          FREQUENTLY ASKED QUESTIONS
-        </h1>
-      </div>
+      </Suspense>
       <div
         className="w-100"
         style={{
@@ -48,17 +38,17 @@ const FAQ = () => {
       >
         <div className="w-75 mx-auto">
           <div className="d-flex justify-content-between w-100 align-items-center">
-            <h3 className="fw-bold" style={{ color: "var(--heading-color)" }}>
-              FAQ FOR SBH SENIOR
+            <h3
+              className="fw-bold caveat"
+              style={{ color: "var(--heading-color)" }}
+            >
+              SBH SENIOR
             </h3>
             <Button
               variant="success"
-              className="mb-5"
               style={{
                 outline: "none",
                 border: "none",
-                // backgroundColor: "var(--heading-color)",
-                // color: "white",
                 padding: "10px 30px",
                 borderRadius: "50px",
                 fontWeight: "600",
@@ -91,17 +81,17 @@ const FAQ = () => {
         </div>
         <div className="w-75 mx-auto mt-5">
           <div className="d-flex justify-content-between w-100 align-items-center">
-            <h3 className="fw-bold" style={{ color: "var(--heading-color)" }}>
-              FAQ FOR SBH JUNIOR
+            <h3
+              className="fw-bold caveat"
+              style={{ color: "var(--heading-color)" }}
+            >
+              SBH JUNIOR
             </h3>
             <Button
               variant="success"
-              className="mb-5"
               style={{
                 outline: "none",
                 border: "none",
-                // backgroundColor: "var(--heading-color)",
-                // color: "white",
                 padding: "10px 30px",
                 borderRadius: "50px",
                 fontWeight: "600",
@@ -133,7 +123,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 
