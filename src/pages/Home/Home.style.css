@@ -207,3 +207,13 @@
   background-size: cover;
   background-position: center;
 }
+
+.partner__contact {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+  .partner__contact {
+    flex-direction: column;
+  }
+}

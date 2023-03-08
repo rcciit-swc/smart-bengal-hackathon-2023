@@ -238,27 +238,31 @@ const Home = () => {
         style={{ height: "400px", padding: "0px 10vw" }}
       >
         <div
-          className="w-100 h-100 d-flex justify-content-between align-items-center flex-wrap "
+          className="partner__contact w-100 h-100 d-flex justify-content-between align-items-center my-5 py-5 px-3"
           style={{ backgroundColor: "#F88208", borderRadius: "50px" }}
         >
           <div
-            className="d-flex flex-column justify-content-center align-items-left poppin my-5 mx-auto px-3"
+            className="d-flex flex-column justify-content-center align-items-left poppin mb-5"
             style={{ color: "white", marginLeft: "3vw" }}
           >
             <span className="text-uppercase fs-3 fw-semibold">
-              Feeling Excited ?
-            </span>
-            <span className="text-uppercase fs-3 fw-semibold">
-              Wanna Partner With Us ?
+              Feeling Excited ?<br></br>Partner With Us.
             </span>
             <span className="fs-6">
-              Fill the form to partner with us. We together can change the way
+              Fill the form to partner with us. Together, we can change the way
               <br />
-              other think. So, let’s just take a step forward and solve the
-              problem
+              others think. So, let’s just take a step forward and solve the
+              problem.
             </span>
           </div>
-          <div className="mx-auto">
+          <div className="d-flex flex-column align-items-center">
+            <img
+              className=" mx-auto mb-2"
+              src="https://i.imgur.com/9KWEdy0.png"
+              alt="handshake_icon"
+              width={200}
+              height="auto"
+            />
             <Button
               className="rounded-button poppins "
               style={{
@@ -282,12 +286,6 @@ const Home = () => {
               </a>
             </Button>
           </div>
-          <img
-            className=" mx-auto my-5"
-            src="https://i.imgur.com/9KWEdy0.png"
-            alt="handshake_icon"
-            width={200}
-          />
         </div>
       </div>
     </main>
