@@ -13,7 +13,7 @@ const Header = ({
         <img
           className={"d-block"}
           src={image}
-          alt={"projectImplementation"}
+          alt=""
           style={{ height: "200px", width: "100%", objectFit: "cover" }}
         />
         <h1
