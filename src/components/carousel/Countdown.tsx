@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
+import "./Countdown.style.css";
 
 const Countdown = () => {
   const [days, setDays] = useState(0);
@@ -7,7 +8,7 @@ const Countdown = () => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const startTimer = () => {
+  useEffect(() => {
     const countdownDate = new Date("March 21, 2023 00:00:00").getTime();
 
     const countdown = setInterval(() => {
@@ -27,20 +28,15 @@ const Countdown = () => {
       setMinutes(minutes);
       setSeconds(seconds);
     }, 1000);
-  };
 
-  startTimer();
+    return () => clearInterval(countdown);
+  }, []);
 
   return (
     <div
       className="countdown-section px-4 d-flex flex-row align-items-center justify-content-evenly"
       style={{
-        position: "absolute",
-        bottom: "-20%",
         zIndex: "10",
-        width: "95%",
-        height: "15vh",
-        backgroundColor: "white",
       }}
     >
       <img
@@ -49,21 +45,21 @@ const Countdown = () => {
         className="countdown-logo "
       />
       <div
-        className="countdown-timer d-flex justify-content-evenly align-items-center flex-wrap"
+        className="countdown-timer d-flex justify-content-evenly align-items-center"
         style={{
           width: "100%",
         }}
       >
         <h3
-          className="poppins"
+          className="poppins pe-2"
           style={{
             fontSize: "1.2rem",
           }}
         >
-          Registrations open for :
+          Registrations closes:
         </h3>
         <div className="d-flex gap-3 mt-3 mb-3">
-          <div className="d-flex flex-column text-center countdown-item ">
+          <div className="d-flex flex-column text-center countdown-item">
             <span className="fw-bold time">{days}</span>
             <span className="time-label">Days</span>
           </div>
@@ -81,28 +77,27 @@ const Countdown = () => {
           </div>
         </div>
         <Button
-                className="rounded-button"
-                style={{
-                  backgroundColor: "#F88208",
-                  boxShadow: "0px 8px 25px #F88208",
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.backgroundColor = "#f2be88";
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = "#F88208";
-                }}
-              >
-                <a
-                  href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Register Now
-                </a>
-              </Button>
+          className="rounded-button mx-3"
+          style={{
+            backgroundColor: "#F88208",
+            boxShadow: "0px 8px 25px #F88208",
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.backgroundColor = "#f2be88";
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.backgroundColor = "#F88208";
+          }}
+        >
+          <a
+            href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Register Now
+          </a>
+        </Button>
       </div>
-      
     </div>
   );
 };

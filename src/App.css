@@ -20,6 +20,22 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
+
 a {
   color: inherit !important;
   text-decoration: none !important;
@@ -27,6 +43,7 @@ a {
 
 :root {
   --heading-color: rgb(0, 167, 0);
+  --secondary-heading-color: rgb(248, 130, 8);
   --secondary-heading-color: rgba(38, 50, 56, 0.65);
   --primary-color: #002449;
   --secondary-color: #3a478b;
@@ -99,4 +116,19 @@ a {
   padding: 10px 30px !important;
   border-radius: 50px !important;
   letter-spacing: 2px !important;
+}
+
+.up__arrow {
+  animation: up infinite 1s alternate;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+  }
 }

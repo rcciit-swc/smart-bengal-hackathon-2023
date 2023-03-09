@@ -12,7 +12,7 @@ const Team = () => {
     <>
       <Suspense fallback={<></>}>
         <Header
-          text="Executive Team"
+          text="Team"
           image="https://sih.gov.in/img/project-implementation.jpg"
         />
       </Suspense>

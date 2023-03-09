@@ -122,28 +122,6 @@
     font-size: 10px;
   }
 
-  #orange_circle {
-    width: 300px !important;
-    height: 400px !important;
-    top: 0 !important;
-  }
-
-  #blue_circle {
-    width: 300px !important;
-    height: 400px !important;
-    top: 0 !important;
-  }
-
-  .orange_circle_body {
-    width: 200px !important;
-    height: 500px !important;
-  }
-
-  .blue_circle_body {
-    width: 200px !important;
-    height: 500px !important;
-  }
-
   .sponsor-form {
     height: 100% !important;
     text-align: center !important;
@@ -169,10 +147,6 @@
 @media screen and (max-width: 900px) {
   .partner__contact {
     flex-direction: column;
-  }
-
-  .sbh-title{
-    margin-top: 8em !important;
   }
 }
 

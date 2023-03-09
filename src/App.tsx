@@ -208,10 +208,12 @@ function App() {
         </UserProvider>
       </DataProvider>
       <img
-        className="position-fixed"
+        className="position-fixed up__arrow"
         style={{ bottom: "20px", right: "20px" }}
-        alt="scroll to top"
-        src="https://img.icons8.com/color/40/000000/login-rounded-up--v1.png"
+        width="40px"
+        height="40px"
+        alt=""
+        src="/assets/arrow_up.png"
         role="button"
         onClick={() => {
           window.scrollTo(0, 0);

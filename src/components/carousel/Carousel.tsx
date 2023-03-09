@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "./Carousel.style.css";
 import Carousel from "react-bootstrap/Carousel";
-import Countdown from "./Countdown";
-import { Button } from "react-bootstrap";
 // import axios from "axios";
 
 const CarouselContainer = () => {
@@ -29,12 +27,11 @@ const CarouselContainer = () => {
 
   return (
     <div
-    className="d-flex flex-column align-items-center"
+      className="d-flex flex-column align-items-center"
       style={{
         position: "relative",
       }}
     >
-      <Countdown />
       <Carousel
         style={{
           width: "90vw",

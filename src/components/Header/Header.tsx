@@ -14,7 +14,7 @@ const Header = ({
           className={"d-block"}
           src={image}
           alt={"projectImplementation"}
-          style={{ height: "100%", width: "100%", objectFit: "cover" }}
+          style={{ height: "200px", width: "100%", objectFit: "cover" }}
         />
         <h1
           className="fw-bold text-center position-absolute w-100"

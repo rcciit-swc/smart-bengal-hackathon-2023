@@ -50,6 +50,7 @@ const ThemeCard = ({
           top: "180px",
           borderRadius: "20px",
           transform: "rotate(-28deg)",
+          backgroundColor: color,
         }}
         className="position-absolute"
       >
@@ -58,6 +59,7 @@ const ThemeCard = ({
             height: "inherit",
             width: "inherit",
             borderRadius: "inherit",
+            opacity: "0.2",
           }}
           src={picture}
           alt=""
@@ -91,7 +93,7 @@ const Themes = () => {
   return (
     <div className="pt-5 w-100 h-100 d-flex flex-column align-items-center text-center position-relative">
       <Suspense fallback={<></>}>
-      <Circle
+        <Circle
           width="600px"
           height="600px"
           blur="80"

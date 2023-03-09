@@ -17,7 +17,7 @@ const Circle = ({
   color = "#F88208",
   width = "200px",
   height = "200px",
-  blur ,
+  blur,
   top,
   left,
   right,
@@ -34,13 +34,9 @@ const Circle = ({
   bottom?: string;
   zIndex?: string;
 }) => {
-
-
-
-
   return (
     <div
-    className={`${color}_circle`}
+      className={`${color}_circle`}
       style={{
         position: "absolute",
         width: width,

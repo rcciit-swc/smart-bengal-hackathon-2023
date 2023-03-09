@@ -1,12 +1,11 @@
 import { lazy, Suspense } from "react";
 import { useData } from "../../contexts/Data";
-// import DescriptionCard from "./component.body.description";
 import "./Home.style.css";
 import Sponsors from "./Sponsors";
-import Marquee from "react-fast-marquee";
 import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
+import Countdown from "../../components/carousel/Countdown";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
@@ -16,9 +15,9 @@ const Home = () => {
 
   return (
     <main
-      className="d-flex flex-column align-items-center"
+      className="d-flex flex-column align-items-center position-relative"
       style={{
-        overflow: "hidden",
+        overflowX: "hidden",
       }}
     >
       <Suspense fallback={<></>}>
@@ -38,9 +37,9 @@ const Home = () => {
           left="-450px"
           color="blue"
         />
-
       </Suspense>
       <CarouselContainer />
+      <Countdown />
       {/* <div className="w-75 my-5 fs-3">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
           <a
@@ -82,10 +81,10 @@ const Home = () => {
           ))}
         </div>
       </div> */}
-      <div className=" d-flex flex-column w-75 sbh-title">
+      <div className=" d-flex flex-column w-75 mt-5 sbh-title">
         <h2
-          style={{ color: `var(--heading-color)`,marginTop:"5em" }}
-          className="caveat text-uppercase px-3"
+          style={{ color: `var(--sub-heading)` }}
+          className="caveat text-uppercase fw-bold px-3"
         >
           {title}
         </h2>

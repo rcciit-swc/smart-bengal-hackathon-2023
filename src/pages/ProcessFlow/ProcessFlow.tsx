@@ -12,7 +12,7 @@ const ProcessFlow = () => {
   return (
     <>
       <div className="banner_container">
-        <img src={banner} className="banner_img" alt="banner" />
+        <img src={banner} className="banner_img" alt="" />
         <div className="carosal_caption">
           <h3 className=" text-uppercase banner_tag">
             Smart Bengal Hackathon 2023
@@ -25,7 +25,7 @@ const ProcessFlow = () => {
           </p>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center my-5 main-container">
+      <div className="d-flex flex-column align-items-center py-5 main-container">
         <div
           style={{
             backgroundColor: "var(--secondary-color)",
