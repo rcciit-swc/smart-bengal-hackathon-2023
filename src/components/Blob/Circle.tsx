@@ -23,6 +23,7 @@ const Circle = ({
   right,
   bottom,
   zIndex = "-1",
+  bannerCircle ,
 }: {
   color?: string;
   width?: string;
@@ -33,10 +34,11 @@ const Circle = ({
   right?: string;
   bottom?: string;
   zIndex?: string;
+  bannerCircle?: string;
 }) => {
   return (
     <div
-      className={`${color}_circle`}
+      className={`${color}_circle ${bannerCircle}`}
       style={{
         position: "absolute",
         width: width,

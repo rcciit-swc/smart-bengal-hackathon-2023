@@ -165,3 +165,17 @@
     rgba(217, 217, 217, 0) 100%
   );
 }
+
+@media screen and (max-width: 768px) {
+
+  .banner_circle{
+    height: 500px !important;
+    width: 800px !important;
+  }
+
+  .banner_circle{
+    height: 500px !important;
+    width: 800px !important;
+  }
+}
+  

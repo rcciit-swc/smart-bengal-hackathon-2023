@@ -28,6 +28,7 @@ const Home = () => {
           top="-25px"
           right="-450px"
           color="orange"
+          bannerCircle="banner_circle"
         />
         <Circle
           width="900px"
@@ -36,10 +37,11 @@ const Home = () => {
           top="-25px"
           left="-450px"
           color="blue"
+          bannerCircle="banner_circle"
         />
       </Suspense>
       <CarouselContainer />
-      <Countdown />
+      
       {/* <div className="w-75 my-5 fs-3">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
           <a

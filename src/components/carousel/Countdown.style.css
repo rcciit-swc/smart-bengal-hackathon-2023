@@ -1,5 +1,18 @@
+.countdown-section {
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border-radius: 10px !important;
+}
+
+.countdown-logo {
+  height: 10vw !important;
+}
+
 .countdown-item {
   padding: 10px 10px;
+  width: 100px;
   backdrop-filter: blur(25px) saturate(47%);
   -webkit-backdrop-filter: blur(25px) saturate(47%);
   background-color: rgba(17, 25, 40, 0.77);
@@ -8,52 +21,75 @@
   color: white;
 }
 
-.countdown-section {
-  background: rgb(255, 255, 255) !important;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-  border-radius: 10px !important;
-  height: 200px;
-  margin: 15px 0;
+.time {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.countdown-logo {
-  height: 140px;
-  width: auto;
+.time-label {
+  font-size: 1rem;
+  font-weight: 200;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
+
+  .countdown-logo{
+    /* height: 130px !important; */
+  }
+
   .countdown-section {
-    scale: 0.9;
-    margin: 10px 0;
+    bottom: -35% !important;
+    height: 200px !important;
+    /* bottom: -16% !important; */
   }
 }
 
 @media screen and (max-width: 768px) {
   .countdown-section {
-    scale: 0.7;
-    margin: -10px 0;
+    bottom: -95% !important;
   }
-}
 
-@media screen and (max-width: 430px) {
-  .countdown-section {
-    scale: 0.6;
+  .timer{
+    gap: 0 10px !important;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-}
 
-@media screen and (max-width: 430px) {
-  .countdown-section {
-    scale: 0.55;
-    margin: -20px 0;
+  .countdown-logo {
+    height: 80px !important;
   }
-}
 
-@media screen and (max-width: 640px) {
+  .time {
+    font-size: 1.2rem !important;
+  }
+
+  .time-label {
+    font-size: 0.5rem !important;
+  }
+
+  .countdown-item {
+    padding: 8px 5px !important;
+    width: 55px !important;
+  }
+
   .countdown-timer {
-    flex-direction: column;
-    padding: 0 20px;
-    margin: 20px 0;
+    margin: 0 10px !important;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .time {
+    font-size: 1rem !important;
+  }
+
+  .time-label {
+    font-size: 0.3rem !important;
+  }
+
+  .countdown-item {
+    padding: 8px 5px !important;
+    width: 40px !important;
+  }
+}
+
+
