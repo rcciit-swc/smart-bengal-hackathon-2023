@@ -5,7 +5,6 @@ import Sponsors from "./Sponsors";
 import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
-import Countdown from "../../components/carousel/Countdown";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));

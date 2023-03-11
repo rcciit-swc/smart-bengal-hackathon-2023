@@ -11,9 +11,11 @@ function SponsorModal() {
   const [uploadSponsor, setUploadSponsor] = useState<{
     category: string;
     name: string;
+    website?: string;
   }>({
     category: "",
     name: "",
+    website: "",
   });
   const { setImageAndCategory, getSponsorCategory } = useDataContext();
   const [newCategory, setNewCategory] = useState<boolean>(false);
@@ -33,7 +35,7 @@ function SponsorModal() {
     setImageAndCategory(seletecdFile, uploadSponsor, orderNo);
     // clear inputs
     setSelectedFile(null);
-    setUploadSponsor({ category: "", name: "" });
+    setUploadSponsor({ category: "", name: "", website: "" });
     setNewCategory(false);
     setNewOrderNo(false);
   };
@@ -123,6 +125,7 @@ function SponsorModal() {
                       setUploadSponsor({
                         category: e.target.value,
                         name: uploadSponsor.name,
+                        website: uploadSponsor.website,
                       })
                     }
                   />
@@ -147,6 +150,23 @@ function SponsorModal() {
                   setUploadSponsor({
                     category: uploadSponsor.category,
                     name: e.target.value,
+                    website: uploadSponsor.website,
+                  })
+                }
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Sponsor Website</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Enter Website"
+                autoFocus
+                value={uploadSponsor.website}
+                onChange={(e) =>
+                  setUploadSponsor({
+                    category: uploadSponsor.category,
+                    name: uploadSponsor.name,
+                    website: e.target.value,
                   })
                 }
               />

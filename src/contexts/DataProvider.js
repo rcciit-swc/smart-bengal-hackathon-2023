@@ -111,7 +111,7 @@ export function UserProvider({ children }) {
 
   // Set new Sponsors by Admin
   async function setImageAndCategory(imageFile, sponsorData, orderNo) {
-    const { category, name } = sponsorData;
+    const { category, name, website } = sponsorData;
     const modifiedCategory = category.toLowerCase().replace(/\s+/g, "-"); // example: Tech Partner => tech-partner
     try {
       const sponsorImagesRef = ref(storage, `sponsor-images/${name}`);
@@ -123,7 +123,7 @@ export function UserProvider({ children }) {
       // check if document exists
       const docRef = doc(db, "sponsors", modifiedCategory);
       const response = await getDoc(docRef);
-      const newEntry = { name, url };
+      const newEntry = { name, url , website };
 
       // sponsor category already exists
       if (response.exists()) {

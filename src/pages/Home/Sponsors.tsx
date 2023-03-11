@@ -100,12 +100,18 @@ const Sponsors: React.FC = () => {
                             delayInMilliseconds={100}
                           >
                             <div className="sponsor-img-container my-3 mx-3">
-                              <img
-                                className="sponsor-img"
-                                src={image.url}
-                                // style={{ width: "20rem" }}
-                                alt={image.name}
-                              />
+                              <a
+                                href={image.website}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  className="sponsor-img"
+                                  src={image.url}
+                                  // style={{ width: "20rem" }}
+                                  alt={image.name}
+                                />
+                              </a>
                             </div>
                           </FadeIn>
                         );
@@ -121,12 +127,18 @@ const Sponsors: React.FC = () => {
                           delayInMilliseconds={100}
                         >
                           <div className="sponsor-img-container">
-                            <img
-                              className="sponsor-img"
-                              src={image.url}
-                              // style={{ width: "20rem" }}
-                              alt={image.name}
-                            />
+                            <a
+                              href={image.website}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <img
+                                className="sponsor-img"
+                                src={image.url}
+                                // style={{ width: "20rem" }}
+                                alt={image.name}
+                              />
+                            </a>
                           </div>
                         </FadeIn>
                       );
