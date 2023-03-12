@@ -3,6 +3,7 @@ import "./Sponsors.css";
 import { useDataContext } from "../../contexts/DataProvider";
 import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 import Marquee from "react-fast-marquee";
+import { Col, Row } from "react-bootstrap";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 
@@ -63,62 +64,36 @@ const Sponsors: React.FC = () => {
         >
           Supporters of SBH 2023
         </h1>
+        <Row className="w-100 d-flex flex-row justify-content-center align-items-center">
         {sponsorList &&
           sponsorList.map((sponsor: any) => {
-            return (
-              <div className="py-5">
-                <div className="w-100 d-flex flex-row justify-content-center align-items-center">
-                  <div
-                    className="mx-2"
-                    style={{
-                      height: "1px",
-                      backgroundColor: "grey",
-                      width: "inherit",
-                    }}
-                  ></div>
-                  <h3 className="text-center" style={{ width: "inherit" }}>
-                    {sponsor.category}
-                  </h3>
-                  <div
-                    className="mx-2"
-                    style={{
-                      height: "1px",
-                      backgroundColor: "grey",
-                      width: "inherit",
-                    }}
-                  ></div>
-                </div>
-                <div className="sponsor-wrapper mt-5">
-                  {sponsor.category === "Tech Partner" ? (
-                    <Marquee pauseOnHover={true} speed={80}>
-                      {sponsor.images.map((image: any) => {
-                        return (
-                          <FadeIn
-                            from="left"
-                            positionOffset={150}
-                            triggerOffset={25}
-                            delayInMilliseconds={100}
-                          >
-                            <div className="sponsor-img-container my-3 mx-3">
-                              <a
-                                href={image.website}
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                <img
-                                  className="sponsor-img"
-                                  src={image.url}
-                                  // style={{ width: "20rem" }}
-                                  alt={image.name}
-                                />
-                              </a>
-                            </div>
-                          </FadeIn>
-                        );
-                      })}
-                    </Marquee>
-                  ) : (
-                    sponsor.images.map((image: any) => {
+            if(sponsor.images.length > 2) {
+              return <div className="py-5">
+              <div className="w-100 d-flex flex-row justify-content-center align-items-center">
+                <div
+                  className="mx-2"
+                  style={{
+                    height: "1px",
+                    backgroundColor: "grey",
+                    width: "inherit",
+                  }}
+                ></div>
+                <h3 className="text-center" style={{ width: "inherit" }}>
+                  {sponsor.category}
+                </h3>
+                <div
+                  className="mx-2"
+                  style={{
+                    height: "1px",
+                    backgroundColor: "grey",
+                    width: "inherit",
+                  }}
+                ></div>
+              </div>
+              <div className="sponsor-wrapper mt-5">
+                {sponsor.category === "Tech Partner" ? (
+                  <Marquee pauseOnHover={true} speed={80}>
+                    {sponsor.images.map((image: any) => {
                       return (
                         <FadeIn
                           from="left"
@@ -126,7 +101,7 @@ const Sponsors: React.FC = () => {
                           triggerOffset={25}
                           delayInMilliseconds={100}
                         >
-                          <div className="sponsor-img-container">
+                          <div className="sponsor-img-container my-3 mx-3">
                             <a
                               href={image.website}
                               target="_blank"
@@ -142,9 +117,10 @@ const Sponsors: React.FC = () => {
                           </div>
                         </FadeIn>
                       );
-                    })
-                  )}
-                  {/* {sponsor.images.map((image: any) => {
+                    })}
+                  </Marquee>
+                ) : (
+                  sponsor.images.map((image: any) => {
                     return (
                       <FadeIn
                         from="left"
@@ -152,19 +128,82 @@ const Sponsors: React.FC = () => {
                         triggerOffset={25}
                         delayInMilliseconds={100}
                       >
-                        <img
-                          className="sponsor-img"
-                          src={image.url}
-                          style={{ width: "20rem" }}
-                          alt={image.name}
-                        />
+                        <div className="sponsor-img-container">
+                          <a
+                            href={image.website}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <img
+                              className="sponsor-img"
+                              src={image.url}
+                              // style={{ width: "20rem" }}
+                              alt={image.name}
+                            />
+                          </a>
+                        </div>
                       </FadeIn>
                     );
-                  })} */}
-                </div>
+                  })
+                )}
               </div>
-            );
+            </div>
+            }
+            else
+            return <Col xs={12} md={2}>
+                <div className="w-100 d-flex flex-row justify-content-center align-items-center mt-5">
+              <div
+                  className="mx-2"
+                  style={{
+                    height: "1px",
+                    backgroundColor: "grey",
+                    width: "inherit",
+                  }}
+                ></div>
+                <h5 className="text-center" style={{ width: "inherit" }}>
+                  {sponsor.category}
+                </h5>
+                <div
+                  className="mx-2"
+                  style={{
+                    height: "1px",
+                    backgroundColor: "grey",
+                    width: "inherit",
+                  }}
+                ></div>
+                </div>
+                <div className="sponsor-wrapper mt-3">
+                {sponsor.images.map((image: any) => {
+                    return (
+                      <FadeIn
+                        from="left"
+                        positionOffset={150}
+                        triggerOffset={25}
+                        delayInMilliseconds={100}
+                      >
+                        <div className="sponsor-img-container">
+                          <a
+                            href={image.website}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <img
+                              className="sponsor-img"
+                              src={image.url}
+                              // style={{ width: "20rem" }}
+                              alt={image.name}
+                            />
+                          </a>
+                        </div>
+                      </FadeIn>
+                    );
+                  })}
+                  </div>
+              </Col>
+              
+            
           })}
+          </Row>
       </div>
     </>
   );
