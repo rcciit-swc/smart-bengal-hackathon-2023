@@ -1,13 +1,13 @@
 import { lazy, Suspense } from "react";
 import { useData } from "../../contexts/Data";
 import "./Home.style.css";
-import Sponsors from "./Sponsors";
 import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
+const Sponsors = lazy(() => import("./Sponsors"));
 
 const Home = () => {
   const { title, about } = useData();
@@ -40,7 +40,7 @@ const Home = () => {
         />
       </Suspense>
       <CarouselContainer />
-      
+
       {/* <div className="w-75 my-5 fs-3">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
           <a
@@ -219,7 +219,78 @@ const Home = () => {
       <Suspense fallback={<></>}>
         <Themes />
       </Suspense>
-      <Sponsors />
+      <FadeIn
+        from="left"
+        positionOffset={150}
+        triggerOffset={25}
+        delayInMilliseconds={100}
+      >
+        <div className="w-100 d-flex justify-content-center align-items-center">
+          <div
+            className="w-75 py-5 px-2 my-4 d-flex justify-content-evenly align-items-center flex-wrap"
+            style={{
+              backgroundColor: "#000000",
+              color: "white",
+              borderRadius: "50px",
+            }}
+          >
+            <div className="d-flex flex-column align-items-start  w-75">
+              <h1 className="text-uppercase fs-3 fw-bold poppins">
+                Do you love data ?
+              </h1>
+              <p className="poppins fs-6 text-justify">
+                Department of IT & Electronics, Government of West Bengal
+                invites academicians, students, technologists from across the
+                globe, to participate in The Anonymiser Hackathon and develop
+                India's first data anonymizer with support from data innovation
+                firm Sapio Analytics
+              </p>
+            </div>
+            <div className="d-flex flex-column align-items-center justify-content-between gap-4">
+              <div
+                style={{
+                  width: "200px",
+                }}
+              >
+                <img
+                  src="https://anonymiser.wb.gov.in/static/media/anonymiser_white.7a9f25dd821e51772791.png"
+                  alt="anonymiser hackathon"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
+              <Button
+                className="rounded-button"
+                style={{
+                  backgroundColor: "#F88208",
+                  boxShadow: "0px 8px 25px #F88208",
+                  width: "200px",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#f2be88";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = "#F88208";
+                }}
+              >
+                <a
+                  href="https://anonymiser.wb.gov.in/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Register Now
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </FadeIn>
+      <Suspense fallback={<></>}>
+        <Sponsors />
+      </Suspense>
       <div
         className="d-flex sponsor-form w-100 justify-content-center align-items-center py-5"
         style={{ height: "400px", padding: "0px 10vw" }}
