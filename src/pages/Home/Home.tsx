@@ -229,12 +229,12 @@ const Home = () => {
           <div
             className="w-75 py-5 px-2 my-4 d-flex justify-content-evenly align-items-center flex-wrap"
             style={{
-              backgroundColor: "#000000",
+              // backgroundColor: "#000000",
               color: "white",
               borderRadius: "50px",
             }}
           >
-            <div className="d-flex flex-column align-items-start  w-75">
+            {/* <div className="d-flex flex-column align-items-start  w-75">
               <h1 className="text-uppercase fs-3 fw-bold poppins">
                 Do you love data ?
               </h1>
@@ -245,9 +245,10 @@ const Home = () => {
                 India's first data anonymizer with support from data innovation
                 firm Sapio Analytics
               </p>
-            </div>
+              
+            </div> */}
             <div className="d-flex flex-column align-items-center justify-content-between gap-4">
-              <div
+              {/* <div
                 style={{
                   width: "200px",
                 }}
@@ -261,7 +262,9 @@ const Home = () => {
                     objectFit: "contain",
                   }}
                 />
-              </div>
+              </div> */}
+              <img src="/hack.jpeg" style={{width:"100%"}}/>
+
               <Button
                 className="rounded-button"
                 style={{
@@ -281,7 +284,7 @@ const Home = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Register Now
+                  Know Now
                 </a>
               </Button>
             </div>
