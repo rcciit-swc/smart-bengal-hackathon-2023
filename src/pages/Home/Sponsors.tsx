@@ -201,8 +201,7 @@
 //                   })}
 //                   </div>
 //               </Col>
-              
-            
+
 //           })}
 //           </Row>
 //       </div>
@@ -211,7 +210,6 @@
 // };
 
 // export default Sponsors;
-
 
 import React, { lazy, Suspense, useEffect, useState } from "react";
 import "./Sponsors.css";
