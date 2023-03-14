@@ -152,26 +152,32 @@ const NavBar = () => {
                 </a>
               </div>
             </NavDropdown>
-            <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={venueRoute}>
-                Venue
-              </Link>
-            </div>
-            <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={updatesRoute}>
-                Registration
-              </Link>
-            </div>
-            <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={prizesRoute}>
-                Prizes
-              </Link>
-            </div>
-            <div className="nav-link text-decoration-none">
-              <Link onClick={navHandler} to={eligibilityRoute}>
-                Eligibility
-              </Link>
-            </div>
+            <NavDropdown title="Hackathon Details">
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link onClick={navHandler} to={venueRoute}>
+                  Venue
+                </Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link onClick={navHandler} to={updatesRoute}>
+                  Registration
+                </Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link onClick={navHandler} to={prizesRoute}>
+                  Prizes
+                </Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link onClick={navHandler} to={eligibilityRoute}>
+                  Eligibility
+                </Link>
+              </div>
+            </NavDropdown>
             <div className="nav-link text-decoration-none">
               <Link onClick={navHandler} to={faqRoute}>
                 FAQs

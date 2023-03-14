@@ -339,7 +339,44 @@ const Sponsors: React.FC = () => {
                           triggerOffset={25}
                           delayInMilliseconds={100}
                         >
-                          <div className="sponsor-img-container">
+                          {sponsor.category === "Supported by" ? (
+                            <div
+                              className="sponsor-img-container"
+                              style={{
+                                width: "18rem",
+                                height: "18rem",
+                              }}
+                            >
+                              <a
+                                href={image.website}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  className="sponsor-img"
+                                  src={image.url}
+                                  // style={{ width: "20rem" }}
+                                  alt={image.name}
+                                />
+                              </a>
+                            </div>
+                          ) : (
+                            <div className="sponsor-img-container">
+                              <a
+                                href={image.website}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  className="sponsor-img"
+                                  src={image.url}
+                                  // style={{ width: "20rem" }}
+                                  alt={image.name}
+                                />
+                              </a>
+                            </div>
+                          )}
+                          {/* <div className="sponsor-img-container">
                             <a
                               href={image.website}
                               target="_blank"
@@ -352,7 +389,7 @@ const Sponsors: React.FC = () => {
                                 alt={image.name}
                               />
                             </a>
-                          </div>
+                          </div> */}
                         </FadeIn>
                       );
                     })
