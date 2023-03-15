@@ -303,33 +303,66 @@ const Sponsors: React.FC = () => {
                 </div>
                 <div className="sponsor-wrapper mt-5">
                   {sponsor.category === "Tech Partner" ? (
-                    <Marquee pauseOnHover={true} speed={80}>
-                      {sponsor.images.map((image: any) => {
-                        return (
-                          <FadeIn
-                            from="left"
-                            positionOffset={150}
-                            triggerOffset={25}
-                            delayInMilliseconds={100}
-                          >
-                            <div className="sponsor-img-container my-3 mx-3">
-                              <a
-                                href={image.website}
-                                target="_blank"
-                                rel="noreferrer"
+                    <>
+                      <div className="sponsor-wrapper">
+                        {sponsor.images.map((image: any) => {
+                          return (
+                            image.society && (
+                              <FadeIn
+                                from="left"
+                                positionOffset={150}
+                                triggerOffset={25}
+                                delayInMilliseconds={100}
                               >
-                                <img
-                                  className="sponsor-img"
-                                  src={image.url}
-                                  // style={{ width: "20rem" }}
-                                  alt={image.name}
-                                />
-                              </a>
-                            </div>
-                          </FadeIn>
-                        );
-                      })}
-                    </Marquee>
+                                <div className="sponsor-img-container">
+                                  <a
+                                    href={image.website}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <img
+                                      className="sponsor-img"
+                                      src={image.url}
+                                      // style={{ width: "20rem" }}
+                                      alt={image.name}
+                                    />
+                                  </a>
+                                </div>
+                              </FadeIn>
+                            )
+                          );
+                        })}
+                      </div>
+                      <Marquee pauseOnHover={true} speed={80}>
+                        {sponsor.images.map((image: any) => {
+                          return (
+                            !image.society && (
+                              <FadeIn
+                                from="left"
+                                positionOffset={150}
+                                triggerOffset={25}
+                                delayInMilliseconds={100}
+                              >
+                                <div className="sponsor-img-container my-3 mx-3">
+                                  <a
+                                    href={image.website}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <img
+                                      className="sponsor-img"
+                                      src={image.url}
+                                      // style={{ width: "20rem" }}
+                                      alt={image.name}
+                                    />
+                                  </a>
+                                </div>
+                              </FadeIn>
+                            )
+                          );
+                        })}
+                      </Marquee>
+                    </>
                   ) : (
                     sponsor.images.map((image: any) => {
                       return (
@@ -342,9 +375,10 @@ const Sponsors: React.FC = () => {
                           {sponsor.category === "Supported by" ? (
                             <div
                               className="sponsor-img-container"
+                              id="supported-by"
                               style={{
-                                width: "18rem",
-                                height: "18rem",
+                                width: "450px",
+                                height: "450px",
                               }}
                             >
                               <a
