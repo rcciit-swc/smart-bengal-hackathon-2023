@@ -17,6 +17,12 @@ type themeCardData = {
   color: string;
 };
 
+type prizeObjectType={
+  orderNo: number;
+  position: string;
+  prizeMoney: string;
+}
+
 type FaqObjectType = {
   question: string;
   answer: string;
@@ -54,6 +60,10 @@ type DataContextType = {
     SBHSenior: FaqObjectType[];
     SBHJunior: FaqObjectType[];
   };
+  prize:{
+    SBHSenior: prizeObjectType[];
+    SBHJunior: prizeObjectType[];
+  }
 };
 
 const DataContext = createContext<DataContextType>({
@@ -84,6 +94,10 @@ const DataContext = createContext<DataContextType>({
     SBHSenior: [],
     SBHJunior: [],
   },
+  prize:{
+    SBHSenior: [],
+    SBHJunior: [],
+  }
 });
 
 export function useData() {
@@ -106,6 +120,7 @@ export function DataProvider(props: any) {
         winningGuidelines: data["winning-guidelines"],
         ThemeCardData: data["theme-card-data"],
         faq: data.faqs,
+        prize: data.prizes,
       }}
     >
       {props.children}

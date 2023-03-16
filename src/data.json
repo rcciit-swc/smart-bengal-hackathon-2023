@@ -481,5 +481,41 @@
         "answer": "Following steps to be followed:\n Step 1.Team should be formed as per above mentioned guideline. Eligibility of the\n members for SBH Junior should follow the above guideline.\nStep 2.A theme and matching problem statement has to be identified from SBH\n portal https://sbh.rcciit.org.in/.\nStep 3.IDEA template has to be prepared following the given IDEA template ppt in\n the SBH portal.\nStep 4. A PDF has to be created of this PPT.\nStep 5.A consent letter has to be obtained in the given format from the Head of the\n Institute and it should be scanned to PDF.\nStep 6.Registration Form has to be filled with all above mentioned details at\n https://unstop.com/o/2adeEYJ?lb=TzAP536."
       }
     ]
+  },
+  "prizes": {
+    "SBHSenior": [
+      {
+        "orderNo": 1,
+        "position": "1st Prize",
+        "prizeMoney": "₹ 30,000"
+      },
+      {
+        "orderNo": 2,
+        "position": "2nd Prize",
+        "prizeMoney": "₹ 20,000"
+      },
+      {
+        "orderNo": 3,
+        "position": "3rd Prize",
+        "prizeMoney": "₹ 10,000"
+      }
+    ],
+    "SBHJunior": [
+      {
+        "orderNo": 1,
+        "position": "1st Prize",
+        "prizeMoney": "₹ 25,000"
+      },
+      {
+        "orderNo": 2,
+        "position": "2nd Prize",
+        "prizeMoney": "₹ 15,000"
+      },
+      {
+        "orderNo": 3,
+        "position": "3rd Prize",
+        "prizeMoney": "₹ 10,000"
+      }
+    ]
   }
 }
