@@ -1,5 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Table } from "react-bootstrap";
+import PrizeCard from "../../components/PrizeCard/PrizeCard";
+import { useData } from "../../contexts/Data";
 
 const Header = lazy(() => import("../../components/Header/Header"));
 
@@ -20,6 +22,9 @@ const PrizesNotes = [
 ];
 
 const Prizes = () => {
+
+  const { prize } = useData();
+
   return (
     <>
       <Suspense fallback={<></>}>
@@ -40,57 +45,20 @@ const Prizes = () => {
           3 teams will be awarded with prize money, exciting goodies and a
           certificate of excellence for SBH Junior and SBH Senior.
         </p>
-        <Table
-          striped
-          bordered
-          hover
-          responsive
-          className="w-100 mt-4 mb-2"
-          style={{ fontSize: "1.5rem" }}
-        >
-          <thead>
-            <tr>
-              <th className="text-center">Prize</th>
-              <th className="text-center">SBH Senior</th>
-              <th className="text-center">SBH Junior</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="d-flex justify-content-start align-items-center">
-                <img
-                  src="https://img.icons8.com/emoji/35/null/1st-place-medal-emoji.png"
-                  alt="1st prize"
-                />
-                <b>1st Prize</b>
-              </td>
-              <td className="text-center">₹&emsp;30,000</td>
-              <td className="text-center">₹&emsp;25,000</td>
-            </tr>
-            <tr>
-              <td className="d-flex align-items-center justify-content-start">
-                <img
-                  src="https://img.icons8.com/emoji/35/null/2nd-place-medal-emoji.png"
-                  alt="2nd prize"
-                />
-                <b>2nd Prize</b>
-              </td>
-              <td className="text-center">₹&emsp;20,000</td>
-              <td className="text-center">₹&emsp;15,000</td>
-            </tr>
-            <tr>
-              <td className="d-flex justify-content-start align-items-center">
-                <img
-                  src="https://img.icons8.com/emoji/35/null/3rd-place-medal-emoji.png"
-                  alt="3rd prize"
-                />
-                <b>3rd Prize</b>
-              </td>
-              <td className="text-center">₹&emsp;10,000</td>
-              <td className="text-center">₹&emsp;10,000</td>
-            </tr>
-          </tbody>
-        </Table>
+        <div className="d-flex flex-column gap-2 my-2">
+          <h1 className="poppins text-center fs-3 text-uppercase fw-semibold"
+          style={{color: "var(--heading-color)"}}
+          >SBH Senior</h1>
+          <PrizeCard
+            prize={prize.SBHSenior}
+            />
+<h1 className="poppins text-center fs-3 text-uppercase fw-semibold"
+          style={{color: "var(--heading-color)"}}
+          >SBH Junior</h1>
+          <PrizeCard
+            prize={prize.SBHJunior}
+            />
+        </div>
         <ul className="w-75">
           {PrizesNotes.map((item, index) => (
             <li

@@ -8,6 +8,7 @@ import { Button } from "react-bootstrap";
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
 const Sponsors = lazy(() => import("./Sponsors"));
+const HomePrizes = lazy(() => import("./HomePrizes"));
 
 const Home = () => {
   const { title, about } = useData();
@@ -291,6 +292,9 @@ const Home = () => {
           </div>
         </div>
       </FadeIn>
+      <Suspense fallback={<></>}>
+        <HomePrizes />
+      </Suspense>
       <Suspense fallback={<></>}>
         <Sponsors />
       </Suspense>
