@@ -4,6 +4,7 @@ import "./Home.style.css";
 import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
+import Marquee from "react-fast-marquee";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
@@ -42,18 +43,23 @@ const Home = () => {
       </Suspense>
       <CarouselContainer />
 
-      {/* <div className="w-75 my-5 fs-3">
+      <div className="w-75 my-5 fs-5">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
+          <img src="https://thumbs.gfycat.com/DenseGaseousBobwhite-max-1mb.gif" alt="" 
+          width={60}/>
+        Please submit the
           <a
-            href="https://anonymiser.wb.gov.in/"
+            href="https://docs.google.com/document/d/155asP1jA_Lepq8TKGmMwp6w_AuVFKEbB57mAt1mDqnI/edit"
             target="_blank"
             rel="noreferrer"
-            className="mx-2"
+            className="mx-2 text-decoration-underline"
           >
-            The Anonymiser Hackathon
+             declaration form 
           </a>
+          on unstop after submitting an
+            idea.
         </Marquee>
-      </div> */}
+      </div>
       {/* <div
         style={{ backgroundColor: `var(--primary-color-light)` }}
         className="w-100 h-100 d-flex flex-column align-items-center"
@@ -264,7 +270,7 @@ const Home = () => {
                   }}
                 />
               </div> */}
-              <img src="/hack.jpeg" style={{width:"100%"}}/>
+              <img src="/hack.jpeg" style={{ width: "100%" }} />
 
               <Button
                 className="rounded-button"
