@@ -22,6 +22,22 @@ const Home = () => {
       }}
     >
       <Suspense fallback={<></>}>
+      <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1300px"
+          right="-400px"
+          color="blue"
+        />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1800px"
+          left="-400px"
+          color="orange"
+        />
         <Circle
           width="900px"
           height="900px"

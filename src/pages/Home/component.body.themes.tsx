@@ -93,22 +93,7 @@ const Themes = () => {
   return (
     <div className="pt-5 w-100 h-100 d-flex flex-column align-items-center text-center position-relative">
       <Suspense fallback={<></>}>
-        <Circle
-          width="600px"
-          height="600px"
-          blur="80"
-          top="-50px"
-          right="-400px"
-          color="orange"
-        />
-        <Circle
-          width="600px"
-          height="600px"
-          blur="80"
-          top="500px"
-          left="-400px"
-          color="blue"
-        />
+        
       </Suspense>
       <h5
         style={{ color: `var(--heading-color)` }}
