@@ -22,7 +22,7 @@ const Home = () => {
       }}
     >
       <Suspense fallback={<></>}>
-      <Circle
+        <Circle
           width="600px"
           height="600px"
           blur="80"
@@ -61,19 +61,32 @@ const Home = () => {
 
       <div className="w-75 my-5 fs-5">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
-          <img src="https://thumbs.gfycat.com/DenseGaseousBobwhite-max-1mb.gif" alt="" 
-          width={60}/>
-        Please submit the
-          <a
-            href="https://docs.google.com/document/d/155asP1jA_Lepq8TKGmMwp6w_AuVFKEbB57mAt1mDqnI/edit"
-            target="_blank"
-            rel="noreferrer"
-            className="mx-2 text-decoration-underline"
-          >
-             declaration form 
-          </a>
-          on unstop after submitting an
-            idea.
+          <span>
+            <img
+              src="https://thumbs.gfycat.com/DenseGaseousBobwhite-max-1mb.gif"
+              alt=""
+              width={60}
+            />
+            Please submit the
+            <a
+              href="https://docs.google.com/document/d/155asP1jA_Lepq8TKGmMwp6w_AuVFKEbB57mAt1mDqnI/edit"
+              target="_blank"
+              rel="noreferrer"
+              className="mx-2 text-decoration-underline"
+            >
+              declaration form
+            </a>
+            on unstop after submitting an idea.
+          </span>
+            
+          <span>
+          <img
+              src="https://thumbs.gfycat.com/DenseGaseousBobwhite-max-1mb.gif"
+              alt=""
+              width={60}
+            />
+            You can submit your idea templates without the consent letter for now.
+          </span>
         </Marquee>
       </div>
       {/* <div

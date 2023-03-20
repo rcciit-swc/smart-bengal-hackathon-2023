@@ -77,7 +77,7 @@ const CarouselContainer = () => {
               className="d-block w-100"
               height="500px"
               width="auto"
-              src="https://i.imgur.com/g6I5feA.jpg"
+              src="https://i.imgur.com/EhqUm4k.jpg"
               alt="Second slide"
             />
         </Carousel.Item>
