@@ -35,7 +35,7 @@ const Updates = () => {
             ends on 23rd Mar(Senior) & 31st Mar(Junior) 2023.
           </li>
           <li>
-            <b>Shortlisted Teams Announcement:</b> 30th March (Senior) & 1st April (Junior) 2023
+            <b>Shortlisted Teams Announcement:</b> 30th March (Senior) & 2nd April (Junior) 2023
           </li>
           <li>
             <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH Junior

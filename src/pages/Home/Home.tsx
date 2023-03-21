@@ -210,7 +210,7 @@ const Home = () => {
                 className="circle position-absolute bubble__1"
               >
                 <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                  <span className="fw-bold pb-2 bubble__title">30th March(Senior) & 1st April (Junior)</span>
+                  <span className="fw-bold pb-2 bubble__title">30th March(Senior) & 2nd April (Junior)</span>
                   <span className="bubble__text">
                     Shortlisted Team Announcements
                   </span>
