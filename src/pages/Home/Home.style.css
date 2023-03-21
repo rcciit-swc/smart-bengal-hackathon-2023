@@ -71,8 +71,9 @@
 }
 
 .bubble__title {
+  padding: 0 5px;
   z-index: 9;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
 }
 
@@ -115,7 +116,8 @@
   }
 
   .bubble__title {
-    font-size: 15px;
+    padding: 0 5px;
+    font-size: 10px;
   }
 
   .bubble__text {
@@ -167,15 +169,13 @@
 }
 
 @media screen and (max-width: 768px) {
-
-  .banner_circle{
+  .banner_circle {
     height: 500px !important;
     width: 800px !important;
   }
 
-  .banner_circle{
+  .banner_circle {
     height: 500px !important;
     width: 800px !important;
   }
 }
-  

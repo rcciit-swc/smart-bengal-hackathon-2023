@@ -30,11 +30,10 @@ const CarouselContainer = () => {
     <div
       className="d-flex flex-column align-items-center"
       style={{
-        marginBottom: "20vh",
         position: "relative",
       }}
     >
-      <Countdown />
+      {/* <Countdown /> */}
       <Carousel
         style={{
           width: "90vw",
@@ -67,7 +66,7 @@ const CarouselContainer = () => {
               className="d-block w-100"
               height="500px"
               width="auto"
-              src="https://i.imgur.com/zieQFGR.png"
+              src="https://i.imgur.com/F7H69ih.png"
               alt="Second slide"
             />
           </a>

@@ -9,7 +9,7 @@ const Countdown = () => {
   const [seconds, setSeconds] = useState(0);
 
   const startTimer = () => {
-    const countdownDate = new Date("March 21, 2023 00:00:00").getTime();
+    const countdownDate = new Date("March 24, 2023 00:00:00").getTime();
 
     const countdown = setInterval(() => {
       const now = new Date().getTime();

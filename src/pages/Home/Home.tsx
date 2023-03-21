@@ -59,7 +59,7 @@ const Home = () => {
       </Suspense>
       <CarouselContainer />
 
-      <div className="w-75 my-5 fs-5">
+      <div className="w-75  fs-5">
         <Marquee pauseOnHover={true} speed={100} gradient={false}>
           <span>
             <img
@@ -210,7 +210,7 @@ const Home = () => {
                 className="circle position-absolute bubble__1"
               >
                 <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                  <span className="fw-bold pb-2 bubble__title">25th Mar</span>
+                  <span className="fw-bold pb-2 bubble__title">30th March(Senior) & 1st April (Junior)</span>
                   <span className="bubble__text">
                     Shortlisted Team Announcements
                   </span>
@@ -225,7 +225,7 @@ const Home = () => {
               >
                 <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                   <span className="fw-bold pb-2 bubble__title">
-                    28th Feb - 20th March
+                    28th Feb - 23th March(Senior), 31st March(Junior)
                   </span>
                   <span className="bubble__text">
                     Registration & Idea Submission
