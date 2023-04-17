@@ -1,0 +1,17 @@
+.total-statements-container {
+    flex-direction: row;
+}
+
+.soft-background {
+    border-radius: 0 0 1000px 0px;
+    background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .total-statements-container {
+        flex-direction: column;
+    }
+    .total-statements-container span {
+        text-align: center;
+    }
+}
