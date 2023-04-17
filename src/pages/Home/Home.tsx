@@ -67,25 +67,29 @@ const Home = () => {
               alt=""
               width={60}
             />
-            Please submit the
             <a
-              href="https://docs.google.com/document/d/155asP1jA_Lepq8TKGmMwp6w_AuVFKEbB57mAt1mDqnI/edit"
+              href="https://docs.google.com/spreadsheets/d/1rWAcseHRgUS8aWII3sCrDdXCt2DYK98QgY6FiHZAUds/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="mx-2 text-decoration-underline"
             >
-              declaration form
+              Shortlisted Teams for SBH Senior.
             </a>
-            on unstop after submitting an idea.
           </span>
-            
           <span>
-          <img
+            <img
               src="https://thumbs.gfycat.com/DenseGaseousBobwhite-max-1mb.gif"
               alt=""
               width={60}
             />
-            You can submit your idea templates without the consent letter for now.
+            <a
+              href="https://docs.google.com/spreadsheets/d/1WKwQa_RD3wHPr3pHjUmUANtqRFIHQdXJ0R6cXtsys5Y/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="mx-2 text-decoration-underline"
+            >
+              Shortlisted Teams for SBH Junior.
+            </a>
           </span>
         </Marquee>
       </div>
@@ -210,7 +214,9 @@ const Home = () => {
                 className="circle position-absolute bubble__1"
               >
                 <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                  <span className="fw-bold pb-2 bubble__title">30th March(Senior) & 2nd April (Junior)</span>
+                  <span className="fw-bold pb-2 bubble__title">
+                    30th March(Senior) & 2nd April (Junior)
+                  </span>
                   <span className="bubble__text">
                     Shortlisted Team Announcements
                   </span>
