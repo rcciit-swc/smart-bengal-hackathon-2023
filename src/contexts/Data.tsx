@@ -63,7 +63,12 @@ type DataContextType = {
   prize:{
     SBHSenior: prizeObjectType[];
     SBHJunior: prizeObjectType[];
+  };
+  result:{
+    SbhSenior: any[];
+    SbhJunior: any[];
   }
+
 };
 
 const DataContext = createContext<DataContextType>({
@@ -97,6 +102,10 @@ const DataContext = createContext<DataContextType>({
   prize:{
     SBHSenior: [],
     SBHJunior: [],
+  },
+  result:{
+    SbhSenior:[],
+    SbhJunior:[],
   }
 });
 
@@ -121,6 +130,7 @@ export function DataProvider(props: any) {
         ThemeCardData: data["theme-card-data"],
         faq: data.faqs,
         prize: data.prizes,
+        result: data.results,
       }}
     >
       {props.children}

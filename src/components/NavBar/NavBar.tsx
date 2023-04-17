@@ -15,6 +15,8 @@ import {
   contactUsRoute,
   faqRoute,
   rulesRoute,
+  resultSeniorRoute,
+  resultJuniorRoute
 } from "../../Routes";
 import idea_template_college from "../../assets/docs/Idea-Presentation-Format-SBH2023-College.pptx";
 import idea_template_school from "../../assets/docs/Idea-Presentation-Format-SIH2022-School.pptx";
@@ -150,6 +152,32 @@ const NavBar = () => {
                 >
                   For Schools
                 </a>
+              </div>
+            </NavDropdown>
+            <NavDropdown className="navbar__color" title="Results">
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link
+                  //href="https://docs.google.com/document/d/17DrpmAKZ20Kvwqg2hjQWbtd_Rtz22m69/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true"
+                  onClick={navHandler}
+                  //target="_blank"
+                  //rel="noreferrer"
+                  to={resultSeniorRoute}
+                >
+                  SBH Senior
+                </Link>
+              </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link
+                  //href="https://docs.google.com/document/d/1aO2-qzhJioC-SLw2JQ6e7nprd9i7KrEk/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true"
+                  onClick={navHandler}
+                  //target="_blank"
+                  //rel="noreferrer"
+                  to={resultJuniorRoute}
+                >
+                  SBH Junior
+                </Link>
               </div>
             </NavDropdown>
             <NavDropdown title="Hackathon Details">

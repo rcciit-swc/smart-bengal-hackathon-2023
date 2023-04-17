@@ -15,3 +15,5 @@ export const adminPortalRoute = "/admin-portal";
 export const contactUsRoute = "/contact-us";
 export const faqRoute = "/faq";
 export const rulesRoute = "/rules";
+export const resultSeniorRoute = "/result/senior";
+export const resultJuniorRoute = "/result/junior";

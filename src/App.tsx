@@ -18,6 +18,8 @@ import {
   contactUsRoute,
   faqRoute,
   rulesRoute,
+  resultJuniorRoute,
+  resultSeniorRoute
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
@@ -25,6 +27,7 @@ import { UserProvider } from "./contexts/DataProvider";
 import Team from "./pages/Teams/Team";
 import { AuthProvider } from "./contexts/Auth";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import SbhSenior from "./pages/Result/SbhSenior";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -49,6 +52,8 @@ const Register = lazy(() => import("./pages/Login/Login"));
 const AdminPortal = lazy(() => import("./pages/AdminPortal/AdminPortal"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 const Faq = lazy(() => import("./pages/FAQ/Faq"));
+const ResultSenior= lazy(() => import("./pages/Result/SbhSenior"));
+const ResultJunior= lazy(() => import("./pages/Result/SbhJunior"));
 
 function App() {
   return (
@@ -194,6 +199,22 @@ function App() {
                   </Suspense>
                 }>
                 </Route> */}
+                <Route
+                path={resultSeniorRoute}
+                element={
+                  <Suspense fallback={<></>}>
+                    <ResultSenior />
+                  </Suspense>
+                }
+                ></Route>
+                <Route
+                path={resultJuniorRoute}
+                element={
+                  <Suspense fallback={<></>}>
+                    <ResultJunior />
+                  </Suspense>
+                }
+                ></Route>
                 <Route
                   path={contactUsRoute}
                   element={
