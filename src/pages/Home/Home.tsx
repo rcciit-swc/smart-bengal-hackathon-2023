@@ -5,6 +5,8 @@ import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
+import { Link } from "react-router-dom";
+import { resultJuniorRoute, resultSeniorRoute } from "../../Routes";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
@@ -67,14 +69,12 @@ const Home = () => {
               alt=""
               width={60}
             />
-            <a
-              href="https://docs.google.com/spreadsheets/d/1rWAcseHRgUS8aWII3sCrDdXCt2DYK98QgY6FiHZAUds/edit?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to={resultSeniorRoute}
               className="mx-2 text-decoration-underline"
             >
-              Shortlisted Teams for SBH Senior.
-            </a>
+              Result for SBH Senior.
+            </Link>
           </span>
           <span>
             <img
@@ -82,14 +82,12 @@ const Home = () => {
               alt=""
               width={60}
             />
-            <a
-              href="https://docs.google.com/spreadsheets/d/1WKwQa_RD3wHPr3pHjUmUANtqRFIHQdXJ0R6cXtsys5Y/edit?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to={resultJuniorRoute}
               className="mx-2 text-decoration-underline"
             >
-              Shortlisted Teams for SBH Junior.
-            </a>
+              Result for SBH Junior.
+            </Link>
           </span>
         </Marquee>
       </div>
