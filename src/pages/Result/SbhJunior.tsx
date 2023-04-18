@@ -1,27 +1,17 @@
 import "./SbhJunior.css";
 import { useState } from "react";
 import Table from "react-bootstrap/Table";
-import { useDataContext } from "../../contexts/DataProvider";
+//import { useDataContext } from "../../contexts/DataProvider";
+import { useData } from "../../contexts/Data";
 //import DescriptionModal from "./DescriptionModal";
 
 const SbhJunior = () => {
-  const { org } = useDataContext();
+  const { result } = useData();
 
   
 
-  let sno = 1;
-  let softwareCount = 0;
-  let hybridCount = 0;
+console.log(result)
 
-  for (let i = 0; i < org.length; i++) {
-    for (let j = 0; j < org[i].problemStatements.length; j++) {
-      if (org[i].problemStatements[j].category === "Software") {
-        softwareCount++;
-      } else if (org[i].problemStatements[j].category === "Hybrid") {
-        hybridCount++;
-      }
-    }
-  }
 
   return (
     <main className="d-flex flex-column align-items-center my-5 w-100">
@@ -54,35 +44,36 @@ const SbhJunior = () => {
               
             </tr>
           </thead>
-          <tbody>
-            {org &&
-              org?.map((item: any, index: any) =>
-                item?.problemStatements?.map((data: any, indexing: any) => {
+           <tbody>
+           {
+
+                result?.SbhJunior?.map((data: any, indexing: any) => {
                   return (
                     <>
                       <tr key={indexing}>
-                        <td className="text-center">{sno++}</td>
-                        <td className="w-25">{}</td>
+                        <td className="text-center">{data.Rank}</td>
+                        <td className="w-25">{data.TeamName}</td>
                         <td
                           className="w-25 text-center"
                           style={{
                             cursor: "pointer",
-                            color: "blue",
+                            color: "black",
                           }}
 
                         >
-                          {}
+                          {data.teamLeadersName}
                         </td>
-                        <td className="text-center">{}</td>
-                        <td className="text-center">{}</td>
-                        <td className="w-25 text-center">{}</td>
-                        <td className="text-center">{}</td>
+                        <td className="text-center">{data.schoolName}</td>
+                        <td className="text-center">{data.catagory}</td>
+                      
+                       
                       </tr>
                     </>
                   );
-                })
-              )}
-          </tbody>
+                        })
+           }
+              
+          </tbody> 
         </Table>
       </div>
     </main>

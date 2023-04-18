@@ -511,11 +511,152 @@
         ]
     },
     "results": {
-        "SbhSenior": [
+        "SbhSenior": [{
+                "rank": 1,
+                "teamName": "key 2 innov@tion  BIT, Kolkata",
+                "CollegeName": "Bengal Institute of Technology (BIT), Kolkata",
+                "TeamLeadersName": "HRISHIKESH DAS",
+                "psNumber": "SBHRCCIITXXX"
+            },
+            {
+                "rank": 2,
+                "teamName": "FUTURISTIC-Us Techno SL, Kolkata",
+                "CollegeName": "Techno Main Salt Lake",
+                "TeamLeadersName": "Preetha Sengupta",
+                "psNumber": "SBHRCCIITXXX"
+            },
+            {
+
+                "rank": 3,
+                "teamName": "Tech Giants Techno NT, Kolkata",
+                "CollegeName": "Techno International New Town, West Bengal",
+                "TeamLeadersName": "Ritam Chatterjee",
+                "psNumber": "SBHRCCIITXXX"
+            },
+            {
+                "rank": 4,
+                "teamName": "626373-UGCD3433   FIEM, WB",
+                "CollegeName": "Future Institute of Engineering and Management",
+                "TeamLeadersName": "Arijit Dasgupta",
+                "psNumber": "SBHRCCIITXXX"
+            },
+            {
+                "rank": 5,
+                "teamName": "FoxHackerz  RCCIIT Kolkata",
+                "CollegeName": "RCC Institute of Information Technology (RCCIIT), Kolkata",
+                "TeamLeadersName": "Neelkalpa Majumder",
+                "psNumber": "SBHRCCIIT006"
+            },
+            {
+                "rank": 6,
+                "teamName": "SourceX   MSIT, Kolkata",
+                "CollegeName": "Meghnad Saha Institute of Technology (MSIT), Kolkata",
+                "TeamLeadersName": "Michael Gomes",
+                "psNumber": "SBHRCCIIT028"
+            },
+            {
+                "rank": 7,
+                "teamName": "The Kriticks  Techno NT, Kolkata",
+                "CollegeName": "Techno International New Town, West Bengal",
+                "TeamLeadersName": "Krittika Das",
+                "psNumber": "SBHRCCIIT024"
+            },
+            {
+                "rank": 8,
+                "teamName": "626373-U506I6MV   Amity University",
+                "CollegeName": "Amity University  Kolkata, West Bengal",
+                "TeamLeadersName": "Kaustav Das",
+                "psNumber": "SBHRCCIIT023"
+            },
+            {
+                "rank": 9,
+                "teamName": "626373-U2OFP573   Techno NT, Kolkata",
+                "CollegeName": "Techno International New Town, West Bengal",
+                "TeamLeadersName": "Avigyan Chowdhury",
+                "psNumber": "SBHRCCIITXXX"
+            },
+            {
+                "rank": 10,
+                "teamName": "Think Tank 3.0  UIT, Burdwan",
+                "CollegeName": "University Institute of Technology, The University of Burdwan",
+                "TeamLeadersName": "Sumit Gupta",
+                "psNumber": "SBHRCCIIT015"
+            }
 
 
         ],
-        "SbhJunior": [
+        "SbhJunior": [{
+                "Rank": 1,
+                "TeamName": "NDPMB-24",
+                "teamLeadersName": "Lalan Kumar",
+                "schoolName": "Ramakrishna Mission Vidyalaya, Narendrapur",
+                "catagory": "Hybrid"
+            },
+            {
+                "Rank": 1,
+                "TeamName": "La Martiniere for Boys",
+                "teamLeadersName": "Aakarsh Garg",
+                "schoolName": "La Martiniere for Boys, Kolkata",
+                "catagory": "Hybrid"
+            },
+            {
+                "Rank": 2,
+                "TeamName": "Coding Wizards",
+                "teamLeadersName": "Mainak Chakraborty",
+                "schoolName": "Lions Calcutta Greater Vidya Mandir school, West Bengal",
+                "catagory": "Hybrid"
+            },
+            {
+                "Rank": 3,
+                "TeamName": "Hackminors",
+                "teamLeadersName": "Purbayon Sarkar",
+                "schoolName": "South Point High School, Ballygunge, Kolkata, West Bengal",
+                "catagory": "Software"
+            },
+            {
+
+                "Rank": 3,
+                "TeamName": "626373-U2G9KD56",
+                "teamLeadersName": "Rajarshi Dhara",
+                "schoolName": "The Assembly of God Church School, Park Street",
+                "catagory": "Software"
+            },
+            {
+                "Rank": 4,
+                "TeamName": "626373-US8817ZL",
+                "teamLeadersName": "TRIJAL SRIMAL",
+                "schoolName": "St.Xavier's Collegiate School,Kolkata",
+                "catagory": "Hybrid"
+            },
+            {
+                "Rank": 5,
+                "TeamName": "Bosco Bytes",
+                "teamLeadersName": "Ayush Abhinandan Choudhury",
+                "schoolName": "Don Bosco School, Park Circus, Kolkata, West Bengal",
+                "catagory": "Software"
+            },
+            {
+                "Rank": 6,
+                "TeamName": "SXCS Team 2",
+                "teamLeadersName": "Ashmeet Lakra",
+                "schoolName": "St. Xavier's Collegiate School (SXCS), Kolkata, West Bengal",
+                "catagory": "Software"
+            },
+            {
+                "Rank": 7,
+                "TeamName": "FUTURE FORESIGHTERS",
+                "teamLeadersName": "Soumyadeep  Das",
+                "schoolName": "Lions Calcutta Greater Vidya Mandir school, West Bengal",
+                "catagory": "Hybrid"
+            },
+            {
+                "Rank": 8,
+                "TeamName": "Segmentation Fault",
+                "teamLeadersName": "Shanu Sarkar",
+                "schoolName": "Lions Calcutta Greater Vidya Mandir school, West Bengal",
+                "catagory": "Software"
+            }
+
 
 
         ]
