@@ -12,7 +12,7 @@ const DescriptionCard = ({
   const [icon, setIcon] = useState("");
 
   useEffect(() => {
-    import(../../assets/description_card_${index}.png).then((icon) => {
+    import('../../assets/description_card_${index}.png').then((icon) => {
       setIcon(icon.default);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
