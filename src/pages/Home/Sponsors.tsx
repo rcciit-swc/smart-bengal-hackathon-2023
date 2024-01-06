@@ -61,7 +61,7 @@ const Sponsors: React.FC = () => {
           className="w-100 text-center fw-bold mt-5 caveat"
           style={{ color: "var(--heading-color)" }}
         >
-          Supporters of SBH 2023
+          Previous Supporters of SBH 2023
         </h1>
         {sponsorList &&
           sponsorList.map((sponsor: any) => {

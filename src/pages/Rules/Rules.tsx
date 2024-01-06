@@ -7,7 +7,9 @@ const Rules = () => {
       >
         Rules and Regulations
       </div>
-      <div className="w-75 my-3">
+      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1>
+      {/* <div className="w-75 my-3">
         <ol>
           <li>
             Maximum allowed student member in each team is 3 excluding 1
@@ -82,7 +84,7 @@ const Rules = () => {
             conduct and other unsporting behavior.
           </li>
         </ol>
-      </div>
+      </div> */}
     </main>
   );
 };

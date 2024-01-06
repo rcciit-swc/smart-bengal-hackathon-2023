@@ -31,7 +31,7 @@ const ProblemStatements = () => {
         style={{ color: "var(--heading-color)" }}
         className="d-flex flex-row fw-bold fs-1"
       >
-        <span className="text-uppercase">problem statements</span>
+        <span className="text-uppercase">problem statements 2023</span>
       </div>
       <div
         style={{
