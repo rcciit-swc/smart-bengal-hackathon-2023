@@ -74,7 +74,9 @@ const ProjectImplementation = () => {
           image="https://sih.gov.in/img/project-implementation.jpg"
         />
       </Suspense>
-      <div className="d-flex w-100 mb-5 flex-column justify-content-center align-items-center">
+      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1>
+      {/* <div className="d-flex w-100 mb-5 flex-column justify-content-center align-items-center">
         <h2
           className="text-center fw-bold my-5"
           style={{ color: "var(--heading-color)", width: "90%" }}
@@ -156,7 +158,7 @@ const ProjectImplementation = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

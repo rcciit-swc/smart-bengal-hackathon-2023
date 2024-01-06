@@ -103,11 +103,11 @@ const NavBar = () => {
                 Executive Team
               </Link>
             </div>
-            {/* <div className="nav-link text-decoration-none">
+            <div className="nav-link text-decoration-none">
               <Link onClick={navHandler} to={projectImplementationRoute}>
                 Project Implementation
               </Link>
-            </div> */}
+            </div>
             {/* <NavDropdown className="navbar__color" title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
