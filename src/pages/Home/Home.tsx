@@ -69,12 +69,12 @@ const Home = () => {
               alt=""
               width={60}
             />
-            <Link
+            {/* <Link
               to={resultSeniorRoute}
               className="mx-2 text-decoration-underline"
             >
-              Result for SBH Senior.
-            </Link>
+              Result for SBH Senior 2023.
+            </Link> */}
           </span>
           <span>
             <img
@@ -82,12 +82,12 @@ const Home = () => {
               alt=""
               width={60}
             />
-            <Link
+            {/* <Link
               to={resultJuniorRoute}
               className="mx-2 text-decoration-underline"
             >
-              Result for SBH Junior.
-            </Link>
+              Result for SBH Junior 2023.
+            </Link> */}
           </span>
         </Marquee>
       </div>
@@ -155,13 +155,14 @@ const Home = () => {
               triggerOffset={25}
               delayInMilliseconds={100}
             >
-              <p>
+              <h1>COMING SOON</h1>
+              {/* <p>
                 Important dates and deadlines vary depending on the context.
                 It's crucial to keep track of them for tasks such as project
                 submissions, application deadlines, and events. Missing
                 deadlines can lead to penalties and missed opportunities.
-              </p>
-              <Button
+              </p> */}
+              {/* <Button
                 className="rounded-button"
                 style={{
                   backgroundColor: "#1768b0",
@@ -181,7 +182,7 @@ const Home = () => {
                 >
                   Register Now
                 </a>
-              </Button>
+              </Button> */}
               {/* <ul style={{ fontSize: "20px" }}>
                 <li>
                   <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023
@@ -197,7 +198,7 @@ const Home = () => {
               </ul> */}
             </FadeIn>
           </div>
-          <FadeIn
+          {/* <FadeIn
             from="right"
             positionOffset={150}
             triggerOffset={25}
@@ -253,13 +254,14 @@ const Home = () => {
                 </span>
               </div>
             </div>
-          </FadeIn>
+          </FadeIn> */}
         </div>
       </div>
       <Suspense fallback={<></>}>
         <Themes />
+        <h1>COMING SOON</h1>
       </Suspense>
-      <FadeIn
+      {/* <FadeIn
         from="left"
         positionOffset={150}
         triggerOffset={25}
@@ -269,12 +271,12 @@ const Home = () => {
           <div
             className="w-75 py-5 px-2 my-4 d-flex justify-content-evenly align-items-center flex-wrap"
             style={{
-              // backgroundColor: "#000000",
+           
               color: "white",
               borderRadius: "50px",
             }}
           >
-            {/* <div className="d-flex flex-column align-items-start  w-75">
+            <div className="d-flex flex-column align-items-start  w-75">
               <h1 className="text-uppercase fs-3 fw-bold poppins">
                 Do you love data ?
               </h1>
@@ -286,9 +288,9 @@ const Home = () => {
                 firm Sapio Analytics
               </p>
               
-            </div> */}
+            </div>
             <div className="d-flex flex-column align-items-center justify-content-between gap-4">
-              {/* <div
+              <div
                 style={{
                   width: "200px",
                 }}
@@ -302,7 +304,7 @@ const Home = () => {
                     objectFit: "contain",
                   }}
                 />
-              </div> */}
+              </div>
               <img src="/hack.jpeg" style={{ width: "100%" }} />
 
               <Button
@@ -330,14 +332,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </FadeIn>
+      </FadeIn> */}
       <Suspense fallback={<></>}>
-        <HomePrizes />
+        {/* <HomePrizes /> */}
       </Suspense>
       <Suspense fallback={<></>}>
         <Sponsors />
       </Suspense>
-      <div
+      {/* <div
         className="d-flex sponsor-form w-100 justify-content-center align-items-center py-5"
         style={{ height: "400px", padding: "0px 10vw" }}
       >
@@ -357,7 +359,7 @@ const Home = () => {
               <br />
               others think. So, let’s just take a step forward and solve the
               problem.
-            </span>
+            </span> 
           </div>
           <div className="d-flex flex-column align-items-center">
             <img
@@ -391,7 +393,7 @@ const Home = () => {
             </Button>
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 };

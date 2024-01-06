@@ -15,7 +15,7 @@ const ProcessFlow = () => {
         <img src={banner} className="banner_img" alt="" />
         <div className="carosal_caption">
           <h3 className=" text-uppercase banner_tag">
-            Smart Bengal Hackathon 2023
+            Smart Bengal Hackathon 2024
           </h3>
           <h5 className="text-uppercase banner_subtxt">
             software & hardware edition
@@ -36,7 +36,7 @@ const ProcessFlow = () => {
           <div className="d-flex flex-column ">
             <span className="text-uppercase fw-bold fs-2">overview</span>
             <span className="text-capitalize ">
-              Smart Bengal Hackathon 2023 is a statewide initiative to provide
+              Smart Bengal Hackathon is a statewide initiative to provide
               students a platform to solve some of the pressing problems we face
               in our daily lives, and thus inculcate a culture of product
               innovation and a mindset of problem solving.
@@ -61,7 +61,7 @@ const ProcessFlow = () => {
             className="text-uppercase fw-bold fs-2"
             style={{ color: "var(--heading-color)" }}
           >
-            WHY JOIN SBH 2023?
+            WHY JOIN SBH?
           </span>
           <div className="d-flex flex-row flex-wrap justify-content-center mt-5">
             {descriptionCards.map((card, index) => (
@@ -81,7 +81,7 @@ const ProcessFlow = () => {
             ))}
           </div>
         </div>
-        <div
+        {/* <div
           className="w-75  process-container text-center"
           style={{ backgroundColor: "var(--invert-color)" }}
         >
@@ -132,9 +132,10 @@ const ProcessFlow = () => {
               </FadeIn>
             ))}
           </div>
-        </div>
+        </div> */}
         <Suspense fallback={<></>}>
           <Themes />
+          <h1>COMING SOON</h1>
         </Suspense>
       </div>
     </>

@@ -29,7 +29,7 @@ const Updates = () => {
         >
           Important Dates and Deadlines
         </h2>
-        <ul className="w-75" style={{ fontSize: "20px" }}>
+        {/* <ul className="w-75" style={{ fontSize: "20px" }}>
           <li>
             <b>Registration & Idea Submission:</b> Begins on 28 Feb 2023 and
             ends on 23rd Mar(Senior) & 31st Mar(Junior) 2023.
@@ -41,9 +41,9 @@ const Updates = () => {
             <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH Junior
             & 12th April, 2023 for SBH Senior
           </li>
-        </ul>
-      </div>
-      <div className="w-100 d-flex flex-column justify-content-center align-items-center">
+        </ul> */}
+      {/* </div>
+      <div className="w-100 d-flex flex-column justify-content-center align-items-center"> */}
         {/* <h2
           className="w-100 text-center fw-bold my-3"
           style={{ color: "var(--heading-color)" }}
@@ -61,7 +61,7 @@ const Updates = () => {
         <span className="mb-4 text-center">
           Registration fees need to be paid after the shortlisting.
         </span> */}
-        <Button
+        {/* <Button
           variant="success"
           className="mb-5"
           style={{
@@ -82,7 +82,7 @@ const Updates = () => {
           >
             Register Now
           </a>
-        </Button>
+        </Button> */}
       </div>
     </main>
   );
