@@ -43,7 +43,7 @@ const CarouselContainer = () => {
       >
         <Carousel.Item>
           <a
-            href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -51,22 +51,7 @@ const CarouselContainer = () => {
               className="d-block w-100"
               height="500px"
               width="auto"
-              src="https://i.imgur.com/SraJzN7.png"
-              alt="First slide"
-            />
-          </a>
-        </Carousel.Item>
-        <Carousel.Item>
-          <a
-            href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="d-block w-100"
-              height="500px"
-              width="auto"
-              src="https://i.imgur.com/F7H69ih.png"
+              src="https://imgur.com/a/VR2e4IG"
               alt="Second slide"
             />
           </a>
@@ -76,7 +61,7 @@ const CarouselContainer = () => {
               className="d-block w-100"
               height="500px"
               width="auto"
-              src="https://i.imgur.com/EhqUm4k.jpg"
+              src="https://imgur.com/a/VR2e4IG"
               alt="Second slide"
             />
         </Carousel.Item>
