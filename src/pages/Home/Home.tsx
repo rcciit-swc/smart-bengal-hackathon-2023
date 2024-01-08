@@ -41,18 +41,18 @@ const Home = () => {
           color="orange"
         />
         <Circle
-          width="900px"
-          height="900px"
-          blur="0"
+          width="600px"
+          height="600px"
+          blur="80"
           top="-25px"
           right="-450px"
           color="orange"
           bannerCircle="banner_circle"
         />
         <Circle
-          width="900px"
-          height="900px"
-          blur="0"
+          width="600px"
+          height="600px"
+          blur="80"
           top="-25px"
           left="-450px"
           color="blue"
