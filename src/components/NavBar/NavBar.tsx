@@ -3,6 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import {
   indexRoute,
   problemStatementsRoute,
+  problemStatementsRoute24,
   processFlowRoute,
   projectImplementationRoute,
   TeamImplementationRoute,
@@ -67,6 +68,12 @@ const NavBar = () => {
                   About SBH 2024
                 </Link>
               </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link onClick={navHandler} to={problemStatementsRoute24}>
+                  SBH 2024 Problem Statements
+                </Link>
+                </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={processFlowRoute}>
