@@ -21,19 +21,25 @@
     "themes-tagline": "No problem is too big... No idea is too small",
     "contact": {
         "name": [
-            "Souvik Majumdar",
-            "Anirban Dey",
-            "Swapan Sakhari"
+            "Dr. Hiranmoy Roy",
+            "Mr. Souvik Majumdar",
+            "Mr. Anirban Dey",
+            "Mr. Swapan Sakhari"
+
         ],
         "email": [
+            "hiranmoy.roy@rcciit.org.in",
             "souvik.majumdar@rcciit.org.in",
             "anirban.dey@rcciit.org.in",
-            ""
+            "swapan.shakhari@rcciit.org.in"
+
         ],
         "phone": [
+            "+919831445343",
             "+91 96818 92754",
             "+91 78725 22530",
             "+91 98049 57389"
+
         ]
     },
     "theme-card-data": [{

@@ -16,7 +16,7 @@ const Footer = () => {
         <p className="text-uppercase fs-5 fw-bold montserrat">Follow us</p>
         <div></div>
         <a href="#" className="fs-6 copyright my-1 text-center poppins">
-          © 2023-24 Smart Bengal Hackathon. All rights reserved
+          © 2024-25 Smart Bengal Hackathon. All rights reserved
         </a>
         <a className="fs-6 copyright" href="mailto:sbh@rcciit.org.in">
           sbh@rcciit.org.in
