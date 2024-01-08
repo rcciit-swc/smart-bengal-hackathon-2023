@@ -24,44 +24,89 @@ const Sponsors: React.FC = () => {
     <>
       <div className="container pt-5 pb-5 position-relative">
         <Suspense fallback={<></>}>
-          <Circle
-            width="600px"
-            height="600px"
-            blur="80"
-            top="800px"
-            right="-500px"
-            color="orange"
-          />
-          <Circle
-            width="600px"
-            height="600px"
-            blur="80"
-            top="1500px"
-            left="-500px"
-            color="blue"
-          />
-          <Circle
-            width="600px"
-            height="600px"
-            blur="80"
-            top="2000px"
-            right="-500px"
-            color="orange"
-          />
-          <Circle
-            width="600px"
-            height="600px"
-            blur="80"
-            top="2600px"
-            left="-500px"
-            color="blue"
-          />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1300px"
+          right="-400px"
+          color="blue"
+        />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1800px"
+          left="-400px"
+          color="orange"
+        />
+        <Circle
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          right="-450px"
+          color="orange"
+          bannerCircle="banner_circle"
+        />
+        <Circle
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          left="-450px"
+          color="blue"
+          bannerCircle="banner_circle"
+        />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1300px"
+          right="-400px"
+          color="blue"
+        />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1800px"
+          left="-400px"
+          color="orange"
+        />
+        <Circle
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          right="-450px"
+          color="orange"
+          bannerCircle="banner_circle"
+        />
+        <Circle
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          left="-450px"
+          color="blue"
+          bannerCircle="banner_circle"
+        />
+        
         </Suspense>
         <h1
           className="w-100 text-center fw-bold mt-5 caveat"
           style={{ color: "var(--heading-color)" }}
         >
-          Previous Supporters of SBH 2023
+          Supporters of SBH 2024
+        </h1>
+        <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1>
+        <h1
+          className="w-100 text-center fw-bold mt-5 caveat"
+          style={{ color: "var(--heading-color)" }}
+        >
+          Last Year Suppoters
         </h1>
         {sponsorList &&
           sponsorList.map((sponsor: any) => {
