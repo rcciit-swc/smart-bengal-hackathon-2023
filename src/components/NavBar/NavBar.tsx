@@ -70,12 +70,6 @@ const NavBar = () => {
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
-                <Link onClick={navHandler} to={problemStatementsRoute24}>
-                  SBH 2024 Problem Statements
-                </Link>
-                </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
                 <Link onClick={navHandler} to={processFlowRoute}>
                   SBH 2024 Process Flow
                 </Link>
@@ -86,6 +80,12 @@ const NavBar = () => {
                   SBH 2024 Themes
                 </Link>
               </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link onClick={navHandler} to={problemStatementsRoute24}>
+                  SBH 2024 Problem Statements
+                </Link>
+                </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={problemStatementsRoute}>
