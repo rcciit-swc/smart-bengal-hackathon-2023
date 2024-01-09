@@ -100,7 +100,16 @@ const Sponsors: React.FC = () => {
         >
           Supporters of SBH 2024
         </h1>
-        {sponsorList &&
+
+        <h1
+          className="w-100 text-center fw-bold mt-5 caveat"
+          style={{ color: "var(--heading-color)" }}
+        >
+          Coming Soon ...
+        </h1>
+        
+
+        {/* {sponsorList &&
           sponsorList.map((sponsor: any) => {
             return (
               <div className="py-5">
@@ -233,7 +242,7 @@ const Sponsors: React.FC = () => {
                                 />
                               </a>
                             </div>
-                          )}
+                          )} */}
                           {/* <div className="sponsor-img-container">
                             <a
                               href={image.website}
@@ -248,10 +257,10 @@ const Sponsors: React.FC = () => {
                               />
                             </a>
                           </div> */}
-                        </FadeIn>
+                        {/* </FadeIn>
                       );
                     })
-                  )}
+                  )} */}
                   {/* {sponsor.images.map((image: any) => {
                     return (
                       <FadeIn
@@ -269,10 +278,7 @@ const Sponsors: React.FC = () => {
                       </FadeIn>
                     );
                   })} */}
-                </div>
-              </div>
-            );
-          })}
+                {/*  */}
         {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
           style={{color: "black"}}>COMING SOON</h1> */}
         {/* <h1
