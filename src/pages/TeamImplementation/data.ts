@@ -14,19 +14,20 @@ type impl_team_type = {
 };
 
 const impl_team_data: impl_team_type[] = [
-  {
-    img: abhijtSir,
-    name: "Prof. Abhijit Chakraborty",
-    position: "Chief Patron",
-    designation:
-      "Chairman, BOM, RCCIIT & Ex.VC of Jadavpur University & Professor of IIEST",
-  },
+  
   {
     img: pranashSir,
     name: "Mr. Pranabesh Das",
-    position: "Patron",
+    position: "Chief Patron",
     designation:
       "Chairman, BOG, RCCIIT, Ex.Director of Technical Education, Govt.of West Bengal",
+  },
+  {
+    img: amlanSir,
+    name: "Prof. Amlan Chakrabrti",
+    position: "Chief Patron",
+    designation:
+      "Professor and Director, A.K. Choudhury School of Information Technology University of Calcutta",
   },
   {
     img: anirbanSir,
@@ -35,38 +36,61 @@ const impl_team_data: impl_team_type[] = [
     designation: "Principal(ofg.), RCCIIT",
   },
   {
-    img: aloknathSir,
-    name: "Dr. Alokenath De",
-    position: "Chief Mentor",
-    designation:
-      "Ex. Corporate Vice President of Samsung Electronics and Chief Technology Officer of Samsung R&D Institute India, Bangalore, Chair, IEEE Bangalore section",
-  },
-  {
-    img: "https://rcciit.org/images/staff/ee/f/alok.jpg",
-    name: "Dr. Alok Kole",
-    position: "Convener",
-    designation:
-      "Professor, Dept.of EE & President of Institution’s Innovation Council, RCCIIT",
-  },
-  {
-    img: amlanSir,
-    name: "Prof. Amlan Chakrabrti",
+    img: 'https://rcciit.org/images/staff/cse/f/minakshi.jpg',
+    name: "Dr. Minakshi Banerjee",
     position: "Adviser",
-    designation:
-      "Professor and Director, A.K. Choudhury School of Information Technology University of Calcutta",
+    designation: "Professor, Dept.of CSE, RCCIIT",
   },
   {
-    img: joydeepSir,
-    name: "Joydeep Banerjee",
+    img: 'https://rcciit.org/images/staff/ece/f/ashoke.jpg',
+    name: "Dr. Ashoke Mondal",
     position: "Adviser",
-    designation: "Global CoC, Mainframe Modernization Service, IBM Consulting",
+    designation: "Professor,Dept.of ECE, RCCIIT",
   },
   {
-    img: swagatamSir,
-    name: "Prof. Swagatam Das",
+    img: "https://rcciit.org/images/staff/it/f/indrajit.jpg",
+    name: "Dr. Indrajit Pan",
+    position:'Adviser',
+    designation: "Professor, Dept.of IT, Dean, R & D, RCCIIT",
+    
+  },
+  {
+    img: 'https://rcciit.org/images/staff/cse/f/harinandan.jpg',
+    name: "Mr. Harinandan Tunga",
     position: "Adviser",
-    designation:
-      "Associate Professor and Head Electronics and Communication Sciences Unit, Indian Statistical Institute",
+    designation: "Professor, Dept.of CSE, FIC(SA & SW), RCCIIT",
+  },
+  {
+    img: "https://rcciit.org/images/staff/ee/f/Debasish.jpg",
+    name: "Dr. Debasish Mondal",
+    position:'Chief Convener',
+    designation: "Professor, Dept.of EE, RCCIIT",
+  },
+  {
+    img: "https://rcciit.org/images/staff/aeie/f/srijan.jpg",
+    name: "Dr. Srijan Bhattacharya",
+    position:'Joint Convener (SBH Junior)',
+    designation: "Professor,  Dept.of AEIE, RCCIIT",
+    
+  },
+  {
+    img: "https://rcciit.org/images/staff/it/f/Soumen.jpg",
+    name: "Dr. Soumen  Mukherjee",
+    position:'Joint Convener (SBH Junior)',
+    designation: "Professor, Dept.of IT, RCCIIT",
+    
+  },
+  {
+    img: "https://rcciit.org/images/staff/ece/f/arpan.jpg",
+    name: "Dr. Arpan Deyasi",
+    position:'Joint Convener (SBH Senior)',
+    designation: "Professor, Dept.of ECE, RCCIIT",
+  },
+  {
+    img: "https://rcciit.org/images/staff/it/f/Hiranmoy.jpg",
+    name: "Dr. Hiranmoy Roy",
+    position:'Joint Convener (SBH Senior)',
+    designation: "HOD ,Dept.of IT, RCCIIT",
   },
 ];
 
