@@ -1,8 +1,7 @@
 {
     "title": "smart bengal hackathon",
     "description": "Bengal’s largest open platform for the innovators or entrepreneurs of tomorrow to start today towards a smarter Bengal",
-    "description-cards": [
-        {
+    "description-cards": [{
             "ingenious": "Harnessing creativity and expertise of students, academicians and visionaries"
         },
         {
@@ -27,7 +26,7 @@
             "Mr. Anirban Dey",
             "Mr. Swapan Sakhari",
             "Shuvangi De",
-            "Sanrita Saha"
+            "Sansrita Saha"
         ],
         "email": [
             "hiranmoy.roy@rcciit.org.in",
@@ -46,8 +45,7 @@
             "+91 70036 12844"
         ]
     },
-    "theme-card-data": [
-        {
+    "theme-card-data": [{
             "theme": "Smart Vehicle",
             "desc": "Creating intelligent devices to improve commutation sector.",
             "picture": "https://scwcontent.affino.com/AcuCustom/Sitename/DAM/014/Autonomous-vehicle-AdobeStock_174958313_rm.png",
@@ -379,8 +377,7 @@
             "SBH Junior/ SBH Senior"
         ]
     },
-    "pf": [
-        {
+    "pf": [{
             "title": "Step 1",
             "img": "./assets/step1.png",
             "desc": "Teams should be formed as per perspective guidelines. Eligibility of the members for SBH Junior and SBH Senior should follow eligibility guidelines."
@@ -426,8 +423,7 @@
             "desc": "Final compilation of Results and Announcement of Winners."
         }
     ],
-    "winning-guidelines": [
-        {
+    "winning-guidelines": [{
             "id": "1",
             "title": "Hackathons are opportunities to quickly check the feasibility of any novel idea, hence projects developed during Hackathons are usually very crude and absolutely not ready for field implementation or deployment as working solutions. They require considerable work or development before implementation/deployment as reliable, dependable solutions."
         },
@@ -481,8 +477,7 @@
         }
     ],
     "faqs": {
-        "SBHSenior": [
-            {
+        "SBHSenior": [{
                 "question": "Who can participate in SBH Senior?",
                 "answer": "A student of College or University, pursuing any of the following programme \n a) B.Sc./ BCA/ BBA \nb) BE/B.Tech \nc) M.Sc \nd) MCA/MBA \ne) ME/ M. Tech \nf) Ph.D. (Science)/ Ph.D. (Engineering)/ Ph.D. (Management)"
             },
@@ -491,24 +486,23 @@
                 "answer": "Yes, in that case approval should be obtained from respective Heads of all Institutes in\n the given format separately and those should be merged into a single PDF and uploaded\n during registration."
             },
             {
-                "question": "How do I register for Smart Bengal Hackathon 2023?",
-                "answer": "<div>Mentors of a team can register at <a href='https://unstop.com/o/2adeEYJ?lb=TzAP536' target='_blank' rel='noreferrer'>https://unstop.com/o/2adeEYJ?lb=TzAP536</a></div>"
+                "question": "How do I register for Smart Bengal Hackathon 2024?",
+                "answer": "<div>COMING SOON</div>"
             },
             {
                 "question": "When Registration will start?",
-                "answer": "Registration for SBH 2023 will commence from 28 February 2023 and it will close on 23 March 2023."
+                "answer": "COMING SOON"
             },
             {
                 "question": "What will be the team size?",
-                "answer": "Mentors can identify minimum two or maximum three students as per eligibility and form a team. A unique team name has to be decided."
+                "answer": "COMING SOON"
             },
             {
                 "question": "What do we require for registration?",
-                "answer": "Following steps to be followed:\n Step 1.Team should be formed as per above mentioned guideline. Eligibility of the\n members for SBH Senior should follow the above guideline.\nStep 2.A theme and matching problem statement has to be identified from SBH\n portal https://sbh.rcciit.org.in/.\nStep 3.IDEA template has to be prepared following the given IDEA template ppt in\n the SBH portal.\nStep 4. A PDF has to be created of this PPT.\nStep 5.A consent letter has to be obtained in the given format from the Head of the\n Institute and it should be scanned to PDF.\nStep 6.Registration Form has to be filled with all above mentioned details at\n https://unstop.com/o/2adeEYJ?lb=TzAP536."
+                "answer": "COMING SOON"
             }
         ],
-        "SBHJunior": [
-            {
+        "SBHJunior": [{
                 "question": "Who can participate in SBH Junior?",
                 "answer": "a) Any student from School – Class IX to XII \nb) Any student from Polytechnic Institute (AICTE affiliated)"
             },
@@ -518,25 +512,24 @@
             },
             {
                 "question": "How do I register for Smart Bengal Hackathon 2023?",
-                "answer": "<div>Mentors of a team can register at <a href='https://unstop.com/o/2adeEYJ?lb=TzAP536' target='_blank' rel='noreferrer'>https://unstop.com/o/2adeEYJ?lb=TzAP536</a></div>"
+                "answer": "COMING SOON"
             },
             {
                 "question": "When Registration will start?",
-                "answer": "Registration for SBH 2023 will commence from 28 February 2023 and it will close on 31 March 2023."
+                "answer": "COMING SOON"
             },
             {
                 "question": "What will be the team size?",
-                "answer": "Mentors can identify minimum two or maximum three students as per eligibility and form a team. A unique team name has to be decided."
+                "answer": "COMING SOON"
             },
             {
                 "question": "What do we require for registration?",
-                "answer": "Following steps to be followed:\n Step 1.Team should be formed as per above mentioned guideline. Eligibility of the\n members for SBH Junior should follow the above guideline.\nStep 2.A theme and matching problem statement has to be identified from SBH\n portal https://sbh.rcciit.org.in/.\nStep 3.IDEA template has to be prepared following the given IDEA template ppt in\n the SBH portal.\nStep 4. A PDF has to be created of this PPT.\nStep 5.A consent letter has to be obtained in the given format from the Head of the\n Institute and it should be scanned to PDF.\nStep 6.Registration Form has to be filled with all above mentioned details at\n https://unstop.com/o/2adeEYJ?lb=TzAP536."
+                "answer": "COMING SOON"
             }
         ]
     },
     "prizes": {
-        "SBHSenior": [
-            {
+        "SBHSenior": [{
                 "orderNo": 1,
                 "position": "1st Prize",
                 "prizeMoney": "₹ 30,000"
@@ -552,8 +545,7 @@
                 "prizeMoney": "₹ 10,000"
             }
         ],
-        "SBHJunior": [
-            {
+        "SBHJunior": [{
                 "orderNo": 1,
                 "position": "1st Prize",
                 "prizeMoney": "₹ 25,000"
@@ -571,8 +563,7 @@
         ]
     },
     "results": {
-        "SbhSenior": [
-            {
+        "SbhSenior": [{
                 "rank": 1,
                 "teamName": "key 2 innov@tion  BIT, Kolkata",
                 "CollegeName": "Bengal Institute of Technology (BIT), Kolkata",
@@ -643,8 +634,7 @@
                 "psNumber": "SBHRCCIIT015"
             }
         ],
-        "SbhJunior": [
-            {
+        "SbhJunior": [{
                 "Rank": 1,
                 "TeamName": "NDPMB-24",
                 "teamLeadersName": "Lalan Kumar",

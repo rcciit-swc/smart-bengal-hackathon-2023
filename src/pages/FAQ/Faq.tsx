@@ -44,7 +44,7 @@ const FAQ = () => {
             >
               SBH SENIOR
             </h3>
-            {/* <Button
+            <Button
               variant="success"
               style={{
                 outline: "none",
@@ -56,17 +56,17 @@ const FAQ = () => {
               }}
             >
               <a
-                href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+                href=" "
                 target="_blank"
                 rel="noreferrer"
               >
                 Register Now
               </a>
-            </Button> */}
+            </Button>
           </div>
-          <h1 className="fw-bold caveat"
-              style={{ color: "black" }}>COMING SOON</h1>
-          {/* <div
+          {/* <h1 className="fw-bold caveat"
+              style={{ color: "black" }}>COMING SOON</h1> */}
+          <div
             className="w-100 d-flex flex-column mt-3"
             style={{ gap: "10px" }}
           >
@@ -79,7 +79,7 @@ const FAQ = () => {
                 />
               );
             })}
-          </div> */}
+          </div>
         </div>
         <div className="w-75 mx-auto mt-5">
           <div className="d-flex justify-content-between w-100 align-items-center">
@@ -89,7 +89,7 @@ const FAQ = () => {
             >
               SBH JUNIOR
             </h3>
-            {/* <Button
+            <Button
               variant="success"
               style={{
                 outline: "none",
@@ -101,17 +101,17 @@ const FAQ = () => {
               }}
             >
               <a
-                href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+                href=" "
                 target="_blank"
                 rel="noreferrer"
               >
                 Register Now
               </a>
-            </Button> */}
+            </Button>
           </div>
-          <h1 className="fw-bold caveat"
-              style={{ color: "black" }}>COMING SOON</h1>
-          {/* <div
+          {/* <h1 className="fw-bold caveat"
+              style={{ color: "black" }}>COMING SOON</h1> */}
+          <div
             className="w-100 d-flex flex-column mt-3"
             style={{ gap: "10px" }}
           >
@@ -124,7 +124,7 @@ const FAQ = () => {
                 />
               );
             })}
-          </div> */}
+          </div>
         </div>
       </div>
     </>

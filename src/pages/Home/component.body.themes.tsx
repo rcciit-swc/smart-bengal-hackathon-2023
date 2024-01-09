@@ -107,7 +107,7 @@ const Themes = () => {
       >
         themes
       </h1>
-      {/* <h5 className="fw-light fs-6 text-center">{themesTagline}</h5>
+      <h5 className="fw-light fs-6 text-center">{themesTagline}</h5>
       <FadeIn
         from="bottom"
         positionOffset={200}
@@ -166,12 +166,12 @@ const Themes = () => {
             }}
           />
         </div>
-      </FadeIn> */}
-      {/* <p className="mt-4 fw-500 fs-6 w-75">
+      </FadeIn>
+      <p className="mt-4 fw-500 fs-6 w-75">
         Participants can submit their innovative ideas according to their choice
         of concerned theme irrespective of the already present problem
         statements.
-      </p> */}
+      </p>
     </div>
   );
 };

@@ -14,9 +14,9 @@ const ThemePage = () => {
           image="https://sih.gov.in/img/themes-bg.jpg"
         />
       </Suspense>
-      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
-          style={{color: "black"}}>COMING SOON</h1>
-      {/* <Table
+      {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1> */}
+      <Table
         striped
         bordered
         responsive
@@ -113,7 +113,7 @@ const ThemePage = () => {
             );
           })}
         </tbody>
-      </Table> */}
+      </Table>
     </>
   );
 };

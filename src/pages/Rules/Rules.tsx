@@ -7,12 +7,12 @@ const Rules = () => {
       >
         Rules and Regulations
       </div>
-      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
-          style={{color: "black"}}>COMING SOON</h1>
-      {/* <div className="w-75 my-3">
+      {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1> */}
+      <div className="w-75 my-3">
         <ol>
           <li>
-            Maximum allowed student member in each team is 3 excluding 1
+            Maximum allowed student member in each team is 6 excluding 1
             mentor(industry/ academic institution). Mentor is compulsory for
             idea submission.
           </li>
@@ -30,7 +30,7 @@ const Rules = () => {
           <li>
             Each participate must treat all team members, competitors, judges,
             coaches,volunteers, etc, with respect and courtesy, abiding by the
-            guidelines of SBH-2023.
+            guidelines of SBH-2024.
           </li>
           <li>All prizes are to be shared between all team members.</li>
           <li>
@@ -84,7 +84,7 @@ const Rules = () => {
             conduct and other unsporting behavior.
           </li>
         </ol>
-      </div> */}
+      </div>
     </main>
   );
 };
