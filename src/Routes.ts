@@ -1,5 +1,6 @@
 export const indexRoute = "/";
 export const problemStatementsRoute = "/problem-statements";
+export const problemStatementsRoute24 = "/problem-statements24";
 export const processFlowRoute = "/process-flow";
 export const projectImplementationRoute = "/project-implementation";
 export const TeamImplementationRoute = "/team-implementation";

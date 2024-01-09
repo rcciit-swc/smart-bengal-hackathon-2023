@@ -1,7 +1,8 @@
 {
     "title": "smart bengal hackathon",
     "description": "Bengal’s largest open platform for the innovators or entrepreneurs of tomorrow to start today towards a smarter Bengal",
-    "description-cards": [{
+    "description-cards": [
+        {
             "ingenious": "Harnessing creativity and expertise of students, academicians and visionaries"
         },
         {
@@ -24,30 +25,37 @@
             "Dr. Hiranmoy Roy",
             "Mr. Souvik Majumdar",
             "Mr. Anirban Dey",
-            "Mr. Swapan Sakhari"
-
+            "Mr. Swapan Sakhari",
+            "Shuvangi De",
+            "Sanrita Saha"
         ],
         "email": [
             "hiranmoy.roy@rcciit.org.in",
             "souvik.majumdar@rcciit.org.in",
             "anirban.dey@rcciit.org.in",
-            "swapan.shakhari@rcciit.org.in"
-
+            "swapan.shakhari@rcciit.org.in",
+            "shuvangide@gmail.com",
+            "sansritasaha@gmail.com"
         ],
         "phone": [
             "+919831445343",
             "+91 96818 92754",
             "+91 78725 22530",
-            "+91 98049 57389"
-
+            "+91 98049 57389",
+            "+91 90731 74284",
+            "+91 70036 12844"
         ]
     },
-    "theme-card-data": [{
+    "theme-card-data": [
+        {
             "theme": "Smart Vehicle",
             "desc": "Creating intelligent devices to improve commutation sector.",
             "picture": "https://scwcontent.affino.com/AcuCustom/Sitename/DAM/014/Autonomous-vehicle-AdobeStock_174958313_rm.png",
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Smart_Fortwo_EQ_Car2goStuttgart_IMG_0750.jpg/1200px-Smart_Fortwo_EQ_Car2goStuttgart_IMG_0750.jpg",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(146, 186, 213)"
         },
         {
@@ -55,7 +63,10 @@
             "desc": "There is a need to design drones and robots that can solve some of the pressing challenges of India such as handling medical emergencies, search and rescue operations, etc.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/ICub_-_Festival_Economia_2018_2.jpg/1200px-ICub_-_Festival_Economia_2018_2.jpg",
             "icon": "https://img.icons8.com/external-soft-fill-juicy-fish/60/null/external-drone-aerospace-engineering-soft-fill-soft-fill-juicy-fish.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "#0d1402"
         },
         {
@@ -63,7 +74,10 @@
             "desc": "Disaster management includes ideas related to risk mitigation, Planning and management before, after or during a disaster.",
             "picture": "https://drscdn.500px.org/photo/83432187/m%3D900/v2?sig=fca34a23a10a8207eb1ded7e1b1d8fb0c6eb477b9bd964090b0ea280766f1050",
             "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-environment-ecology-flaticons-lineal-color-flat-icons.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(248, 130, 8)"
         },
         {
@@ -71,7 +85,10 @@
             "desc": "Smart education,a concept that describes learning in digital age. It enables learners to learn more effectively, efficiently, flexibly and comfortably.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Interactive_whiteboard_at_CeBIT_2007.jpg",
             "icon": "https://sih.gov.in/img/smart-education.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(147, 63, 44)"
         },
         {
@@ -79,7 +96,10 @@
             "desc": "Ideas focused on the intelligent use of resources for transforming and advancements of technology with combining the artificial intelligence to explore more various sources and get valuable insights.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/BMW_Leipzig_MEDIA_050719_Download_Karosseriebau_max.jpg/463px-BMW_Leipzig_MEDIA_050719_Download_Karosseriebau_max.jpg",
             "icon": "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(238, 101, 0)"
         },
         {
@@ -87,14 +107,19 @@
             "desc": "Submit your ideas to address the growing pressures on the city’s resources, transport networks, and logistic infrastructure.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Platooning_Back_022414_Final_noTpye.jpg",
             "icon": "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/null/external-logistics-industry-flaticons-lineal-color-flat-icons-2.png",
-            "institution": ["college"],
+            "institution": [
+                "college"
+            ],
             "color": "rgb(0, 45, 62)"
         },
         {
             "theme": "Clean/Green Technology",
             "desc": "Solutions could be in the form of waste segregation, disposal, and improve sanitization system.",
             "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-green-technology-renewable-energy-flaticons-flat-flat-icons.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "picture": "https://drscdn.500px.org/photo/31224973/m%3D900/v2?sig=9ef91d98e591c587be5909a76d1a6d57139785dd418f3ff5c21bf3d12d14c533",
             "color": "rgb(0, 97, 167)"
         },
@@ -103,7 +128,10 @@
             "desc": "Innovative ideas that help manage and generate renewable /sustainable sources more efficiently.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/As_solar_firmengebaude.jpg/1200px-As_solar_firmengebaude.jpg",
             "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-renewable-energy-renewable-energy-flaticons-flat-flat-icons-2.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(0, 112, 255)"
         },
         {
@@ -111,7 +139,9 @@
             "desc": "Provide ideas in a decentralized and distributed ledger technology used to store digital information that powers cryptocurrencies and NFTs and can radically change multiple sectors.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Data_Security_Breach_%2829723649810%29.jpg/1200px-Data_Security_Breach_%2829723649810%29.jpg",
             "icon": "https://img.icons8.com/external-becris-lineal-becris/64/null/external-blockchain-cryptocurrency-block-chain-becris-lineal-becris-1.png",
-            "institution": ["college"],
+            "institution": [
+                "college"
+            ],
             "color": "rgb(255, 0, 0)"
         },
         {
@@ -119,7 +149,10 @@
             "desc": "Ideas that can boost fitness activities and assist in keeping fit.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Football_in_Bloomington%2C_Indiana%2C_1996.jpg/1200px-Football_in_Bloomington%2C_Indiana%2C_1996.jpg",
             "icon": "https://sih.gov.in/img/icon_sport.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(30, 109, 30)"
         },
         {
@@ -127,7 +160,10 @@
             "desc": "Developing solutions, keeping in mind the need to enhance the primary sector of India - Agriculture and to manage and process our agriculture produce.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/4/41/India_Farming.jpg",
             "icon": "https://sih.gov.in/img/icon_technology.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(68, 255, 0)"
         },
         {
@@ -135,7 +171,10 @@
             "desc": "Cutting-edge technology in these sectors continues to be in demand. Recent shifts in healthcare trends, growing populations also present an array of opportunities for innovation.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/0/0f/%D0%93%D0%B0%D0%B7%D0%B5%D0%BB%D1%8C_%D1%80%D0%B5%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F.jpg",
             "icon": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-biotech-bioengineering-flaticons-flat-flat-icons.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(0, 56, 162)"
         },
         {
@@ -143,7 +182,10 @@
             "desc": "Submit your idea on Artificial intelligence technologies with the Internet of things infrastructure to achieve more efficient IoT operations, improve human-machine interactions and enhance data management and analytics.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Oneplus_TV_U1S.jpg/333px-Oneplus_TV_U1S.jpg",
             "icon": "https://img.icons8.com/ultraviolet/40/null/artificial-intelligence-productivity.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(88, 48, 39)"
         },
         {
@@ -151,7 +193,10 @@
             "desc": "Submit your idea and  develop a tool which can access data and anonymize it, so that privacy of the person is protected in compliance with proposed Digital Personal Data Protection Bill, 2022 (to be enacted shortly). With this tool, live transactional data can be made accessible to various stakeholders without violating privacy.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Bansky_one_nation_under_cctv.jpg",
             "icon": "https://img.icons8.com/external-filled-line-andi-nur-abdillah/64/null/external-Data-Privacy-cyber-security-(filled-line)-filled-line-andi-nur-abdillah.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(212, 197, 176)"
         },
         {
@@ -159,7 +204,10 @@
             "desc": "Technology ideas in tertiary sectors like Hospitality, Financial Services, Entertainment and Retail.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Silego_clock_generator.JPG/1200px-Silego_clock_generator.JPG",
             "icon": "https://sih.gov.in/img/icon_education.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(47, 131, 166)"
         },
         {
@@ -167,7 +215,10 @@
             "desc": "Participants can submit their innovative ideas according to their choice of concerned theme irrespective of the already present problem statements.",
             "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kibo_PM_and_ELM-PS.jpg/800px-Kibo_PM_and_ELM-PS.jpg",
             "icon": "https://img.icons8.com/external-filled-color-icons-papa-vector/78/null/external-Innovative-Idea-sales-trends-filled-color-icons-papa-vector.png",
-            "institution": ["school", "college"],
+            "institution": [
+                "school",
+                "college"
+            ],
             "color": "rgb(120, 112, 100)"
         }
     ],
@@ -328,7 +379,8 @@
             "SBH Junior/ SBH Senior"
         ]
     },
-    "pf": [{
+    "pf": [
+        {
             "title": "Step 1",
             "img": "./assets/step1.png",
             "desc": "Teams should be formed as per perspective guidelines. Eligibility of the members for SBH Junior and SBH Senior should follow eligibility guidelines."
@@ -374,7 +426,8 @@
             "desc": "Final compilation of Results and Announcement of Winners."
         }
     ],
-    "winning-guidelines": [{
+    "winning-guidelines": [
+        {
             "id": "1",
             "title": "Hackathons are opportunities to quickly check the feasibility of any novel idea, hence projects developed during Hackathons are usually very crude and absolutely not ready for field implementation or deployment as working solutions. They require considerable work or development before implementation/deployment as reliable, dependable solutions."
         },
@@ -428,7 +481,8 @@
         }
     ],
     "faqs": {
-        "SBHSenior": [{
+        "SBHSenior": [
+            {
                 "question": "Who can participate in SBH Senior?",
                 "answer": "A student of College or University, pursuing any of the following programme \n a) B.Sc./ BCA/ BBA \nb) BE/B.Tech \nc) M.Sc \nd) MCA/MBA \ne) ME/ M. Tech \nf) Ph.D. (Science)/ Ph.D. (Engineering)/ Ph.D. (Management)"
             },
@@ -453,7 +507,8 @@
                 "answer": "Following steps to be followed:\n Step 1.Team should be formed as per above mentioned guideline. Eligibility of the\n members for SBH Senior should follow the above guideline.\nStep 2.A theme and matching problem statement has to be identified from SBH\n portal https://sbh.rcciit.org.in/.\nStep 3.IDEA template has to be prepared following the given IDEA template ppt in\n the SBH portal.\nStep 4. A PDF has to be created of this PPT.\nStep 5.A consent letter has to be obtained in the given format from the Head of the\n Institute and it should be scanned to PDF.\nStep 6.Registration Form has to be filled with all above mentioned details at\n https://unstop.com/o/2adeEYJ?lb=TzAP536."
             }
         ],
-        "SBHJunior": [{
+        "SBHJunior": [
+            {
                 "question": "Who can participate in SBH Junior?",
                 "answer": "a) Any student from School – Class IX to XII \nb) Any student from Polytechnic Institute (AICTE affiliated)"
             },
@@ -480,7 +535,8 @@
         ]
     },
     "prizes": {
-        "SBHSenior": [{
+        "SBHSenior": [
+            {
                 "orderNo": 1,
                 "position": "1st Prize",
                 "prizeMoney": "₹ 30,000"
@@ -496,7 +552,8 @@
                 "prizeMoney": "₹ 10,000"
             }
         ],
-        "SBHJunior": [{
+        "SBHJunior": [
+            {
                 "orderNo": 1,
                 "position": "1st Prize",
                 "prizeMoney": "₹ 25,000"
@@ -514,7 +571,8 @@
         ]
     },
     "results": {
-        "SbhSenior": [{
+        "SbhSenior": [
+            {
                 "rank": 1,
                 "teamName": "key 2 innov@tion  BIT, Kolkata",
                 "CollegeName": "Bengal Institute of Technology (BIT), Kolkata",
@@ -529,7 +587,6 @@
                 "psNumber": "SBHRCCIITXXX"
             },
             {
-
                 "rank": 3,
                 "teamName": "Tech Giants Techno NT, Kolkata",
                 "CollegeName": "Techno International New Town, West Bengal",
@@ -585,10 +642,9 @@
                 "TeamLeadersName": "Sumit Gupta",
                 "psNumber": "SBHRCCIIT015"
             }
-
-
         ],
-        "SbhJunior": [{
+        "SbhJunior": [
+            {
                 "Rank": 1,
                 "TeamName": "NDPMB-24",
                 "teamLeadersName": "Lalan Kumar",
@@ -617,7 +673,6 @@
                 "catagory": "Software"
             },
             {
-
                 "Rank": 3,
                 "TeamName": "626373-U2G9KD56",
                 "teamLeadersName": "Rajarshi Dhara",
@@ -659,9 +714,6 @@
                 "schoolName": "Lions Calcutta Greater Vidya Mandir school, West Bengal",
                 "catagory": "Software"
             }
-
-
-
         ]
     }
 }
