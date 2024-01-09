@@ -259,7 +259,7 @@ const Home = () => {
       </div>
       <Suspense fallback={<></>}>
         <Themes />
-        <h1>COMING SOON</h1>
+        
       </Suspense>
       {/* <FadeIn
         from="left"

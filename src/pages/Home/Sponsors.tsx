@@ -100,14 +100,6 @@ const Sponsors: React.FC = () => {
         >
           Supporters of SBH 2024
         </h1>
-        <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
-          style={{color: "black"}}>COMING SOON</h1>
-        <h1
-          className="w-100 text-center fw-bold mt-5 caveat"
-          style={{ color: "var(--heading-color)" }}
-        >
-          Last Year Suppoters
-        </h1>
         {sponsorList &&
           sponsorList.map((sponsor: any) => {
             return (
@@ -281,6 +273,158 @@ const Sponsors: React.FC = () => {
               </div>
             );
           })}
+        {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1> */}
+        {/* <h1
+          className="w-100 text-center fw-bold mt-5 caveat"
+          style={{ color: "var(--heading-color)" }}
+        >
+          Last Year Suppoters
+        </h1> */}
+        {/* {sponsorList &&
+          sponsorList.map((sponsor: any) => {
+            return (
+              <div className="py-5">
+                <div className="w-100 d-flex flex-row justify-content-center align-items-center">
+                  <div
+                    className="mx-2"
+                    style={{
+                      height: "1px",
+                      backgroundColor: "grey",
+                      width: "inherit",
+                    }}
+                  ></div>
+                  <h3 className="text-center" style={{ width: "inherit" }}>
+                    {sponsor.category}
+                  </h3>
+                  <div
+                    className="mx-2"
+                    style={{
+                      height: "1px",
+                      backgroundColor: "grey",
+                      width: "inherit",
+                    }}
+                  ></div>
+                </div>
+                <div className="sponsor-wrapper mt-5">
+                  {sponsor.category === "Tech Partner" ? (
+                    <>
+                      <div className="sponsor-wrapper">
+                        {sponsor.images.map((image: any) => {
+                          return (
+                            image.society && (
+                              <FadeIn
+                                from="left"
+                                positionOffset={150}
+                                triggerOffset={25}
+                                delayInMilliseconds={100}
+                              >
+                                <div className="sponsor-img-container">
+                                  <a
+                                    href={image.website}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <img
+                                      className="sponsor-img"
+                                      src={image.url}
+                                  
+                                      alt={image.name}
+                                    />
+                                  </a>
+                                </div>
+                              </FadeIn>
+                            )
+                          );
+                        })}
+                      </div>
+                      <Marquee pauseOnHover={true} speed={80}>
+                        {sponsor.images.map((image: any) => {
+                          return (
+                            !image.society && (
+                              <FadeIn
+                                from="left"
+                                positionOffset={150}
+                                triggerOffset={25}
+                                delayInMilliseconds={100}
+                              >
+                                <div className="sponsor-img-container my-3 mx-3">
+                                  <a
+                                    href={image.website}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <img
+                                      className="sponsor-img"
+                                      src={image.url}
+                                    
+                                      alt={image.name}
+                                    />
+                                  </a>
+                                </div>
+                              </FadeIn>
+                            )
+                          );
+                        })}
+                      </Marquee>
+                    </>
+                  ) : (
+                    sponsor.images.map((image: any) => {
+                      return (
+                        <FadeIn
+                          from="left"
+                          positionOffset={150}
+                          triggerOffset={25}
+                          delayInMilliseconds={100}
+                        >
+                          {sponsor.category === "Supported by" ? (
+                            <div
+                              className="sponsor-img-container"
+                              id="supported-by"
+                              style={{
+                                width: "450px",
+                                height: "450px",
+                              }}
+                            >
+                              <a
+                                href={image.website}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  className="sponsor-img"
+                                  src={image.url}
+                       
+                                  alt={image.name}
+                                />
+                              </a>
+                            </div>
+                          ) : (
+                            <div className="sponsor-img-container">
+                              <a
+                                href={image.website}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  className="sponsor-img"
+                                  src={image.url}
+                                 
+                                  alt={image.name}
+                                />
+                              </a>
+                            </div>
+                          )}
+                          
+                        </FadeIn>
+                      );
+                    })
+                  )}
+                 
+                </div>
+              </div>
+            );
+          })} */}
       </div>
     </>
   );
