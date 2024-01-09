@@ -10,7 +10,7 @@ const ThemePage = () => {
     <>
       <Suspense fallback={<></>}>
         <Header
-          text="Themes of SBH 2023"
+          text="Themes of SBH 2024"
           image="https://sih.gov.in/img/themes-bg.jpg"
         />
       </Suspense>
