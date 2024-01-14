@@ -155,7 +155,7 @@ const Home = () => {
               triggerOffset={25}
               delayInMilliseconds={100}
             >
-              <h1>COMING SOON</h1>
+              {/* <h1>COMING SOON</h1> */}
               {/* <p>
                 Important dates and deadlines vary depending on the context.
                 It's crucial to keep track of them for tasks such as project
@@ -183,19 +183,19 @@ const Home = () => {
                   Register Now
                 </a>
               </Button> */}
-              {/* <ul style={{ fontSize: "20px" }}>
-                <li>
+              <ul style={{ fontSize: "20px" }}>
+                {/* <li>
                   <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023
                   and ends on 10 Mar 2023.
                 </li>
                 <li>
                   <b>Shortlisted Teams Announcement:</b> 25th March.2023.
-                </li>
+                </li> */}
                 <li>
-                  <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH
-                  Junior & 12th April, 2023 for SBH Senior
+                  <b>Smart Bengal Hackathon Begins:</b> 16th April,2024 for SBH
+                  Junior & 17th April, 2024 for SBH Senior
                 </li>
-              </ul> */}
+              </ul>
             </FadeIn>
           </div>
           {/* <FadeIn
