@@ -126,7 +126,7 @@ const ContactUs = () => {
             <div className="d-flex flex-column align-items-start px-3">
               <p className="text-uppercase fs-5 fw-bold">Follow us</p>
               <a href="#" className="fs-6 copyright">
-                © 2022-23 Smart Bengal Hackathon. All rights reserved
+                © 2024-25 Smart Bengal Hackathon. All rights reserved
               </a>
               <a className="fs-6 copyright" href="mailto:sbh@rcciit.org.in">
                 sbh@rcciit.org.in

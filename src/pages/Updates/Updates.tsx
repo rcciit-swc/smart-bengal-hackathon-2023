@@ -29,6 +29,13 @@ const Updates = () => {
         >
           Important Dates and Deadlines
         </h2>
+        <ul style={{ fontSize: "20px" }}>
+                
+                <li>
+                  <b>Smart Bengal Hackathon Begins:</b> 16th April,2024 for SBH
+                  Junior & 17th April, 2024 for SBH Senior
+                </li>
+              </ul>
         {/* <ul className="w-75" style={{ fontSize: "20px" }}>
           <li>
             <b>Registration & Idea Submission:</b> Begins on 28 Feb 2023 and
