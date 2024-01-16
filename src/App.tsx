@@ -20,7 +20,8 @@ import {
   faqRoute,
   rulesRoute,
   resultJuniorRoute,
-  resultSeniorRoute
+  resultSeniorRoute,
+  sbh2023Route,
 } from "./Routes";
 import { lazy, Suspense } from "react";
 import { DataProvider } from "./contexts/Data";
@@ -56,9 +57,9 @@ const Register = lazy(() => import("./pages/Login/Login"));
 const AdminPortal = lazy(() => import("./pages/AdminPortal/AdminPortal"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 const Faq = lazy(() => import("./pages/FAQ/Faq"));
-const ResultSenior= lazy(() => import("./pages/Result/SbhSenior"));
-const ResultJunior= lazy(() => import("./pages/Result/SbhJunior"));
-
+const ResultSenior = lazy(() => import("./pages/Result/SbhSenior"));
+const ResultJunior = lazy(() => import("./pages/Result/SbhJunior"));
+const SBH2023 = lazy(() => import("./pages/SBH2023/SBH2023"));
 function App() {
   return (
     <BrowserRouter>
@@ -72,6 +73,14 @@ function App() {
                   element={
                     <Suspense fallback={<></>}>
                       <Home />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={sbh2023Route}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <SBH2023 />
                     </Suspense>
                   }
                 ></Route>
@@ -212,20 +221,20 @@ function App() {
                 }>
                 </Route> */}
                 <Route
-                path={resultSeniorRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <ResultSenior />
-                  </Suspense>
-                }
+                  path={resultSeniorRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <ResultSenior />
+                    </Suspense>
+                  }
                 ></Route>
                 <Route
-                path={resultJuniorRoute}
-                element={
-                  <Suspense fallback={<></>}>
-                    <ResultJunior />
-                  </Suspense>
-                }
+                  path={resultJuniorRoute}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <ResultJunior />
+                    </Suspense>
+                  }
                 ></Route>
                 <Route
                   path={contactUsRoute}
