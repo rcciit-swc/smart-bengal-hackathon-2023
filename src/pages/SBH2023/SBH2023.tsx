@@ -1,6 +1,7 @@
 import Committe from '../../components/SBH2023/Committe'
 import Finale from '../../components/SBH2023/Finale'
 import Gallery from '../../components/SBH2023/Gallery'
+import Sponsors from '../Home/Sponsors'
 import Impact from '../../components/SBH2023/Impact'
 import Supporters from '../../components/SBH2023/Supporters'
 import Winners from '../../components/SBH2023/Winners'
@@ -16,7 +17,7 @@ const SBH2023 = () => {
       <Committe />
         <Gallery />
         <Themes/>
-        <Supporters />
+        <Sponsors/> 
     </div>
   )
 }
