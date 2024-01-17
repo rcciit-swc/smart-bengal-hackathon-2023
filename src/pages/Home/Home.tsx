@@ -10,7 +10,7 @@ import { resultJuniorRoute, resultSeniorRoute } from "../../Routes";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
-const Sponsors = lazy(() => import("./Sponsors"));
+const Sponsors24 = lazy(() => import("../../pages/Home/Sponsors24"));
 const HomePrizes = lazy(() => import("./HomePrizes"));
 
 const Home = () => {
@@ -337,7 +337,7 @@ const Home = () => {
         {/* <HomePrizes /> */}
       </Suspense>
       <Suspense fallback={<></>}>
-        <Sponsors />
+        <Sponsors24 />
       </Suspense>
       {/* <div
         className="d-flex sponsor-form w-100 justify-content-center align-items-center py-5"
