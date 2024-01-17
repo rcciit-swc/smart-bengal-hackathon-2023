@@ -34,7 +34,7 @@ export const sbhTeam: teamMemberType[] = [
     committee: "Corporate Collaboration",
   },
   {
-    img: "https://rcciit.org/images/staff/administration/adas.jpg",
+    img: "https://www.rcciit.org/images/staff/it/f/abhijit.jpg",
     name: " Prof. (Dr.) Abhijit Das",
     designation: "Jt. Coordinator, SBH2024",
     committee: "Corporate Collaboration",
