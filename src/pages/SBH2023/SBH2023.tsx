@@ -6,7 +6,7 @@ const SBH2023 = () => {
   return (
     <div>
         <Gallery />
-        {/* Put the "Themes" component here ! */}
+        <Themes/>
         <Supporters />
     </div>
   )
