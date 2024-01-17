@@ -29,10 +29,7 @@ const FinaleCard = ({
         })}
       </div>
       <p>
-        To interate the efforts towards PM's vision of Digital India and to
-        promote digital literacy in order to make development a comprehensive
-        mass movement. MHRD, AICTE, i4C and Persistent System were found to
-        organize the 2nd edition of this initiative - Smart India Hackathon.
+      {description}
       </p>
     </div>
   );

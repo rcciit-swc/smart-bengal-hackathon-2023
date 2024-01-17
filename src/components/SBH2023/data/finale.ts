@@ -1,6 +1,6 @@
 export  const finaleData = [
     {
-      title: "GRAND FINALE FOR SIH SENIOR",
+      title: "GRAND FINALE FOR SBH SENIOR",
       data:[
         {
           digit: "75",
@@ -26,7 +26,7 @@ export  const finaleData = [
       description: "To interate the efforts towards PM's vision of Digital India and to promote digital literacy in order to make development a comprehensive mass movement. MHRD, AICTE, i4C and Persistent System were found to organize the 2nd edition of this initiative - Smart India Hackathon."
     },
     {
-      title: "GRAND FINALE FOR SIH JUNIOR",
+      title: "GRAND FINALE FOR SBH JUNIOR",
       data:[
         {
           digit: "75",

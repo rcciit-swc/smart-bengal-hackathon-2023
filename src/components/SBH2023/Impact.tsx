@@ -49,9 +49,9 @@ const Impact = () => {
     <div className="impact-title">
       <div className="impact-title">
         <h4 style={{ color: "#f75700" }}>
-          <b>SIH 2022</b>
+          <b>SBH 2023</b>
         </h4>
-        <h1>IMPACT SIH 2022</h1>
+        <h1>IMPACT SBH 2023</h1>
       </div>
       <div className="impact-title">
         <h2 style={{ color: "#f75700" }}>Our Reach</h2>
