@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import "./sbh2023.css";
 
+
 const winnerData = [
   {
     title: "WINNERS - SBH 2023 SENIOR",
-    link: "http://localhost:3000/result/senior",
+    link: " ",
   },
   {
     title: "WINNERS - SBH 2023 JUNIOR",
-    link: "http://localhost:3000/result/junior",
+    link: " ",
   },
 ];
 const WinnerCard = ({ title, link }: { title: string; link: string }) => {

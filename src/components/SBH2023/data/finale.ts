@@ -23,7 +23,7 @@ export  const finaleData = [
           image: "https://www.sih.gov.in/img1/sih-2018-soft-stu-icon.png",
         },
       ],
-      description: "To interate the efforts towards PM's vision of Digital India and to promote digital literacy in order to make development a comprehensive mass movement. MHRD, AICTE, i4C and Persistent System were found to organize the 2nd edition of this initiative - Smart India Hackathon."
+      description: " "
     },
     {
       title: "GRAND FINALE FOR SBH JUNIOR",
@@ -49,7 +49,7 @@ export  const finaleData = [
           image: "https://www.sih.gov.in/img1/sih-2018-soft-stu-icon.png",
         },
       ],
-      description: "To interate the efforts towards PM's vision of Digital India and to promote digital literacy in order to make development a comprehensive mass movement. MHRD, AICTE, i4C and Persistent System were found to organize the 2nd edition of this initiative - Smart India Hackathon."
+      description: " "
     },
     
   ];
