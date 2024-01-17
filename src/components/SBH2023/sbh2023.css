@@ -1,15 +1,25 @@
+.sbh2023-root {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding: 40px 0;
+  gap: 50px;
+}
+
 .impact-card-root {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 320px;
 }
 .impact-card-left {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: start;
+
   justify-content: start;
   gap: 5;
 }
@@ -105,4 +115,17 @@
   justify-content: center;
   margin: auto;
   gap: 50px;
+}
+
+.carousel-style {
+  padding-left: 60px;
+  @media (max-width: 768px) {
+    padding-left: 30px;
+  }
+}
+
+.winner-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #f75700;
 }
