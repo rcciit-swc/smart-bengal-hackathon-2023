@@ -1,5 +1,5 @@
 import Gallery from '../../components/SBH2023/Gallery'
-import Supporters from '../../components/SBH2023/Supporters'
+import Sponsors from '../Home/Sponsors'
 import Themes from '../Home/component.body.themes'
 
 const SBH2023 = () => {
@@ -7,7 +7,7 @@ const SBH2023 = () => {
     <div>
         <Gallery />
         <Themes/>
-        <Supporters />
+        <Sponsors/> 
     </div>
   )
 }

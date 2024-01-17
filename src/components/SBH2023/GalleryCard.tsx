@@ -1,23 +1,30 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import photo1 from "../../assets/sbh-2023 .jpg"
+import photo2 from "../../assets/sbh-2023 2.0.jpg"
+import photo3 from "../../assets/sbh-2023 3.0.jpg"
+import photo4 from "../../assets/sbh-2023 4.0.jpg"
+import photo5 from "../../assets/sbh-2023 5.0.jpg"
+import photo6 from "../../assets/sbh-2023 6.0.jpg"
 const gallery = [
   {
-    image:
-      "https://i.pinimg.com/736x/ff/6a/89/ff6a89d1454672a134e5a60b6157f75e.jpg",
+    image: photo1
   },
   {
-    image:
-      "https://i.pinimg.com/1200x/9c/a1/cf/9ca1cf7df797d13fda3d4eb052ba2d25.jpg",
+    image: photo2
   },
   {
-    image:
-      "https://i.pinimg.com/originals/77/45/70/7745709c4859a8664ff4d6cc7b871fe5.jpg",
+    image: photo3
   },
   {
-    image:
-      "https://i.pinimg.com/originals/82/36/24/8236242a5d6f9f900cea70da3762008b.jpg",
+    image: photo4
+  },
+{
+  image: photo5
+  },
+{
+  image: photo6
   },
 ];
 
@@ -57,7 +64,8 @@ const GalleryCard = () => {
          {gallery.map((card, index) => (
             <div key={index}>
               <img src={card.image} alt={`Gallery ${index}`} 
-               style={{ maxWidth: '90%', maxHeight: '90%', borderRadius:'2rem',paddingLeft:'10%',paddingRight:'10%',paddingBottom:'5%',paddingTop:'5%',boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}}/>
+               style={{ maxWidth: '90%', maxHeight: '90%', borderRadius:'2rem',width: '100%', // Set a fixed width
+               height: '400px',paddingLeft:'10%',paddingRight:'10%',paddingBottom:'5%',paddingTop:'5%',boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}}/>
             </div>
           ))}
         </Carousel>
