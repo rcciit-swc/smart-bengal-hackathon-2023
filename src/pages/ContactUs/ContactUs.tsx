@@ -164,8 +164,33 @@ const ContactUs = () => {
             </div>
             <div className="d-flex flex-column align-items-start px-3">
               <p className="text-uppercase fs-5 fw-bold mt-3">contact us</p>
+              <p className="fs-5 fw-bold px-3 montserrat">
+                Convenor
+              </p>
               <div className="d-flex footer-content flex-column">
-                {contact.name.map((item, index) => {
+                <div
+                  className="d-flex flex-column px-3 mb-3 flex-wrap"
+                >
+                  <span>{contact.convenor.name}</span>
+                  <span>
+                    Email:{" "}
+                    <a href={`mailto:${contact.convenor.email}`}>
+                      {contact.convenor.email}
+                    </a>
+                  </span>
+                  <span>
+                    Phone:{" "}
+                    <a href={`tel:${contact.convenor.phone}`}>
+                      {contact.convenor.phone}
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <p className="fs-5 fw-bold px-3 montserrat">
+                Smart Bengal Hackathon Junior
+              </p>
+              <div className="d-flex footer-content flex-column">
+                {contact.SbhJunior.name.map((item, index) => {
                   return (
                     <div
                       key={index}
@@ -174,14 +199,41 @@ const ContactUs = () => {
                       <span>{item}</span>
                       <span>
                         Email:{" "}
-                        <a href={`mailto:${contact.email[index]}`}>
-                          {contact.email[index]}
+                        <a href={`mailto:${contact.SbhJunior.email[index]}`}>
+                          {contact.SbhJunior.email[index]}
                         </a>
                       </span>
                       <span>
                         Phone:{" "}
-                        <a href={`tel:${contact.phone[index]}`}>
-                          {contact.phone[index]}
+                        <a href={`tel:${contact.SbhJunior.phone[index]}`}>
+                          {contact.SbhJunior.phone[index]}
+                        </a>
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+              <p className="fs-5 fw-bold px-3 montserrat">
+                Smart Bengal Hackathon Senior
+              </p>
+              <div className="d-flex footer-content flex-column">
+                {contact.SbhSenior.name.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="d-flex flex-column px-3 mb-3 flex-wrap"
+                    >
+                      <span>{item}</span>
+                      <span>
+                        Email:{" "}
+                        <a href={`mailto:${contact.SbhSenior.email[index]}`}>
+                          {contact.SbhSenior.email[index]}
+                        </a>
+                      </span>
+                      <span>
+                        Phone:{" "}
+                        <a href={`tel:${contact.SbhSenior.phone[index]}`}>
+                          {contact.SbhSenior.phone[index]}
                         </a>
                       </span>
                     </div>
