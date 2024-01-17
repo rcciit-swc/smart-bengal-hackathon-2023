@@ -10,7 +10,7 @@ const Footer = () => {
         backgroundColor: "black",
         color: "var(--invert-color)",
       }}
-      className="d-flex flex-row justify-content-evenly py-4 flex-wrap align-items-start"
+      className="d-flex flex-column justify-content-evenly py-4 flex-wrap align-items-center"
     >
       <div className="d-flex flex-column align-items-center px-3 justify-content-evenly my-3">
         <p className="text-uppercase fs-5 fw-bold montserrat">Follow us</p>
@@ -53,11 +53,14 @@ const Footer = () => {
         </div>
       </div>
       <div className="d-flex flex-column align-items-center px-3 my-3">
-        <p className="text-uppercase fs-5 fw-bold px-3 montserrat">
-          contact us
+        <p className="fs-5 fw-bold px-3 montserrat">
+          Developed By
+        </p>
+        <p className="fs-6 fw-bold px-3 montserrat align-items-left">
+          Faculty Members
         </p>
         <div className="d-flex footer-content">
-          {contact.name.map((item, index) => {
+          {contact.developedByFaculty.name.map((item, index) => {
             return (
               <div
                 key={index}
@@ -65,20 +68,22 @@ const Footer = () => {
               >
                 <span>{item}</span>
                 <span style={{ fontWeight: "200" }}>
-                  <a href={`mailto:${contact.email[index]}`}>
-                    {contact.email[index]}
+                  <a href={`mailto:${contact.developedByFaculty.email[index]}`}>
+                    {contact.developedByFaculty.email[index]}
                   </a>
                 </span>
                 <span style={{ fontWeight: "200" }}>
-                  <a href={`tel:${contact.phone[index]}`}>
-                    {contact.phone[index]}
+                  <a href={`tel:${contact.developedByFaculty.phone[index]}`}>
+                    {contact.developedByFaculty.phone[index]}
                   </a>
                 </span>
               </div>
             );
           })}
-          
         </div>
+        <p className="pt-2">Made with ❤️ by  <a className="underline" href="https://github.com/rcciit-swc/smart-bengal-hackathon-2023/contributors"
+          target="_blank "
+          rel="noreferrer noopener"> SBH Tech Team </a> </p>
       </div>
     </div>
   );

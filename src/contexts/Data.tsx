@@ -38,9 +38,26 @@ type DataContextType = {
     [key: string]: any;
   }[];
   contact: {
-    name: string[];
-    phone: string[];
-    email: string[];
+    SbhJunior: {
+      name: string[];
+      phone: string[];
+      email: string[];
+    },
+    SbhSenior: {
+      name: string[];
+      phone: string[];
+      email: string[];
+    },
+    convenor: {
+      name: string;
+      phone: string;
+      email: string;
+    },
+    developedByFaculty: {
+      name: string[];
+      phone: string[];
+      email: string[];
+    },
   };
   teamData: teamMemberType[];
   ps: {
@@ -78,9 +95,26 @@ const DataContext = createContext<DataContextType>({
   about: "",
   descriptionCards: [],
   contact: {
-    name: [],
-    email: [],
-    phone: [],
+    SbhJunior: {
+      name: [],
+      email: [],
+      phone: [],
+    },
+    SbhSenior: {
+      name: [],
+      email: [],
+      phone: [],
+    },
+    convenor: {
+      name: "",
+      email: "",
+      phone: "",
+    },
+    developedByFaculty: {
+      name: [],
+      email: [],
+      phone: [],
+    },
   },
   teamData: [],
   ps: {
