@@ -24,46 +24,92 @@ const Sponsors: React.FC = () => {
     <>
       <div className="container pt-5 pb-5 position-relative">
         <Suspense fallback={<></>}>
-          <Circle
-            width="600px"
-            height="600px"
-            blur="80"
-            top="800px"
-            right="-500px"
-            color="orange"
-          />
-          <Circle
-            width="600px"
-            height="600px"
-            blur="80"
-            top="1500px"
-            left="-500px"
-            color="blue"
-          />
-          <Circle
-            width="600px"
-            height="600px"
-            blur="80"
-            top="2000px"
-            right="-500px"
-            color="orange"
-          />
-          <Circle
-            width="600px"
-            height="600px"
-            blur="80"
-            top="2600px"
-            left="-500px"
-            color="blue"
-          />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1300px"
+          right="-400px"
+          color="blue"
+        />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1800px"
+          left="-400px"
+          color="orange"
+        />
+        <Circle
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          right="-450px"
+          color="orange"
+          bannerCircle="banner_circle"
+        />
+        <Circle
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          left="-450px"
+          color="blue"
+          bannerCircle="banner_circle"
+        />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1300px"
+          right="-400px"
+          color="blue"
+        />
+        <Circle
+          width="600px"
+          height="600px"
+          blur="80"
+          top="1800px"
+          left="-400px"
+          color="orange"
+        />
+        <Circle
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          right="-450px"
+          color="orange"
+          bannerCircle="banner_circle"
+        />
+        <Circle
+          width="900px"
+          height="900px"
+          blur="0"
+          top="-25px"
+          left="-450px"
+          color="blue"
+          bannerCircle="banner_circle"
+        />
+        
         </Suspense>
         <h1
           className="w-100 text-center fw-bold mt-5 caveat"
           style={{ color: "var(--heading-color)" }}
         >
-          Supporters of SBH 2023
+          Supporters of SBH 2024
         </h1>
-        {sponsorList &&
+
+        <h1
+          className="w-100 text-center fw-bold mt-5 caveat"
+          style={{ color: "var(--heading-color)" }}
+        >
+          Coming Soon ...
+        </h1>
+        
+
+        {/* {sponsorList &&
           sponsorList.map((sponsor: any) => {
             return (
               <div className="py-5">
@@ -196,7 +242,7 @@ const Sponsors: React.FC = () => {
                                 />
                               </a>
                             </div>
-                          )}
+                          )} */}
                           {/* <div className="sponsor-img-container">
                             <a
                               href={image.website}
@@ -211,10 +257,10 @@ const Sponsors: React.FC = () => {
                               />
                             </a>
                           </div> */}
-                        </FadeIn>
+                        {/* </FadeIn>
                       );
                     })
-                  )}
+                  )} */}
                   {/* {sponsor.images.map((image: any) => {
                     return (
                       <FadeIn
@@ -232,10 +278,159 @@ const Sponsors: React.FC = () => {
                       </FadeIn>
                     );
                   })} */}
+                {/*  */}
+        {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1> */}
+        {/* <h1
+          className="w-100 text-center fw-bold mt-5 caveat"
+          style={{ color: "var(--heading-color)" }}
+        >
+          Last Year Suppoters
+        </h1> */}
+        {/* {sponsorList &&
+          sponsorList.map((sponsor: any) => {
+            return (
+              <div className="py-5">
+                <div className="w-100 d-flex flex-row justify-content-center align-items-center">
+                  <div
+                    className="mx-2"
+                    style={{
+                      height: "1px",
+                      backgroundColor: "grey",
+                      width: "inherit",
+                    }}
+                  ></div>
+                  <h3 className="text-center" style={{ width: "inherit" }}>
+                    {sponsor.category}
+                  </h3>
+                  <div
+                    className="mx-2"
+                    style={{
+                      height: "1px",
+                      backgroundColor: "grey",
+                      width: "inherit",
+                    }}
+                  ></div>
+                </div>
+                <div className="sponsor-wrapper mt-5">
+                  {sponsor.category === "Tech Partner" ? (
+                    <>
+                      <div className="sponsor-wrapper">
+                        {sponsor.images.map((image: any) => {
+                          return (
+                            image.society && (
+                              <FadeIn
+                                from="left"
+                                positionOffset={150}
+                                triggerOffset={25}
+                                delayInMilliseconds={100}
+                              >
+                                <div className="sponsor-img-container">
+                                  <a
+                                    href={image.website}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <img
+                                      className="sponsor-img"
+                                      src={image.url}
+                                  
+                                      alt={image.name}
+                                    />
+                                  </a>
+                                </div>
+                              </FadeIn>
+                            )
+                          );
+                        })}
+                      </div>
+                      <Marquee pauseOnHover={true} speed={80}>
+                        {sponsor.images.map((image: any) => {
+                          return (
+                            !image.society && (
+                              <FadeIn
+                                from="left"
+                                positionOffset={150}
+                                triggerOffset={25}
+                                delayInMilliseconds={100}
+                              >
+                                <div className="sponsor-img-container my-3 mx-3">
+                                  <a
+                                    href={image.website}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
+                                    <img
+                                      className="sponsor-img"
+                                      src={image.url}
+                                    
+                                      alt={image.name}
+                                    />
+                                  </a>
+                                </div>
+                              </FadeIn>
+                            )
+                          );
+                        })}
+                      </Marquee>
+                    </>
+                  ) : (
+                    sponsor.images.map((image: any) => {
+                      return (
+                        <FadeIn
+                          from="left"
+                          positionOffset={150}
+                          triggerOffset={25}
+                          delayInMilliseconds={100}
+                        >
+                          {sponsor.category === "Supported by" ? (
+                            <div
+                              className="sponsor-img-container"
+                              id="supported-by"
+                              style={{
+                                width: "450px",
+                                height: "450px",
+                              }}
+                            >
+                              <a
+                                href={image.website}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  className="sponsor-img"
+                                  src={image.url}
+                       
+                                  alt={image.name}
+                                />
+                              </a>
+                            </div>
+                          ) : (
+                            <div className="sponsor-img-container">
+                              <a
+                                href={image.website}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <img
+                                  className="sponsor-img"
+                                  src={image.url}
+                                 
+                                  alt={image.name}
+                                />
+                              </a>
+                            </div>
+                          )}
+                          
+                        </FadeIn>
+                      );
+                    })
+                  )}
+                 
                 </div>
               </div>
             );
-          })}
+          })} */}
       </div>
     </>
   );

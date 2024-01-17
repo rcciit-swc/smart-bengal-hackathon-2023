@@ -3,6 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import {
   indexRoute,
   problemStatementsRoute,
+  problemStatementsRoute24,
   processFlowRoute,
   projectImplementationRoute,
   TeamImplementationRoute,
@@ -64,21 +65,27 @@ const NavBar = () => {
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={indexRoute}>
-                  About SBH 2023
+                  About SBH 2024
                 </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={processFlowRoute}>
-                  SBH 2023 Process Flow
+                  SBH 2024 Process Flow
                 </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={sbhthemesRoute}>
-                  SBH 2023 Themes
+                  SBH 2024 Themes
                 </Link>
               </div>
+              <div className="dropdown-item">
+                <span className="dot"></span>
+                <Link onClick={navHandler} to={problemStatementsRoute24}>
+                  SBH 2024 Problem Statements
+                </Link>
+                </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={problemStatementsRoute}>
@@ -88,13 +95,13 @@ const NavBar = () => {
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={teamRoute}>
-                  SBH 2023 Teams
+                  SBH 2024 Teams
                 </Link>
               </div>
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={rulesRoute}>
-                  SBH 2023 Rules and Regulations
+                  SBH 2024 Rules and Regulations
                 </Link>
               </div>
             </NavDropdown>
@@ -108,7 +115,7 @@ const NavBar = () => {
                 Project Implementation
               </Link>
             </div>
-            <NavDropdown className="navbar__color" title="Guidelines">
+            {/* <NavDropdown className="navbar__color" title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <a
@@ -117,7 +124,7 @@ const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  SBH Senior
+                  SBH Senior 2023
                 </a>
               </div>
               <div className="dropdown-item">
@@ -128,7 +135,7 @@ const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  SBH Junior
+                  SBH Junior 2023 
                 </a>
               </div>
             </NavDropdown>
@@ -153,7 +160,7 @@ const NavBar = () => {
                   For Schools
                 </a>
               </div>
-            </NavDropdown>
+            </NavDropdown> */}
             <NavDropdown className="navbar__color" title="Results">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -164,7 +171,7 @@ const NavBar = () => {
                   //rel="noreferrer"
                   to={resultSeniorRoute}
                 >
-                  SBH Senior
+                  SBH Senior 2023
                 </Link>
               </div>
               <div className="dropdown-item">
@@ -176,7 +183,7 @@ const NavBar = () => {
                   //rel="noreferrer"
                   to={resultJuniorRoute}
                 >
-                  SBH Junior
+                  SBH Junior 2023
                 </Link>
               </div>
             </NavDropdown>

@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar/NavBar";
 import {
   indexRoute,
   problemStatementsRoute,
+  problemStatementsRoute24,
   processFlowRoute,
   projectImplementationRoute,
   TeamImplementationRoute,
@@ -33,6 +34,9 @@ import SbhSenior from "./pages/Result/SbhSenior";
 const Home = lazy(() => import("./pages/Home/Home"));
 const ProblemStatements = lazy(
   () => import("./pages/ProblemStatements/ProblemStatements")
+);
+const ProblemStatements24 = lazy(
+  () => import("./pages/ProblemStatements24/ProblemStatements24")
 );
 const ProjectImplementation = lazy(
   () => import("./pages/ProjectImplementation/ProjectImplementation")
@@ -76,6 +80,14 @@ function App() {
                   element={
                     <Suspense fallback={<></>}>
                       <ProblemStatements />
+                    </Suspense>
+                  }
+                ></Route>
+                <Route
+                  path={problemStatementsRoute24}
+                  element={
+                    <Suspense fallback={<></>}>
+                      <ProblemStatements24 />
                     </Suspense>
                   }
                 ></Route>

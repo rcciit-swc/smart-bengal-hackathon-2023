@@ -4,19 +4,19 @@ import { useData } from "../../contexts/Data";
 
 const Header = lazy(() => import("../../components/Header/Header"));
 
-const ThemePage = () => {
+const ProblemStatements24 = () => {
   const { ThemeCardData } = useData();
   return (
     <>
       <Suspense fallback={<></>}>
         <Header
-          text="Themes of SBH 2024"
+          text="Problem Statements of SBH 2024"
           image="https://sih.gov.in/img/themes-bg.jpg"
         />
       </Suspense>
-      {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
-          style={{color: "black"}}>COMING SOON</h1> */}
-      <Table
+      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1>
+      {/* <Table
         striped
         bordered
         responsive
@@ -113,9 +113,9 @@ const ThemePage = () => {
             );
           })}
         </tbody>
-      </Table>
+      </Table> */}
     </>
   );
 };
 
-export default ThemePage;
+export default ProblemStatements24;

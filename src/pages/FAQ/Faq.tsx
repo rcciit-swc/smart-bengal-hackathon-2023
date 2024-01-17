@@ -24,10 +24,10 @@ const FAQ = () => {
           padding: "40px 55px",
         }}
       >
-        <h5 className="fw-bold">SBH 2023</h5>
-        <h2 className="fw-bold">
+        <h5 className="fw-bold">SBH 2024</h5>
+        {/* <h2 className="fw-bold">
           IDEA SUBMISSION PROCESS FOR SMART INDIA HACKATHON 2022
-        </h2>
+        </h2> */}
       </div>
       <div
         style={{
@@ -56,7 +56,7 @@ const FAQ = () => {
               }}
             >
               <a
-                href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+                href=" "
                 target="_blank"
                 rel="noreferrer"
               >
@@ -64,6 +64,8 @@ const FAQ = () => {
               </a>
             </Button>
           </div>
+          {/* <h1 className="fw-bold caveat"
+              style={{ color: "black" }}>COMING SOON</h1> */}
           <div
             className="w-100 d-flex flex-column mt-3"
             style={{ gap: "10px" }}
@@ -99,7 +101,7 @@ const FAQ = () => {
               }}
             >
               <a
-                href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+                href=" "
                 target="_blank"
                 rel="noreferrer"
               >
@@ -107,6 +109,8 @@ const FAQ = () => {
               </a>
             </Button>
           </div>
+          {/* <h1 className="fw-bold caveat"
+              style={{ color: "black" }}>COMING SOON</h1> */}
           <div
             className="w-100 d-flex flex-column mt-3"
             style={{ gap: "10px" }}
