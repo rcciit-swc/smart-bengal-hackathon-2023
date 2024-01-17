@@ -5,11 +5,11 @@ import "./sbh2023.css";
 const winnerData = [
   {
     title: "WINNERS - SBH 2023 SENIOR",
-    link: " ",
+    link: "/result/senior",
   },
   {
     title: "WINNERS - SBH 2023 JUNIOR",
-    link: " ",
+    link: "/result/junior",
   },
 ];
 const WinnerCard = ({ title, link }: { title: string; link: string }) => {
