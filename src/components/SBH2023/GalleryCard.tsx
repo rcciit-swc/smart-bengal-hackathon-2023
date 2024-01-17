@@ -57,7 +57,7 @@ const GalleryCard = () => {
          {gallery.map((card, index) => (
             <div key={index}>
               <img src={card.image} alt={`Gallery ${index}`} 
-               style={{ maxWidth: '90%', maxHeight: '90%', borderRadius:'2rem',paddingLeft:'15%',paddingRight:'15%',paddingBottom:'5%',paddingTop:'5%',boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}}/>
+               style={{ maxWidth: '90%', maxHeight: '90%', borderRadius:'2rem',paddingLeft:'10%',paddingRight:'10%',paddingBottom:'5%',paddingTop:'5%',boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)'}}/>
             </div>
           ))}
         </Carousel>

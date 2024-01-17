@@ -5,12 +5,12 @@ import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 const Gallery = () => {
   return (
     <>
-     <div className="pt-5 w-100 h-90 d-flex flex-column align-items-center text-center position-relative">
+     <div className="pt-5 w-100 h-100 d-flex flex-column align-items-center text-center position-relative">
       <h5
         style={{ color: `var(--heading-color)` }}
         className="caveat text-uppercase fw-bold fs-2"
       >
-        Smart India Hackathon 2023
+        Smart Bengal Hackathon 2023
       </h5>
       <h1
         style={{ color: "var(--primary-color)" }}
@@ -25,7 +25,7 @@ const Gallery = () => {
         delayInMilliseconds={100}
       >
       </FadeIn>
-      <p>Memories or some bullshit</p>
+      <p>Memories from last year.</p>
       </div>
     <GalleryCard/>
     </>
