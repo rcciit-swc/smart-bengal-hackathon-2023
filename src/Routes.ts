@@ -1,4 +1,5 @@
 export const indexRoute = "/";
+export const sbh2023Route = "/sbh2023";
 export const problemStatementsRoute = "/problem-statements";
 export const problemStatementsRoute24 = "/problem-statements24";
 export const processFlowRoute = "/process-flow";
