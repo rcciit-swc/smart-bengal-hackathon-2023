@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center px-3 my-3">
+      {/* <div className="d-flex flex-column align-items-center px-3 my-3">
         <p className="fs-5 fw-bold px-3 montserrat">
           Developed By
         </p>
@@ -84,7 +84,10 @@ const Footer = () => {
         <p className="pt-2">Made with ❤️ by  <a className="underline" href="https://github.com/rcciit-swc/smart-bengal-hackathon-2023/contributors"
           target="_blank "
           rel="noreferrer noopener"> SBH Tech Team </a> </p>
-      </div>
+      </div> */}
+      <p className="pt-2">Made with ❤️ by  <a className="underline" href="https://github.com/rcciit-swc/smart-bengal-hackathon-2023/contributors"
+          target="_blank "
+          rel="noreferrer noopener"> SBH Tech Team </a> </p>
     </div>
   );
 };
