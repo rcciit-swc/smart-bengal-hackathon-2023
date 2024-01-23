@@ -62,6 +62,12 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="d-flex">
+          <div className="nav-link text-decoration-none">
+                
+                <Link onClick={navHandler} to={sbh2023Route}>
+                  About SBH 2023
+                </Link>
+              </div>
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -69,12 +75,7 @@ const NavBar = () => {
                   About SBH 2024
                 </Link>
               </div>
-              <div className="dropdown-item">
-                <span className="dot"></span>
-                <Link onClick={navHandler} to={sbh2023Route}>
-                  About SBH 2023
-                </Link>
-              </div>
+              
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={processFlowRoute}>
@@ -93,12 +94,12 @@ const NavBar = () => {
                   SBH 2024 Problem Statements
                 </Link>
                 </div>
-              <div className="dropdown-item">
+              {/* <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={problemStatementsRoute}>
                   SBH 2023 Problem Statements
                 </Link>
-              </div>
+              </div> */}
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link onClick={navHandler} to={teamRoute}>
@@ -122,7 +123,7 @@ const NavBar = () => {
                 Project Implementation
               </Link>
             </div>
-            {/* <NavDropdown className="navbar__color" title="Guidelines">
+            <NavDropdown className="navbar__color" title="Guidelines">
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <a
@@ -167,7 +168,7 @@ const NavBar = () => {
                   For Schools
                 </a>
               </div>
-            </NavDropdown> */}
+            </NavDropdown>
             <NavDropdown className="navbar__color" title="Results">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -230,6 +231,7 @@ const NavBar = () => {
                 Contact Us
               </Link>
             </div>
+            
             {/* <button
               onClick={(e) => {
                 e.preventDefault();

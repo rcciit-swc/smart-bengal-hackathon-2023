@@ -8,7 +8,14 @@ import Themes from "../Home/component.body.themes";
 import "../../components/SBH2023/sbh2023.css";
 const SBH2023 = () => {
   return (
+    
     <div className="sbh2023-root">
+      {/* <img
+            className={"d-block"}
+            src={"https://i.imgur.com/TQLfvXU.jpg"}
+            alt={"sbh2023"}
+            style={{ height: "30%", width: "100%", objectFit: "cover" }}
+          /> */}
       <Impact />
       <Finale />
       <Winners />
