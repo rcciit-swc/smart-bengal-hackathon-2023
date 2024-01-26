@@ -26,7 +26,7 @@ const TeamImplementation = () => {
               triggerOffset={25}
               delayInMilliseconds={100}
             >
-              {/* <div
+              <div
                 key={index}
                 className="member-container"
                 style={{
@@ -45,7 +45,7 @@ const TeamImplementation = () => {
                 <h6 className="text-center member-committee">
                   {member.designation}
                 </h6>
-              </div> */}
+              </div>
             </FadeIn>
           );
         })}
