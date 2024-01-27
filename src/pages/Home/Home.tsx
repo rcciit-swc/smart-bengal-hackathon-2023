@@ -184,16 +184,17 @@ const Home = () => {
                 </a>
               </Button> */}
               <ul style={{ fontSize: "20px" }}>
-                {/* <li>
-                  <b>Registration & Idea Submission:</b>Begins on 28 Feb 2023
-                  and ends on 10 Mar 2023.
+                <li>
+                  <b>Registration & Idea Submission:</b>Begins on 05 Feb 2024
+                  and ends on 12 March 2024.
                 </li>
                 <li>
-                  <b>Shortlisted Teams Announcement:</b> 25th March.2023.
-                </li> */}
+                  <b>Shortlisted Teams Announcement:</b> TBD
+                </li>
                 <li>
-                  <b>Smart Bengal Hackathon Begins:</b> 16th April,2024 for SBH
-                  Junior & 17th April, 2024 for SBH Senior
+                
+                  <b>Smart Bengal Hackathon:</b> 16th April 2024 for SBH
+                  Junior & 17th April 2024 for SBH Senior
                 </li>
               </ul>
             </FadeIn>
