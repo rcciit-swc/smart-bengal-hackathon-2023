@@ -12,9 +12,16 @@ export const sbhTeam: teamMemberType[] = [
   {
     img: "https://rcciit.org/images/staff/ece/f/arijit.jpg",
     name: "Dr. Arijit Ghosh",
-    designation: "Jt. Coordinator, SBH2024",
+    designation: "Jt.Coordinator",
     committee: "Technical Program Design",
   },
+  {img: "https://rcciit.org/images/staff/ece/f/arijit.jpg",
+  name: "Dr. Promit Ghosh",
+  designation: "Member",
+  committee: "Technical Program Design",
+
+  },
+  
   {
     img: "https://rcciit.org/images/staff/it/f/Hrishikesh.jpg",
     name: "Prof. (Dr.) Hrishikesh Bhaumik",

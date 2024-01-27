@@ -26,7 +26,7 @@ const Team = () => {
               triggerOffset={25}
               delayInMilliseconds={100}
             >
-              {/* <div
+              { <div
                 key={index}
                 className="member-container"
                 style={{
@@ -47,7 +47,7 @@ const Team = () => {
                 <h6 className="text-center member-committee">
                   {member.committee}
                 </h6>
-              </div> */}
+              </div> }
             </FadeIn>
           );
         })}

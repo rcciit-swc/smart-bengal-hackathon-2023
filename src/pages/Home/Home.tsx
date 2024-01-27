@@ -192,8 +192,7 @@ const Home = () => {
                   <b>Shortlisted Teams Announcement:</b> 25th March.2023.
                 </li> */}
                 <li>
-                  <b>Smart Bengal Hackathon Begins:</b> 16th April,2024 for SBH
-                  Junior & 17th April, 2024 for SBH Senior
+                  <b>Smart Bengal Hackathon Registration Starts:</b> 9th February,2024 and <b>Registration Closed:</b> 12th March 2024
                 </li>
               </ul>
             </FadeIn>

@@ -32,9 +32,6 @@ const Eligibility = () => {
           <li>
             <b>Class 9th to 12th Students</b>
           </li>
-          <li>
-            <b>Polytechnic Students</b>
-          </li>
         </ul>
       </div>
     </>

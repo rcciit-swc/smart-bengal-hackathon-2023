@@ -47,7 +47,7 @@ const ProcessFlow = () => {
             <div className="d-flex gap-4 mt-4">
               <div className="d-grid">
                 <span className="text-uppercase fw-bold fs-2 ">sbh junior</span>
-                <span>Class 9th-12th & Polytechnic Students</span>
+                <span>Class 8th-12th Students</span>
               </div>
               <div className="d-grid">
                 <span className="text-uppercase fw-bold fs-2">sbh senior</span>
