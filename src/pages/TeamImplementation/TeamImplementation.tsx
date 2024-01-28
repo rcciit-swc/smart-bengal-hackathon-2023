@@ -27,6 +27,7 @@ const TeamImplementation = () => {
               delayInMilliseconds={100}
             >
               <div
+              
                 key={index}
                 className="member-container"
                 style={{

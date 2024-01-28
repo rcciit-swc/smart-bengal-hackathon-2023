@@ -212,14 +212,13 @@ const Home = () => {
               </Button> */}
               <ul style={{ fontSize: "20px" }}>
                 <li>
-                  <b>Registration & Idea Submission:</b>Begins on 05 Feb 2024
-                  and ends on 12 March 2024.
+                <b>Smart Bengal Hackathon Registration Starts:</b> 9th February,2024
                 </li>
                 <li>
-                  <b>Shortlisted Teams Announcement:</b> TBD
+                <b>Registration Closed:</b> 12th March 2024
                 </li>
                 <li>
-                  <b>Smart Bengal Hackathon:</b> 16th April 2024 for SBH Junior
+                <b>Smart Bengal Hackathon:</b> 16th April 2024 for SBH Junior
                   & 17th April 2024 for SBH Senior
                 </li>
               </ul>
