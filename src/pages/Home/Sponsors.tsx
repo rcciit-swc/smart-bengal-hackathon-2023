@@ -103,31 +103,32 @@ const Sponsors: React.FC = () => {
 
         <div className="row justify-content-center">
    
-          <div className="col-md-4 mb-4">
-            <div className="gold-sponsor-card">
-              <img src="https://i.postimg.cc/HLqKY3yt/Colored-1.png" alt="DEVFOLIO LOGO" />
-            
-            </div>
-          </div>
-
-  
-          <div className="col-md-4 mb-4">
-            <div className="gold-sponsor-card">
-              <img src="https://i.postimg.cc/C57wXdKk/Colored.png" alt="POLYGON LOGO" />
-           
-            </div>
-          </div>
-        </div>
+   <div className="col-md-4 mb-4">
+     <div className="gold-sponsor-card">
+       <img src="https://i.postimg.cc/HLqKY3yt/Colored-1.png" alt="DEVFOLIO LOGO" />
+     
+     </div>
+   </div>
 
 
-        <div className="row justify-content-center">
-          <div className="col-md-4 mb-4">
-            <div className="silver-sponsor-card">
-              <img src="https://cdn.sanity.io/images/bj34pdbp/migration/9f64bd2c0bc7662e57c0179621069f44a8185011-1608x656.jpg?w=3840&q=100&fit=clip&auto=format" alt="REPLIT LOGO" />
+   <div className="col-md-4 mb-4">
+     <div className="gold-sponsor-card">
+       <img src="https://i.postimg.cc/C57wXdKk/Colored.png" alt="POLYGON LOGO" />
+    
+     </div>
+   </div>
+ </div>
 
-            </div>
-          </div>
-        </div>
+
+ <div className="row justify-content-center">
+   <div className="col-md-4 mb-4">
+     <div className="silver-sponsor-card">
+       <img src="https://cdn.sanity.io/images/bj34pdbp/migration/9f64bd2c0bc7662e57c0179621069f44a8185011-1608x656.jpg?w=3840&q=100&fit=clip&auto=format" alt="REPLIT LOGO" />
+
+     </div>
+   </div>
+ </div>
+        
 
         {/* {sponsorList &&
           sponsorList.map((sponsor: any) => {
