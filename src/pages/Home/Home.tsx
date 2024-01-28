@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { useData } from "../../contexts/Data";
 import "./Home.style.css";
 import CarouselContainer from "../../components/carousel/Carousel";
@@ -15,6 +15,17 @@ const HomePrizes = lazy(() => import("./HomePrizes"));
 
 const Home = () => {
   const { title, about } = useData();
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <main
@@ -120,6 +131,22 @@ const Home = () => {
           ))}
         </div>
       </div> */}
+
+      <div
+        className="apply-button"
+        style={{
+          width: "312px",
+          height: "44px",
+          margin: "auto",
+          textAlign: "center",
+        }}
+        data-hackathon-slug={process.env.DEVFOLIO_SLUG}
+        data-button-theme="light"
+      ></div>
+
+      {/* <div className="devfolio-button">
+          Apply
+        </div> */}
       <div className=" d-flex flex-column w-75 mt-5 sbh-title">
         <h2
           style={{ color: `var(--sub-heading)` }}
@@ -192,9 +219,8 @@ const Home = () => {
                   <b>Shortlisted Teams Announcement:</b> TBD
                 </li>
                 <li>
-                
-                  <b>Smart Bengal Hackathon:</b> 16th April 2024 for SBH
-                  Junior & 17th April 2024 for SBH Senior
+                  <b>Smart Bengal Hackathon:</b> 16th April 2024 for SBH Junior
+                  & 17th April 2024 for SBH Senior
                 </li>
               </ul>
             </FadeIn>
@@ -260,7 +286,6 @@ const Home = () => {
       </div>
       <Suspense fallback={<></>}>
         <Themes />
-        
       </Suspense>
       {/* <FadeIn
         from="left"
@@ -334,9 +359,7 @@ const Home = () => {
           </div>
         </div>
       </FadeIn> */}
-      <Suspense fallback={<></>}>
-        {/* <HomePrizes /> */}
-      </Suspense>
+      <Suspense fallback={<></>}>{/* <HomePrizes /> */}</Suspense>
       <Suspense fallback={<></>}>
         <Sponsors24 />
       </Suspense>
