@@ -15,9 +15,9 @@ const TeamImplementation = () => {
         />
       </Suspense>
       
-      {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
-          style={{color: "black"}}>COMING SOON</h1> */}
-      <div className="container pt-5 pb-5 team-wrapper">
+      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1>
+      {/* <div className="container pt-5 pb-5 team-wrapper">
         {impl_team_data.map((member, index) => {
           return (
             <FadeIn
@@ -50,7 +50,7 @@ const TeamImplementation = () => {
             </FadeIn>
           );
         })}
-      </div>
+      </div> */}
     </>
   );
 };

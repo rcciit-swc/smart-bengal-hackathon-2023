@@ -16,8 +16,11 @@ const Team = () => {
           image="https://sih.gov.in/img/project-implementation.jpg"
         />
       </Suspense>
+
+      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1>
     
-      {<div className="container pt-5 pb-5 team-wrapper">
+      {/* {<div className="container pt-5 pb-5 team-wrapper">
         {teamData.map((member, index) => {
           return (
             <FadeIn
@@ -51,7 +54,7 @@ const Team = () => {
             </FadeIn>
           );
         })}
-      </div>}
+      </div>} */}
     </>
   );
 };
