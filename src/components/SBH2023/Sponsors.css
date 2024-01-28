@@ -34,12 +34,64 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-
 @media screen and (max-width: 768px) {
-  
-  #supported-by{
+  #supported-by {
     width: 300px !important;
     height: 300px !important;
   }
+}
 
+.gold-sponsor-card {
+  background-color: #ffd700; /* Gold color - Adjust as needed */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gold-sponsor-card:hover {
+  transform: scale(1.05);
+}
+
+.gold-sponsor-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gold-sponsor-card:hover img {
+  transform: scale(1.1);
+}
+
+.silver-sponsor-card {
+  background-color: #c0c0c0; /* Silver color - Adjust as needed */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.silver-sponsor-card:hover {
+  transform: scale(1.05);
+}
+
+.silver-sponsor-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.silver-sponsor-card:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .gold-sponsor-card,
+  .silver-sponsor-card {
+    margin-right: 0;
+  }
 }
