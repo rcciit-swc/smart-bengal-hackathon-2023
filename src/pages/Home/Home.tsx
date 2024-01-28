@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { useData } from "../../contexts/Data";
 import "./Home.style.css";
 import CarouselContainer from "../../components/carousel/Carousel";
@@ -15,6 +15,17 @@ const HomePrizes = lazy(() => import("./HomePrizes"));
 
 const Home = () => {
   const { title, about } = useData();
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);
 
   return (
     <main
@@ -120,6 +131,14 @@ const Home = () => {
           ))}
         </div>
       </div> */}
+
+    <div 
+      className="apply-button" 
+      data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+      data-button-theme="light">
+        Apply
+      </div>
+
       <div className=" d-flex flex-column w-75 mt-5 sbh-title">
         <h2
           style={{ color: `var(--sub-heading)` }}
