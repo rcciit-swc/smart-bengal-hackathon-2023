@@ -3,8 +3,10 @@
 }
 
 .navbar__color {
-  background-color: transparent !important;
+  background-color: white !important;
   color: black !important;
+  position: sticky !important;
+  top: 0 !important;
 }
 
 .brand-logo {

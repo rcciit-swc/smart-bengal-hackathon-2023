@@ -32,6 +32,7 @@ const Home = () => {
       className="d-flex flex-column align-items-center position-relative"
       style={{
         overflowX: "hidden",
+        overflowY: "hidden",
       }}
     >
       <Suspense fallback={<></>}>
