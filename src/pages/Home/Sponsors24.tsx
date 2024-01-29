@@ -100,6 +100,12 @@ const Sponsors24: React.FC = () => {
           Supporters of SBH 2024
         </h1>
 
+        <FadeIn
+        from="bottom"
+        positionOffset={200}
+        triggerOffset={0}
+        delayInMilliseconds={100}
+      >
         <div id="gold-sponsor" className="divider">
           &nbsp;Gold Sponsors&nbsp;
         </div>
@@ -115,10 +121,11 @@ const Sponsors24: React.FC = () => {
             alt=""
           />
         </div>
-
+       
         <div id="silver-sponsor" className="divider">
           &nbsp;Silver Sponsors&nbsp;
         </div>
+        
         <div className="gold-sponsor">
           <img
             className="sponsor-image"
@@ -126,6 +133,7 @@ const Sponsors24: React.FC = () => {
             alt="REPLIT LOGO"
           />
         </div>
+        </FadeIn>
 
         {/* {sponsorList &&
           sponsorList.map((sponsor: any) => {
