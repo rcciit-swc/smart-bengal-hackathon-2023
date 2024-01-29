@@ -66,7 +66,7 @@ const ThemeCard = ({
         />
       </div>
       <h5 className="fw-bold text-start w-100">{theme}</h5>
-      <span style={{ textAlign: "justify" }} className="fs-6">
+      <span style={{ textAlign: "justify" , zIndex:10}} className="fs-6">
         {desc}
       </span>
     </div>
