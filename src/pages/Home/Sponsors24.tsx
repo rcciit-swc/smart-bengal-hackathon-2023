@@ -24,75 +24,74 @@ const Sponsors24: React.FC = () => {
     <>
       <div className="container pt-5 pb-5 position-relative">
         <Suspense fallback={<></>}>
-        <Circle
-          width="600px"
-          height="600px"
-          blur="80"
-          top="1300px"
-          right="-400px"
-          color="blue"
-        />
-        <Circle
-          width="600px"
-          height="600px"
-          blur="80"
-          top="1800px"
-          left="-400px"
-          color="orange"
-        />
-        <Circle
-          width="900px"
-          height="900px"
-          blur="0"
-          top="-25px"
-          right="-450px"
-          color="orange"
-          bannerCircle="banner_circle"
-        />
-        <Circle
-          width="900px"
-          height="900px"
-          blur="0"
-          top="-25px"
-          left="-450px"
-          color="blue"
-          bannerCircle="banner_circle"
-        />
-        <Circle
-          width="600px"
-          height="600px"
-          blur="80"
-          top="1300px"
-          right="-400px"
-          color="blue"
-        />
-        <Circle
-          width="600px"
-          height="600px"
-          blur="80"
-          top="1800px"
-          left="-400px"
-          color="orange"
-        />
-        <Circle
-          width="900px"
-          height="900px"
-          blur="0"
-          top="-25px"
-          right="-450px"
-          color="orange"
-          bannerCircle="banner_circle"
-        />
-        <Circle
-          width="900px"
-          height="900px"
-          blur="0"
-          top="-25px"
-          left="-450px"
-          color="blue"
-          bannerCircle="banner_circle"
-        />
-        
+          <Circle
+            width="600px"
+            height="600px"
+            blur="80"
+            top="1300px"
+            right="-400px"
+            color="blue"
+          />
+          <Circle
+            width="600px"
+            height="600px"
+            blur="80"
+            top="1800px"
+            left="-400px"
+            color="orange"
+          />
+          <Circle
+            width="900px"
+            height="900px"
+            blur="0"
+            top="-25px"
+            right="-450px"
+            color="orange"
+            bannerCircle="banner_circle"
+          />
+          <Circle
+            width="900px"
+            height="900px"
+            blur="0"
+            top="-25px"
+            left="-450px"
+            color="blue"
+            bannerCircle="banner_circle"
+          />
+          <Circle
+            width="600px"
+            height="600px"
+            blur="80"
+            top="1300px"
+            right="-400px"
+            color="blue"
+          />
+          <Circle
+            width="600px"
+            height="600px"
+            blur="80"
+            top="1800px"
+            left="-400px"
+            color="orange"
+          />
+          <Circle
+            width="900px"
+            height="900px"
+            blur="0"
+            top="-25px"
+            right="-450px"
+            color="orange"
+            bannerCircle="banner_circle"
+          />
+          <Circle
+            width="900px"
+            height="900px"
+            blur="0"
+            top="-25px"
+            left="-450px"
+            color="blue"
+            bannerCircle="banner_circle"
+          />
         </Suspense>
         <h1
           className="w-100 text-center fw-bold mt-5 caveat"
@@ -101,34 +100,32 @@ const Sponsors24: React.FC = () => {
           Supporters of SBH 2024
         </h1>
 
-        <div className="row justify-content-center">
-
-          <div className="col-md-4 mb-4">
-            <div className="gold-sponsor-card">
-              <img src="https://i.postimg.cc/HLqKY3yt/Colored-1.png" alt="DEVFOLIO LOGO" />
-
-            </div>
-          </div>
-
-
-          <div className="col-md-4 mb-4">
-            <div className="gold-sponsor-card">
-              <img src="https://i.postimg.cc/C57wXdKk/Colored.png" alt="POLYGON LOGO" />
-
-            </div>
-          </div>
+        <div id="gold-sponsor" className="divider">
+          &nbsp;Gold Sponsors&nbsp;
+        </div>
+        <div className="gold-sponsor">
+          <img
+            className="sponsor-image"
+            src="https://i.postimg.cc/HLqKY3yt/Colored-1.png"
+            alt=""
+          />
+          <img
+            className="sponsor-image"
+            src="https://i.postimg.cc/C57wXdKk/Colored.png"
+            alt=""
+          />
         </div>
 
-
-        <div className="row justify-content-center">
-          <div className="col-md-4 mb-4">
-            <div className="silver-sponsor-card">
-              <img src="https://cdn.sanity.io/images/bj34pdbp/migration/9f64bd2c0bc7662e57c0179621069f44a8185011-1608x656.jpg?w=3840&q=100&fit=clip&auto=format" alt="REPLIT LOGO" />
-
-            </div>
-          </div>
+        <div id="silver-sponsor" className="divider">
+          &nbsp;Silver Sponsors&nbsp;
         </div>
-        
+        <div className="gold-sponsor">
+          <img
+            className="sponsor-image"
+            src="https://cdn.sanity.io/images/bj34pdbp/migration/9f64bd2c0bc7662e57c0179621069f44a8185011-1608x656.jpg?w=3840&q=100&fit=clip&auto=format"
+            alt="REPLIT LOGO"
+          />
+        </div>
 
         {/* {sponsorList &&
           sponsorList.map((sponsor: any) => {
@@ -264,7 +261,7 @@ const Sponsors24: React.FC = () => {
                               </a>
                             </div>
                           )} */}
-                          {/* <div className="sponsor-img-container">
+        {/* <div className="sponsor-img-container">
                             <a
                               href={image.website}
                               target="_blank"
@@ -278,11 +275,11 @@ const Sponsors24: React.FC = () => {
                               />
                             </a>
                           </div> */}
-                        {/* </FadeIn>
+        {/* </FadeIn>
                       );
                     })
                   )} */}
-                  {/* {sponsor.images.map((image: any) => {
+        {/* {sponsor.images.map((image: any) => {
                     return (
                       <FadeIn
                         from="left"
@@ -299,7 +296,7 @@ const Sponsors24: React.FC = () => {
                       </FadeIn>
                     );
                   })} */}
-                {/*  */}
+        {/*  */}
         {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
           style={{color: "black"}}>COMING SOON</h1> */}
         {/* <h1

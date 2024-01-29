@@ -40,3 +40,53 @@
     height: 300px !important;
   }
 }
+
+.divider {
+  font-size: 30px;
+  font-weight: 500;
+  width: 60%;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  color: ;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+#gold-sponsor {
+  color: #fd7e14;
+}
+#silver-sponsor {
+  color: #343a40;
+}
+
+.divider::before,
+.divider::after {
+  flex: 1;
+  content: "";
+  padding: 1px;
+  background-color: grey;
+  margin: 5px;
+}
+
+.gold-sponsor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.sponsor-image {
+  width: 400px;
+  height: 150px;
+  object-fit: contain;
+  @media screen and (max-width: 768px) {
+    width: 300px;
+    height: 100px;
+  }
+}
