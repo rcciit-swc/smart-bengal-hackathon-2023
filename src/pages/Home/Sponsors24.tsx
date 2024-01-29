@@ -3,6 +3,9 @@ import "./Sponsors24.css";
 import { useDataContext } from "../../contexts/DataProvider";
 import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 import Marquee from "react-fast-marquee";
+import replit from '../../assets/replit-dark.svg';
+import devfolio from '../../assets/devfolio.svg';
+import polygon from '../../assets/polygon-logo-colored.svg';
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 
@@ -101,38 +104,38 @@ const Sponsors24: React.FC = () => {
         </h1>
 
         <FadeIn
-        from="bottom"
-        positionOffset={200}
-        triggerOffset={0}
-        delayInMilliseconds={100}
-      >
-        <div id="gold-sponsor" className="divider">
-          &nbsp;Gold Sponsors&nbsp;
-        </div>
-        <div className="gold-sponsor">
-          <img
-            className="sponsor-image"
-            src="https://i.postimg.cc/HLqKY3yt/Colored-1.png"
-            alt=""
-          />
-          <img
-            className="sponsor-image"
-            src="https://i.postimg.cc/C57wXdKk/Colored.png"
-            alt=""
-          />
-        </div>
-       
-        <div id="silver-sponsor" className="divider">
-          &nbsp;Silver Sponsors&nbsp;
-        </div>
-        
-        <div className="gold-sponsor">
-          <img
-            className="sponsor-image"
-            src="https://cdn.sanity.io/images/bj34pdbp/migration/9f64bd2c0bc7662e57c0179621069f44a8185011-1608x656.jpg?w=3840&q=100&fit=clip&auto=format"
-            alt="REPLIT LOGO"
-          />
-        </div>
+          from="bottom"
+          positionOffset={200}
+          triggerOffset={0}
+          delayInMilliseconds={100}
+        >
+          <div id="gold-sponsor" className="divider">
+            &nbsp;Gold Sponsors&nbsp;
+          </div>
+          <div className="gold-sponsor">
+            <img
+              className="sponsor-image"
+              src={devfolio}
+              alt=""
+            />
+            <img
+              className="sponsor-image"
+              src={polygon}
+              alt=""
+            />
+          </div>
+
+          <div id="silver-sponsor" className="divider">
+            &nbsp;Silver Sponsors&nbsp;
+          </div>
+
+          <div className="gold-sponsor">
+            <img
+              className="sponsor-image"
+              src={replit}
+              alt="REPLIT LOGO"
+            />
+          </div>
         </FadeIn>
 
         {/* {sponsorList &&
