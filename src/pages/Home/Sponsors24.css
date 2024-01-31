@@ -61,6 +61,9 @@
 #silver-sponsor {
   color: #343a40;
 }
+#technical-sponsor {
+  color: #007bff;
+}
 
 .divider::before,
 .divider::after {

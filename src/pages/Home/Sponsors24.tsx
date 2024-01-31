@@ -3,9 +3,10 @@ import "./Sponsors24.css";
 import { useDataContext } from "../../contexts/DataProvider";
 import { FadeIn } from "react-slide-fade-in/dist/fade-in";
 import Marquee from "react-fast-marquee";
-import replit from '../../assets/replit-dark.svg';
-import devfolio from '../../assets/devfolio.svg';
-import polygon from '../../assets/polygon-logo-colored.svg';
+import replit from "../../assets/replit-dark.svg";
+import devfolio from "../../assets/devfolio.svg";
+import polygon from "../../assets/polygon-logo-colored.svg";
+import echo3d from "../../assets/echo3d.png";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 
@@ -113,16 +114,8 @@ const Sponsors24: React.FC = () => {
             &nbsp;Gold Sponsors&nbsp;
           </div>
           <div className="gold-sponsor">
-            <img
-              className="sponsor-image"
-              src={devfolio}
-              alt=""
-            />
-            <img
-              className="sponsor-image"
-              src={polygon}
-              alt=""
-            />
+            <img className="sponsor-image" src={devfolio} alt="Devfolio LOGO" />
+            <img className="sponsor-image" src={polygon} alt="Polygon LOGO" />
           </div>
 
           <div id="silver-sponsor" className="divider">
@@ -130,11 +123,14 @@ const Sponsors24: React.FC = () => {
           </div>
 
           <div className="gold-sponsor">
-            <img
-              className="sponsor-image"
-              src={replit}
-              alt="REPLIT LOGO"
-            />
+            <img className="sponsor-image" src={replit} alt="REPLIT LOGO" />
+          </div>
+
+          <div id="technical-sponsor" className="divider">
+            &nbsp;Technical Sponsors&nbsp;
+          </div>
+          <div className="gold-sponsor">
+            <img className="sponsor-image" src={echo3d} alt="Echo3D LOGO" />
           </div>
         </FadeIn>
 
