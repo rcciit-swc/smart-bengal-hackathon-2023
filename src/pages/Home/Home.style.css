@@ -146,17 +146,6 @@
   flex-direction: row;
 }
 
-.devfolio-button {
-  padding: 10px 100px;
-  border-radius: 4px;
-  background-color: #1768b0;
-  color: white;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  margin: auto;
-}
-
 @media screen and (max-width: 900px) {
   .partner__contact {
     flex-direction: column;
@@ -193,5 +182,14 @@
 
 .devfolio-button {
   background-color: rgb(55, 112, 255);
-  padding: 10px 20px;
+  object-fit: cover;
+  width: 400px;
+  height: 50%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  @media screen and (max-width: 768px) {
+    width: 280px;
+  }
 }
