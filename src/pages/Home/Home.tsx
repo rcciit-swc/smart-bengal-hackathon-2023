@@ -130,17 +130,18 @@ const Home = () => {
         </div>
       </div> */}
 
-      {/* <div
+      
+     <Devfolio />
+     <div
         className="apply-button"
         style={{
           width: "312px",
           height: "44px",
         }}
-        data-hackathon-slug={process.env.DEVFOLIO_SLUG}
-        data-button-theme="light"
-      ></div> */}
-     <Devfolio />
-      <div className=" d-flex flex-column w-75 mt-5 sbh-title">
+        data-hackathon-slug={'smart-bengal-hackathon-1'}
+        data-button-theme="white"
+      ></div>
+      <div className=" d-flex flex-column w-75 mt-2 sbh-title">
         <h2
           style={{ color: `var(--sub-heading)` }}
           className="caveat text-uppercase fw-bold px-3"

@@ -2,8 +2,7 @@ import React, { lazy, Suspense, useEffect, useState } from "react";
 import "./Sponsors24.css";
 import { useDataContext } from "../../contexts/DataProvider";
 import { FadeIn } from "react-slide-fade-in/dist/fade-in";
-import Marquee from "react-fast-marquee";
-import replit from "../../assets/replit-dark.svg";
+import ethindia from "../../assets/ethindia.png";
 import devfolio from "../../assets/devfolio.svg";
 import polygon from "../../assets/polygon-logo-colored.svg";
 import echo3d from "../../assets/echo3d.png";
@@ -123,15 +122,19 @@ const Sponsors24: React.FC = () => {
           </div>
 
           <div className="gold-sponsor">
-            <img className="sponsor-image" src={replit} alt="REPLIT LOGO" />
+            <img
+              style={{ width: "210px" }}
+              src={ethindia}
+              alt="ETHINDIA LOGO"
+            />
           </div>
 
-          <div id="technical-sponsor" className="divider">
+          {/* <div id="technical-sponsor" className="divider">
             &nbsp;Technical Sponsors&nbsp;
           </div>
           <div className="gold-sponsor">
             <img className="sponsor-image" src={echo3d} alt="Echo3D LOGO" />
-          </div>
+          </div> */}
         </FadeIn>
 
         {/* {sponsorList &&
