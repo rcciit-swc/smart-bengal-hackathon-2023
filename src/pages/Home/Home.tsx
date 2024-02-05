@@ -5,7 +5,7 @@ import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { resultJuniorRoute, resultSeniorRoute } from "../../Routes";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
@@ -17,15 +17,15 @@ const Home = () => {
   const { title, about } = useData();
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    };
-  }, []);
+    }
+}, []);
 
   return (
     <main
@@ -133,17 +133,21 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div
+      {/* <div
         className="apply-button"
         style={{
           width: "312px",
           height: "44px",
-          margin: "auto",
-          textAlign: "center",
         }}
         data-hackathon-slug={process.env.DEVFOLIO_SLUG}
         data-button-theme="light"
-      ></div>
+      ></div> */}
+   
+      <button>
+        <NavLink to={'https://smart-bengal-hackathon-1.devfolio.co/'}>
+          Apply with Devfolio
+        </NavLink>
+      </button>
 
       {/* <div className="devfolio-button">
           Apply

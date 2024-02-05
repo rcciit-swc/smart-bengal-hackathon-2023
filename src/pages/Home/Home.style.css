@@ -190,3 +190,8 @@
     width: 800px !important;
   }
 }
+
+.devfolio-button {
+  background-color: rgb(55, 112, 255);
+  padding: 10px 20px;
+}
