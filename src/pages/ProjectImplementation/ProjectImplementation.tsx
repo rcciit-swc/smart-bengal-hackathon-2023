@@ -80,17 +80,8 @@ const ProjectImplementation = () => {
           image="https://sih.gov.in/img/project-implementation.jpg"
         />
       </Suspense>
-<<<<<<< HEAD
-      <h1
-        className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
-        style={{ color: "black" }}
-      >
-        COMING SOON
-      </h1>
-=======
       {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
           style={{color: "black"}}>COMING SOON</h1> */}
->>>>>>> 78e32846a52ff7dea3c971600e2f0fab484c3e1c
       <div className="d-flex w-100 mb-5 flex-column justify-content-center align-items-center">
         <h2
           className="text-center fw-bold my-5"
@@ -105,17 +96,10 @@ const ProjectImplementation = () => {
           institutionalize a model for harnessing the creativity and technical
           expertise of millions of West Bengal students for the direct benefit
           of our state as well as nation. Through the Smart Bengal Hackathon
-<<<<<<< HEAD
-          2024 (SBH-2024), the Institution’s Innovation Cell (IIC) tried to
-          crowd source solutions for improving governance and quality of life
-          and provide young citizens with an opportunity to co-create and
-          present innovative solutions to India's pressing needs.
-=======
           2024 (SBH2024), the Institution’s Innovation Cell (IIC) tried to
           crowdsource solutions for improving governance and quality of life and
           provide young citizens with an opportunity to co-create and present
           innovative solutions to India's pressing needs.
->>>>>>> 78e32846a52ff7dea3c971600e2f0fab484c3e1c
           <br />
           <br />
           Post SBH, the RCC Institute of Information Technology is committed to
