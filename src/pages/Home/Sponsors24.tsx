@@ -96,12 +96,12 @@ const Sponsors24: React.FC = () => {
             bannerCircle="banner_circle"
           />
         </Suspense>
-        <h1
+        {/* <h1
           className="w-100 text-center fw-bold mt-5 caveat"
           style={{ color: "var(--heading-color)" }}
         >
           Supporters of SBH 2024
-        </h1>
+        </h1> */}
 
         <FadeIn
           from="bottom"
