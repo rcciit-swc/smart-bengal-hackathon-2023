@@ -131,7 +131,7 @@ const Home = () => {
       </div> */}
 
       
-     <Devfolio />
+     {/* <Devfolio /> */}
      <div
         className="apply-button"
         style={{

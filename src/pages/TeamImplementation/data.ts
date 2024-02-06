@@ -17,7 +17,7 @@ const impl_team_data: impl_team_type[] = [
   
   {
     img: pranashSir,
-    name: "Mr. Pranabesh Das",
+    name: "Sri Pranabesh Das",
     position: "Chief Patron",
     designation:
       "Chairman, BOG, RCCIIT, Ex.Director of Technical Education, Govt.of West Bengal",
@@ -31,25 +31,25 @@ const impl_team_data: impl_team_type[] = [
   },
   {
     img: anirbanSir,
-    name: "Prof. Anirban Mukherjee",
+    name: "Prof.(Dr.) Anirban Mukherjee",
     position: "Patron",
-    designation: "Principal(ofg.), RCCIIT",
+    designation: "Principal(officiating), RCCIIT",
   },
   {
     img: 'https://rcciit.org/images/staff/cse/f/minakshi.jpg',
-    name: "Dr. Minakshi Banerjee",
+    name: "Prof.(Dr.) Minakshi Banerjee",
     position: "Adviser",
     designation: "Professor, Dept.of CSE, RCCIIT",
   },
   {
     img: 'https://rcciit.org/images/staff/ece/f/ashoke.jpg',
-    name: "Dr. Ashoke Mondal",
+    name: "Prof.(Dr.) Ashoke Mondal",
     position: "Adviser",
     designation: "Professor,Dept.of ECE, RCCIIT",
   },
   {
     img: "https://rcciit.org/images/staff/it/f/indrajit.jpg",
-    name: "Dr. Indrajit Pan",
+    name: "Prof.(Dr.) Indrajit Pan",
     position:'Adviser',
     designation: "Professor, Dept.of IT, Dean, R & D, RCCIIT",
     
@@ -58,11 +58,11 @@ const impl_team_data: impl_team_type[] = [
     img: 'https://rcciit.org/images/staff/cse/f/harinandan.jpg',
     name: "Mr. Harinandan Tunga",
     position: "Adviser",
-    designation: "Professor, Dept.of CSE, FIC(SA & SW), RCCIIT",
+    designation: "Associate Professor, Dept.of CSE, FIC(SA & SW), RCCIIT",
   },
   {
     img: "https://rcciit.org/images/staff/ee/f/Debasish.jpg",
-    name: "Dr. Debasish Mondal",
+    name: "Prof.(Dr.) Debasish Mondal",
     position:'Chief Convener',
     designation: "Professor, Dept.of EE, RCCIIT",
   },
@@ -70,27 +70,27 @@ const impl_team_data: impl_team_type[] = [
     img: "https://rcciit.org/images/staff/aeie/f/srijan.jpg",
     name: "Dr. Srijan Bhattacharya",
     position:'Joint Convener (SBH Junior)',
-    designation: "Professor,  Dept.of AEIE, RCCIIT",
+    designation: " Assistant Professor,  Dept.of AEIE, RCCIIT",
     
   },
   {
     img: "https://rcciit.org/images/staff/it/f/Soumen.jpg",
     name: "Dr. Soumen  Mukherjee",
     position:'Joint Convener (SBH Junior)',
-    designation: "Professor, Dept.of IT, RCCIIT",
+    designation: "Associate Professor, Dept.of IT, RCCIIT",
     
   },
   {
     img: "https://rcciit.org/images/staff/ece/f/arpan.jpg",
     name: "Dr. Arpan Deyasi",
     position:'Joint Convener (SBH Senior)',
-    designation: "Professor, Dept.of ECE, RCCIIT",
+    designation: "Associate Professor, Dept.of ECE, RCCIIT",
   },
   {
     img: "https://rcciit.org/images/staff/it/f/Hiranmoy.jpg",
     name: "Dr. Hiranmoy Roy",
     position:'Joint Convener (SBH Senior)',
-    designation: "HOD ,Dept.of IT, RCCIIT",
+    designation: "Associate Professor, HOD ,Dept.of IT, RCCIIT",
   },
 ];
 
