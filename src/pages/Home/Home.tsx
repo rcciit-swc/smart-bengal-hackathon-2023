@@ -182,7 +182,7 @@ const Home = () => {
                 submissions, application deadlines, and events. Missing
                 deadlines can lead to penalties and missed opportunities.
               </p> */}
-              {/* <Button
+              <Button
                 className="rounded-button"
                 style={{
                   backgroundColor: "#1768b0",
@@ -195,17 +195,19 @@ const Home = () => {
                   e.currentTarget.style.backgroundColor = "#1768B0";
                 }}
               >
+               
                 <a
-                  href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+                  href="https://smart-bengal-hackathon-1.devfolio.co/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Register Now
                 </a>
-              </Button> */}
+              </Button>
+              <p> </p>
               <ul style={{ fontSize: "20px" }}>
                 <li>
-                  <b>Smart Bengal Hackathon Registration Starts:</b> 9th
+                  <b>Smart Bengal Hackathon Registration Starts:</b> 7th
                   February,2024
                 </li>
                 <li>
