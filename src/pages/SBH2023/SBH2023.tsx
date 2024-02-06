@@ -16,8 +16,8 @@ const SBH2023 = () => {
             alt={"sbh2023"}
             style={{ height: "30%", width: "100%", objectFit: "cover" }}
           /> */}
-      <Impact />
-      <Finale />
+      {/* <Impact /> */}
+      {/* <Finale /> */}
       <Winners />
       <Gallery />
       <Themes />

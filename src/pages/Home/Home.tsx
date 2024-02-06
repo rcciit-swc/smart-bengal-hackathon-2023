@@ -129,8 +129,10 @@ const Home = () => {
           ))}
         </div>
       </div> */}
-      <Devfolio />
-      <div
+
+      
+     <Devfolio />
+     {/* <div
         className="apply-button"
         style={{
           width: "312px",
@@ -138,8 +140,7 @@ const Home = () => {
         }}
         data-hackathon-slug={"smart-bengal-hackathon-1"}
         data-button-theme="white"
-      ></div>
-
+      ></div> */}
       <div className=" d-flex flex-column w-75 mt-2 sbh-title">
         <h2
           style={{ color: `var(--sub-heading)` }}
