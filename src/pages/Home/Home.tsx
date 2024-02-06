@@ -1,13 +1,11 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { useData } from "../../contexts/Data";
 import "./Home.style.css";
 import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
-import { Link } from "react-router-dom";
-import { resultJuniorRoute, resultSeniorRoute } from "../../Routes";
-
+import Devfolio from "../../components/Buttons/Devfolio";
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
 const Sponsors24 = lazy(() => import("../../pages/Home/Sponsors24"));
@@ -15,7 +13,6 @@ const HomePrizes = lazy(() => import("./HomePrizes"));
 
 const Home = () => {
   const { title, about } = useData();
-
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";
@@ -133,22 +130,18 @@ const Home = () => {
         </div>
       </div> */}
 
-      <div
+      
+     <Devfolio />
+     <div
         className="apply-button"
         style={{
           width: "312px",
           height: "44px",
-          margin: "auto",
-          textAlign: "center",
         }}
-        data-hackathon-slug={process.env.DEVFOLIO_SLUG}
-        data-button-theme="light"
+        data-hackathon-slug={'smart-bengal-hackathon-1'}
+        data-button-theme="white"
       ></div>
-
-      {/* <div className="devfolio-button">
-          Apply
-        </div> */}
-      <div className=" d-flex flex-column w-75 mt-5 sbh-title">
+      <div className=" d-flex flex-column w-75 mt-2 sbh-title">
         <h2
           style={{ color: `var(--sub-heading)` }}
           className="caveat text-uppercase fw-bold px-3"
@@ -213,13 +206,14 @@ const Home = () => {
               </Button> */}
               <ul style={{ fontSize: "20px" }}>
                 <li>
-                <b>Smart Bengal Hackathon Registration Starts:</b> 9th February,2024
+                  <b>Smart Bengal Hackathon Registration Starts:</b> 9th
+                  February,2024
                 </li>
                 <li>
-                <b>Registration Closed:</b> 12th March 2024
+                  <b>Registration Closed:</b> 12th March 2024
                 </li>
                 <li>
-                <b>Smart Bengal Hackathon:</b> 16th April 2024 for SBH Junior
+                  <b>Smart Bengal Hackathon:</b> 16th April 2024 for SBH Junior
                   & 17th April 2024 for SBH Senior
                 </li>
               </ul>
