@@ -20,38 +20,23 @@ const Rules = () => {
           }}
         >
           <li>
-            Maximum allowed student member (SBH- Senior) in each team is 06
-            excluding 01 mentor (industry/ academic institution). Mentor is
-            compulsory for an idea submission.
+          Maximum allowed student member (SBH- Senior) in each team is 06 excluding 01 mentor (industry/ academic institution). Mentor is compulsory for an idea submission.
           </li>
           <li>
-            Maximum allowed student member (SBH- Junior) in each team is 04
-            excluding 01 mentor. Mentor is compulsory for an idea submission.
+          Maximum allowed student member (SBH- Junior) in each team is 04 excluding 01 mentor. Mentor is compulsory for an idea submission.
           </li>
-          <li>One guide can mentor different teams.</li>
+          <li>One mentor may supervise multiple teams.</li>
           <li>
-            One student member may include himself/herself in different
-            projects, however can only participate in one of the final selected
-            project (if any).
+          One student member may include himself/herself in different projects, however can only participate in one of the final selected project (if any).
           </li>
           <li>
-            Participants from multiple institutions/ organizations can
-            collaborate in a single team provided consent letter from all
-            respective institutions/organizations are submitted.
+          Participants from multiple institutions/ organizations can collaborate in a single team provided consent letter from all respective institutions/organizations are submitted.
           </li>
           <li>
-            Each participate must treat all team members, competitors, judges,
-            coaches, volunteers, etc, with respect and courtesy, abiding by the
-            guidelines of SBH-2024.
+          Each participate must treat all team members, competitors, judges, coaches, volunteers, etc, with respect and courtesy, abiding by the guidelines of SBH-2024.
           </li>
           <li>
-            Prizes won by a particular team are to be shared between all team
-            members.
-          </li>
-          <li>
-            Teams should be made up exclusively of students who are not
-            organizers,volunteers, judges, sponsors, or in any other privileged
-            position at the event.
+          Prizes won by a particular team are to be shared between all team members.
           </li>
           <li>All team members should be present at the event.</li>
           <li>
@@ -75,7 +60,6 @@ const Rules = () => {
               jury’s/ panel member’s discretion.
             </li>
           </ul>
-          <li>Teams can use any idea they had before the event.</li>
           <li>
             Teams can work on ideas that have already been done. If somebody
             wants to work on a common idea they should be allowed to do so and
