@@ -182,7 +182,7 @@ const Home = () => {
                 submissions, application deadlines, and events. Missing
                 deadlines can lead to penalties and missed opportunities.
               </p> */}
-              <Button
+              {/* <Button
                 className="rounded-button"
                 style={{
                   backgroundColor: "#1768b0",
@@ -203,7 +203,7 @@ const Home = () => {
                 >
                   Register Now
                 </a>
-              </Button>
+              </Button> */}
               <p> </p>
               <ul style={{ fontSize: "20px" }}>
                 <li>
