@@ -7,11 +7,17 @@ const ImportantNotes = [
   {
     description: (
       <p>
-        In case the solution developed by the teams is an assembly of available
-        components, then any conflict arising due to plagiarism, IP, or
-        copyright violations, the individuals of the concerned team will be
-        solely responsible. Hence, the teams have been advised to use verified
-        open-source components only and acknowledge them appropriately.{" "}
+        <span style={{ color: "blue", fontWeight: "bold" }}>
+          In case the solution developed by the teams is an assembly of
+          available components, then any conflict arising due to plagiarism, IP,
+          or copyright violations, the individuals of the concerned team will be
+          solely responsible.
+        </span>{" "}
+        Hence, the teams have been advised to use verified open-source
+        components only and acknowledge them appropriately. RCCIIT also get a
+        signed declaration from all the members of the team in this regard to
+        indemnify itself from any legal conflict.
+        <br />
         <b>
           RCCIIT also get a signed declaration from all the members of the team
           in this regard to indemnify itself from any legal conflict.
@@ -37,17 +43,17 @@ const ImportantNotes = [
         <b>Long Distance Travel/Short Distance Travel:</b>  SBH committee will
         not reimburse any travel cost for the participants. The concerned
         participants shall bear the travel cost even if they travel from any
-        other district.
+        other district/state.
       </p>
     ),
   },
   {
     description: (
       <p>
-        <b>Stay: SBH organizing</b> committee will arrange the accommodation
+        <b>Stay:</b> SBH organizing committee will arrange the accommodation
         nearby to the venue. But the participants has to bear the accommodation
-        cost. However the participants shall request the accommodation request
-        to SBH committee in advance.
+        cost. However, the participants shall request the accommodation to SBH
+        committee in advance.
       </p>
     ),
   },
@@ -101,7 +107,7 @@ const ProjectImplementation = () => {
           ideas by effectively supporting the concerned ministries/departments.
           Hence, to initiate the development and deployment of SBH-winning
           ideas, the concerned Problem Statement given agency is requested to
-          follow the guidelines indicated below.
+          follow the guidelines indicated below:
         </p>
         <ul className="list-unstyled w-75">
           {winningGuidelines.map((item, index) => (

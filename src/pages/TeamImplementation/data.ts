@@ -14,7 +14,6 @@ type impl_team_type = {
 };
 
 const impl_team_data: impl_team_type[] = [
-  
   {
     img: pranashSir,
     name: "Sri Pranabesh Das",
@@ -52,10 +51,9 @@ const impl_team_data: impl_team_type[] = [
     name: "Prof.(Dr.) Indrajit Pan",
     position:'Adviser',
     designation: "Professor, Dept.of IT, Dean, R & D, RCCIIT",
-    
   },
   {
-    img: 'https://rcciit.org/images/staff/cse/f/harinandan.jpg',
+    img: "https://rcciit.org/images/staff/cse/f/harinandan.jpg",
     name: "Mr. Harinandan Tunga",
     position: "Adviser",
     designation: "Associate Professor, Dept.of CSE, FIC(SA & SW), RCCIIT",

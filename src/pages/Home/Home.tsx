@@ -138,7 +138,7 @@ const Home = () => {
           width: "312px",
           height: "44px",
         }}
-        data-hackathon-slug={'smart-bengal-hackathon-1'}
+        data-hackathon-slug={"smart-bengal-hackathon-1"}
         data-button-theme="white"
       ></div> */}
       <div className=" d-flex flex-column w-75 mt-2 sbh-title">
@@ -183,7 +183,7 @@ const Home = () => {
                 submissions, application deadlines, and events. Missing
                 deadlines can lead to penalties and missed opportunities.
               </p> */}
-              <Button
+              {/* <Button
                 className="rounded-button"
                 style={{
                   backgroundColor: "#1768b0",
@@ -204,7 +204,7 @@ const Home = () => {
                 >
                   Register Now
                 </a>
-              </Button>
+              </Button> */}
               <p> </p>
               <ul style={{ fontSize: "20px" }}>
                 <li>
