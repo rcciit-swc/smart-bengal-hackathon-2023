@@ -62,12 +62,6 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="d-flex">
-          <div className="nav-link text-decoration-none">
-                
-                <Link onClick={navHandler} to={sbh2023Route}>
-                  About SBH 2023
-                </Link>
-              </div>
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -132,7 +126,7 @@ const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  SBH Senior 2023
+                  SBH Senior 2024
                 </a>
               </div>
               <div className="dropdown-item">
@@ -143,7 +137,7 @@ const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  SBH Junior 2023 
+                  SBH Junior 2024 
                 </a>
               </div>
             </NavDropdown>
@@ -169,7 +163,7 @@ const NavBar = () => {
                 </a>
               </div>
             </NavDropdown>
-            <NavDropdown className="navbar__color" title="Results">
+            {/* <NavDropdown className="navbar__color" title="Results">
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link
@@ -194,7 +188,7 @@ const NavBar = () => {
                   SBH Junior 2023
                 </Link>
               </div>
-            </NavDropdown>
+            </NavDropdown> */}
             <NavDropdown title="Hackathon Details">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -226,6 +220,12 @@ const NavBar = () => {
                 FAQs
               </Link>
             </div>
+            <div className="nav-link text-decoration-none">
+                
+                <Link onClick={navHandler} to={sbh2023Route}>
+                  About SBH 2023
+                </Link>
+              </div>
             <div className="nav-link text-decoration-none">
               <Link onClick={navHandler} to={contactUsRoute}>
                 Contact Us

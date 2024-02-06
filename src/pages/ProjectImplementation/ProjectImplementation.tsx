@@ -74,15 +74,15 @@ const ProjectImplementation = () => {
           image="https://sih.gov.in/img/project-implementation.jpg"
         />
       </Suspense>
-      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
-          style={{color: "black"}}>COMING SOON</h1>
+      {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1> */}
       <div className="d-flex w-100 mb-5 flex-column justify-content-center align-items-center">
         <h2
           className="text-center fw-bold my-5"
           style={{ color: "var(--heading-color)", width: "90%" }}
         >
           GUIDELINES FOR FURTHER DEVELOPMENT AND DEPLOYMENT OF SMART BENGAL
-          HACKATHON (SBH2023) WINNING PROJECTS
+          HACKATHON (SBH2024) WINNING PROJECTS
         </h2>
         <p className="w-75">
           The Smart Bengal Hackathon (SBH) is envisioned to promote innovation
@@ -90,7 +90,7 @@ const ProjectImplementation = () => {
           institutionalize a model for harnessing the creativity and technical
           expertise of millions of West Bengal students for the direct benefit
           of our state as well as nation. Through the Smart Bengal Hackathon
-          2023 (SBH2023), the Institution’s Innovation Cell (IIC) tried to
+          2024 (SBH2024), the Institution’s Innovation Cell (IIC) tried to
           crowdsource solutions for improving governance and quality of life and
           provide young citizens with an opportunity to co-create and present
           innovative solutions to India's pressing needs.
