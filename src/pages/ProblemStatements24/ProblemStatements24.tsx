@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Table } from "react-bootstrap";
 import { useData } from "../../contexts/Data";
+import { psData } from "./ps_data";
 
 const Header = lazy(() => import("../../components/Header/Header"));
 
@@ -14,9 +15,9 @@ const ProblemStatements24 = () => {
           image="https://sih.gov.in/img/themes-bg.jpg"
         />
       </Suspense>
-      <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
-          style={{color: "black"}}>COMING SOON</h1>
-      {/* <Table
+      {/* <h1 className="poppins text-center fs-3 text-uppercase fw-semibold py-4"
+          style={{color: "black"}}>COMING SOON</h1> */}
+      <Table
         striped
         bordered
         responsive
@@ -26,12 +27,18 @@ const ProblemStatements24 = () => {
         <thead>
           <tr>
             <th style={{ backgroundColor: "#313D76", color: "white" }}>
-              S.No.
+              PS No.
             </th>
             <th style={{ backgroundColor: "#313D76", color: "white" }}>
-              Themes
+              Problem Statement
             </th>
-            <th
+            <th style={{ backgroundColor: "#313D76", color: "white" }}>
+              Theme & Description
+            </th>
+            <th style={{ backgroundColor: "#313D76", color: "white" }}>
+              Category
+            </th>
+            {/* <th
               style={{
                 backgroundColor: "#313D76",
                 color: "white",
@@ -50,14 +57,15 @@ const ProblemStatements24 = () => {
             >
               SBH Senior Themes<br></br>
               (colleges)
-            </th>
+            </th> */}
           </tr>
         </thead>
         <tbody>
-          {ThemeCardData.map((item, index) => {
+          {psData.map((item, index) => {
             return (
               <tr key={index}>
-                <td>{index + 1}</td>
+                <td>{item.psno}</td>
+                <td>{item.problemStat}</td>
                 <td>
                   <span className="d-flex jusify-content-center align-items-center">
                     <img
@@ -75,7 +83,8 @@ const ProblemStatements24 = () => {
                   {<br />}
                   {item.desc}
                 </td>
-                <td className=" ">
+                <td>{item.category}</td>
+                {/* <td className=" ">
                   {item.institution.includes("school") ? (
                     <img
                       className="d-block mx-auto my-5"
@@ -108,12 +117,12 @@ const ProblemStatements24 = () => {
                       style={{ height: "50px", width: "50px" }}
                     />
                   )}
-                </td>
+                </td> */}
               </tr>
             );
           })}
         </tbody>
-      </Table> */}
+      </Table>
     </>
   );
 };
