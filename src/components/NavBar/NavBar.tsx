@@ -62,12 +62,6 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="d-flex">
-          <div className="nav-link text-decoration-none">
-                
-                <Link onClick={navHandler} to={sbh2023Route}>
-                  About SBH 2023
-                </Link>
-              </div>
             <NavDropdown title="Discover about SBH">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -127,7 +121,7 @@ const NavBar = () => {
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <a
-                  href="https://docs.google.com/document/d/17DrpmAKZ20Kvwqg2hjQWbtd_Rtz22m69/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true"
+                  href="https://docs.google.com/document/d/1E-0g0HS1S4tHnLZXXE4lZyylDEQaICFX/edit?usp=sharing&ouid=113739507441587181944&rtpof=true&sd=true"
                   onClick={navHandler}
                   target="_blank"
                   rel="noreferrer"
@@ -138,7 +132,7 @@ const NavBar = () => {
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <a
-                  href="https://docs.google.com/document/d/1aO2-qzhJioC-SLw2JQ6e7nprd9i7KrEk/edit?usp=sharing&ouid=107107518174504861403&rtpof=true&sd=true"
+                  href="https://docs.google.com/document/d/1nhRvixPGykYpPe90uosOCPed0uryNI_W/edit?usp=sharing&ouid=113739507441587181944&rtpof=true&sd=true"
                   onClick={navHandler}
                   target="_blank"
                   rel="noreferrer"
@@ -169,7 +163,7 @@ const NavBar = () => {
                 </a>
               </div>
             </NavDropdown>
-            <NavDropdown className="navbar__color" title="Results">
+            {/* <NavDropdown className="navbar__color" title="Results">
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link
@@ -194,7 +188,7 @@ const NavBar = () => {
                   SBH Junior 2023
                 </Link>
               </div>
-            </NavDropdown>
+            </NavDropdown> */}
             <NavDropdown title="Hackathon Details">
               <div className="dropdown-item">
                 <span className="dot"></span>
@@ -226,6 +220,12 @@ const NavBar = () => {
                 FAQs
               </Link>
             </div>
+            <div className="nav-link text-decoration-none">
+                
+                <Link onClick={navHandler} to={sbh2023Route}>
+                  About SBH 2023
+                </Link>
+              </div>
             <div className="nav-link text-decoration-none">
               <Link onClick={navHandler} to={contactUsRoute}>
                 Contact Us
