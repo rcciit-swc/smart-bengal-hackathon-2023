@@ -132,7 +132,7 @@ const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  SBH Senior 2023
+                  SBH Senior 2024
                 </a>
               </div>
               <div className="dropdown-item">
@@ -143,7 +143,7 @@ const NavBar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  SBH Junior 2023 
+                  SBH Junior 2024 
                 </a>
               </div>
             </NavDropdown>
