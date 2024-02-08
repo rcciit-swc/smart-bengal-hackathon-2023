@@ -82,12 +82,51 @@ export const psData = [
     icon: "https://sih.gov.in/img/icon_technology.png",
   },
   {
+    psno: "SBHRCCIIT010",
+    category: "Hardware",
+    theme: "Safety & Security",
+    problemStat:
+      "Navigation of Blind People using Smart Cap, Shoe and Mobile Charging system & Accident detection and sending alert to nearest hospital ,police station",
+    icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
+  },
+  {
+    psno: "SBHRCCIIT011",
+    category: "Hardware",
+    theme: "Biotech & Healthcare",
+    problemStat:
+      "IoT based recording and monitoring of fluid intake and discharge for a ICU patient",
+    icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
+  },
+  {
+    psno: "SBHRCCIIT012",
+    category: "Software",
+    theme: "Miscellaneous",
+    problemStat:
+      "Development of mobile application for cashier less unmanned retail buisness",
+    icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
+  },
+  {
+    psno: "SBHRCCIIT013",
+    category: "Hardware",
+    theme: "Smart Automation",
+    problemStat:
+      "Human less medicine vending Machine",
+    icon: "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
+  },
+  {
+    psno: "SBHRCCIIT013",
+    category: "Hardware",
+    theme: "Power and Energy",
+    problemStat:
+      "Design of combined AC &amp; DC Power generating Machine & IoT based fault detection and mitigation in a hybrid power System",
+    icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
+  },
+  {
     psno: "SBHRCCIITXXX",
     category: "Open Innovation",
     theme: "Miscellaneous",
     problemStat:
-      "Create any kind of software or hardware solution to solve any relevant problem statement on your own.",
-    desc: "Student can Build any solutions to their problem statements from their own.",
+      "Student can build any solutions of their problem statements from their own.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
-  },
+  }
 ];
