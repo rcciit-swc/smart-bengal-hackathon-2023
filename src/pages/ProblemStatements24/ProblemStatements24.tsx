@@ -22,7 +22,7 @@ const ProblemStatements24 = () => {
         bordered
         responsive
         className={"my-5"}
-        style={{ width: "75%", margin: "0 auto" }}
+        style={{ width: "75%", margin: "0 auto", textAlign: "center" }}
       >
         <thead>
           <tr>
@@ -30,14 +30,24 @@ const ProblemStatements24 = () => {
               PS No.
             </th>
             <th style={{ backgroundColor: "#313D76", color: "white" }}>
+              Category
+            </th>
+            <th
+              style={{
+                backgroundColor: "#313D76",
+                color: "white",
+                width: "25%",
+              }}
+            >
+              Theme
+            </th>
+            <th style={{ backgroundColor: "#313D76", color: "white" }}>
               Problem Statement
             </th>
             <th style={{ backgroundColor: "#313D76", color: "white" }}>
-              Theme & Description
+            Problem Statement Description
             </th>
-            <th style={{ backgroundColor: "#313D76", color: "white" }}>
-              Category
-            </th>
+
             {/* <th
               style={{
                 backgroundColor: "#313D76",
@@ -65,7 +75,7 @@ const ProblemStatements24 = () => {
             return (
               <tr key={index}>
                 <td>{item.psno}</td>
-                <td>{item.problemStat}</td>
+                <td>{item.category}</td>
                 <td>
                   <span className="d-flex jusify-content-center align-items-center">
                     <img
@@ -77,13 +87,11 @@ const ProblemStatements24 = () => {
                         marginRight: "10px",
                       }}
                     />
-                    <h4>{item.theme}</h4>
+                    <h5>{item.theme}</h5>
                   </span>
-
-                  {<br />}
-                  {item.desc}
                 </td>
-                <td>{item.category}</td>
+                <td>{item.problemStat}</td>
+                <td>{item.desc}</td>
                 {/* <td className=" ">
                   {item.institution.includes("school") ? (
                     <img
