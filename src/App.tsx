@@ -30,7 +30,6 @@ import Team from "./pages/Teams/Team";
 import { AuthProvider } from "./contexts/Auth";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import SbhSenior from "./pages/Result/SbhSenior";
-import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 
 // splitting different page bundles
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -63,7 +62,7 @@ const ResultJunior = lazy(() => import("./pages/Result/SbhJunior"));
 const SBH2023 = lazy(() => import("./pages/SBH2023/SBH2023"));
 function App() {
   return (
-    <ReactLenis root>
+
       <BrowserRouter>
         <DataProvider>
           <UserProvider>
@@ -264,7 +263,6 @@ function App() {
           }}
         />
       </BrowserRouter>
-    </ReactLenis>
   );
 }
 
