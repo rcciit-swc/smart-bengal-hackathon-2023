@@ -26,7 +26,7 @@ const impl_team_data: impl_team_type[] = [
     name: "Prof. Amlan Chakrabrti",
     position: "Chief Patron",
     designation:
-      "Professor and Director, A.K. Choudhury School of Information Technology University of Calcutta",
+      "Chairman, BOG, RCCIIT(Non-AICTE),Professor and Director, A.K. Choudhury School of Information Technology University of Calcutta",
   },
   {
     img: anirbanSir,

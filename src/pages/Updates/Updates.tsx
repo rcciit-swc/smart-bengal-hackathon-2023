@@ -29,29 +29,29 @@ const Updates = () => {
         >
           Important Dates and Deadlines
         </h2>
-        <ul style={{ fontSize: "20px" }}>
+        {/* <ul style={{ fontSize: "20px" }}>
                 
                 <li>
                   <b>Smart Bengal Hackathon Begins:</b> 16th April,2024 for SBH
                   Junior & 17th April, 2024 for SBH Senior
                 </li>
-              </ul>
-        {/* <ul className="w-75" style={{ fontSize: "20px" }}>
+              </ul>  */}
+        <ul className="w-75" style={{ fontSize: "20px" }}>
           <li>
-            <b>Registration & Idea Submission:</b> Begins on 28 Feb 2023 and
-            ends on 23rd Mar(Senior) & 31st Mar(Junior) 2023.
+            <b>Registration & Idea Submission:</b> Begins on 07 Feb 2024 and
+            ends on 12th March 2024.
           </li>
           <li>
-            <b>Shortlisted Teams Announcement:</b> 30th March (Senior) & 2nd April (Junior) 2023
+            <b>Shortlisted Teams Announcement:</b> TBD
           </li>
           <li>
-            <b>Smart Bengal Hackathon Begins:</b> 11th April,2023 for SBH Junior
-            & 12th April, 2023 for SBH Senior
+            <b>Smart Bengal Hackathon Begins:</b> 16th April,2024 for SBH Junior <br />
+            & 17th April, 2024 for SBH Senior
           </li>
-        </ul> */}
-      {/* </div>
-      <div className="w-100 d-flex flex-column justify-content-center align-items-center"> */}
-        {/* <h2
+        </ul>
+       </div>
+      <div className="w-100 d-flex flex-column justify-content-center align-items-center"> 
+         <h2
           className="w-100 text-center fw-bold my-3"
           style={{ color: "var(--heading-color)" }}
         >
@@ -59,16 +59,13 @@ const Updates = () => {
         </h2>
         <ul className="w-75" style={{ fontSize: "20px" }}>
           <li>
-            <b>SBH SENIOR :</b> - Rs. 2000/- per team
+            <b>SBH SENIOR :</b> - FREE
           </li>
           <li>
-            <b>SBH JUNIOR :</b> - Rs. 1000/- per team
+            <b>SBH JUNIOR :</b> - FREE
           </li>
         </ul>
-        <span className="mb-4 text-center">
-          Registration fees need to be paid after the shortlisting.
-        </span> */}
-        {/* <Button
+         <Button
           variant="success"
           className="mb-5"
           style={{
@@ -83,13 +80,13 @@ const Updates = () => {
           }}
         >
           <a
-            href="https://unstop.com/o/2adeEYJ?lb=TzAP536"
+            href="https://smart-bengal-hackathon-1.devfolio.co/"
             target="_blank"
             rel="noreferrer"
           >
             Register Now
           </a>
-        </Button> */}
+        </Button> 
       </div>
     </main>
   );

@@ -47,11 +47,11 @@ const ProcessFlow = () => {
             <div className="d-flex gap-4 mt-4">
               <div className="d-grid">
                 <span className="text-uppercase fw-bold fs-2 ">sbh junior</span>
-                <span>Class 9th-12th & Polytechnic Students</span>
+                <span>Class 8th-12th</span>
               </div>
               <div className="d-grid">
                 <span className="text-uppercase fw-bold fs-2">sbh senior</span>
-                <span>College & University Students</span>
+                <span>College/University/Polytechnic Students</span>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const ProcessFlow = () => {
             ))}
           </div>
         </div>
-        {/* <div
+        <div
           className="w-75  process-container text-center"
           style={{ backgroundColor: "var(--invert-color)" }}
         >
@@ -132,11 +132,11 @@ const ProcessFlow = () => {
               </FadeIn>
             ))}
           </div>
-        </div> */}
-        <Suspense fallback={<></>}>
+        </div>
+        {/* <Suspense fallback={<></>}>
           <Themes />
           <h1>COMING SOON</h1>
-        </Suspense>
+        </Suspense> */}
       </div>
     </>
   );

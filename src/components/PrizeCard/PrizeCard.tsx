@@ -5,7 +5,7 @@ import thirdprize from "../../assets/thirdprize.png";
 import { FadeIn } from "react-slide-fade-in";
 
 const PrizeCard = ({ prize }: { prize: any }) => {
-  const taskade = "+ Taskade Pro lifetime free subscription";
+  // const taskade = "+ Taskade Pro lifetime free subscription";
   const instruction =
     "*Prize money will be updated as more prizes will be added";
 
@@ -30,7 +30,7 @@ const PrizeCard = ({ prize }: { prize: any }) => {
           >
             <img src={firstprize} alt="First Prize" width={200} />
             <span className="poppins fs-4 ms-5">{prize[0].prizeMoney}</span>
-            <span className="poppins ms-5 fw-bold">{taskade}</span>
+            {/* <span className="poppins ms-5 fw-bold">{taskade}</span> */}
             <span className="poppins ms-5">{instruction}</span>
           </div>
           <div
@@ -42,7 +42,7 @@ const PrizeCard = ({ prize }: { prize: any }) => {
           >
             <img src={secondprize} alt="Second Prize" width={200} />
             <span className="poppins fs-4 ms-5">{prize[1].prizeMoney}</span>
-            <span className="poppins ms-5 fw-bold">{taskade}</span>
+            {/* <span className="poppins ms-5 fw-bold">{taskade}</span> */}
             <span className="poppins ms-5">{instruction}</span>
           </div>
           <div
@@ -54,7 +54,7 @@ const PrizeCard = ({ prize }: { prize: any }) => {
           >
             <img src={thirdprize} alt="Second Prize" width={200} />
             <span className="poppins fs-4 ms-5">{prize[2].prizeMoney}</span>
-            <span className="poppins ms-5 fw-bold">{taskade}</span>
+            {/* <span className="poppins ms-5 fw-bold">{taskade}</span> */}
             <span className="poppins ms-5">{instruction}</span>
           </div>
         </div>
@@ -69,7 +69,7 @@ const PrizeCard = ({ prize }: { prize: any }) => {
           >
             <img src={secondprize} alt="Second Prize" width={200} />
             <span className="poppins fs-4 ms-5">{prize[1].prizeMoney}</span>
-            <span className="poppins ms-5 fw-bold">{taskade}</span>
+            {/* <span className="poppins ms-5 fw-bold">{taskade}</span> */}
             <span className="poppins ms-5">{instruction}</span>
           </div>
           <div
@@ -82,7 +82,7 @@ const PrizeCard = ({ prize }: { prize: any }) => {
           >
             <img src={firstprize} alt="First Prize" width={200} />
             <span className="poppins fs-4 ms-5">{prize[0].prizeMoney}</span>
-            <span className="poppins ms-5 fw-bold">{taskade}</span>
+            {/* <span className="poppins ms-5 fw-bold">{taskade}</span> */}
             <span className="poppins ms-5">{instruction}</span>
           </div>
           <div
@@ -94,7 +94,7 @@ const PrizeCard = ({ prize }: { prize: any }) => {
           >
             <img src={thirdprize} alt="Second Prize" width={200} />
             <span className="poppins fs-4 ms-5">{prize[2].prizeMoney}</span>
-            <span className="poppins ms-5 fw-bold">{taskade}</span>
+            {/* <span className="poppins ms-5 fw-bold">{taskade}</span> */}
             <span className="poppins ms-5">{instruction}</span>
           </div>
         </div>

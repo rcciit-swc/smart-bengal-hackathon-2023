@@ -57,16 +57,16 @@ const ImportantNotes = [
       </p>
     ),
   },
-  {
-    description: (
-      <p>
-        <b>Cost Incurred during Field Visits:</b> Other than travel and stay, if
-        any other cost is incurred during any field visit to collect data/field
-        survey or to undertake user testing etc (wherever required), each person
-        shall bear the cost.
-      </p>
-    ),
-  },
+  // {
+  //   description: (
+  //     <p>
+  //       <b>Cost Incurred during Field Visits:</b> Other than travel and stay, if
+  //       any other cost is incurred during any field visit to collect data/field
+  //       survey or to undertake user testing etc (wherever required), each person
+  //       shall bear the cost.
+  //     </p>
+  //   ),
+  // },
 ];
 
 const ProjectImplementation = () => {

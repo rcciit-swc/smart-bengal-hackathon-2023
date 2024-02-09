@@ -49,7 +49,7 @@ export const sbhTeam: teamMemberType[] = [
     img: "https://rcciit.org/images/staff/sh/f/Avijit.jpg",
     name: " Mr. Avijit Saha",
     designation: "Jt. Coordinator, SBH2024",
-    committee: "FInfrastructure & Logistics",
+    committee: "Infrastructure & Logistics",
   },
   {
     img: "https://rcciit.org/images/staff/ece/f/arpan.jpg",
