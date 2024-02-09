@@ -87,6 +87,7 @@ export const psData = [
     theme: "Safety & Security",
     problemStat:
       "Navigation of Blind People using Smart Cap, Shoe and Mobile Charging system & Accident detection and sending alert to nearest hospital ,police station",
+    desc: "This project addresses the challenges faced by blind individuals in public spaces. It includes a Smart Cap with a camera for object detection, Smart Shoes with sensors for obstacle detection and wireless charging, and a GSM module for emergency alerts to hospitals or police stations, facilitating swift assistance with GPS coordinates.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
@@ -95,6 +96,7 @@ export const psData = [
     theme: "Biotech & Healthcare",
     problemStat:
       "IoT based recording and monitoring of fluid intake and discharge for a ICU patient",
+    desc: "Make an IoT-based healthcare platform for remote monitoring of patients in ICU bed in critical condition. Fluid intake and discharge flow rate to be measured by the flow sensor and will record total intake per HR and send message to the doctor’s mobile and nurse for monitoring.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
@@ -103,6 +105,7 @@ export const psData = [
     theme: "Miscellaneous",
     problemStat:
       "Development of mobile application for cashier less unmanned retail buisness",
+    desc: "The application software features an interactive store map for shopper navigation and product location. It enables queue-free shopping by allowing item pickup and mobile payment through PoS. Biometric entry gate authentication links shoppers' prints to their retailer accounts for seamless transactions.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
@@ -111,6 +114,7 @@ export const psData = [
     theme: "Smart Automation",
     problemStat:
       "Human less medicine vending Machine",
+    desc: "It also has an inbuilt system for receiving money from the user in exchange for dispensed Medicines. All these systems are monitored by a central microprocessor, which is programmed to receive input from the user through the scanner and to operate and control each necessary components required to dispense the drug requested by the patients.",
     icon: "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
   },
   {
@@ -119,6 +123,7 @@ export const psData = [
     theme: "Power and Energy",
     problemStat:
       "Design of combined AC &amp; DC Power generating Machine & IoT based fault detection and mitigation in a hybrid power System",
+    desc: "In this project a converter need to design which can produce both AC (alternating current) and DC (direct current) power in a single machine. This is a special case of the motor-generator rotary converter called a 'dynamotor' used commonly in industrial applications where both types of power are required.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
@@ -127,6 +132,7 @@ export const psData = [
     theme: "Miscellaneous",
     problemStat:
       "Student can build any solutions of their problem statements from their own.",
+    desc: "An IoT-based system is proposed for fault detection and diagnosis in hybrid power generating systems. Wireless sensor nodes gather electrical parameters and environmental data, transmitting it to a central server for analysis with machine learning. Real-time fault detection, along with alerts and maintenance recommendations, enhances system reliability and performance.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   }
 ];
