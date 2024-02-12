@@ -164,7 +164,7 @@ const ContactUs = () => {
             </div>
             <div className="d-flex flex-column align-items-start px-3">
               <p className="text-uppercase fs-5 fw-bold mt-3">contact us</p>
-              <p className="fs-5 fw-bold px-3 montserrat">
+              {/* <p className="fs-5 fw-bold px-3 montserrat">
                 Convenor
               </p>
               <div className="d-flex footer-content flex-column">
@@ -185,7 +185,7 @@ const ContactUs = () => {
                     </a>
                   </span>
                 </div>
-              </div>
+              </div> */}
               <p className="fs-5 fw-bold px-3 montserrat">
                 Smart Bengal Hackathon Junior
               </p>

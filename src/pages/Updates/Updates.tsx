@@ -46,7 +46,7 @@ const Updates = () => {
           </li>
           <li>
             <b>Smart Bengal Hackathon Begins:</b> 16th April,2024 for SBH Junior <br />
-            & 17th April, 2024 for SBH Senior
+            <p style={{ marginLeft: "350px" }}>& 17th April, 2024 for SBH Senior</p>
           </li>
         </ul>
        </div>

@@ -24,7 +24,7 @@ const FAQ = () => {
           padding: "40px 55px",
         }}
       >
-        <h5 className="fw-bold">SBH 2024</h5>
+        {/* <h5 className="fw-bold">SBH 2024</h5> */}
         {/* <h2 className="fw-bold">
           IDEA SUBMISSION PROCESS FOR SMART INDIA HACKATHON 2022
         </h2> */}
@@ -56,7 +56,7 @@ const FAQ = () => {
               }}
             >
               <a
-                href=" "
+                href="https://smart-bengal-hackathon-1.devfolio.co/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -101,7 +101,7 @@ const FAQ = () => {
               }}
             >
               <a
-                href=" "
+                href="https://smart-bengal-hackathon-1.devfolio.co/"
                 target="_blank"
                 rel="noreferrer"
               >

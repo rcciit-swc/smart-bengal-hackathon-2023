@@ -14,9 +14,6 @@ const PrizesNotes = [
     description: "Best Prize for innovation and creativity of INR 2,000",
   },
   {
-    description: "Certificate of excellence for top 3 teams",
-  },
-  {
     description: "Certificate of distinction for top 10 teams",
   },
   {

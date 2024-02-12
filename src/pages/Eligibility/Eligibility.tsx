@@ -27,13 +27,13 @@ const Eligibility = () => {
             <b>University Students</b>
           </li>
           <li>
-            <b>Polytechnic/ Deploma Students</b>
+            <b>Polytechnic/ Diploma Students</b>
           </li>
         </ul>
         <h3 className="fw-bold w-75 mt-3">SBH Junior</h3>
         <ul className="w-75 mb-5 fs-5">
           <li>
-            <b>Class 8th to 12th Students</b>
+            <b>Class 8th to 12th Standard Students</b>
           </li>
           
         </ul>
