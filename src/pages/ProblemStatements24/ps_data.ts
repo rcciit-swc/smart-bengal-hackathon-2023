@@ -82,16 +82,16 @@ export const psData = [
     icon: "https://sih.gov.in/img/icon_technology.png",
   },
   {
-    psno: "SBHRCCIIT010",
+    psno: "SBHRCCIIT011",
     category: "Hardware",
     theme: "Safety & Security",
     problemStat:
-      "Navigation of Blind People using Smart Cap, Shoe and Mobile Charging system & Accident detection and sending alert to nearest hospital ,police station",
+      "Navigation of Blind People using Smart Cap, Shoe and Mobile Charging system & Accident detection and sending alert to nearest hospital & police station.",
     desc: "This project addresses the challenges faced by blind individuals in public spaces. It includes a Smart Cap with a camera for object detection, Smart Shoes with sensors for obstacle detection and wireless charging, and a GSM module for emergency alerts to hospitals or police stations, facilitating swift assistance with GPS coordinates.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
-    psno: "SBHRCCIIT011",
+    psno: "SBHRCCIIT012",
     category: "Hardware",
     theme: "Biotech & Healthcare",
     problemStat:
@@ -100,7 +100,7 @@ export const psData = [
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
-    psno: "SBHRCCIIT012",
+    psno: "SBHRCCIIT013",
     category: "Software",
     theme: "Miscellaneous",
     problemStat:
@@ -109,16 +109,16 @@ export const psData = [
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
-    psno: "SBHRCCIIT013",
+    psno: "SBHRCCIIT014",
     category: "Hardware",
     theme: "Smart Automation",
     problemStat:
       "Human less medicine vending Machine",
-    desc: "It also has an inbuilt system for receiving money from the user in exchange for dispensed Medicines. All these systems are monitored by a central microprocessor, which is programmed to receive input from the user through the scanner and to operate and control each necessary components required to dispense the drug requested by the patients.",
+    desc: "It also has an inbuilt system for receiving money from the user in exchange for dispensed Medicines.All these systems are monitored by a central microprocessor, which is programmed to receive input from the user through the scanner and to operate and control each necessary components required to dispense the drug requested by the patient",
     icon: "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
   },
   {
-    psno: "SBHRCCIIT013",
+    psno: "SBHRCCIIT015",
     category: "Hardware",
     theme: "Power and Energy",
     problemStat:
