@@ -86,12 +86,21 @@ export const psData = [
     category: "Hardware",
     theme: "Safety & Security",
     problemStat:
-      "Navigation of Blind People using Smart Cap, Shoe and Mobile Charging system & Accident detection and sending alert to nearest hospital & police station.",
-    desc: "This project addresses the challenges faced by blind individuals in public spaces. It includes a Smart Cap with a camera for object detection, Smart Shoes with sensors for obstacle detection and wireless charging, and a GSM module for emergency alerts to hospitals or police stations, facilitating swift assistance with GPS coordinates.",
+      "Navigation of Blind People using Smart Cap, Shoe and Mobile Charging System",
+    desc: "This work regarding managing the problems faced by blind people especially when moving in public places. Smart cap may have camera to detect object. Smart shoes will help a blind person to mover on independently with help of ultrasonic sensor to detect obstacles and pressure sensor in shoe will charge mobile without plugin in electric supply.  ",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
     psno: "SBHRCCIIT012",
+    category: "Hardware",
+    theme: "Safety & Security",
+    problemStat:
+      "Accident detection and sending alert to nearest hospital & police station",
+    desc: "In this project GSM will send alarm message to the hospital or nearest police station. This message will read the geographical co-ordinates of accident spot with the help of GPS. The location has been traced by the GPS, emergency medical service can be given to the accident victims as soon as possible.",
+    icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
+  },
+  {
+    psno: "SBHRCCIIT013",
     category: "Hardware",
     theme: "Biotech & Healthcare",
     problemStat:
@@ -100,7 +109,7 @@ export const psData = [
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
-    psno: "SBHRCCIIT013",
+    psno: "SBHRCCIIT014",
     category: "Software",
     theme: "Miscellaneous",
     problemStat:
@@ -109,7 +118,7 @@ export const psData = [
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
-    psno: "SBHRCCIIT014",
+    psno: "SBHRCCIIT015",
     category: "Hardware",
     theme: "Smart Automation",
     problemStat:
@@ -118,12 +127,21 @@ export const psData = [
     icon: "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
   },
   {
-    psno: "SBHRCCIIT015",
+    psno: "SBHRCCIIT016",
     category: "Hardware",
     theme: "Power and Energy",
     problemStat:
-      "Design of combined AC &amp; DC Power generating Machine & IoT based fault detection and mitigation in a hybrid power System",
+      "Design of combined AC & DC Power generating Machine & IoT based fault detection and mitigation in a hybrid power System",
     desc: "In this project a converter need to design which can produce both AC (alternating current) and DC (direct current) power in a single machine. This is a special case of the motor-generator rotary converter called a 'dynamotor' used commonly in industrial applications where both types of power are required.",
+    icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
+  },
+  {
+    psno: "SBHRCCIIT017",
+    category: "Hardware",
+    theme: "Power and Energy",
+    problemStat:
+      "IoT based fault detection and mitigation in a hybrid power System ",
+    desc: "An IoT-based system need to develop for fault detection and diagnosis in hybrid power generating systems. The system includes wireless sensor nodes that are deployed to collect electrical parameters and environmental conditions. The collected data is then transmitted to a central server for processing and analysis using machine learning algorithms. The system can detect and diagnose faults in real-time, and provide alerts and recommendations to maintenance personnel to take appropriate actions. ",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
@@ -132,7 +150,7 @@ export const psData = [
     theme: "Miscellaneous",
     problemStat:
       "Student can build any solutions of their problem statements from their own.",
-    desc: "An IoT-based system is proposed for fault detection and diagnosis in hybrid power generating systems. Wireless sensor nodes gather electrical parameters and environmental data, transmitting it to a central server for analysis with machine learning. Real-time fault detection, along with alerts and maintenance recommendations, enhances system reliability and performance.",
+    desc: "Make any software based or IoT based solution on a genuine and relevant problem statement where various technologies are involved and solution should be feasible and novel with practical implementation and testing in real time.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   }
 ];
