@@ -45,7 +45,7 @@ const ProblemStatements24 = () => {
               Problem Statement
             </th>
             <th style={{ backgroundColor: "#313D76", color: "white" }}>
-            Problem Statement Description
+              Problem Statement Description
             </th>
 
             {/* <th
