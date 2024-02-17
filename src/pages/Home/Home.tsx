@@ -362,7 +362,7 @@ const Home = () => {
       <Suspense fallback={<></>}>
         <Sponsors24 />
       </Suspense>
-      {/* <div
+      <div
         className="d-flex sponsor-form w-100 justify-content-center align-items-center py-5"
         style={{ height: "400px", padding: "0px 10vw" }}
       >
@@ -416,7 +416,7 @@ const Home = () => {
             </Button>
           </div>
         </div>
-      </div> */}
+      </div>
     </main>
   );
 };

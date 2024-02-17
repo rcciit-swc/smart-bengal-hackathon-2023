@@ -32,7 +32,7 @@ const impl_team_data: impl_team_type[] = [
     img: anirbanSir,
     name: "Prof.(Dr.) Anirban Mukherjee",
     position: "Patron",
-    designation: "Principal(officiating), RCCIIT",
+    designation: "Principal-in-charge(officiating), RCCIIT",
   },
   {
     img: 'https://rcciit.org/images/staff/cse/f/minakshi.jpg',

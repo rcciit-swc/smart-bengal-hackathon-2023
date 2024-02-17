@@ -565,7 +565,7 @@
         "SBHSenior": [
             {
                 "question": "Who can participate in SBH Senior?",
-                "answer": "A student of College or University, pursuing any of the following programme \n a) B.Sc./ BCA/ BBA \nb) BE/B.Tech \nc) M.Sc \nd) MCA/MBA \ne) ME/ M. Tech \nf) Ph.D. (Science)/ Ph.D. (Engineering)/ Ph.D. (Management)"
+                "answer": "A student of College or University, pursuing any of the following programme \n a) B.Sc./ BCA/ BBA \nb) BE/B.Tech \nc) M.Sc \nd) MCA/MBA \ne) ME/ M. Tech \n <b>Note:Participants from distance courses are not allowed.</b>"
             },
             {
                 "question": "Can Mentor or Student Members join from different Institutes?",
