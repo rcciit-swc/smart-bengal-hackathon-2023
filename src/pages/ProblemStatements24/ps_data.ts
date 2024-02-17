@@ -131,7 +131,7 @@ export const psData = [
     category: "Hardware",
     theme: "Power and Energy",
     problemStat:
-      "Design of combined AC & DC Power generating Machine & IoT based fault detection and mitigation in a hybrid power System",
+      "Design of combined AC & DC Power generating Machine ",
     desc: "In this project a converter need to design which can produce both AC (alternating current) and DC (direct current) power in a single machine. This is a special case of the motor-generator rotary converter called a 'dynamotor' used commonly in industrial applications where both types of power are required.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
