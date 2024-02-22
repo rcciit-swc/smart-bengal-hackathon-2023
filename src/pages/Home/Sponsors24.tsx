@@ -6,6 +6,10 @@ import ethindia from "../../assets/ethindia.png";
 import devfolio from "../../assets/devfolio.svg";
 import polygon from "../../assets/polygon-logo-colored.svg";
 import echo3d from "../../assets/echo3d.png";
+import SSCS from "../../assets/SSCS.jpeg";
+import CAS from "../../assets/CAS.jpeg";
+import Wie from "../../assets/Wie.jpeg";
+import ISTE from "../../assets/ISTE.jpeg";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 
@@ -127,6 +131,17 @@ const Sponsors24: React.FC = () => {
               src={ethindia}
               alt="ETHINDIA LOGO"
             />
+          </div>
+
+          <div id="technical-sponsor" className="divider">
+            &nbsp;Technical Sponsors&nbsp;
+          </div>
+
+          <div className="gold-sponsor">
+            <img className="sponsor-image" src={SSCS} alt="SSCS LOGO" />
+            <img className="sponsor-image" src={CAS} alt="CAS LOGO" />
+            <img className="sponsor-image" src={Wie} alt="Wie LOGO" />
+            <img className="sponsor-image" src={ISTE} alt="ISTE LOGO" />
           </div>
 
           {/* <div id="technical-sponsor" className="divider">
