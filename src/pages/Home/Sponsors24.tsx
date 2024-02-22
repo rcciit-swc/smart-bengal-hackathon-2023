@@ -137,11 +137,18 @@ const Sponsors24: React.FC = () => {
             &nbsp;Technical Sponsors&nbsp;
           </div>
 
-          <div className="gold-sponsor">
+          <div className="technical-sponsor">
+            <p> </p>
             <img className="sponsor-image" src={SSCS} alt="SSCS LOGO" />
             <img className="sponsor-image" src={CAS} alt="CAS LOGO" />
             <img className="sponsor-image" src={Wie} alt="Wie LOGO" />
             <img className="sponsor-image" src={ISTE} alt="ISTE LOGO" />
+            <p> </p>
+            <img className="sponsor-image" src={'https://i.imgur.com/HKy5afa.jpg'} alt="Computer_Society LOGO" />
+            <img className="sponsor-image" src={'https://i.imgur.com/2polx5l.png'} alt="CAS LOGO" />
+            <img className="sponsor-image" src={'https://i.imgur.com/QbQbJP0.jpg'} alt="Wie LOGO" />
+            <img className="sponsor-image" src={'https://i.imgur.com/YupfMoX.jpg'} alt="Robotic Society LOGO" />
+            <img className="sponsor-image" src={'https://i.imgur.com/9i5L9es.jpg'} alt="Electron Device Society LOGO" />
           </div>
 
           {/* <div id="technical-sponsor" className="divider">
