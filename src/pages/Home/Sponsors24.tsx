@@ -148,7 +148,10 @@ const Sponsors24: React.FC = () => {
             <img className="sponsor-image" src={'https://i.imgur.com/2polx5l.png'} alt="CAS LOGO" />
             <img className="sponsor-image" src={'https://i.imgur.com/QbQbJP0.jpg'} alt="Wie LOGO" />
             <img className="sponsor-image" src={'https://i.imgur.com/YupfMoX.jpg'} alt="Robotic Society LOGO" />
+            <p> </p>
             <img className="sponsor-image" src={'https://i.imgur.com/9i5L9es.jpg'} alt="Electron Device Society LOGO" />
+            <img className="sponsor-image" src={'https://i.imgur.com/DFKp41C.jpg'} alt="IEEE" />
+            <img className="sponsor-image" src={'https://i.imgur.com/VDxkhgW.jpg'} alt="SSCS" />
           </div>
 
           {/* <div id="technical-sponsor" className="divider">
