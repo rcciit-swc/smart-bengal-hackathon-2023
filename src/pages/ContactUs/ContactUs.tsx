@@ -132,34 +132,41 @@ const ContactUs = () => {
                 sbh@rcciit.org.in
               </a>
               <div className="w-50 d-flex justify-content-between mt-2">
-                <a
-                  href="https://www.facebook.com/profile.php?id=100090128125218"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-facebook-square fs-1 copyright"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/sbh_rcc_2023/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-instagram fs-1 copyright"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/smart-bengal-hackathon/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-linkedin fs-1 copyright"></i>
-                </a>
-                <a
-                  href="https://discord.gg/7a7VB7HDvE"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-discord fs-1 copyright"></i>
-                </a>
+              <a
+            href="https://www.facebook.com/profile.php?id=100090128125218"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-facebook-square fs-1 copyright"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/sbh_rcciit?igsh=MW5jYmJienpuem8zYQ=="
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-instagram fs-1 copyright"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/smart-bengal-hackathon/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-linkedin fs-1 copyright"></i>
+          </a>
+          <a
+            href="https://twitter.com/sbh_2024"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-twitter fs-1 copyright"></i>
+          </a>
+          <a
+            href="https://discord.gg/7a7VB7HDvE"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fab fa-discord fs-1 copyright"></i>
+          </a>
               </div>
             </div>
             <div className="d-flex flex-column align-items-start px-3">
