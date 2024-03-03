@@ -11,6 +11,9 @@ import CAS from "../../assets/CAS.jpeg";
 import Wie from "../../assets/Wie.jpeg";
 import ISTE from "../../assets/ISTE.jpeg";
 
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 
 const Sponsors24: React.FC = () => {
@@ -100,12 +103,7 @@ const Sponsors24: React.FC = () => {
             bannerCircle="banner_circle"
           />
         </Suspense>
-        {/* <h1
-          className="w-100 text-center fw-bold mt-5 caveat"
-          style={{ color: "var(--heading-color)" }}
-        >
-          Supporters of SBH 2024
-        </h1> */}
+        
 
         <FadeIn
           from="bottom"
