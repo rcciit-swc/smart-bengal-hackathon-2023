@@ -137,17 +137,19 @@ const Sponsors24: React.FC = () => {
 
           <div className="technical-sponsor">
             <p> </p>
-            <img className="sponsor-image" src={SSCS} alt="SSCS LOGO" />
+            
             <img className="sponsor-image" src={CAS} alt="CAS LOGO" />
             <img className="sponsor-image" src={Wie} alt="Wie LOGO" />
             <img className="sponsor-image" src={ISTE} alt="ISTE LOGO" />
-            <p> </p>
+            
             <img className="sponsor-image" src={'https://i.imgur.com/HKy5afa.jpg'} alt="Computer_Society LOGO" />
+            <p> </p>
             <img className="sponsor-image" src={'https://i.imgur.com/2polx5l.png'} alt="CAS LOGO" />
             <img className="sponsor-image" src={'https://i.imgur.com/QbQbJP0.jpg'} alt="Wie LOGO" />
             <img className="sponsor-image" src={'https://i.imgur.com/YupfMoX.jpg'} alt="Robotic Society LOGO" />
-            <p> </p>
+            
             <img className="sponsor-image" src={'https://i.imgur.com/9i5L9es.jpg'} alt="Electron Device Society LOGO" />
+            <p> </p>
             <img className="sponsor-image" src={'https://i.imgur.com/DFKp41C.jpg'} alt="IEEE" />
             <img className="sponsor-image" src={'https://i.imgur.com/kdyuFlQ.jpg'} alt="SSCS" />
           </div>
