@@ -20,12 +20,12 @@ const Venue = () => {
           className="w-100 fw-bold my-5"
           style={{ color: "var(--heading-color)" }}
         >
-          RCC Institute of Information Technology.
+          RCC Institute of Information Technology
           <br />
           <span>
-            Canal South Road, Beliaghata.
+            Canal South Road, Beliaghata
             <br />
-            Kolkata- 700015, West Bengal, India.
+            Kolkata- 700015, West Bengal, India
           </span>
         </h2>
         <div className="d-flex flex-column" id="fix-iframe">
@@ -34,7 +34,7 @@ const Venue = () => {
             title="RCC Institute of Information Technology"
             style={{ border: "0", width: "100%", height: "100%" }}
             loading="lazy"
-            // referrerpolicy="no-referrer-when-downgrade"
+            
           ></iframe>
           <a
             target={"_blank"}
