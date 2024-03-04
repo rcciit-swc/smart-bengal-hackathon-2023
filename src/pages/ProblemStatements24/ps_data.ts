@@ -3,6 +3,7 @@ export const psData = [
     psno: "SBHRCCIIT001",
     category: "Software",
     theme: "Image Processing",
+    org: "RCCIIT",
     problemStat: "Detection of person talking with mobile in no mobile zone",
     desc: "It is a regular practice that people use mobile phones while walking in roads, roaming around near the railway tracks, no mobile phone zones etc. A complete real-time solution with alert and fine system is to be developed. (Solution can use both hardware and software).",
     icon: "https://play-lh.googleusercontent.com/hWwd8WeRUqma9_pzJEqVgFVvI8utJPmZ-FqHgbM9yoj77JA8NvUIBPmWgS5LKfrnCQ=w240-h480-rw",
@@ -11,6 +12,7 @@ export const psData = [
     psno: "SBHRCCIIT002",
     category: "Software",
     theme: "Smart Automation",
+    org: "RCCIIT",
     problemStat: "A scanner app to generate csv data file",
     desc: "Develop a scanner app which will scan the document and create a table data in csv file. It is very useful for exam cell. Exam cell can easily generate student semester wise marks table in csv file. If the scanner continue scanning same types of results for multiple student then same csv file will be modified.",
     icon: "https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/null/external-artificial-intelligence-automation-technology-flaticons-flat-circular-flat-icons-2.png",
@@ -19,6 +21,7 @@ export const psData = [
     psno: "SBHRCCIIT003",
     category: "Hardware",
     theme: "Clean/Green Technology",
+    org: "RCCIIT",
     problemStat: "Water quality prediction and categorization",
     desc: "A hybrid system to predict the water quality and categorize it based on its use like drinkable, useful for fish in the aquarium, useful for washing cloths, etc.",
     icon: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-green-technology-renewable-energy-flaticons-flat-flat-icons.png",
@@ -27,6 +30,7 @@ export const psData = [
     psno: "SBHRCCIIT004",
     category: "Hardware",
     theme: "Clean/Green Technology",
+    org: "RCCIIT",
     problemStat: "Plastic waste detection and separation",
     desc: "A complete hybrid system to detect the plastic objects and separate it from other waste.",
     icon: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/null/external-green-technology-renewable-energy-flaticons-flat-flat-icons.png",
@@ -35,6 +39,7 @@ export const psData = [
     psno: "SBHRCCIIT005",
     category: "Software",
     theme: "Miscellaneous",
+    org: "RCCIIT",
     problemStat: "Gaming monitoring app",
     desc: "An android app which will monitor the other mobile gaming apps. This app will take user input in terms of times and days to access the existing gaming apps. If the gaming app(s) is used more than the daily threshold limits (time taken by user), the developed app will stop the gaming app. If the gaming app(s) is used more than the threshold days (taken input by user) in a week, the developed app will block the gaming app (s).",
     icon: "https://sih.gov.in/img/icon_education.png",
@@ -43,6 +48,7 @@ export const psData = [
     psno: "SBHRCCIIT006",
     category: "Software",
     theme: "Smart Education",
+    org: "RCCIIT",
     problemStat: "Automatic optimize class routine generation",
     desc: "This application will generate an optimize class routine for the given input constrains, i.e., faculty timing, class timing, number of periods, tiffin time etc.",
     icon: "https://sih.gov.in/img/smart-education.png",
@@ -51,6 +57,7 @@ export const psData = [
     psno: "SBHRCCIIT007",
     category: "Software",
     theme: "Smart Education",
+    org: "RCCIIT",
     problemStat: "Automatic presentation evaluation",
     desc: "Generate a video processing application which will evaluate the presentation given by a student in categories by detecting presenter's confidence, expression, etc.",
     icon: "https://sih.gov.in/img/smart-education.png",
@@ -59,6 +66,7 @@ export const psData = [
     psno: "SBHRCCIIT008",
     category: "Software",
     theme: "Smart Education",
+    org: "RCCIIT",
     problemStat: "Automatic report evaluation",
     desc: "Generate an image processing and NLP application to evaluate the report submitted by a student in categories based on some keywords from the given topic.",
     icon: "https://sih.gov.in/img/smart-education.png",
@@ -67,6 +75,7 @@ export const psData = [
     psno: "SBHRCCIIT009",
     category: "Hardware",
     theme: "Clean/Green Technology",
+    org: "RCCIIT",
     problemStat:
       "Detecting and monitoring the effect of pesticides in agriculture",
     desc: "The system will detect and monitor the step by step effect of pesticides used in agriculture.",
@@ -76,6 +85,7 @@ export const psData = [
     psno: "SBHRCCIIT010",
     category: "Hardware",
     theme: "Agriculture, Foodtech and Rural Development",
+    org: "RCCIIT",
     problemStat:
       "Create a smart farming system to increase agricultural yields and decrease waste.",
     desc: "The system will predict the best farming environment by optimizing the use of different parameters and reducing waste.",
@@ -85,6 +95,7 @@ export const psData = [
     psno: "SBHRCCIIT011",
     category: "Hardware",
     theme: "Safety & Security",
+    org: "RCCIIT",
     problemStat:
       "Navigation of Blind People using Smart Cap, Shoe and Mobile Charging System",
     desc: "This work regarding managing the problems faced by blind people especially when moving in public places. Smart cap may have camera to detect object. Smart shoes will help a blind person to mover on independently with help of ultrasonic sensor to detect obstacles and pressure sensor in shoe will charge mobile without plugin in electric supply.  ",
@@ -94,6 +105,7 @@ export const psData = [
     psno: "SBHRCCIIT012",
     category: "Hardware",
     theme: "Safety & Security",
+    org: "RCCIIT",
     problemStat:
       "Accident detection and sending alert to nearest hospital & police station",
     desc: "In this project GSM will send alarm message to the hospital or nearest police station. This message will read the geographical co-ordinates of accident spot with the help of GPS. The location has been traced by the GPS, emergency medical service can be given to the accident victims as soon as possible.",
@@ -103,6 +115,7 @@ export const psData = [
     psno: "SBHRCCIIT013",
     category: "Hardware",
     theme: "Biotech & Healthcare",
+    org: "RCCIIT",
     problemStat:
       "IoT based recording and monitoring of fluid intake and discharge for a ICU patient",
     desc: "Make an IoT-based healthcare platform for remote monitoring of patients in ICU bed in critical condition. Fluid intake and discharge flow rate to be measured by the flow sensor and will record total intake per HR and send message to the doctor’s mobile and nurse for monitoring.",
@@ -112,6 +125,7 @@ export const psData = [
     psno: "SBHRCCIIT014",
     category: "Software",
     theme: "Miscellaneous",
+    org: "RCCIIT",
     problemStat:
       "Development of mobile application for cashier less unmanned retail buisness",
     desc: "The application software features an interactive store map for shopper navigation and product location. It enables queue-free shopping by allowing item pickup and mobile payment through PoS. Biometric entry gate authentication links shoppers' prints to their retailer accounts for seamless transactions.",
@@ -121,6 +135,7 @@ export const psData = [
     psno: "SBHRCCIIT015",
     category: "Hardware",
     theme: "Smart Automation",
+    org: "RCCIIT",
     problemStat:
       "Human less medicine vending Machine",
     desc: "It also has an inbuilt system for receiving money from the user in exchange for dispensed Medicines.All these systems are monitored by a central microprocessor, which is programmed to receive input from the user through the scanner and to operate and control each necessary components required to dispense the drug requested by the patient",
@@ -130,6 +145,7 @@ export const psData = [
     psno: "SBHRCCIIT016",
     category: "Hardware",
     theme: "Power and Energy",
+    org: "RCCIIT",
     problemStat:
       "Design of combined AC & DC Power generating Machine ",
     desc: "In this project a converter need to design which can produce both AC (alternating current) and DC (direct current) power in a single machine. This is a special case of the motor-generator rotary converter called a 'dynamotor' used commonly in industrial applications where both types of power are required.",
@@ -139,6 +155,7 @@ export const psData = [
     psno: "SBHRCCIIT017",
     category: "Hardware",
     theme: "Power and Energy",
+    org: "RCCIIT",
     problemStat:
       "IoT based fault detection and mitigation in a hybrid power System ",
     desc: "An IoT-based system need to develop for fault detection and diagnosis in hybrid power generating systems. The system includes wireless sensor nodes that are deployed to collect electrical parameters and environmental conditions. The collected data is then transmitted to a central server for processing and analysis using machine learning algorithms. The system can detect and diagnose faults in real-time, and provide alerts and recommendations to maintenance personnel to take appropriate actions. ",
@@ -148,6 +165,7 @@ export const psData = [
     psno: "SBHRCCIITXXX",
     category: "Open Innovation",
     theme: "Miscellaneous",
+    org: "RCCIIT",
     problemStat:
       "Student can build any solutions of their problem statements from their own.",
     desc: "Make any software based or IoT based solution on a genuine and relevant problem statement where various technologies are involved and solution should be feasible and novel with practical implementation and testing in real time.",

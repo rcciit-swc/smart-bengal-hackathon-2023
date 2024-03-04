@@ -41,11 +41,15 @@ const ProblemStatements24 = () => {
             >
               Theme
             </th>
+            
             <th style={{ backgroundColor: "#313D76", color: "white" }}>
               Problem Statement
             </th>
             <th style={{ backgroundColor: "#313D76", color: "white" }}>
               Problem Statement Description
+            </th>
+            <th style={{ backgroundColor: "#313D76", color: "white" }}>
+              Organization
             </th>
 
             {/* <th
@@ -92,6 +96,7 @@ const ProblemStatements24 = () => {
                 </td>
                 <td>{item.problemStat}</td>
                 <td>{item.desc}</td>
+                <td>{item.org}</td>
                 {/* <td className=" ">
                   {item.institution.includes("school") ? (
                     <img
