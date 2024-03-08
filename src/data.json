@@ -1,8 +1,7 @@
 {
     "title": "smart bengal hackathon",
     "description": "Bengal’s largest open platform for the innovators or entrepreneurs of tomorrow to start today towards a smarter Bengal",
-    "description-cards": [
-        {
+    "description-cards": [{
             "ingenious": "Harnessing creativity and expertise of students, academicians and visionaries"
         },
         {
@@ -81,8 +80,7 @@
             ]
         }
     },
-    "theme-card-data": [
-        {
+    "theme-card-data": [{
             "theme": "Smart Vehicle",
             "desc": "Creating intelligent devices to improve commutation sector.",
             "picture": "https://scwcontent.affino.com/AcuCustom/Sitename/DAM/014/Autonomous-vehicle-AdobeStock_174958313_rm.png",
@@ -460,8 +458,7 @@
             "SBH Junior/ SBH Senior"
         ]
     },
-    "pf": [
-        {
+    "pf": [{
             "title": "Step 1",
             "img": "./assets/step1.png",
             "desc": "Teams should be formed as per perspective guidelines. Eligibility of the members for SBH Junior and SBH Senior should follow eligibility guidelines."
@@ -507,8 +504,7 @@
             "desc": "Final compilation of Results and Announcement of Winners."
         }
     ],
-    "winning-guidelines": [
-        {
+    "winning-guidelines": [{
             "id": "1",
             "title": "Hackathons are opportunities to quickly check the feasibility of any novel idea, hence projects developed during Hackathons are usually very crude and absolutely not ready for field implementation or deployment as working solutions. They require considerable work or development before implementation/deployment as reliable, dependable solutions."
         },
@@ -562,8 +558,7 @@
         }
     ],
     "faqs": {
-        "SBHSenior": [
-            {
+        "SBHSenior": [{
                 "question": "Who can participate in SBH Senior?",
                 "answer": "A student of College or University, pursuing any of the following programme \n a) B.Sc./ BCA/ BBA \nb) BE/B.Tech \nc) M.Sc \nd) MCA/MBA \ne) ME/ M. Tech \n <b>Note:Participants from distance courses are not allowed.</b>"
             },
@@ -586,10 +581,14 @@
             {
                 "question": "What do we require for registration?",
                 "answer": "<ol>    <li><p>Team should be formed as per above mentioned guideline. Eligibility of the members for SBH Senior should follow the above guideline.</p></li>    <li><p>A theme and matching problem statement has to be identified from SBH portal <a href=\"https://sbh.rcciit.org.in/\">https://sbh.rcciit.org.in/</a>.</p></li>    <li><p>IDEA template has to be prepared following the given IDEA template ppt in the SBH portal.</p></li>    <li><p>A PDF has to be created of this PPT for idea submission.</p></li>    <li><p>A signed consent letter (signed by Head of the Institution; for multiple schools, consent letters are required from both the schools and should be merged into single one) has to be submitted along with the idea template as per the given format in pdf form.</p></li>    <li><p>Registration Form has to be filled with all above mentioned details at <b><a href=\"https://smart-bengal-hackathon-1.devfolio.co/\">Devfolio</a></b>.</p></li></ol>"
-            }
-        ],
-        "SBHJunior": [
+            },
             {
+                "question": "Can I participate remotely?",
+                "answer": "Smart Bengal Hackathon is an in-person hackathon. So remote participation is not applicable and it is mandatory for every team member to be present on the day of the hackathon.  "
+            }
+
+        ],
+        "SBHJunior": [{
                 "question": "Who can participate in SBH Junior?",
                 "answer": "Any student from School – Class VIII to XII \n"
             },
@@ -612,12 +611,15 @@
             {
                 "question": "What do we require for registration?",
                 "answer": "<ol>    <li><p>Team should be formed as per above mentioned guideline. Eligibility of the members for SBH Senior should follow the above guideline.</p></li>    <li><p>A theme and matching problem statement has to be identified from SBH portal <a href=\"https://sbh.rcciit.org.in/\">https://sbh.rcciit.org.in/</a>.</p></li>    <li><p>IDEA template has to be prepared following the given IDEA template ppt in the SBH portal.</p></li>    <li><p>A PDF has to be created of this PPT for idea submission.</p></li>    <li><p>A signed consent letter (signed by Head of the Institution; for multiple schools, consent letters are required from both the schools and should be merged into single one) has to be submitted along with the idea template as per the given format in pdf form.</p></li>    <li><p>Registration Form has to be filled with all above mentioned details at <b><a href=\"https://smart-bengal-hackathon-1.devfolio.co/\">Devfolio</a></b>.</p></li></ol>"
+            },
+            {
+                "question": "Can I participate remotely?",
+                "answer": "Smart Bengal Hackathon is an in-person hackathon. So remote participation is not applicable and it is mandatory for every team member to be present on the day of the hackathon.  "
             }
         ]
     },
     "prizes": {
-        "SBHSenior": [
-            {
+        "SBHSenior": [{
                 "orderNo": 1,
                 "position": "1st Prize",
                 "prizeMoney": "₹ 18,000"
@@ -633,8 +635,7 @@
                 "prizeMoney": "₹ 9,000"
             }
         ],
-        "SBHJunior": [
-            {
+        "SBHJunior": [{
                 "orderNo": 1,
                 "position": "1st Prize",
                 "prizeMoney": "₹ 10,000"
@@ -652,8 +653,7 @@
         ]
     },
     "results": {
-        "SbhSenior": [
-            {
+        "SbhSenior": [{
                 "rank": 1,
                 "teamName": "key 2 innov@tion  BIT, Kolkata",
                 "CollegeName": "Bengal Institute of Technology (BIT), Kolkata",
@@ -724,8 +724,7 @@
                 "psNumber": "SBHRCCIIT015"
             }
         ],
-        "SbhJunior": [
-            {
+        "SbhJunior": [{
                 "Rank": 1,
                 "TeamName": "NDPMB-24",
                 "teamLeadersName": "Lalan Kumar",
