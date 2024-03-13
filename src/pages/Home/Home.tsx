@@ -212,7 +212,7 @@ const Home = () => {
                   February,2024
                 </li>
                 <li>
-                  <b>Registration Closed:</b> 12th March 2024
+                  <b>Registration Closed:</b> 20th March 2024
                 </li>
                 <li>
                   <b>Smart Bengal Hackathon:</b> 
