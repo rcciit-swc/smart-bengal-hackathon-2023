@@ -130,7 +130,34 @@ const Home = () => {
         </div>
       </div> */}
 
-      
+<div
+        className="w-75 my-2 fs-3"
+        style={
+          {
+            // backgroundColor: `var(--primary-color-light)`,
+          }
+        }
+      >
+        <Marquee
+          style={
+            {
+              // backgroundColor: `var(--primary-color-light)`,
+            }
+          }
+          pauseOnHover={true}
+          speed={100}
+          gradient={false}
+        >
+          <a
+            
+            target="_blank"
+            rel="noreferrer"
+          >
+            Last date for Application and Idea submission extended till 20th March 2024.............  
+            
+          </a>
+        </Marquee>
+      </div>  
      <Devfolio />
      {/* <div
         className="apply-button"
