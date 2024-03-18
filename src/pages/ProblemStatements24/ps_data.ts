@@ -162,6 +162,17 @@ export const psData = [
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
   },
   {
+    psno: "SBHRCCIIT018",
+    category: " Software",
+    theme: " Image Processing",
+    org: "Websoft IOT, Kolkata",
+    problemStat:
+      "Computer Vision Based - Website Beautifier and Recommendation Engine.",
+    desc: 
+    "Step 1: a) Create a Computer Vision application that takes a website link as input. b) It will analyze the website, take full page screenshots. c) Split the whole image into sections as per the website being analyzed - like header, slider, image, text, lists, etc  d) Use the split images to match with several pre-stored sectional images and score the top 3 match for each split section. e) Also segment the text content for each section.  Step 2:  Take 2 more website urls as input and do the same thing as Step 1.   Step 3:  Analyse the results from the 3 websites and recommend the best alternate options as per the matches and score as in Step 1.d.Use LLM Models / Chat GPT to generate matching texts and images for each section.",
+    icon: "https://play-lh.googleusercontent.com/hWwd8WeRUqma9_pzJEqVgFVvI8utJPmZ-FqHgbM9yoj77JA8NvUIBPmWgS5LKfrnCQ=w240-h480-rw",
+  },
+  {
     psno: "SBHRCCIITXXX",
     category: "Open Innovation",
     theme: "Miscellaneous",
