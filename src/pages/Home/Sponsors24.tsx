@@ -152,6 +152,8 @@ const Sponsors24: React.FC = () => {
             <p> </p>
             <img className="sponsor-image" src={'https://i.imgur.com/DFKp41C.jpg'} alt="IEEE" />
             <img className="sponsor-image" src={'https://i.imgur.com/kdyuFlQ.jpg'} alt="SSCS" />
+            
+            <img className="sponsor-image" src={'https://i.imgur.com/ZMRZvW8.png'} alt="WEBSOFT" />
           </div>
 
           {/* <div id="technical-sponsor" className="divider">
