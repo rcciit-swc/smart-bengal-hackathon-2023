@@ -1,3 +1,5 @@
+import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
+
 export const psData = [
   {
     psno: "SBHRCCIIT001",
@@ -181,5 +183,53 @@ export const psData = [
       "Student can build any solutions of their problem statements from their own.",
     desc: "Make any software based or IoT based solution on a genuine and relevant problem statement where various technologies are involved and solution should be feasible and novel with practical implementation and testing in real time.",
     icon: "https://i.postimg.cc/CLY57tMJ/openinnovation.png",
-  }
+  },
+  {
+    psno: "",
+    category: "Software",
+    theme: "AI/ML and NLP",
+    problemStat: "Develop an AI language tutor for immersive, interactive learning, personalized to user proficiency and goals.",
+    desc: "Develop an AI language tutor utilizing generative AI and NLP. It offers realistic conversations, feedback on pronunciation and grammar, and adapts to users' proficiency levels and goals, ensuring personalized and immersive language learning experiences.",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-98Vx5aF87-0oLIUo1q6szGzO8D-Kwj6wjS30uZPDlXLICeNaEP65Brjn27j2sH13WI&usqp=CAU"
+  },
+  {
+    psno: "",
+    category: "Software",
+    theme: "AI/ML and NLP",
+    problemStat: "Develop an AI mentor platform for personalized career guidance and professional development.",
+    desc: "Leverage generative AI and NLP to craft a virtual mentorship platform offering personalized career advice, industry insights, and skill-building exercises. Empower students to navigate job roles, refine interview skills, and master networking strategies for career success.",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-98Vx5aF87-0oLIUo1q6szGzO8D-Kwj6wjS30uZPDlXLICeNaEP65Brjn27j2sH13WI&usqp=CAU"
+  },
+  {
+    psno: "",
+    category: "Software",
+    theme: "AI/ML and NLP",
+    problemStat: "Develop a crossword solver app: input clues, patterns; generate potential solutions using algorithms.",
+    desc: "Develop a crossword solver app enabling users to input clues and patterns, employing intelligent algorithms to search a word database, generating solutions matching the criteria for partially filled puzzles.",
+    icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-98Vx5aF87-0oLIUo1q6szGzO8D-Kwj6wjS30uZPDlXLICeNaEP65Brjn27j2sH13WI&usqp=CAU"
+  },
+  {
+    psno: "",
+    category: "Software",
+    theme: "AI/ML and IOT",
+    problemStat: "Developing a smart energy monitoring system to reduce carbon emissions in residential buildings.",
+    desc: "Develop a smart energy system for residential buildings integrating IoT, machine learning, and user-friendly interfaces to track usage, promote sustainability, and reduce carbon emissions. Optionally, gamify carbon reduction for communities.",
+    icon: "https://cdn-icons-png.flaticon.com/512/12177/12177032.png"
+  },
+  {
+    psno: "",
+    category: "Software",
+    theme: "AI/ML and IOT",
+    problemStat: "Developing an AI-powered system to enhance campus safety through IoT devices and machine learning algorithms.",
+    desc: "Implement an AI-driven campus safety system utilizing IoT devices and ML. Deploy surveillance tools strategically to detect emergencies. Real-time analytics prioritize responses, enhancing safety and resilience against accidents, fires, and criminal activities.",
+    icon: "https://cdn-icons-png.flaticon.com/512/12177/12177032.png"
+  },
+  {
+    psno: "",
+    category: "Software",
+    theme: "AI/ML and IOT",
+    problemStat: "Design a smart waste sorting bin to autonomously segregate recyclable and nonrecyclable waste.",
+    desc: "Create a prototype smart waste sorting bin with sensors and actuators to sort recyclable and nonrecyclable waste. It should have basic functionality, including waste detection, segregation, and a user-friendly interface for monitoring and control.",
+    icon: "https://cdn-icons-png.flaticon.com/512/12177/12177032.png"
+  },
 ];
