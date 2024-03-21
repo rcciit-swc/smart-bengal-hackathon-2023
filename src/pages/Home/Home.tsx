@@ -148,14 +148,14 @@ const Home = () => {
           speed={100}
           gradient={false}
         >
-          <a
+          {/* <a
             
             target="_blank"
             rel="noreferrer"
           >
             Last date for Application and Idea submission extended till 20th March 2024.............  
             
-          </a>
+          </a> */}
         </Marquee>
       </div>  
      <Devfolio />
