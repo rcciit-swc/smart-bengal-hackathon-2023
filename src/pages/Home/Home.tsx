@@ -159,6 +159,29 @@ const Home = () => {
         </Marquee>
       </div>  
      <Devfolio />
+     <p> </p>
+     <Button
+                className="rounded-button"
+                style={{
+                  backgroundColor: "#1768b0",
+                  boxShadow: "0px 8px 25px #1768b0",
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = "#508fc7";
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = "#1768B0";
+                }}
+              >
+               
+                <a
+                  href="https://forms.gle/dRciPZ3T7dpuww996"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Register Now for SBH Junior (Class 8th to 12th Standard Students)
+                </a>
+              </Button>
      {/* <div
         className="apply-button"
         style={{
@@ -181,6 +204,7 @@ const Home = () => {
           triggerOffset={25}
           delayInMilliseconds={100}
         >
+          
           <div className="d-flex flex-column px-3">
             <h2
               style={{ color: `var(--secondary-heading-color)` }}
@@ -191,6 +215,7 @@ const Home = () => {
         </FadeIn>
         <div className="d-flex dates__deadlines">
           <div className="d-flex flex-column dates__deadlines-text px-3">
+            
             <h2
               className="w-100 fw-bold mt-5"
               style={{ color: "var(--secondary-heading-color)" }}
@@ -210,28 +235,7 @@ const Home = () => {
                 submissions, application deadlines, and events. Missing
                 deadlines can lead to penalties and missed opportunities.
               </p> */}
-              {/* <Button
-                className="rounded-button"
-                style={{
-                  backgroundColor: "#1768b0",
-                  boxShadow: "0px 8px 25px #1768b0",
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.backgroundColor = "#508fc7";
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = "#1768B0";
-                }}
-              >
-               
-                <a
-                  href="https://smart-bengal-hackathon-1.devfolio.co/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Register Now
-                </a>
-              </Button> */}
+              
               <p> </p>
               <ul style={{ fontSize: "20px" }}>
                 <li>
