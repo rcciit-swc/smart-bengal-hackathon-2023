@@ -55,13 +55,13 @@ const FAQ = () => {
                 letterSpacing: "2px",
               }}
             >
-              <a
+              {/* <a
                 href="https://smart-bengal-hackathon-1.devfolio.co/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Register Now
-              </a>
+              </a> */}
             </Button>
           </div>
           {/* <h1 className="fw-bold caveat"
@@ -101,7 +101,7 @@ const FAQ = () => {
               }}
             >
               <a
-                href="https://smart-bengal-hackathon-1.devfolio.co/"
+                href="https://forms.gle/dRciPZ3T7dpuww996"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -158,8 +158,8 @@ const Home = () => {
           </a> */}
         </Marquee>
       </div>  
-     <Devfolio />
-     <p> </p>
+     {/* <Devfolio /> */}
+    
      <Button
                 className="rounded-button"
                 style={{
