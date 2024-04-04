@@ -11,9 +11,6 @@ import CAS from "../../assets/CAS.jpeg";
 import Wie from "../../assets/Wie.jpeg";
 import ISTE from "../../assets/ISTE.jpeg";
 
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 
 const Sponsors24: React.FC = () => {
@@ -103,7 +100,6 @@ const Sponsors24: React.FC = () => {
             bannerCircle="banner_circle"
           />
         </Suspense>
-        
 
         <FadeIn
           from="bottom"
@@ -137,23 +133,55 @@ const Sponsors24: React.FC = () => {
 
           <div className="technical-sponsor">
             <p> </p>
-            
+
             <img className="sponsor-image" src={CAS} alt="CAS LOGO" />
             <img className="sponsor-image" src={Wie} alt="Wie LOGO" />
             <img className="sponsor-image" src={ISTE} alt="ISTE LOGO" />
-            
-            <img className="sponsor-image" src={'https://i.imgur.com/HKy5afa.jpg'} alt="Computer_Society LOGO" />
+
+            <img
+              className="sponsor-image"
+              src={"https://i.imgur.com/HKy5afa.jpg"}
+              alt="Computer_Society LOGO"
+            />
             <p> </p>
-            <img className="sponsor-image" src={'https://i.imgur.com/2polx5l.png'} alt="CAS LOGO" />
-            <img className="sponsor-image" src={'https://i.imgur.com/QbQbJP0.jpg'} alt="Wie LOGO" />
-            <img className="sponsor-image" src={'https://i.imgur.com/YupfMoX.jpg'} alt="Robotic Society LOGO" />
-            
-            <img className="sponsor-image" src={'https://i.imgur.com/9i5L9es.jpg'} alt="Electron Device Society LOGO" />
+            <img
+              className="sponsor-image"
+              src={"https://i.imgur.com/2polx5l.png"}
+              alt="CAS LOGO"
+            />
+            <img
+              className="sponsor-image"
+              src={"https://i.imgur.com/QbQbJP0.jpg"}
+              alt="Wie LOGO"
+            />
+            <img
+              className="sponsor-image"
+              src={"https://i.imgur.com/YupfMoX.jpg"}
+              alt="Robotic Society LOGO"
+            />
+
+            <img
+              className="sponsor-image"
+              src={"https://i.imgur.com/9i5L9es.jpg"}
+              alt="Electron Device Society LOGO"
+            />
             <p> </p>
-            <img className="sponsor-image" src={'https://i.imgur.com/DFKp41C.jpg'} alt="IEEE" />
-            <img className="sponsor-image" src={'https://i.imgur.com/kdyuFlQ.jpg'} alt="SSCS" />
-            
-            <img className="sponsor-image" src={'https://i.imgur.com/ZMRZvW8.png'} alt="WEBSOFT" />
+            <img
+              className="sponsor-image"
+              src={"https://i.imgur.com/DFKp41C.jpg"}
+              alt="IEEE"
+            />
+            <img
+              className="sponsor-image"
+              src={"https://i.imgur.com/kdyuFlQ.jpg"}
+              alt="SSCS"
+            />
+
+            <img
+              className="sponsor-image"
+              src={"https://i.imgur.com/ZMRZvW8.png"}
+              alt="WEBSOFT"
+            />
           </div>
 
           {/* <div id="technical-sponsor" className="divider">
@@ -162,6 +190,28 @@ const Sponsors24: React.FC = () => {
           <div className="gold-sponsor">
             <img className="sponsor-image" src={echo3d} alt="Echo3D LOGO" />
           </div> */}
+
+          <div id="silver-sponsor" className="divider">
+            &nbsp;Media Partner&nbsp;
+          </div>
+          <div className="gold-sponsor">
+            <img
+              style={{ width: "250px" }}
+              src={"https://i.postimg.cc/wx4B6fXD/Media-Partner.jpg"}
+              alt="WEBSOFT"
+            />
+          </div>
+          <div id="silver-sponsor" className="divider">
+            &nbsp;Radio Partner&nbsp;
+          </div>
+          <div className="gold-sponsor">
+            <img
+              className="gold-sponsor"
+              style={{ width: "250px" }}
+              src={"https://i.postimg.cc/DytyGSYZ/Radio-Partner.jpg"}
+              alt="WEBSOFT"
+            />
+          </div>
         </FadeIn>
 
         {/* {sponsorList &&

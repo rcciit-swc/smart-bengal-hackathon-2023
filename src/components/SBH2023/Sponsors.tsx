@@ -171,7 +171,6 @@ const Sponsors: React.FC = () => {
                                     <img
                                       className="sponsor-img"
                                       src={image.url}
-                                    
                                       alt={image.name}
                                     />
                                   </a>
