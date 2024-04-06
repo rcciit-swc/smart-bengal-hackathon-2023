@@ -160,7 +160,7 @@ const Home = () => {
       </div>  
      {/* <Devfolio /> */}
     
-     <Button
+     {/* <Button
                 className="rounded-button"
                 style={{
                   backgroundColor: "#1768b0",
@@ -181,7 +181,7 @@ const Home = () => {
                 >
                   Register Now for SBH Junior (Class 8th to 12th Standard Students)
                 </a>
-              </Button>
+              </Button> */}
      {/* <div
         className="apply-button"
         style={{

@@ -44,7 +44,7 @@ const FAQ = () => {
             >
               SBH SENIOR
             </h3>
-            <Button
+            {/* <Button
               variant="success"
               style={{
                 outline: "none",
@@ -55,14 +55,14 @@ const FAQ = () => {
                 letterSpacing: "2px",
               }}
             >
-              {/* <a
+              <a
                 href="https://smart-bengal-hackathon-1.devfolio.co/"
                 target="_blank"
                 rel="noreferrer"
               >
                 Register Now
-              </a> */}
-            </Button>
+              </a>
+            </Button> */}
           </div>
           {/* <h1 className="fw-bold caveat"
               style={{ color: "black" }}>COMING SOON</h1> */}
@@ -89,7 +89,7 @@ const FAQ = () => {
             >
               SBH JUNIOR
             </h3>
-            <Button
+            {/* <Button
               variant="success"
               style={{
                 outline: "none",
@@ -107,7 +107,7 @@ const FAQ = () => {
               >
                 Register Now
               </a>
-            </Button>
+            </Button> */}
           </div>
           {/* <h1 className="fw-bold caveat"
               style={{ color: "black" }}>COMING SOON</h1> */}

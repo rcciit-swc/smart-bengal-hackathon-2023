@@ -42,7 +42,7 @@ const Updates = () => {
             ends on 20th March 2024.
           </li>
           <li>
-            <b>Shortlisted Teams Announcement:</b> TBD
+            <b>Shortlisted Teams Announcement:</b> 6th April 2024
           </li>
           <li>
             <b>Smart Bengal Hackathon Begins:</b> 16th April,2024 for SBH Junior <br />
@@ -65,7 +65,7 @@ const Updates = () => {
             <b>SBH JUNIOR :</b> - FREE
           </li>
         </ul>
-         <Button
+         {/* <Button
           variant="success"
           className="mb-5"
           style={{
@@ -86,7 +86,7 @@ const Updates = () => {
           >
             Register Now
           </a>
-        </Button> 
+        </Button>  */}
       </div>
     </main>
   );
