@@ -246,6 +246,9 @@ const Home = () => {
                   <b>Registration Closed:</b> 20th March 2024
                 </li>
                 <li>
+                  <b>Shortlisted Teams Announcement for Senior:</b> 6th April 2024
+                </li>
+                <li>
                   <b>Smart Bengal Hackathon:</b> 
                   <div style= {{ marginLeft: '200px' }}>
                     <li>16th April 2024 for SBH Junior</li>
@@ -254,8 +257,52 @@ const Home = () => {
                 </li>
               </ul>
             </FadeIn>
+            <Button
+          variant="success"
+          className="mb-5"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://docs.google.com/spreadsheets/d/1cU0g4wkYu0AWkGODDz7yPYB-hVHu8ZzT/edit#gid=2103771487"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Finalist Teams for SBH Senior (Hardware)
+          </a>
+        </Button>
+        <Button
+          variant="success"
+          className="mb-5"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://docs.google.com/spreadsheets/d/1CXHVXLMlmgSm1V-xJSKjWkIk-onlH8CE/edit#gid=16674244"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Finalist Teams for SBH Senior (Software)
+          </a>
+        </Button>  
           </div>
-          {/* <FadeIn
+          <FadeIn
             from="right"
             positionOffset={150}
             triggerOffset={25}
@@ -271,7 +318,7 @@ const Home = () => {
               >
                 <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                   <span className="fw-bold pb-2 bubble__title">
-                    30th March(Senior) & 2nd April (Junior)
+                    6th April(Senior) & TBD (Junior)
                   </span>
                   <span className="bubble__text">
                     Shortlisted Team Announcements
@@ -287,7 +334,7 @@ const Home = () => {
               >
                 <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                   <span className="fw-bold pb-2 bubble__title">
-                    28th Feb - 23th March(Senior), 31st March(Junior)
+                    7th Feb - 20th March(Senior), 4th April(Junior)
                   </span>
                   <span className="bubble__text">
                     Registration & Idea Submission
@@ -303,7 +350,7 @@ const Home = () => {
               >
                 <span className="text-center w-100 h-100 d-flex flex-column justify-content-center align-items-center">
                   <span className="fw-bold pb-2 bubble__title">
-                    11th & 12th April
+                    16th & 17th April
                   </span>
                   <span className="bubble__text">
                     Finals for SBH Junior & Senior
@@ -311,7 +358,7 @@ const Home = () => {
                 </span>
               </div>
             </div>
-          </FadeIn> */}
+          </FadeIn>
         </div>
       </div>
       <Suspense fallback={<></>}>
