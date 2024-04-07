@@ -65,7 +65,7 @@ const Updates = () => {
             <b>SBH JUNIOR :</b> - FREE
           </li>
         </ul>
-         <Button
+         {/* <Button
           variant="success"
           className="mb-5"
           style={{
@@ -86,8 +86,8 @@ const Updates = () => {
           >
             View Finalist Teams for SBH Senior (Hardware)
           </a>
-        </Button>
-        <Button
+        </Button> */}
+        {/* <Button
           variant="success"
           className="mb-5"
           style={{
@@ -108,7 +108,7 @@ const Updates = () => {
           >
             View Finalist Teams for SBH Senior (Software)
           </a>
-        </Button>  
+        </Button>   */}
       </div>
     </main>
   );
