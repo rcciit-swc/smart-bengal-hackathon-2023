@@ -12,7 +12,7 @@ const Footer = () => {
       }}
       className="d-flex flex-column justify-content-evenly py-4 flex-wrap align-items-center"
     >
-      <div className="d-flex flex-column align-items-center px-3 justify-content-evenly my-3">
+      <div className="d-flex flex-column align-items-center px-3 justify-content-center my-3">
         <p className="text-uppercase fs-5 fw-bold montserrat">Follow us</p>
         <div></div>
         <a href="#" className="fs-6 copyright my-1 text-center poppins">
@@ -21,7 +21,7 @@ const Footer = () => {
         <a className="fs-6 copyright" href="mailto:sbh@rcciit.org.in">
           sbh@rcciit.org.in
         </a>
-        <div className="w-50 d-flex justify-content-between my-4">
+        <div className="w-50 d-flex justify-content-between my-4 gap-3">
           <a
             href="https://www.facebook.com/profile.php?id=100090128125218"
             target="_blank"

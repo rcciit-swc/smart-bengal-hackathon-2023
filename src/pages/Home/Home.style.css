@@ -193,3 +193,14 @@
     width: 280px;
   }
 }
+
+.finalist-buttons-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}

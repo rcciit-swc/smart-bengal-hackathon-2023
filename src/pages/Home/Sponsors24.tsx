@@ -10,6 +10,7 @@ import SSCS from "../../assets/SSCS.jpeg";
 import CAS from "../../assets/CAS.jpeg";
 import Wie from "../../assets/Wie.jpeg";
 import ISTE from "../../assets/ISTE.jpeg";
+import Aspecta from "../../assets/Black2.png";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 
@@ -125,14 +126,19 @@ const Sponsors24: React.FC = () => {
               src={ethindia}
               alt="ETHINDIA LOGO"
             />
+             <img
+              style={{ width: "210px" }}
+              src={Aspecta}
+              alt="ETHINDIA LOGO"
+            />
           </div>
 
           <div id="technical-sponsor" className="divider">
             &nbsp;Technical Sponsors&nbsp;
           </div>
 
-          <div className="technical-sponsor">
-            <p> </p>
+          <div className="technical-sponsor-group">
+          
 
             <img className="sponsor-image" src={CAS} alt="CAS LOGO" />
             <img className="sponsor-image" src={Wie} alt="Wie LOGO" />
@@ -143,7 +149,7 @@ const Sponsors24: React.FC = () => {
               src={"https://i.imgur.com/HKy5afa.jpg"}
               alt="Computer_Society LOGO"
             />
-            <p> </p>
+         
             <img
               className="sponsor-image"
               src={"https://i.imgur.com/2polx5l.png"}
@@ -165,7 +171,7 @@ const Sponsors24: React.FC = () => {
               src={"https://i.imgur.com/9i5L9es.jpg"}
               alt="Electron Device Society LOGO"
             />
-            <p> </p>
+         
             <img
               className="sponsor-image"
               src={"https://i.imgur.com/DFKp41C.jpg"}

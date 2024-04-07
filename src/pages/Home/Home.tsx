@@ -26,10 +26,11 @@ const Home = () => {
 
   return (
     <main
-      className="d-flex flex-column align-items-center position-relative"
+      className="d-flex flex-column  align-items-center position-relative"
       style={{
         overflowX: "hidden",
         overflowY: "hidden",
+        width: "100%",
       }}
     >
       <Suspense fallback={<></>}>
@@ -159,7 +160,100 @@ const Home = () => {
         </Marquee>
       </div>  
      {/* <Devfolio /> */}
-    
+     <h3>View Finalist Teams :</h3>
+     <FadeIn
+          from="bottom"
+          positionOffset={150}
+          triggerOffset={25}
+          delayInMilliseconds={100}
+        >
+     <div className="finalist-buttons-group">
+              <Button
+          variant="success"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://docs.google.com/spreadsheets/d/1cU0g4wkYu0AWkGODDz7yPYB-hVHu8ZzT/edit#gid=2103771487"
+            target="_blank"
+            rel="noreferrer"
+          >
+         SBH Senior (Hardware)
+          </a>
+        </Button>
+        <Button
+          variant="success"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://docs.google.com/spreadsheets/d/1CXHVXLMlmgSm1V-xJSKjWkIk-onlH8CE/edit#gid=16674244"
+            target="_blank"
+            rel="noreferrer"
+          >
+          SBH Senior (Software)
+          </a>
+        </Button>  
+        <Button
+          variant="success"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://docs.google.com/spreadsheets/d/1OAWUsLwazVHjUBV8Ae406ts2fbZK8NPM/edit#gid=1185025783"
+            target="_blank"
+            rel="noreferrer"
+          >
+          SBH Junior (Software)
+          </a>
+        </Button>
+        <Button
+          variant="success"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://docs.google.com/spreadsheets/d/1mx4N26-WKCf2EW2HwPyyxBJDkLof_VaL/edit#gid=374226684"
+            target="_blank"
+            rel="noreferrer"
+          >
+          SBH Junior (Hardware)
+          </a>
+        </Button>
+              </div>
+              </FadeIn>
      {/* <Button
                 className="rounded-button"
                 style={{
@@ -250,58 +344,16 @@ const Home = () => {
                 </li>
                 <li>
                   <b>Smart Bengal Hackathon:</b> 
-                  <div style= {{ marginLeft: '200px' }}>
-                    <li>16th April 2024 for SBH Junior</li>
-                    <li>17th April 2024 for SBH Senior</li>
-                  </div>
+                 
+                    <li><b>16th April 2024</b> for SBH Junior</li>
+                    <li><b>17th April 2024</b> for SBH Senior</li>
+                 
                 </li>
               </ul>
             </FadeIn>
-            <Button
-          variant="success"
-          className="mb-5"
-          style={{
-            outline: "none",
-            border: "none",
-            // backgroundColor: "var(--heading-color)",
-            // color: "white",
-            padding: "10px 30px",
-            borderRadius: "50px",
-            fontWeight: "600",
-            letterSpacing: "2px",
-          }}
-        >
-          <a
-            href="https://docs.google.com/spreadsheets/d/1cU0g4wkYu0AWkGODDz7yPYB-hVHu8ZzT/edit#gid=2103771487"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Finalist Teams for SBH Senior (Hardware)
-          </a>
-        </Button>
-        <Button
-          variant="success"
-          className="mb-5"
-          style={{
-            outline: "none",
-            border: "none",
-            // backgroundColor: "var(--heading-color)",
-            // color: "white",
-            padding: "10px 30px",
-            borderRadius: "50px",
-            fontWeight: "600",
-            letterSpacing: "2px",
-          }}
-        >
-          <a
-            href="https://docs.google.com/spreadsheets/d/1CXHVXLMlmgSm1V-xJSKjWkIk-onlH8CE/edit#gid=16674244"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View Finalist Teams for SBH Senior (Software)
-          </a>
-        </Button>  
+             
           </div>
+          
           <FadeIn
             from="right"
             positionOffset={150}
