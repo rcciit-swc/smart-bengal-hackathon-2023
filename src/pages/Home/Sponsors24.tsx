@@ -11,6 +11,7 @@ import CAS from "../../assets/CAS.jpeg";
 import Wie from "../../assets/Wie.jpeg";
 import ISTE from "../../assets/ISTE.jpeg";
 import Aspecta from "../../assets/Black2.png";
+import GOVTLOGO from "../../assets/govt-logo.jpeg";
 
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 
@@ -108,6 +109,16 @@ const Sponsors24: React.FC = () => {
           triggerOffset={0}
           delayInMilliseconds={100}
         >
+          <div id="govt-sponsor" className="divider">
+            &nbsp;Supported By&nbsp;
+          </div>
+          <div className="gold-sponsor">
+            <img className="sponsor-image" src={GOVTLOGO} alt="Government LOGO" style={{
+                                width: "450px",
+                                height: "450px",
+                              }}/>
+          </div>
+          
           <div id="gold-sponsor" className="divider">
             &nbsp;Gold Sponsors&nbsp;
           </div>
