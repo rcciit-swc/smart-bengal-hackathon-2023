@@ -254,6 +254,58 @@ const Home = () => {
         </Button>
               </div>
               </FadeIn>
+              <h3>Event Timeline:</h3>
+     <FadeIn
+          from="bottom"
+          positionOffset={150}
+          triggerOffset={25}
+          delayInMilliseconds={100}
+        >
+     <div className="finalist-buttons-group">
+              <Button
+          variant="success"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://drive.google.com/file/d/1FpTiy-STla-vK_fzZmZSsgQopHC5ty66/view"
+            target="_blank"
+            rel="noreferrer"
+          >
+         16th April 2024 (SBH-Junior) Event Details
+          </a>
+        </Button>
+        <Button
+          variant="success"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://drive.google.com/file/d/1K1PgfP8ZWu_A-rZksCyikASt9lMEtx80/view"
+            target="_blank"
+            rel="noreferrer"
+          >
+          17th April 2024 (SBH-Senior) Event Details
+          </a>
+        </Button> 
+        </div> 
+        </FadeIn>
      {/* <Button
                 className="rounded-button"
                 style={{
