@@ -160,8 +160,8 @@ const Home = () => {
         </Marquee>
       </div>  
      {/* <Devfolio /> */}
-     <h3>View Finalist Teams :</h3>
-     <FadeIn
+     {/* <h3>View Finalist Teams :</h3> */}
+     {/* <FadeIn
           from="bottom"
           positionOffset={150}
           triggerOffset={25}
@@ -253,7 +253,7 @@ const Home = () => {
           </a>
         </Button>
               </div>
-              </FadeIn>
+              </FadeIn> */}
               <h3>Event Timeline:</h3>
      <FadeIn
           from="bottom"
