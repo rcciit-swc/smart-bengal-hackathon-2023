@@ -735,73 +735,83 @@
         ],
         "SbhJunior": [{
                 "Rank": 1,
-                "TeamName": "NDPMB-24",
-                "teamLeadersName": "Lalan Kumar",
-                "schoolName": "Ramakrishna Mission Vidyalaya, Narendrapur",
-                "catagory": "Hybrid"
-            },
-            {
-                "Rank": 1,
-                "TeamName": "La Martiniere for Boys",
-                "teamLeadersName": "Aakarsh Garg",
-                "schoolName": "La Martiniere for Boys, Kolkata",
-                "catagory": "Hybrid"
+                "Id": "SBHJ016_S",
+                "TeamName": "Hackminors",
+                "teamLeadersName": "Sagnik Chakraborty, Hrishikesh Saha, Purbayon Sarkar",
+                "schoolName": "South Point High School",
+                "catagory": "Joyrup Bhattacharya"
             },
             {
                 "Rank": 2,
-                "TeamName": "Coding Wizards",
-                "teamLeadersName": "Mainak Chakraborty",
-                "schoolName": "Lions Calcutta Greater Vidya Mandir school, West Bengal",
-                "catagory": "Hybrid"
+                "Id": "SBHJ011_H",
+                "TeamName": "Trio Vision",
+                "teamLeadersName": "Shiv Sreekumar, Adarsh khushwaha, Abhav pathania",
+                "schoolName": "Army Public school Kolkata",
+                "catagory": "Munmun Nag  Choudhary"
             },
             {
                 "Rank": 3,
-                "TeamName": "Hackminors",
-                "teamLeadersName": "Purbayon Sarkar",
-                "schoolName": "South Point High School, Ballygunge, Kolkata, West Bengal",
-                "catagory": "Software"
-            },
-            {
-                "Rank": 3,
-                "TeamName": "626373-U2G9KD56",
-                "teamLeadersName": "Rajarshi Dhara",
-                "schoolName": "The Assembly of God Church School, Park Street",
-                "catagory": "Software"
+                "Id": "SSBHJ016_H",
+                "TeamName": "MicroMachina Robotics",
+                "teamLeadersName": "Abhigyan Bhattacherjee, Trisha Maiti",
+                "schoolName": "Lions Calcutta Greater Vidya Mandir",
+                "catagory": "Shanu Sarkar"
             },
             {
                 "Rank": 4,
-                "TeamName": "626373-US8817ZL",
-                "teamLeadersName": "TRIJAL SRIMAL",
-                "schoolName": "St.Xavier's Collegiate School,Kolkata",
-                "catagory": "Hybrid"
+                "Id": "SBHS081_H",
+                "TeamName": "Accident Guardians (AG)",
+                "teamLeadersName": "Kaushik Chakraborty, Mehul Chatterjee, Md. Yasser Yousuf Ansari, Aryan Gupta",
+                "schoolName": "The Assembly of God Church School",
+                "catagory": "Rupa Pandit"
             },
             {
                 "Rank": 5,
-                "TeamName": "Bosco Bytes",
-                "teamLeadersName": "Ayush Abhinandan Choudhury",
-                "schoolName": "Don Bosco School, Park Circus, Kolkata, West Bengal",
-                "catagory": "Software"
+                "Id": "SBHJ005_S",
+                "TeamName": "BitCode",
+                "teamLeadersName": "Pramit Datta, Oum Halder , Srija Kundu",
+                "schoolName": "Lions Calcutta Greater Vidya Mandir",
+                "catagory": "Payel Bannerjee"
             },
             {
                 "Rank": 6,
-                "TeamName": "SXCS Team 2",
-                "teamLeadersName": "Ashmeet Lakra",
-                "schoolName": "St. Xavier's Collegiate School (SXCS), Kolkata, West Bengal",
-                "catagory": "Software"
+                "Id": "SBHJ017_S",
+                "TeamName": "Angshul Saha (angshul)",
+                "teamLeadersName": "Angshul Saha, Aishani Biswas, Anushreee Sarkar , Debojit Tarafdar",
+                "schoolName": "PM SHRI Kendriya Vidyalaya No.1 Salt Lake",
+                "catagory": "Arvind Kumar Jha"
             },
             {
                 "Rank": 7,
-                "TeamName": "FUTURE FORESIGHTERS",
-                "teamLeadersName": "Soumyadeep  Das",
-                "schoolName": "Lions Calcutta Greater Vidya Mandir school, West Bengal",
-                "catagory": "Hybrid"
+                "Id": "SBHJ019_H",
+                "TeamName": "TrioTech",
+                "teamLeadersName": "Swapnil Pradhan, Shantonu Mandal, Aishik Dasgupta",
+                "schoolName": "Army Public school Kolkata",
+                "catagory": "Munmun Nag  Choudhary"
             },
             {
                 "Rank": 8,
-                "TeamName": "Segmentation Fault",
-                "teamLeadersName": "Shanu Sarkar",
-                "schoolName": "Lions Calcutta Greater Vidya Mandir school, West Bengal",
-                "catagory": "Software"
+                "Id": "SBHJ018_H",
+                "TeamName": "InceptionIT",
+                "teamLeadersName": "Utsab Mandal, Aayushmaan Sukul, Neelanjan Basak, Arijit Sarkar",
+                "schoolName": "Army Public School Barrackpore",
+                "catagory": "Nivedita Sukul"
+            },
+            {
+                "Rank": 9,
+                "Id": "SBHJ004_H",
+                "TeamName": "LuminaTech Wizards",
+                "teamLeadersName": "SPANDAN MANDAL, SINJINI CHAKRABORTI, SOUNAK ROY,RAJDEEP DAS",
+                "schoolName": "Indus Valley World School",
+                "catagory": "VASWATI SAHA"
+            },
+            {
+                "Rank": 10,
+                "Id": "SBHS080_H",
+                "TeamName": "NDP Cyborgs ",
+                "teamLeadersName": "Anik Das, Aritra Sinha, Souvik Dhara",
+                "schoolName": "Ramakrishna Mission Vidyalaya, Narendrapur",
+                "catagory": "Subhankar Ghosh"
             }
         ]
     }

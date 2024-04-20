@@ -89,7 +89,7 @@ const Footer = () => {
           })}
         </div>
       </div> */}
-      <p className="pt-2">Made with ❤️ by  <a className="underline" href="https://github.com/rcciit-swc/smart-bengal-hackathon-2023/contributors"
+      <p className="pt-2">Made with ❤️ by  <a className="underline"
           target="_blank "
           rel="noreferrer noopener"> SBH Tech Team </a> </p>
     </div>

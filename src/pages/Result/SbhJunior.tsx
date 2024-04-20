@@ -42,7 +42,7 @@ console.log(result)
               <th>Team Name</th>
               <th>Team Members Name</th>
               <th>School Name</th>
-              <th>Category</th>
+              <th>Mentor's Name</th>
               
             </tr>
           </thead>
