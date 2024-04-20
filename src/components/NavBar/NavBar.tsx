@@ -163,7 +163,7 @@ const NavBar = () => {
                 </a>
               </div>
             </NavDropdown>
-            {/* <NavDropdown className="navbar__color" title="Results">
+            <NavDropdown className="navbar__color" title="Results">
               <div className="dropdown-item">
                 <span className="dot"></span>
                 <Link
@@ -173,7 +173,7 @@ const NavBar = () => {
                   //rel="noreferrer"
                   to={resultSeniorRoute}
                 >
-                  SBH Senior 2023
+                  SBH Senior 2024
                 </Link>
               </div>
               <div className="dropdown-item">
@@ -185,10 +185,10 @@ const NavBar = () => {
                   //rel="noreferrer"
                   to={resultJuniorRoute}
                 >
-                  SBH Junior 2023
+                  SBH Junior 2024
                 </Link>
               </div>
-            </NavDropdown> */}
+            </NavDropdown>
             <NavDropdown title="Hackathon Details">
               <div className="dropdown-item">
                 <span className="dot"></span>

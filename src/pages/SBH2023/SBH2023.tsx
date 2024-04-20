@@ -3,7 +3,7 @@ import Finale from "../../components/SBH2023/Finale";
 import Gallery from "../../components/SBH2023/Gallery";
 import Sponsors from "../../components/SBH2023/Sponsors";
 import Impact from "../../components/SBH2023/Impact";
-import Winners from "../../components/SBH2023/Winners";
+// import Winners from "../../components/SBH2023/Winners";
 import Themes from "../Home/component.body.themes";
 import "../../components/SBH2023/sbh2023.css";
 const SBH2023 = () => {
@@ -18,7 +18,7 @@ const SBH2023 = () => {
           /> */}
       {/* <Impact /> */}
       {/* <Finale /> */}
-      <Winners />
+      
       <Gallery />
       <Themes />
       <Committe />

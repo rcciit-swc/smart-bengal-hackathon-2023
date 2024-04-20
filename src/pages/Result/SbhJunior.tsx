@@ -36,9 +36,11 @@ console.log(result)
           <thead>
             <tr className="text-center">
               
+              
               <th>Rank</th>
+              <th>Id</th>
               <th>Team Name</th>
-              <th>Team Leader's Name</th>
+              <th>Team Members Name</th>
               <th>School Name</th>
               <th>Category</th>
               
@@ -52,6 +54,7 @@ console.log(result)
                     <>
                       <tr key={indexing}>
                         <td className="text-center">{data.Rank}</td>
+                        <td className="text-center">{data.Id}</td>
                         <td className="w-25">{data.TeamName}</td>
                         <td
                           className="w-25 text-center"

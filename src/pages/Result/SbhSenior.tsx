@@ -37,10 +37,11 @@ console.log(result)
             <tr className="text-center">
               
               <th>Rank</th>
+              <th>Id</th>
               <th>Team Name</th>
               <th>Team Leader's Name</th>
               <th>College Name</th>
-              <th>PS Number</th>
+              {/* <th>PS Number</th> */}
               
             </tr>
           </thead>
@@ -52,6 +53,7 @@ console.log(result)
                     <>
                       <tr key={indexing}>
                         <td className="text-center">{data.rank}</td>
+                        <td className="text-center">{data.Id}</td>
                         <td className="w-25">{data.teamName}</td>
                         <td
                           className="w-25 text-center"
@@ -64,7 +66,7 @@ console.log(result)
                           {data.TeamLeadersName}
                         </td>
                         <td className="text-center">{data.CollegeName}</td>
-                        <td className="text-center">{data.psNumber}</td>
+                        {/* <td className="text-center">{data.psNumber}</td> */}
                       
                        
                       </tr>

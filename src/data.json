@@ -655,73 +655,82 @@
     "results": {
         "SbhSenior": [{
                 "rank": 1,
-                "teamName": "key 2 innov@tion  BIT, Kolkata",
-                "CollegeName": "Bengal Institute of Technology (BIT), Kolkata",
-                "TeamLeadersName": "HRISHIKESH DAS",
-                "psNumber": "SBHRCCIITXXX"
+                "Id": "SBHS017_S",
+                "teamName": "GLUCOVISION",
+                "CollegeName": "Heritage Institute of Technology",
+                "TeamLeadersName": "DIPJYOTI KODALI"
             },
             {
                 "rank": 2,
-                "teamName": "FUTURISTIC-Us Techno SL, Kolkata",
-                "CollegeName": "Techno Main Salt Lake",
-                "TeamLeadersName": "Preetha Sengupta",
-                "psNumber": "SBHRCCIITXXX"
+                "Id": "SBHI096_S",
+                "teamName": "NovaByte",
+                "CollegeName": "RCC Institute of Information Technology, Kolkata",
+                "TeamLeadersName": "Rwitam Ray"
+
             },
             {
                 "rank": 3,
-                "teamName": "Tech Giants Techno NT, Kolkata",
-                "CollegeName": "Techno International New Town, West Bengal",
-                "TeamLeadersName": "Ritam Chatterjee",
-                "psNumber": "SBHRCCIITXXX"
+                "Id": "SBHS130_S",
+                "teamName": "Pioneers",
+                "CollegeName": "Budge Budge Institute Of Technology",
+                "TeamLeadersName": "Subhajit Chakraborty"
+
             },
             {
                 "rank": 4,
-                "teamName": "626373-UGCD3433   FIEM, WB",
-                "CollegeName": "Future Institute of Engineering and Management",
-                "TeamLeadersName": "Arijit Dasgupta",
-                "psNumber": "SBHRCCIITXXX"
+                "Id": "SBHI097_H",
+                "teamName": "HEALTHTECHIES",
+                "CollegeName": "RCC Institute of Information Technology, Kolkata",
+                "TeamLeadersName": "ARGHADEEP SAHA"
+
             },
             {
                 "rank": 5,
-                "teamName": "FoxHackerz  RCCIIT Kolkata",
-                "CollegeName": "RCC Institute of Information Technology (RCCIIT), Kolkata",
-                "TeamLeadersName": "Neelkalpa Majumder",
-                "psNumber": "SBHRCCIIT006"
+                "Id": "SBHS172_S",
+                "teamName": "Ctrl+Shift+Create",
+                "CollegeName": "Techno Mains Saltlake",
+                "TeamLeadersName": "Srijan Paul"
+
             },
             {
                 "rank": 6,
-                "teamName": "SourceX   MSIT, Kolkata",
-                "CollegeName": "Meghnad Saha Institute of Technology (MSIT), Kolkata",
-                "TeamLeadersName": "Michael Gomes",
-                "psNumber": "SBHRCCIIT028"
+                "Id": "SBHS059_H",
+                "teamName": "Single Emitting Cyclotron of Charms (S.E.C.C.)",
+                "CollegeName": "Narula Institute of Technology",
+                "TeamLeadersName": "Sparsho Chakraborty"
+
             },
             {
                 "rank": 7,
-                "teamName": "The Kriticks  Techno NT, Kolkata",
-                "CollegeName": "Techno International New Town, West Bengal",
-                "TeamLeadersName": "Krittika Das",
-                "psNumber": "SBHRCCIIT024"
+                "Id": "SBHI111_S",
+                "teamName": "Videhack",
+                "CollegeName": "RCC Institute of Information Technology, Kolkata",
+                "TeamLeadersName": "Neelkalpa Majumder"
+
             },
             {
                 "rank": 8,
-                "teamName": "626373-U506I6MV   Amity University",
-                "CollegeName": "Amity University  Kolkata, West Bengal",
-                "TeamLeadersName": "Kaustav Das",
-                "psNumber": "SBHRCCIIT023"
+                "Id": "SBHS040_H",
+                "teamName": "Robusta1",
+                "CollegeName": "Institute of Engineering and Management",
+                "TeamLeadersName": "Pratyusha Chatterjee"
+
             },
             {
                 "rank": 9,
-                "teamName": "626373-U2OFP573   Techno NT, Kolkata",
-                "CollegeName": "Techno International New Town, West Bengal",
-                "TeamLeadersName": "Avigyan Chowdhury",
-                "psNumber": "SBHRCCIITXXX"
+                "Id": "SBHS040_S",
+                "teamName": "ROBUSTA_6.0",
+                "CollegeName": "Narula Institute of Technology",
+                "TeamLeadersName": "Avrajeet Ghosh"
+
             },
             {
                 "rank": 10,
-                "teamName": "Think Tank 3.0  UIT, Burdwan",
-                "CollegeName": "University Institute of Technology, The University of Burdwan",
-                "TeamLeadersName": "Sumit Gupta",
-                "psNumber": "SBHRCCIIT015"
+                "Id": "SBHS034_S",
+                "teamName": "ARMOR",
+                "CollegeName": "Heritage Institute of Technology",
+                "TeamLeadersName": "Nilanjana Dutta"
+
             }
         ],
         "SbhJunior": [{
