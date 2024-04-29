@@ -6,6 +6,7 @@ import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
 import Devfolio from "../../components/Buttons/Devfolio";
+const Gallery2024 = lazy(() => import("./component.body.gallery"))
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
 const Sponsors24 = lazy(() => import("../../pages/Home/Sponsors24"));
@@ -405,7 +406,6 @@ const Home = () => {
             </FadeIn>
              
           </div>
-          
           <FadeIn
             from="right"
             positionOffset={150}
@@ -465,6 +465,9 @@ const Home = () => {
           </FadeIn>
         </div>
       </div>
+      <Suspense fallback={<></>}>
+        <Gallery2024 />
+      </Suspense>
       <Suspense fallback={<></>}>
         <Themes />
       </Suspense>
