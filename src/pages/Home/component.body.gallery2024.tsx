@@ -8,6 +8,7 @@ import photo9 from "../../assets/SBH2024-gal9.jpg";
 import photo10 from "../../assets/SBH2024-gal10.jpg";
 import photo11 from "../../assets/SBH2024-gal11.jpg";
 import photo12 from "../../assets/SBH2024-gal12.jpg";
+import { Button } from "react-bootstrap";
 
 const gallery2024 = [
     {
@@ -94,6 +95,57 @@ const Gallery2024 = () => {
         ))}
       </Carousel>
       </div>
+      <FadeIn
+          from="bottom"
+          positionOffset={150}
+          triggerOffset={25}
+          delayInMilliseconds={100}
+        >
+     <div className="finalist-buttons-group">
+              <Button
+          variant="success"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://drive.google.com/drive/folders/12uAZufujhRPGKzNj9hcBe0Bu4PGJTbNH"
+            target="_blank"
+            rel="noreferrer"
+          >
+         Glimpses of day1 - 16th April 2024
+          </a>
+        </Button>
+        <Button
+          variant="success"
+          style={{
+            outline: "none",
+            border: "none",
+            // backgroundColor: "var(--heading-color)",
+            // color: "white",
+            padding: "10px 30px",
+            borderRadius: "50px",
+            fontWeight: "600",
+            letterSpacing: "2px",
+          }}
+        >
+          <a
+            href="https://drive.google.com/drive/folders/1j445ynit_QGL4Vys0EBIUetPjFXLIhtd"
+            target="_blank"
+            rel="noreferrer"
+          >
+          Glimpses of day2 - 17th April 2024
+          </a>
+        </Button> 
+        </div> 
+        </FadeIn>
     </div>
     </>
   );
