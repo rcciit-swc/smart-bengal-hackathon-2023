@@ -5,8 +5,7 @@ import CarouselContainer from "../../components/carousel/Carousel";
 import { FadeIn } from "react-slide-fade-in";
 import { Button } from "react-bootstrap";
 import Marquee from "react-fast-marquee";
-import Devfolio from "../../components/Buttons/Devfolio";
-const Gallery2024 = lazy(() => import("./component.body.gallery"))
+const Gallery2024 = lazy(() => import("./component.body.gallery2024"))
 const Circle = lazy(() => import("../../components/Blob/Circle"));
 const Themes = lazy(() => import("./component.body.themes"));
 const Sponsors24 = lazy(() => import("../../pages/Home/Sponsors24"));

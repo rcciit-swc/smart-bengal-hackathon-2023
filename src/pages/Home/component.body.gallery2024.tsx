@@ -1,4 +1,4 @@
-import Carousel from "react-multi-carousel";
+import { Carousel } from 'react-bootstrap';
 import "react-multi-carousel/lib/styles.css";
 import { Suspense } from "react";
 import { FadeIn } from "react-slide-fade-in/dist/fade-in";
@@ -52,7 +52,7 @@ const gallery2024 = [
 const Gallery2024 = () => {
   return (
     <>
-      <div className="pt-5 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative">
+    <div className="pt-5 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center position-relative">
       <Suspense fallback={<></>}>
         
         </Suspense>
@@ -69,25 +69,17 @@ const Gallery2024 = () => {
           delayInMilliseconds={100}
         ></FadeIn>
         <p>Here are some of the glimpses of this year. </p>
-        <div className="carousel-style">
-      <Carousel
-        responsive={responsive}
-        className="w-[400px] 2xl:w-[1300px] h-[500px] flex flex-row items-center px-20"
-        arrows={true}
-        showDots={true}
-        transitionDuration={100}
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={3000}
-      >
+        <div className="carousal-style">
+        <Carousel interval={1000} pause="hover">
         {gallery2024.map((card, index) => (
-          <div key={index}>
+          <Carousel.Item key={index}>
             <img
               src={card.image}
               alt={`Gallery ${index}`}
               style={{
                 maxWidth: "90%",
-                maxHeight: "90%",
+                maxHeight: "70vh", // Adjust as needed
+                objectFit: "cover",
                 borderRadius: "2rem",
                 width: "100%", // Set a fixed width
                 height: "400px",
@@ -98,11 +90,11 @@ const Gallery2024 = () => {
                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.4)",
               }}
             />
-          </div>
+          </Carousel.Item>
         ))}
       </Carousel>
-    </div>
       </div>
+    </div>
     </>
   );
 };
